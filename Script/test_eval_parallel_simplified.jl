@@ -1,5 +1,5 @@
 using Distributed
-addprocs(10)
+addprocs(30)
 @everywhere begin
     global CATS_DIR = "/scratch/jlara/CATS-CaliforniaTestSystem"
     global DATA_DIR = "/scratch/jlara/CATS-CaliforniaTestSystem"
@@ -58,7 +58,9 @@ addprocs(10)
             # push!(results,  solution["termination_status"])
             #nextRow = solution["solution"]["gen"][FIRST_CONDENSER:NUM_GENS]
             if solution["termination_status"] == LOCALLY_INFEASIBLE
-                @error "$k in range $range infeasible skipping write"
+                @error "$k Infeasible skipping write"
+                tmp_condenserReactiveFlows = Tables.table([k, [-99 for x in condenserIndices]...]')
+                CSV.write("SimplifiedcondenserReactiveFlows.csv", tmp_condenserReactiveFlows; append=true)
             else
                 tmp_condenserReactiveFlows = Tables.table([k, [round(solution["solution"]["gen"]["$x"]["qg"], digits = 4) for x in condenserIndices]...]')
                 CSV.write("SimplifiedcondenserReactiveFlows.csv", tmp_condenserReactiveFlows; append=true)
