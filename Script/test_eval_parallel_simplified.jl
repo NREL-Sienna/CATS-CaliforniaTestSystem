@@ -6,7 +6,7 @@ addprocs(30)
     using Pkg
     Pkg.activate(CATS_DIR)
     #Pkg.develop(path = "/home/jlara/HSL_jll.jl-2023.11.7")
-    using HSL_jll
+    #using HSL_jll
     using PowerModels
     using JuMP
     using CSV, JSON
@@ -20,8 +20,8 @@ addprocs(30)
         @info "begin eval call $(range)"
         solver = JuMP.optimizer_with_attributes(() -> Ipopt.Optimizer(),
             "print_level" => 3,
-            "hsllib" => HSL_jll.libhsl_path,
-            "linear_solver" => "ma27"
+            #"hsllib" => HSL_jll.libhsl_path,
+            # "linear_solver" => "ma27"
         )
         @info "Ipopt Instantiated"
         NetworkData = deepcopy(NetworkData_input)
