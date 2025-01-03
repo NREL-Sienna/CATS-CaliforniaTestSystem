@@ -1,13 +1,13 @@
 using Distributed
-addprocs(30)
+addprocs(10)
 @everywhere begin
     global CATS_DIR = "/scratch/jlara/CATS-CaliforniaTestSystem"
     global DATA_DIR = "/scratch/jlara/CATS-CaliforniaTestSystem"
     using Pkg
     Pkg.activate(CATS_DIR)
-    using MKL
-    using LinearAlgebra
-    BLAS.set_num_threads(8)
+    # using MKL
+    #using LinearAlgebra
+    #BLAS.set_num_threads(1)
     #Pkg.develop(path = "/home/jlara/HSL_jll.jl-2023.11.7")
     #using HSL_jll
     using PowerModels
