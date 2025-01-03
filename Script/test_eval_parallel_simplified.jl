@@ -63,10 +63,10 @@ addprocs(30)
             if solution["termination_status"] == LOCALLY_INFEASIBLE
                 @error "$k Infeasible skipping write"
                 tmp_condenserReactiveFlows = Tables.table([k, [-99 for x in condenserIndices]...]')
-                CSV.write("SimplifiedcondenserReactiveFlows.csv", tmp_condenserReactiveFlows; append=true)
+                CSV.write("SimplifiedcondenserReactiveFlows_lb.csv", tmp_condenserReactiveFlows; append=true)
             else
                 tmp_condenserReactiveFlows = Tables.table([k, [round(solution["solution"]["gen"]["$x"]["qg"], digits = 4) for x in condenserIndices]...]')
-                CSV.write("SimplifiedcondenserReactiveFlows.csv", tmp_condenserReactiveFlows; append=true)
+                CSV.write("SimplifiedcondenserReactiveFlows_lb.csv", tmp_condenserReactiveFlows; append=true)
                 @info "Wrote case $k in range $range"
             end
         end
@@ -83,7 +83,7 @@ condenserIndices = [g for g in 1:size(gen_data)[1] if occursin("condenser", lowe
 
 condenserReactiveFlows = DataFrame("timestep" => Int[],
 ("gen $x" => Float64[] for x in condenserIndices)...)
-CSV.write("SimplifiedCcondenserReactiveFlows.csv", condenserReactiveFlows)
+CSV.write("SimplifiedCcondenserReactiveFlows_lb.csv", condenserReactiveFlows)
 
 NetworkData = PowerModels.parse_file("$CATS_DIR/MATPOWER/SimplifiedCaliforniaTestSystem.m")
 load_mapping = map_buses_to_loads(NetworkData)
