@@ -90,6 +90,8 @@ results = []
         #nextRow = solution["solution"]["gen"][FIRST_CONDENSER:NUM_GENS]
         if solution["termination_status"] == LOCALLY_INFEASIBLE
             @error "$k Infeasible skipping write"
+            tmp_condenserReactiveFlows = Tables.table([k, [-99 for x in condenserIndices]...]')
+            CSV.write("condenserReactiveFlows.csv", tmp_condenserReactiveFlows; append=true)
         else
             tmp_condenserReactiveFlows = Tables.table([k, [round(solution["solution"]["gen"]["$x"]["qg"], digits = 4) for x in condenserIndices]...]')
             CSV.write("condenserReactiveFlows.csv", tmp_condenserReactiveFlows; append=true)
