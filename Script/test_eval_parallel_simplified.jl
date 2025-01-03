@@ -13,6 +13,8 @@ addprocs(30)
     using DataFrames
     using Ipopt
     using Tables
+    using MKL
+    BLAS.set_num_threads(8)
 
     include("$CATS_DIR/Script/test_eval_functions.jl")
 
