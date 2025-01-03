@@ -13,6 +13,7 @@ addprocs(30)
     using DataFrames
     using Ipopt
     using Tables
+    using LinearAlgebra
     using MKL
     BLAS.set_num_threads(8)
 
