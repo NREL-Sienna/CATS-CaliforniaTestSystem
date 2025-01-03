@@ -5,6 +5,9 @@ addprocs(30)
     global DATA_DIR = "/scratch/jlara/CATS-CaliforniaTestSystem"
     using Pkg
     Pkg.activate(CATS_DIR)
+    using MKL
+    using LinearAlgebra
+    BLAS.set_num_threads(8)
     #Pkg.develop(path = "/home/jlara/HSL_jll.jl-2023.11.7")
     #using HSL_jll
     using PowerModels
@@ -13,9 +16,6 @@ addprocs(30)
     using DataFrames
     using Ipopt
     using Tables
-    using LinearAlgebra
-    using MKL
-    BLAS.set_num_threads(8)
 
     include("$CATS_DIR/Script/test_eval_functions.jl")
 
