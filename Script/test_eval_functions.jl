@@ -31,6 +31,13 @@ function update_rgen!(k,NetworkData,gen_data,SolarGeneration,WindGeneration,PMax
     end
 end
 
+function update_lower_bound_voltages!(NetworkData, condenserIndices)
+    for i in condenserIndices
+        NetworkData["bus"][string(i)]["vmin"] = 1.0
+    end
+    return
+end
+
 function penalize_reactive_power!(pm, condenserIndices)
     pm.var[:it][:pm][:nw][0][:z] = JuMP.@variable(pm.model, z[i in condenserIndices], lower_bound=0, upper_bound = 2.01)
     pm.con[:it][:pm][:nw][0][:z_ub] = JuMP.@constraint(pm.model, [i in condenserIndices], pm.var[:it][:pm][:nw][0][:qg][i] <= pm.var[:it][:pm][:nw][0][:z][i])
