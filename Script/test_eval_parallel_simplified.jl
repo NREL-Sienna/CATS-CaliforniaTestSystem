@@ -87,6 +87,7 @@ CSV.write("SimplifiedCcondenserReactiveFlows.csv", condenserReactiveFlows)
 
 NetworkData = PowerModels.parse_file("$CATS_DIR/MATPOWER/SimplifiedCaliforniaTestSystem.m")
 load_mapping = map_buses_to_loads(NetworkData)
+update_lower_bound_voltages!(NetworkData, condenserIndices)
 
 @info "finished reading the data"
 pmap(x-> eval(x, NetworkData, load_scenarios, load_mapping, HourlyData2019, gen_data), splits)

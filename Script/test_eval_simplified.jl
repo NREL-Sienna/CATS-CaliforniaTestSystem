@@ -60,7 +60,7 @@ HourlyData2019 = CSV.read("$DATA_DIR/HourlyProduction2019.csv",DataFrame)
 SolarGeneration = HourlyData2019[1:N,"Solar"]
 WindGeneration = HourlyData2019[1:N,"Wind"]
 
-
+update_lower_bound_voltages!(NetworkData, condenserIndices)
 # Create dataframe to store results
 results = []
 
