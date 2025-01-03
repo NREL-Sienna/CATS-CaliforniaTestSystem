@@ -76,7 +76,7 @@ condenserIndices = [g for g in 1:size(gen_data)[1] if occursin("condenser", lowe
 
 condenserReactiveFlows = DataFrame("timestep" => Int[],
 ("gen $x" => Float64[] for x in condenserIndices)...)
-CSV.write("condenserReactiveFlows.csv", condenserReactiveFlows)
+CSV.write("SimplifiedCcondenserReactiveFlows.csv", condenserReactiveFlows)
 
 NetworkData = PowerModels.parse_file("$CATS_DIR/MATPOWER/SimplifiedCaliforniaTestSystem.m")
 load_mapping = map_buses_to_loads(NetworkData)
