@@ -17,6 +17,7 @@ addprocs(10)
     include("$CATS_DIR/Script/test_eval_functions.jl")
 
     function eval(range, NetworkData_input, load_scenarios, load_mapping, HourlyData2019, gen_data)
+        @info "begin eval call $(range)"
         solver = JuMP.optimizer_with_attributes(() -> Ipopt.Optimizer(),
             "print_level" => 3,
             "hsllib" => HSL_jll.libhsl_path,
