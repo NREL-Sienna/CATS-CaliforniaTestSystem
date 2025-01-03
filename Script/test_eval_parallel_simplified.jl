@@ -1,5 +1,5 @@
 using Distributed
-addprocs(20)
+addprocs(10)
 @everywhere begin
     global CATS_DIR = "/scratch/jlara/CATS-CaliforniaTestSystem"
     global DATA_DIR = "/scratch/jlara/CATS-CaliforniaTestSystem"
