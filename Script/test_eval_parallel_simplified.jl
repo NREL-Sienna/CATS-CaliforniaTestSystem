@@ -22,7 +22,7 @@ addprocs(10)
             "hsllib" => HSL_jll.libhsl_path,
             "linear_solver" => "ma27"
         )
-
+        @info "Ipopt Instantiated"
         NetworkData = deepcopy(NetworkData_input)
         N = 8760
         load_scenarios = load_scenarios[:,1:N]
@@ -38,6 +38,7 @@ addprocs(10)
         SolarGeneration = HourlyData2019[1:N,"Solar"]
         WindGeneration = HourlyData2019[1:N,"Wind"]
         PMaxOG = [NetworkData["gen"][string(i)]["pmax"] for i in 1:NUM_GENS]
+        @info "started $(range)"
         for k in range
             # Change renewable generators' pg for the current scenario
             update_rgen!(k,NetworkData,gen_data,SolarGeneration,WindGeneration,PMaxOG,SolarCap,WindCap)
