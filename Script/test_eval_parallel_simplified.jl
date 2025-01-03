@@ -6,7 +6,7 @@ addprocs(10)
     using Pkg
     Pkg.activate(CATS_DIR)
     #Pkg.develop(path = "/home/jlara/HSL_jll.jl-2023.11.7")
-    #using HSL_jll
+    using HSL_jll
     using PowerModels
     using JuMP
     using CSV, JSON
@@ -19,8 +19,8 @@ addprocs(10)
     function eval(range, NetworkData_input, load_scenarios, load_mapping, HourlyData2019, gen_data)
         solver = JuMP.optimizer_with_attributes(() -> Ipopt.Optimizer(),
             "print_level" => 3,
-            #"hsllib" => HSL_jll.libhsl_path,
-            "linear_solver" => "spral"
+            "hsllib" => HSL_jll.libhsl_path,
+            "linear_solver" => "ma27"
         )
 
         NetworkData = deepcopy(NetworkData_input)
