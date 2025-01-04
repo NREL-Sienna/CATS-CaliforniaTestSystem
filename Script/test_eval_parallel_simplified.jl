@@ -22,12 +22,15 @@ addprocs(10)
     function eval(range, NetworkData_input, load_scenarios, load_mapping, HourlyData2019, gen_data)
         @info "begin eval call $(range)"
         solver = JuMP.optimizer_with_attributes(() -> Ipopt.Optimizer(),
-            "print_level" => 3,
+            "print_level" => 5,
             #"hsllib" => HSL_jll.libhsl_path,
             # "linear_solver" => "ma27"
         )
+
         @info "Ipopt Instantiated"
         NetworkData = deepcopy(NetworkData_input)
+        @info "NetworkData initialized"
+
         N = 8760
         load_scenarios = load_scenarios[:,1:N]
         condenserIndices = [g for g in 1:size(gen_data)[1] if occursin("condenser", lowercase(gen_data.FuelType[g]))]
