@@ -1,5 +1,6 @@
 using Pkg
-Pkg.develop(path = "/home/jlara/HSL_jll.jl-2023.11.7")
+Pkg.activate(".")
+Pkg.develop(path = "/Users/jlara/Documents/HSL_jll.jl-2023.11.7")
 using HSL_jll
 
 using PowerModels
@@ -9,12 +10,12 @@ using DataFrames
 using Ipopt
 using Tables
 
-CATS_DIR = "/scratch/jlara/CATS-CaliforniaTestSystem"
-DATA_DIR = "/scratch/jlara/CATS-CaliforniaTestSystem"
+CATS_DIR = "."
+DATA_DIR = "."
 save_to_JSON = false
 # run for N hours (scenarios)
 # N = 8760
-N = 8760
+N = 4
 
 # Specify solver
 #const GUROBI_ENV = Gurobi.Env()
@@ -22,10 +23,11 @@ N = 8760
 
 # const IPOPT_ENV = Ipopt.Env()
 solver = JuMP.optimizer_with_attributes(() -> Ipopt.Optimizer(),
-    "print_level" => 1,
+    "print_level" => 3,
     "hsllib" => HSL_jll.libhsl_path,
-    "linear_solver" => "ma86"
+    "linear_solver" => "ma57"
 )
+# 159
 
 include("$CATS_DIR/Script/test_eval_functions.jl")
 load_scenarios = CSV.read("$DATA_DIR/Load_Agg_Post_Assignment_v3_latest.csv",header = false, DataFrame)
@@ -47,7 +49,7 @@ condenserReactiveFlows = DataFrame("timestep" => Int[],
 
 condenserReactiveFlows = DataFrame("timestep" => Int[],
 ("gen $x" => Float64[] for x in condenserIndices)...)
-CSV.write("condenserReactiveFlows.csv", condenserReactiveFlows; append=true)
+CSV.write("condenserReactiveFlows.csv", condenserReactiveFlows)
 
 SolarCap = sum(g["pmax"] for (i,g) in NetworkData["gen"] if g["index"] in SolarGenIndex)
 WindCap = sum(g["pmax"] for (i,g) in NetworkData["gen"] if g["index"] in WindGenIndex)
@@ -62,10 +64,9 @@ WindGeneration = HourlyData2019[1:N,"Wind"]
 # Create dataframe to store results
 results = []
 
-
 @time begin
     # Threads.@threads
-    for k = 1:N
+    for k in 1:N
         #println("k = $k on thread $(Threads.threadid())")
         println(k)
         # Change renewable generators' pg for the current scenario
@@ -76,7 +77,10 @@ results = []
         update_loads!(k, load_scenarios, load_mapping, NetworkData)
 
         # Run power flow
-        solution = PowerModels.solve_opf(NetworkData, ACPPowerModel, solver)
+        pm = instantiate_model(NetworkData, ACPPowerModel, PowerModels.build_opf)
+        penalize_reactive_power!(pm, condenserIndices)
+        solution = optimize_model!(pm, optimizer=solver)
+
         #push!(results, (renewable_scenarios[!,1][k], solution["termination_status"]))
         #Save solution dictionary to JSON
         if save_to_JSON == true
@@ -84,10 +88,12 @@ results = []
         end
         # push!(results,  solution["termination_status"])
         #nextRow = solution["solution"]["gen"][FIRST_CONDENSER:NUM_GENS]
-        #push!(condenserReactiveFlows, (k, (solution["solution"]["gen"]["$x"]["qg"] for x in condenserIndices)...))
-        #CSV.write("condenserReactiveFlows.csv", condenserReactiveFlows)
-        tmp_condenserReactiveFlows = Tables.table([k, [solution["solution"]["gen"]["$x"]["qg"] for x in condenserIndices...]])
-        CSV.write("condenserReactiveFlows.csv", tmp_condenserReactiveFlows; append=true)
+        if solution["termination_status"] == LOCALLY_INFEASIBLE
+            @error "$k Infeasible skipping write"
+        else
+            tmp_condenserReactiveFlows = Tables.table([k, [round(solution["solution"]["gen"]["$x"]["qg"], digits = 4) for x in condenserIndices]...]')
+            CSV.write("condenserReactiveFlows.csv", tmp_condenserReactiveFlows; append=true)
+        end
     end
 end
 #=
