@@ -1,8 +1,11 @@
+#!/usr/bin/env julia
+
 using PowerSystems
 using CSV
 using DataFrames
-gen_data = SystemDataTable("MATPOWER/CaliforniaTestSystem.m", "generator")
-gen_csv = CSV.read("GIS/CATS_gens.csv", DataFrame)
+DATA_DIR = "data"
+gen_data = SystemDataTable("$DATA_DIR/system_condensers_removed_cutoff75.m", "generator")
+gen_csv = CSV.read("$DATA_DIR/CATS_gens_condensers_removed_cutoff75.csv", DataFrame)
 
 thermal_gens_old = collect(get_components(ThermalStandard, system))
 sort!(thermal_gens_old, by = n -> parse(Int64, n.name[5:end]))
@@ -83,8 +86,12 @@ duration_lims = Dict(
     "SCLE90" => (up = 1.0, down = 0.0), # Simple-cycle less than 90 MW -> WECC (6) Aero derivative CT
 )
 
+# setting rating as Pmax, ask Jose if he wants this or another number as rating
+# setting power_factor as 1 in RenewableDispatch gens to try and get UCED to work
+
 for i in 1:length(gen_csv[:, 1])
 	set_base_power!(thermal_gens_old[i], 100.0)
+	set_rating!(thermal_gens_old[i], gen_csv[i, 9])
     local num = lpad(i, 4, '0')
     local pmtype
 # Replacing ThermalStandard with HydroDispatch at appropriate nodes
@@ -111,8 +118,18 @@ for i in 1:length(gen_csv[:, 1])
         commonKeys = intersect(fieldnames(RenewableDispatch), fieldnames(ThermalStandard))
         local old_data = Dict(key=>getfield(thermal_gens_old[i], key) for key ∈ commonKeys)
         delete!.((old_data,), (:operation_cost, :internal, :prime_mover_type))
-        old_power = get_active_power(thermal_gens_old[i])+ im * get_reactive_power(thermal_gens_old[i])
+        old_power = get_active_power(thermal_gens_old[i])+ im * get_reactive_power(thermal_gens_old[i]) 
         remove_component!(system, thermal_gens_old[i])
+
+        # modified by Hongfei 
+        if abs(old_power) == 0 
+            print("Generator ID: ")
+            print(i)
+            print(" has apparent power ")
+            println(abs(old_power))
+            continue
+        end 
+
         #local pmtype
         if gen_csv[i, 4] == "Batteries"
             pmtype = PrimeMovers.BA
@@ -122,10 +139,12 @@ for i in 1:length(gen_csv[:, 1])
             pmtype = PrimeMovers.PVe
         end
         local rgen = RenewableDispatch(;
-          # name = "renew$num",
+        #   name = "renew$num",
           prime_mover_type = pmtype,
           operation_cost = RenewableGenerationCost(nothing),
-          power_factor = abs(old_power)/real(old_power), # assumption.
+		#   power_factor = 1.0,
+        #   power_factor = abs(old_power)/real(old_power), # assumption.
+          power_factor = real(old_power)/abs(old_power), # modified by Hongfei 
           old_data...
         )
         add_component!(system, rgen)
