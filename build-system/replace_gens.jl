@@ -3,9 +3,8 @@
 using PowerSystems
 using CSV
 using DataFrames
-DATA_DIR = "data"
-gen_data = SystemDataTable("$DATA_DIR/system_condensers_removed_cutoff75.m", "generator")
-gen_csv = CSV.read("$DATA_DIR/CATS_gens_condensers_removed_cutoff75.csv", DataFrame)
+gen_data = SystemDataTable("MATPOWER/system_condensers_removed_cutoff75.m", "generator")
+gen_csv = CSV.read("GIS/CATS_gens_condensers_removed_cutoff75.csv", DataFrame)
 
 thermal_gens_old = collect(get_components(ThermalStandard, system))
 sort!(thermal_gens_old, by = n -> parse(Int64, n.name[5:end]))
