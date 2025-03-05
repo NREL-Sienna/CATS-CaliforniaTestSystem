@@ -6,7 +6,7 @@ using InfrastructureSystems
 # Time Stamps: 
 
 resolution = Dates.Hour(1);
-ts_file = CSV.read("data/HourlyProduction2019.csv", DataFrame) 
+ts_file = CSV.read("GIS/HourlyProduction2019.csv", DataFrame) 
 tslength = length(ts_file[:, 1])
 timestamps = range(DateTime("2019-01-01T00:00:00"); step = resolution, length = tslength);
 
