@@ -5,7 +5,7 @@ using PowerSystemCaseBuilder
 using HiGHS # solver
 using Dates
 
-include("parse-matpower_1o.jl");
+include("../build-system/parse-matpower.jl");
 
 using CSV
 using DataFrames
@@ -25,7 +25,7 @@ COST_KEYS = ["model", "startup", "shutdown", "n", "c2", "c1", "c0"] # modified b
 dataTables["real power cost"] = SystemDataTable(MATPOWER_FILE, "cost", COST_KEYS)
 
 # writeMatpower("data/CaliforniaTestSystem_1o.m", dataTables)
-writeMatpower("MATPOWER/system_condensers_removed_cutoff75_1o.m", dataTables)
+writeMatpower("MATPOWER/system_condensers_removed_cutoff75_1o.m", dataTables, true)
 
 # system = System("data/CaliforniaTestSystem_1o.m") 
 system = System("MATPOWER/system_condensers_removed_cutoff75_1o.m") 

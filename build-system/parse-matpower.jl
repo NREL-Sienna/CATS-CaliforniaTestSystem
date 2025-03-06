@@ -49,7 +49,7 @@ function writeTabJoinedRows(filehandle, table)
     end
 end
 
-function writeMatpower(filepath, tableDict)
+function writeMatpower(filepath, tableDict, first_order::Bool = false)
     dataTableKeys = String["bus", "gen", "branch"]
     open(filepath, "w") do file
         # define the format.
@@ -103,6 +103,9 @@ mpc.version = '2';
         %    2    startup    shutdown    n    c(n-1)    ...    c0
         mpc.gencost = [\n""")
         if "real power cost" in keys(tableDict)
+            if (first_order)
+                tableDict["real power cost"][!, "c2"] .= 0 # modified by Hongfei 
+            end
             writeTabJoinedRows(file, tableDict["real power cost"])
             if "reactive power cost" in keys(tableDict)
                 writeTabJoinedRows(file, tableDict["reactive power cost"])
