@@ -8,8 +8,15 @@ using JuMP
 
 mip_gap = 0.001
 
-sys_path = "assemble_system/CATS_1o.json" 
-system = System(sys_path) 
+if isfile("CATS_1o.json")
+    system = System("CATS_1o.json")
+else
+    system = System("MATPOWER/system_condensers_removed_cutoff75_1o.m")
+    include("../build-system/parse-matpower.jl");
+    include("../build-system/replace_gens.jl") 
+    include("../build-system/define_time_series.jl")
+    PowerSystems.to_json(system, "CATS_1o.json")
+end
 
 transform_single_time_series!(
            system,
