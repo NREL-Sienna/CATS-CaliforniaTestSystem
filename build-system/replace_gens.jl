@@ -121,11 +121,15 @@ for i in 1:length(gen_csv[:, 1])
         elseif gen_csv[i, 4] == "Solar Photovoltaic" || gen_csv[i, 4] == "Solar Thermal without Energy Storage"
             pmtype = PrimeMovers.PVe
         end
+        power_factor = 0.95
+        if old_power != zero(ComplexF64)
+            power_factor = abs(old_power)/real(old_power)
+        end
         local rgen = RenewableDispatch(;
           # name = "renew$num",
           prime_mover_type = pmtype,
           operation_cost = RenewableGenerationCost(nothing),
-          power_factor = abs(old_power)/real(old_power), # assumption.
+          power_factor = power_factor, # assumption.
           old_data...
         )
         add_component!(system, rgen)
