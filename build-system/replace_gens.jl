@@ -179,3 +179,12 @@ for i in 1:length(gen_csv[:, 1])
         end
     end
 end
+
+# set buses with generators as PV buses
+all_generators = get_components(Generator, system)
+for g in all_generators
+    b = get_bus(g)
+    if get_bustype(b) == ACBusTypes.PQ
+        set_bustype!(b, ACBusTypes.PV)
+    end
+end
