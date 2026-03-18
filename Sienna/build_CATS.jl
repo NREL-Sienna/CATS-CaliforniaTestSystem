@@ -9,6 +9,7 @@ const PSY = PowerSystems
 
 include(joinpath(@__DIR__, "parse_matpower.jl"))
 include(joinpath(@__DIR__, "generator_types.jl"))
+include(joinpath(@__DIR__, "add_hvdc.jl"))
 BASE_DIR = joinpath(@__DIR__, "..")
 
 VALIDITY_CHECKS = true
@@ -512,6 +513,8 @@ function build_CATS_system(;
         cost_curve = CostCurve(function_data)
         attach_cost!(comp, cost_curve)
     end
+
+    add_internal_hvdc!(system)
 
     return system
 end
