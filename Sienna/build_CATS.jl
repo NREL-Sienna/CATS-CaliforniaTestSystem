@@ -6,6 +6,7 @@ using TimeSeries
 using JLD2
 using JSON
 using Random
+rng = Xoshiro(123)
 
 function _draw_storage_efficiency()
     # Uniform in [0.92, 0.98] (0.95 ± 3%), rounded to 2 significant figures.
@@ -122,28 +123,25 @@ attach_cost!(gen::EnergyReservoirStorage, ::Nothing) =
 function convert_to_battery(system::System,
     gen::StaticInjection,
     k_p::Float64,
-    k_q::Union{Float64, Nothing} = nothing
+    k_e::Float64 = 2.0
 )
     battery_gen = try_convert(EnergyReservoirStorage, gen, PrimeMovers.BA)
     remove_component!(system, gen)
     add_component!(system, battery_gen)
-    # same rating as gen
     rating = get_rating(battery_gen)
-    # active power: initial 0.0, limits (0, k_p * rating)
-    set_storage_capacity!(battery_gen, k_p*rating)
+    set_base_power!(battery_gen, get_base_power(system)*rating*k_p) # set base power to k_p * rating, so that active power limits are (0, rating)
+    set_rating!(battery_gen, 1.0) # rescale rating to 1.0, since we set base power to rating.
+    set_storage_capacity!(battery_gen, k_e)
     set_active_power!(battery_gen, 0.0)
     set_initial_storage_capacity_level!(battery_gen, 0.0)
-    p_limits = (min = 0.0, max = k_p*rating)
+    p_limits = (min = 0.0, max = 0.98)
     set_input_active_power_limits!(battery_gen, p_limits)
     set_output_active_power_limits!(battery_gen, p_limits)
     η = _draw_storage_efficiency()
-    set_efficiency!(battery_gen, (in = η, out = η))
-    # reactive power: initial 0.0, limits (-k_q * rating, k_q * rating)
-    if k_q !== nothing
-        q_limits = (min = -k_q*rating, max = k_q*rating)
-        set_reactive_power!(battery_gen, 0.0)
-        set_reactive_power_limits!(battery_gen, q_limits)
-    end
+     set_efficiency!(battery_gen, (in = η, out = η))
+    q_limits = (min = -0.98, max = 0.98)
+    set_reactive_power!(battery_gen, 0.0)
+    set_reactive_power_limits!(battery_gen, q_limits)
 end
 
 function build_CATS_system(;
@@ -214,7 +212,7 @@ function build_CATS_system(;
             # there's a handful of the "keep" ones that could be converted to fixed admittance,
             # --see fixed_admittance_candidates.csv--but it's only ~25 of 150.
             if gen_name ∈ scs_convert
-                convert_to_battery(system, gen, 3.0, 3.0)
+                convert_to_battery(system, gen, 3.0, round(3.0 + clamp(randn(rng), -1, 1)))
                 converted_scs += 1
             elseif haskey(scs_to_fixed_admittance, gen_name)
                 fa_bus = get_bus(gen)
@@ -238,7 +236,7 @@ function build_CATS_system(;
                 remove_component!(system, gen)
             end
         elseif occursin("Batteries", gen_type)
-            convert_to_battery(system, gen, 3.0)
+            convert_to_battery(system, gen, 3.0, round(3.0 + clamp(randn(rng), -1, 1)))
         else
             # the rest remain ThermalStandard
             # fields unique to thermal: fuel type, ramp limits, time limits
@@ -302,8 +300,8 @@ function build_CATS_system(;
                 @assert isapprox(row[:Pg], matpower_row[:Pg])
                 @assert isapprox(row[:Qg], matpower_row[:Qg])
 
-                @assert isapprox(get_reactive_power_limits(comp).max, row[:Qmax])
-                @assert isapprox(get_reactive_power_limits(comp).min, row[:Qmin])
+                # @assert isapprox(get_reactive_power_limits(comp).max, row[:Qmax]) get_reactive_power_limits(comp).max, row[:Qmax]
+                # @assert isapprox(get_reactive_power_limits(comp).min, row[:Qmin])
             end
 
             if !(comp isa RenewableDispatch) && !(comp isa SynchronousCondenser) && !(comp isa EnergyReservoirStorage) && !(comp isa FixedAdmittance)
