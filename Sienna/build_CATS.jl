@@ -129,7 +129,7 @@ function convert_to_battery(system::System,
     remove_component!(system, gen)
     add_component!(system, battery_gen)
     rating = get_rating(battery_gen)
-    set_base_power!(battery_gen, get_base_power(system)*rating*k_p) # set base power to k_p * rating, so that active power limits are (0, rating)
+    set_base_power!(battery_gen, rating*k_p) # set base power to k_p * rating, so that active power limits are (0, rating)
     set_rating!(battery_gen, 1.0) # rescale rating to 1.0, since we set base power to rating.
     set_storage_capacity!(battery_gen, k_e)
     set_active_power!(battery_gen, 0.0)
@@ -142,6 +142,74 @@ function convert_to_battery(system::System,
     q_limits = (min = -0.98, max = 0.98)
     set_reactive_power!(battery_gen, 0.0)
     set_reactive_power_limits!(battery_gen, q_limits)
+end
+
+"""
+MATPOWER gives every generator the same base_power (the system's baseMVA), so `rating`
+and other per-unit-of-device fields are meaningless. Rebase each device's own base_power
+to its physical apparent-power rating (sqrt(Pmax^2+Qmax^2)), then re-apply the physical
+values through the setters so natural-units getters are unchanged, while the raw
+per-unit-of-device fields land near [0, 1].
+"""
+rebase_base_power!(::StaticInjection) = nothing
+
+function rebase_base_power!(gen::Union{ThermalStandard, HydroDispatch})
+    active_power = get_active_power(gen)
+    reactive_power = get_reactive_power(gen)
+    p_limits = get_active_power_limits(gen)
+    q_limits = get_reactive_power_limits(gen)
+    ramp_limits = get_ramp_limits(gen)
+    q_max = isnothing(q_limits) ? 0.0 : q_limits.max
+    new_base_power = sqrt(p_limits.max^2 + q_max^2)
+
+    set_base_power!(gen, new_base_power)
+    set_rating!(gen, new_base_power)
+    set_active_power!(gen, active_power)
+    set_reactive_power!(gen, reactive_power)
+    set_active_power_limits!(gen, p_limits)
+    isnothing(q_limits) || set_reactive_power_limits!(gen, q_limits)
+    isnothing(ramp_limits) || set_ramp_limits!(gen, ramp_limits)
+end
+
+function rebase_base_power!(gen::RenewableDispatch)
+    active_power = get_active_power(gen)
+    reactive_power = get_reactive_power(gen)
+    q_limits = get_reactive_power_limits(gen)
+    new_base_power = get_rating(gen)
+
+    set_base_power!(gen, new_base_power)
+    set_rating!(gen, new_base_power)
+    set_active_power!(gen, active_power)
+    set_reactive_power!(gen, reactive_power)
+    isnothing(q_limits) || set_reactive_power_limits!(gen, q_limits)
+end
+
+function rebase_base_power!(gen::SynchronousCondenser)
+    reactive_power = get_reactive_power(gen)
+    q_limits = get_reactive_power_limits(gen)
+    losses = get_active_power_losses(gen)
+    new_base_power = get_rating(gen)
+
+    set_base_power!(gen, new_base_power)
+    set_rating!(gen, new_base_power)
+    set_reactive_power!(gen, reactive_power)
+    isnothing(q_limits) || set_reactive_power_limits!(gen, q_limits)
+    set_active_power_losses!(gen, losses)
+end
+
+function rebase_base_power!(gen::Source)
+    active_power = get_active_power(gen)
+    reactive_power = get_reactive_power(gen)
+    p_limits = get_active_power_limits(gen)
+    q_limits = get_reactive_power_limits(gen)
+    q_max = isnothing(q_limits) ? 0.0 : q_limits.max
+    new_base_power = sqrt(max(abs(p_limits.min), abs(p_limits.max))^2 + q_max^2)
+
+    set_base_power!(gen, new_base_power)
+    set_active_power!(gen, active_power)
+    set_reactive_power!(gen, reactive_power)
+    set_active_power_limits!(gen, p_limits)
+    isnothing(q_limits) || set_reactive_power_limits!(gen, q_limits)
 end
 
 function build_CATS_system(;
@@ -285,6 +353,8 @@ function build_CATS_system(;
         elseif comp isa SynchronousCondenser && gen_name in scs_convert
             set_prime_mover_type!(comp, PrimeMovers.BA)
         end
+
+        rebase_base_power!(comp)
 
         # some data validity checks on the specific row
         # (if it's a system wide check, put it outside the for loop)
