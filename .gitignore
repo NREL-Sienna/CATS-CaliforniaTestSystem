@@ -10,6 +10,7 @@ solutions/
 data/*
 !data/scs*.csv
 !data/fixed_admittance_candidates.csv
+!data/download_data.sh
 
 # Generated build artifacts (from build_CATS.jl)
 /CATS_openapi/

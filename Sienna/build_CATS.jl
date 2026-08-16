@@ -237,10 +237,10 @@ function build_CATS_system(;
     remove_scs::Bool = true,
 )
     if !isfile(timeseries_csv) || !isfile(load_timeseries)
-        error("Data directory $DATA_DIR does not contain expected data. Please download " *
-            "time series (HourlyProduction2019.csv) and load (Load_Agg_Post_Assignment_v3_"*
-            "latest.csv) data from the Google drive linked at "*
-            "https://github.com/WISPO-POP/CATS-CaliforniaTestSystem?tab=readme-ov-file"
+        error("Data directory $DATA_DIR does not contain expected data. Run " *
+            "`data/download_data.sh` (requires `pip install gdown`) to fetch " *
+            "time series (HourlyProduction2019.csv) and load " *
+            "(Load_Agg_Post_Assignment_v3_latest.csv) data."
         )
     end
 
