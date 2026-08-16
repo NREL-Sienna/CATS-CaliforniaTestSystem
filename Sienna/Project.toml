@@ -11,8 +11,8 @@ PowerSystems = "bcd98974-b02a-5e2f-9ee0-a103f5c450dd"
 TimeSeries = "9e3dc215-6440-5c97-bce1-76c03772f85e"
 
 [sources]
-InfrastructureSystems = {path = "/home/jdlara/Sienna_work/psy6/InfrastructureSystems.jl"}
-PowerCoreOpenAPIModels = {path = "/home/jdlara/Sienna_work/psy6/PowerOpenAPIModels/PowerCoreOpenAPIModels.jl"}
-PowerFlowFileParser = {path = "/home/jdlara/Sienna_work/psy6/PowerFlowFileParser.jl"}
-PowerOperationsOpenAPIModels = {path = "/home/jdlara/Sienna_work/psy6/PowerOpenAPIModels/PowerOperationsOpenAPIModels.jl"}
-PowerSystems = {path = "/home/jdlara/Sienna_work/psy6/PowerSystems.jl"}
+InfrastructureSystems = {url = "https://github.com/Sienna-Platform/InfrastructureSystems.jl.git", rev = "IS4"}
+PowerCoreOpenAPIModels = {url = "https://github.com/Sienna-Platform/PowerOpenAPIModels.git", rev = "main", subdir = "PowerCoreOpenAPIModels.jl"}
+PowerFlowFileParser = {url = "https://github.com/Sienna-Platform/PowerFlowFileParser.jl.git", rev = "psy6"}
+PowerOperationsOpenAPIModels = {url = "https://github.com/Sienna-Platform/PowerOpenAPIModels.git", rev = "main", subdir = "PowerOperationsOpenAPIModels.jl"}
+PowerSystems = {url = "https://github.com/Sienna-Platform/PowerSystems.jl.git", rev = "psy6"}

@@ -255,7 +255,9 @@ version = "2.14.0+0"
 
 [[deps.InfrastructureSystems]]
 deps = ["CSV", "DataFrames", "DataStructures", "Dates", "DocStringExtensions", "GeoJSON", "H5Zblosc", "HDF5", "InteractiveUtils", "JSON", "LinearAlgebra", "Logging", "Mustache", "Pkg", "PowerCoreOpenAPIModels", "PrettyTables", "Printf", "Random", "SHA", "SQLite", "Serialization", "StringTemplates", "TOML", "Tables", "TerminalLoggers", "TimeSeries", "TimeZones", "TimerOutputs", "UUIDs", "YAML"]
-path = "/home/jdlara/Sienna_work/psy6/InfrastructureSystems.jl"
+git-tree-sha1 = "1f10836fbcf676fcc57c3bf4ab9008718002a4ca"
+repo-rev = "IS4"
+repo-url = "https://github.com/Sienna-Platform/InfrastructureSystems.jl.git"
 uuid = "2cd47ed4-ca9b-11e9-27f2-ab636a7671f1"
 version = "3.6.0"
 
@@ -537,25 +539,35 @@ version = "1.4.3"
 
 [[deps.PowerCoreOpenAPIModels]]
 deps = ["HTTP", "JSON", "JSON3", "OpenAPI", "TimeZones"]
-path = "/home/jdlara/Sienna_work/psy6/PowerOpenAPIModels/PowerCoreOpenAPIModels.jl"
+git-tree-sha1 = "a118a8751637b8daefedafa515130996f22e7f51"
+repo-rev = "main"
+repo-subdir = "PowerCoreOpenAPIModels.jl"
+repo-url = "https://github.com/Sienna-Platform/PowerOpenAPIModels.git"
 uuid = "b7b40286-e793-417d-a9a0-b1583e4da1cb"
 version = "0.1.0"
 
 [[deps.PowerFlowFileParser]]
 deps = ["DataStructures", "DocStringExtensions", "InfrastructureSystems", "JSON", "LinearAlgebra", "OpenAPI", "PowerCoreOpenAPIModels", "PowerOperationsOpenAPIModels", "Unicode"]
-path = "/home/jdlara/Sienna_work/psy6/PowerFlowFileParser.jl"
+git-tree-sha1 = "af0d98abb4bba1726767fffd049edd69cc168d79"
+repo-rev = "psy6"
+repo-url = "https://github.com/Sienna-Platform/PowerFlowFileParser.jl.git"
 uuid = "bed98974-b02e-5e2f-9ee0-a103f5c450dd"
 version = "0.2.0"
 
 [[deps.PowerOperationsOpenAPIModels]]
 deps = ["HTTP", "JSON3", "OpenAPI", "PowerCoreOpenAPIModels"]
-path = "/home/jdlara/Sienna_work/psy6/PowerOpenAPIModels/PowerOperationsOpenAPIModels.jl"
+git-tree-sha1 = "fc9fca60dac593a88dd8e5ac9fe7ea34a25fa527"
+repo-rev = "main"
+repo-subdir = "PowerOperationsOpenAPIModels.jl"
+repo-url = "https://github.com/Sienna-Platform/PowerOpenAPIModels.git"
 uuid = "a372b6d7-45a2-44c2-8199-6a724b72e8ff"
 version = "0.1.0"
 
 [[deps.PowerSystems]]
 deps = ["DataStructures", "Dates", "DocStringExtensions", "InfrastructureSystems", "JSON", "LinearAlgebra", "Logging", "OpenAPI", "PowerCoreOpenAPIModels", "PowerOperationsOpenAPIModels", "PrecompileTools", "PrettyTables", "TimeSeries", "TimeZones", "Unicode", "Unitful"]
-path = "/home/jdlara/Sienna_work/psy6/PowerSystems.jl"
+git-tree-sha1 = "7e6791a996aea5b6342b99cdd646228279049dc6"
+repo-rev = "psy6"
+repo-url = "https://github.com/Sienna-Platform/PowerSystems.jl.git"
 uuid = "bcd98974-b02a-5e2f-9ee0-a103f5c450dd"
 version = "5.10.0"
 
