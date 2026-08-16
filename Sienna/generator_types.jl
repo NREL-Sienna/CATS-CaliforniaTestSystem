@@ -35,16 +35,25 @@ const PM_TYPE_DICT = Dict{String, PSY.PrimeMovers}(
     "Other Gases" => PrimeMovers.OT
 )
 
+# Ramp fractions (of Pmax, per minute). The original numbered WECC table cited in
+# DURATION_LIMIT_DICT below could not be located online; coal/CC/SC values here are
+# corrected against RTS-GMLC's public per-unit gen.csv
+# (github.com/GridMod/RTS-GMLC/blob/master/RTS_Data/SourceData/gen.csv) instead.
 const RAMP_LIMIT_DICT = Dict(
-    (PrimeMovers.ST, ThermalFuels.COAL) => (up = 0.00264, down = 0.00264),
+    (PrimeMovers.ST, ThermalFuels.COAL) => (up = 0.0194, down = 0.0194), # RTS-GMLC STEAM/Coal (155 MW unit; 3 units range 1.14-2.63%/min)
 
-    (PrimeMovers.CA, ThermalFuels.NATURAL_GAS) => (up = 0.0042, down = 0.0042),
-    (PrimeMovers.CT, ThermalFuels.NATURAL_GAS) => (up = 0.14, down = 0.14),
-    (PrimeMovers.GT, ThermalFuels.NATURAL_GAS) => (up = 0.2475, down = 0.2475),
-    (PrimeMovers.ST, ThermalFuels.NATURAL_GAS) => (up = 0.0054, down = 0.0054),
+    (PrimeMovers.CA, ThermalFuels.NATURAL_GAS) => (up = 0.0117, down = 0.0117), # RTS-GMLC CC/NG (355 MW units)
+    (PrimeMovers.CT, ThermalFuels.NATURAL_GAS) => (up = 0.0673, down = 0.0673), # RTS-GMLC CT/NG (55 MW units)
+    (PrimeMovers.GT, ThermalFuels.NATURAL_GAS) => (up = 0.0673, down = 0.0673), # RTS-GMLC has one simple-cycle-gas category (CT/NG); same source as above
+    (PrimeMovers.ST, ThermalFuels.NATURAL_GAS) => (up = 0.0194, down = 0.0194), # no NG-fired steam unit in RTS-GMLC; approximated from the coal steam-turbine figure (boiler/turbine dynamics, not fuel, dominate steam-cycle ramp)
 
-    (PrimeMovers.OT, ThermalFuels.NUCLEAR) => (up = 0.0001, down = 0.0001),
-    (PrimeMovers.OT, ThermalFuels.GEOTHERMAL) => (up = 0.01, down = 0.01),
+    # Not from WECC or RTS-GMLC: ballpark estimates (see DURATION_LIMIT_DICT). RTS-GMLC's
+    # generic nuclear entry ramps at 5%/min -- ~500x faster than the value below -- but that
+    # reflects a generic test-system assumption, not how the US nuclear fleet is actually
+    # operated (near-must-run, essentially no load-following). Intentionally left
+    # unmatched to RTS-GMLC; documented here as a known, deliberate outlier.
+    (PrimeMovers.ST, ThermalFuels.NUCLEAR) => (up = 0.0001, down = 0.0001),
+    (PrimeMovers.ST, ThermalFuels.GEOTHERMAL) => (up = 0.01, down = 0.01), # no geothermal unit in RTS-GMLC or other source found; unverified estimate, left as-is
 )
 
 const PSY_TO_WECC_DICT = Dict(
@@ -85,18 +94,25 @@ function get_size(WECC_key::String, maxPower::Float64)
 end
 
 const DURATION_LIMIT_DICT = Dict(
-    ("CLLIG", "SMALL") => (up = 12.0, down = 6.0), # Coal and Lignite -> WECC (1) Small coal
-    ("CLLIG", "LARGE") => (up = 12.0, down = 8.0), # WECC (2) Large coal
-    ("CLLIG", "SUPER") => (up = 24.0, down = 8.0), # WECC (3) Super-critical coal
-    ("CC", "GT90") => (up = 2.0, down = 6.0), # Combined cycle greater than 90 MW -> WECC (7) Typical CC
-    ("CC", "LE90") => (up = 2.0, down = 4.0), # Combined cycle less than 90 MW -> WECC (7) Typical CC, modified
-    ("GS", "NONR") => (up = 2.0, down = 4.0), # Gas steam non-reheat -> WECC (4) Gas-fired steam (sub- and super-critical)
-    ("GS", "REH") => (up = 2.0, down = 4.0), # Gas steam reheat boiler -> WECC (4) Gas-fired steam (sub- and super-critical)
-    ("GS", "SUP") => (up = 2.0, down = 4.0), # Gas-steam supercritical -> WECC (4) Gas-fired steam (sub- and super-critical)
-    ("SC", "GT90") => (up = 1.0, down = 1.0), # Simple-cycle greater than 90 MW -> WECC (5) Large-frame Gas CT
-    ("SC", "LE90") => (up = 1.0, down = 0.0), # Simple-cycle less than 90 MW -> WECC (6) Aero derivative CT
-    # not from WECC: numbers are ballpark estimates given by Jose.
-    ("GEO", "ANY") => (up = 1000, down = 300),
+    # The original numbered WECC table this used to cite could not be located online.
+    # Where RTS-GMLC's public per-unit gen.csv (github.com/GridMod/RTS-GMLC) has a matching
+    # unit type/size, values below are corrected against it; where it doesn't, the original
+    # WECC-cited value is kept, noted below.
+    ("CLLIG", "SMALL") => (up = 8.0, down = 6.0), # WECC (1) Small coal; RTS-GMLC 76MW & 155MW coal units: up=8h both, down=4h/8h (midpoint used)
+    ("CLLIG", "LARGE") => (up = 24.0, down = 48.0), # WECC (2) Large coal; RTS-GMLC 350MW coal unit: up=24h, down=48h
+    ("CLLIG", "SUPER") => (up = 24.0, down = 48.0), # WECC (3) Super-critical coal; no RTS-GMLC unit >900MW -- mirrors LARGE as the best available estimate
+    ("CC", "GT90") => (up = 8.0, down = 4.5), # WECC (7) Typical CC; RTS-GMLC 355MW CC/NG units
+    ("CC", "LE90") => (up = 2.0, down = 4.0), # WECC (7) Typical CC, modified; no RTS-GMLC CC unit <=90MW -- original WECC-cited value kept
+    ("GS", "NONR") => (up = 2.0, down = 4.0), # Gas steam non-reheat -> WECC (4); no NG-fired steam unit in RTS-GMLC -- original WECC-cited value kept
+    ("GS", "REH") => (up = 2.0, down = 4.0), # Gas steam reheat boiler -> WECC (4); same as above
+    ("GS", "SUP") => (up = 2.0, down = 4.0), # Gas-steam supercritical -> WECC (4); same as above
+    ("SC", "GT90") => (up = 1.0, down = 1.0), # Simple-cycle greater than 90 MW -> WECC (5) Large-frame Gas CT; no RTS-GMLC unit >90MW -- original WECC-cited value kept
+    ("SC", "LE90") => (up = 2.2, down = 2.2), # Simple-cycle less than 90 MW -> WECC (6) Aero derivative CT; RTS-GMLC 55MW CT/NG units
+    # Not from WECC or RTS-GMLC: ballpark estimates given by Jose. RTS-GMLC's generic
+    # nuclear entry uses 24h/48h (treating nuclear as a normal cyclable unit); kept far more
+    # conservative here since the US nuclear fleet is essentially must-run between
+    # refueling outages, not load-following. Documented here as a known, deliberate outlier.
+    ("GEO", "ANY") => (up = 1000, down = 300), # no geothermal unit in RTS-GMLC or other source found; unverified estimate, left as-is
     ("NUC", "ANY") => (up = 8000, down = 8000),
 )
 

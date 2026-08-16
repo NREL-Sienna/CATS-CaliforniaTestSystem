@@ -1,4 +1,6 @@
 using PowerSystems
+using PowerFlowFileParser
+import PowerCoreOpenAPIModels
 using CSV
 using DataFrames
 using Dates
@@ -14,6 +16,8 @@ function _draw_storage_efficiency()
 end
 
 const PSY = PowerSystems
+const PFP = PowerFlowFileParser
+const PC = PowerCoreOpenAPIModels
 
 include(joinpath(@__DIR__, "parse_matpower.jl"))
 include(joinpath(@__DIR__, "generator_types.jl"))
@@ -120,6 +124,9 @@ attach_cost!(gen::EnergyReservoirStorage, cost::CostCurve) =
 attach_cost!(gen::EnergyReservoirStorage, ::Nothing) =
     set_operation_cost!(gen, StorageCost())
 
+# Tag every field of a MinMax/UpDown NamedTuple as natural units for the psy6 setters.
+_mw(nt::NamedTuple) = map(x -> x * PSY.MW, nt)
+
 function convert_to_battery(system::System,
     gen::StaticInjection,
     k_p::Float64,
@@ -128,21 +135,28 @@ function convert_to_battery(system::System,
     battery_gen = try_convert(EnergyReservoirStorage, gen, PrimeMovers.BA)
     remove_component!(system, gen)
     add_component!(system, battery_gen)
-    rating = get_rating(battery_gen)
+    rating = get_rating(battery_gen, PSY.NU)
     set_base_power!(battery_gen, rating*k_p) # set base power to k_p * rating, so that active power limits are (0, rating)
-    set_rating!(battery_gen, 1.0) # rescale rating to 1.0, since we set base power to rating.
-    set_storage_capacity!(battery_gen, k_e)
-    set_active_power!(battery_gen, 0.0)
+    set_rating!(battery_gen, 1.0 * PSY.DU) # rescale rating to 1.0 of the new device base.
+    set_storage_capacity!(battery_gen, k_e * PSY.DU) # k_e is hours of duration at rated power
+    set_active_power!(battery_gen, 0.0 * PSY.MW)
     set_initial_storage_capacity_level!(battery_gen, 0.0)
-    p_limits = (min = 0.0, max = 0.98*rating*k_p)
+    p_max = 0.98 * rating * k_p
+    p_limits = _mw((min = 0.0, max = p_max))
     set_input_active_power_limits!(battery_gen, p_limits)
     set_output_active_power_limits!(battery_gen, p_limits)
     η = _draw_storage_efficiency()
-     set_efficiency!(battery_gen, (in = η, out = η))
-    q_limits = (min = -0.98*rating*k_p, max = 0.98*rating*k_p)
-    set_reactive_power!(battery_gen, 0.0)
+    set_efficiency!(battery_gen, (in = η, out = η))
+    q_limits = _mw((min = -p_max, max = p_max))
+    set_reactive_power!(battery_gen, 0.0 * PSY.MW)
     set_reactive_power_limits!(battery_gen, q_limits)
 end
+
+# RAMP_LIMIT_DICT holds WECC fractions of device capacity per minute. Ramps are assigned
+# before rebase_base_power!, while base_power is still the MATPOWER system base (100 MVA)
+# for every generator, so tagging those fractions DU would resolve them against 100 MVA and
+# give every unit the same absolute MW/min. Scale by the unit's own Pmax instead.
+_ramp_mw(fraction::NamedTuple, max_power::Float64) = _mw(map(x -> x * max_power, fraction))
 
 """
 MATPOWER gives every generator the same base_power (the system's baseMVA), so `rating`
@@ -154,62 +168,62 @@ per-unit-of-device fields land near [0, 1].
 rebase_base_power!(::StaticInjection) = nothing
 
 function rebase_base_power!(gen::Union{ThermalStandard, HydroDispatch})
-    active_power = get_active_power(gen)
-    reactive_power = get_reactive_power(gen)
-    p_limits = get_active_power_limits(gen)
-    q_limits = get_reactive_power_limits(gen)
-    ramp_limits = get_ramp_limits(gen)
+    active_power = get_active_power(gen, PSY.NU)
+    reactive_power = get_reactive_power(gen, PSY.NU)
+    p_limits = get_active_power_limits(gen, PSY.NU)
+    q_limits = get_reactive_power_limits(gen, PSY.NU)
+    ramp_limits = get_ramp_limits(gen, PSY.NU)
     q_max = isnothing(q_limits) ? 0.0 : q_limits.max
     new_base_power = sqrt(p_limits.max^2 + q_max^2)
 
     set_base_power!(gen, new_base_power)
-    set_rating!(gen, new_base_power)
-    set_active_power!(gen, active_power)
-    set_reactive_power!(gen, reactive_power)
-    set_active_power_limits!(gen, p_limits)
-    isnothing(q_limits) || set_reactive_power_limits!(gen, q_limits)
-    isnothing(ramp_limits) || set_ramp_limits!(gen, ramp_limits)
+    set_rating!(gen, new_base_power * PSY.MW)
+    set_active_power!(gen, active_power * PSY.MW)
+    set_reactive_power!(gen, reactive_power * PSY.MW)
+    set_active_power_limits!(gen, _mw(p_limits))
+    isnothing(q_limits) || set_reactive_power_limits!(gen, _mw(q_limits))
+    isnothing(ramp_limits) || set_ramp_limits!(gen, _mw(ramp_limits))
 end
 
 function rebase_base_power!(gen::RenewableDispatch)
-    active_power = get_active_power(gen)
-    reactive_power = get_reactive_power(gen)
-    q_limits = get_reactive_power_limits(gen)
-    new_base_power = get_rating(gen)
+    active_power = get_active_power(gen, PSY.NU)
+    reactive_power = get_reactive_power(gen, PSY.NU)
+    q_limits = get_reactive_power_limits(gen, PSY.NU)
+    new_base_power = get_rating(gen, PSY.NU)
 
     set_base_power!(gen, new_base_power)
-    set_rating!(gen, new_base_power)
-    set_active_power!(gen, active_power)
-    set_reactive_power!(gen, reactive_power)
-    isnothing(q_limits) || set_reactive_power_limits!(gen, q_limits)
+    set_rating!(gen, new_base_power * PSY.MW)
+    set_active_power!(gen, active_power * PSY.MW)
+    set_reactive_power!(gen, reactive_power * PSY.MW)
+    isnothing(q_limits) || set_reactive_power_limits!(gen, _mw(q_limits))
 end
 
 function rebase_base_power!(gen::SynchronousCondenser)
-    reactive_power = get_reactive_power(gen)
-    q_limits = get_reactive_power_limits(gen)
-    losses = get_active_power_losses(gen)
-    new_base_power = get_rating(gen)
+    reactive_power = get_reactive_power(gen, PSY.NU)
+    q_limits = get_reactive_power_limits(gen, PSY.NU)
+    losses = get_active_power_losses(gen, PSY.NU)
+    new_base_power = get_rating(gen, PSY.NU)
 
     set_base_power!(gen, new_base_power)
-    set_rating!(gen, new_base_power)
-    set_reactive_power!(gen, reactive_power)
-    isnothing(q_limits) || set_reactive_power_limits!(gen, q_limits)
-    set_active_power_losses!(gen, losses)
+    set_rating!(gen, new_base_power * PSY.MW)
+    set_reactive_power!(gen, reactive_power * PSY.MW)
+    isnothing(q_limits) || set_reactive_power_limits!(gen, _mw(q_limits))
+    set_active_power_losses!(gen, losses * PSY.MW)
 end
 
 function rebase_base_power!(gen::Source)
-    active_power = get_active_power(gen)
-    reactive_power = get_reactive_power(gen)
-    p_limits = get_active_power_limits(gen)
-    q_limits = get_reactive_power_limits(gen)
+    active_power = get_active_power(gen, PSY.NU)
+    reactive_power = get_reactive_power(gen, PSY.NU)
+    p_limits = get_active_power_limits(gen, PSY.NU)
+    q_limits = get_reactive_power_limits(gen, PSY.NU)
     q_max = isnothing(q_limits) ? 0.0 : q_limits.max
     new_base_power = sqrt(max(abs(p_limits.min), abs(p_limits.max))^2 + q_max^2)
 
     set_base_power!(gen, new_base_power)
-    set_active_power!(gen, active_power)
-    set_reactive_power!(gen, reactive_power)
-    set_active_power_limits!(gen, p_limits)
-    isnothing(q_limits) || set_reactive_power_limits!(gen, q_limits)
+    set_active_power!(gen, active_power * PSY.MW)
+    set_reactive_power!(gen, reactive_power * PSY.MW)
+    set_active_power_limits!(gen, _mw(p_limits))
+    isnothing(q_limits) || set_reactive_power_limits!(gen, _mw(q_limits))
 end
 
 function build_CATS_system(;
@@ -230,10 +244,13 @@ function build_CATS_system(;
         )
     end
 
+    # OpenAPISystem already holds a built SystemDocument, so no JSON round-trip is needed.
+    pm = PFP.PowerModelsData(matpower_file)
+    oapi = PFP.build_openapi_system(pm; unit_system = "DEVICE_BASE")
+    doc = PFP.get_document(oapi)
+    PC.validate_document(doc)
+    system = from_openapi(System, doc)
 
-    system = System(matpower_file)
-    # everything in the CSV is in natural units.
-    set_units_base_system!(system, "NATURAL_UNITS")
     n_buses = length(get_components(Bus, system))
     n_gens = length(get_components(ThermalStandard, system))
     # n_loads = length(get_components(PowerLoad, system))
@@ -319,26 +336,24 @@ function build_CATS_system(;
 
             pm_type = get_prime_mover_type(gen)
             fuel_type = get_fuel(gen)
-            maxPower = get_max_active_power(gen)
+            maxPower = get_max_active_power(gen, PSY.NU)
 
             if (pm_type, fuel_type) in keys(RAMP_LIMIT_DICT)
                 WECC_string = PSY_TO_WECC_DICT[(pm_type, fuel_type)]
                 size_string = get_size(WECC_string, maxPower)
-                set_ramp_limits!(gen, RAMP_LIMIT_DICT[(pm_type, fuel_type)])
+                ramp = RAMP_LIMIT_DICT[(pm_type, fuel_type)]
+                set_ramp_limits!(gen, _ramp_mw(ramp, maxPower))
                 set_time_limits!(gen, DURATION_LIMIT_DICT[(WECC_string, size_string)])
             elseif pm_type == PrimeMovers.ST
                 # Other steam turbine movers use the same scheme as coal
                 size_string = get_size("CLLIG", maxPower)
-                set_ramp_limits!(gen, RAMP_LIMIT_DICT[(PrimeMovers.ST, ThermalFuels.COAL)])
+                ramp = RAMP_LIMIT_DICT[(PrimeMovers.ST, ThermalFuels.COAL)]
+                set_ramp_limits!(gen, _ramp_mw(ramp, maxPower))
                 set_time_limits!(gen, DURATION_LIMIT_DICT[("CLLIG", size_string)])
-            elseif pm_type == PrimeMovers.IC
-                # IC engines without explicit entries - use generic internal combustion values
+            elseif pm_type in (PrimeMovers.IC, PrimeMovers.OT)
+                # No explicit entries for IC engines or "other" - use conservative values
                 # TODO CoPilot generated: are these reasonable?
-                set_ramp_limits!(gen, (up = 0.01, down = 0.01))
-                set_time_limits!(gen, (up = 1.0, down = 1.0))
-            elseif pm_type == PrimeMovers.OT
-                # Other types without explicit entries - use conservative values
-                set_ramp_limits!(gen, (up = 0.01, down = 0.01))
+                set_ramp_limits!(gen, _ramp_mw((up = 0.01, down = 0.01), maxPower))
                 set_time_limits!(gen, (up = 1.0, down = 1.0))
             end
         end
@@ -361,12 +376,12 @@ function build_CATS_system(;
         if VALIDITY_CHECKS
             matpower_row = gen_df[i, :]
             if !(comp isa SynchronousCondenser || comp isa EnergyReservoirStorage || comp isa FixedAdmittance)
-                @assert isapprox(get_active_power(comp), row[:Pg])
+                @assert isapprox(get_active_power(comp, PSY.NU), row[:Pg])
                 @assert isapprox(row[:Pmax], matpower_row[:Pmax])
                 @assert isapprox(row[:Pmin], matpower_row[:Pmin])
             end
             if !(gen_name in scs_convert) && !(comp isa FixedAdmittance)
-                @assert isapprox(get_reactive_power(comp), row[:Qg])
+                @assert isapprox(get_reactive_power(comp, PSY.NU), row[:Qg])
                 @assert isapprox(row[:Pg], matpower_row[:Pg])
                 @assert isapprox(row[:Qg], matpower_row[:Qg])
 
@@ -375,8 +390,9 @@ function build_CATS_system(;
             end
 
             if !(comp isa RenewableDispatch) && !(comp isa SynchronousCondenser) && !(comp isa EnergyReservoirStorage) && !(comp isa FixedAdmittance)
-                @assert isapprox(get_active_power_limits(comp).max, row[:Pmax])
-                @assert isapprox(get_active_power_limits(comp).min, row[:Pmin])
+                comp_p_limits = get_active_power_limits(comp, PSY.NU)
+                @assert isapprox(comp_p_limits.max, row[:Pmax])
+                @assert isapprox(comp_p_limits.min, row[:Pmin])
             end
         end
 
@@ -400,7 +416,7 @@ function build_CATS_system(;
         @assert n_gens == nrow(gen_csv)
         first_gen = get_component(StaticInjection, system, "gen-1")
         @assert first_gen isa HydroDispatch
-        @assert isapprox(get_reactive_power_limits(first_gen).max, 18.7771429)
+        @assert isapprox(get_reactive_power_limits(first_gen, PSY.NU).max, 18.7771429)
         @assert get_number(get_bus(first_gen)) == 745
         # check last non-SC non-import generator.
         n_imports = length(get_components(Source, system))
@@ -463,14 +479,14 @@ function build_CATS_system(;
         ts_values = collect(ts_df[!, col_name])
         fix_missings!(ts_values)
         ts_values = convert(Vector{Float64}, ts_values)
-        total_max_active_power = sum(get_max_active_power(comp) for comp in comps)
+        total_max_active_power = sum(get_max_active_power(comp, PSY.NU) for comp in comps)
         ts_values ./= total_max_active_power
         if comp_type != Source
             # imports can be negative (i.e., exports)
             @assert all(ts_values .>= 0.0) "time series goes negative for some time " *
                 "steps for $comp_type"
         elseif comp_type != RenewableDispatch && comp_type != Source
-            total_min_active_power = sum(get_active_power_limits(comp).min for comp in comps)
+            total_min_active_power = sum(get_active_power_limits(comp, PSY.NU).min for comp in comps)
             renormalized_min = total_min_active_power / total_max_active_power
             @assert all(ts_values .>= renormalized_min) "time series goes below min " *
                 "generation for some time steps for $comp_type"
@@ -482,10 +498,10 @@ function build_CATS_system(;
                  "powers for those components by $(round(scale_up; sigdigits = 3))"
             ts_values ./= scale_up
             for comp in comps
+                p_limits = get_active_power_limits(comp, PSY.NU)
                 set_active_power_limits!(
                     comp,
-                    (min = get_active_power_limits(comp).min,
-                     max = get_active_power_limits(comp).max * scale_up)
+                    _mw((min = p_limits.min, max = p_limits.max * scale_up))
                 )
             end
             @assert all(ts_values .<= 1.0)
@@ -504,12 +520,14 @@ function build_CATS_system(;
             validity_check_row = 9
             total_generation = 0.0
             for comp in comps
-                ts_comp = get_time_series(SingleTimeSeries, comp, "max_active_power")
+                # Select the row in storage; the two-call form would materialize all 8760.
                 total_generation += first(get_time_series_values(
+                    SingleTimeSeries,
                     comp,
-                    ts_comp;
+                    "max_active_power";
                     start_time = timestamps[validity_check_row],
-                    len = 1
+                    len = 1,
+                    units = PSY.NU,
                 ))
             end
             @assert isapprox(total_generation, ts_df[validity_check_row, col_name])
@@ -575,13 +593,15 @@ function build_CATS_system(;
 
             for (power_values, ts_name, get_max_fn, set_max_fn!) in power_configs
                 max_power = maximum(power_values)
-                if max_power > get_max_fn(load)
+                current_max = get_max_fn(load, PSY.NU)
+                if max_power > current_max
                     increased += 1
-                    most_increase = max(most_increase, max_power / get_max_fn(load))
-                    set_max_fn!(load, max_power)
+                    most_increase = max(most_increase, max_power / current_max)
+                    set_max_fn!(load, max_power * PSY.MW)
+                    current_max = max_power
                 end
                 # PSI prefers values to be between 0 and 1.
-                power_values ./= get_max_fn(load)
+                power_values ./= current_max
                 ts = SingleTimeSeries(;
                     name = ts_name,
                     data = TimeArray(timestamps, power_values),
@@ -627,6 +647,8 @@ function build_CATS_system(;
             # FIXME they use negative exports to represent imports, whereas we use
             # separate curves...
             function_data = PiecewiseIncrementalCurve(c0, [0.0, 1.0e12], [c1])
+            cost_curve = CostCurve(function_data)
+            attach_cost!(comp, cost_curve)
         elseif isapprox(c2, 0.0; atol=1e-6)
             function_data = LinearCurve(c1, c0)
             cost_curve = CostCurve(function_data)
@@ -636,13 +658,14 @@ function build_CATS_system(;
             cost_curve = CostCurve(vom)
             attach_cost!(comp, cost_curve)
         elseif comp isa HydroDispatch
-            slope = 2*c2*get_max_active_power(comp)*0.8 + c1
-            intercept = c0 - c2*(get_max_active_power(comp)*0.8)^2
+            max_power = get_max_active_power(comp, PSY.NU)
+            slope = 2*c2*max_power*0.8 + c1
+            intercept = c0 - c2*(max_power*0.8)^2
             function_data = LinearCurve(slope, intercept)
             cost_curve = CostCurve(function_data)
             attach_cost!(comp, cost_curve)
         else
-            p_limits = get_active_power_limits(comp)
+            p_limits = get_active_power_limits(comp, PSY.NU)
             p_min = p_limits.min
             p_max = p_limits.max
             points = [(p, c2 * p^2 + c1 * p + c0) for p in range(p_min, p_max; length = 4)]
@@ -728,4 +751,4 @@ function build_CATS_system(;
 end
 
 system = build_CATS_system()
-to_json(system, joinpath(BASE_DIR, "CATS_Sienna.json"); force=true)
+to_file(system, joinpath(BASE_DIR, "CATS_openapi"); unit_system = :device_base, force = true)

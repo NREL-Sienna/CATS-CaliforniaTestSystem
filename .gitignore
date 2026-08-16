@@ -10,3 +10,17 @@ solutions/
 data/*
 !data/scs*.csv
 !data/fixed_admittance_candidates.csv
+
+# Generated build artifacts (from build_CATS.jl)
+/CATS_openapi/
+/GIS/counties/
+/Manifest.toml
+/Project.toml
+
+# Stale psy5-era build artifacts (build_CATS.jl no longer writes these)
+/CATS_Sienna.json
+/CATS_Sienna_metadata.json
+/CATS_Sienna_time_series_storage.h5
+
+# Python validator virtualenv
+/Python/.venv/
