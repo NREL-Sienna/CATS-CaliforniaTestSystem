@@ -1,0 +1,27 @@
+substation,geojson_name,county,technology,component_type,name_prefix,mvar_per_unit,n_units,appendix_kv,sited_kv,bus,siting_distance_km,owner
+Gates,Gates,Fresno,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,225.0,1,500,500,8269,0.0,PG&E
+Los Banos,Los Banos,Merced,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,225.0,1,500,500,8420,0.0,PG&E
+Gregg,Gregg,Madera,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,150.0,1,230,230,572,0.0,PG&E
+McCall,Mc Call,Fresno,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,132.0,1,230,230,8573,0.0,PG&E
+Mesa (PG&E),Mesa,San Luis Obispo,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,100.0,1,230,230,8617,0.01,PG&E
+Metcalf,Metcalf 2,Santa Clara,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,350.0,1,500,500,1819,0.0,PG&E
+Olinda,Olinda (Vic Fazio),Shasta,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,200.0,1,500,500,7908,0.0,Other
+Table Mountain,Table Mt.,Butte,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,454.0,1,500,500,8504,0.0,PG&E
+Mira Loma 230kV,Mira Loma,San Bernardino,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,158.0,1,230,230,8081,0.0,SCE
+Mira Loma 500kV,Mira Loma,San Bernardino,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,300.0,1,500,500,8082,0.0,SCE
+Mesa 500/230 kV,Mesa,Los Angeles,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,405.0,1,500,500,8124,0.0,SCE
+San Luis Rey,San Luis Rey,San Diego,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,63.0,1,230,230,8589,0.0,SDG&E
+Bay Boulevard,South Bay,San Diego,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,100.0,1,230,230,8727,0.0,SDG&E
+Miguel,Miguel,San Diego,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,126.0,1,230,230,8757,0.0,SDG&E
+Escondido,Escondido,San Diego,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,126.0,1,230,230,8838,0.0,SDG&E
+Suncrest,Suncrest,San Diego,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,126.0,1,230,230,8040,0.01,SDG&E
+Capistrano,Capistrano,Orange,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,150.0,1,138,115.0,731,0.0,SDG&E
+Penasquitos,Penasquitos,San Diego,ShuntCapacitor,FixedAdmittance,ShuntCapacitor,276.0,1,230,230,7939,0.0,SDG&E
+Santiago,Santiago,Orange,SynchronousCondenser,SynchronousCondenser,SynchronousCondenser,81.0,3,230,230,7870,0.0,SCE
+San Luis Rey,San Luis Rey,San Diego,SynchronousCondenser,SynchronousCondenser,SynchronousCondenser,225.0,2,230,230,8589,0.0,SDG&E
+Talega,Talega,San Diego,SynchronousCondenser,SynchronousCondenser,SynchronousCondenser,225.0,2,138,115.0,7936,0.0,SDG&E
+Miguel,Miguel,San Diego,SynchronousCondenser,SynchronousCondenser,SynchronousCondenser,225.0,2,230,230,8757,0.0,SDG&E
+San Onofre,San Onofre,San Diego,SynchronousCondenser,SynchronousCondenser,SynchronousCondenser,225.0,1,230,230,8309,0.01,SCE
+Devers,Devers,Riverside,StaticVArCompensator,SynchronousCondenser,SVC,605.0,1,500,500,8403,0.01,SCE
+Rector,Rector,Tulare,StaticVArCompensator,SynchronousCondenser,SVC,200.0,1,230,230,7625,0.0,SCE
+Suncrest,Suncrest,San Diego,StaticVArCompensator,SynchronousCondenser,SVC,300.0,1,230,230,8040,0.01,SDG&E

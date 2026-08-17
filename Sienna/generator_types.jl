@@ -1,5 +1,9 @@
 """Contains all the mappings for generator data parsing from MATPOWER format."""
 
+# Fallback only: generators with an EIA match (data/generator_prime_movers.csv, `eia_pm`
+# column) get their prime mover from that lookup instead. This dict now only ever gets
+# consulted for the 1769 EIA-unmatched rows -- synchronous condensers and imports -- both
+# of which map to OT and are dropped by maybe_add_prime_mover_type! regardless.
 const PM_TYPE_DICT = Dict{String, PSY.PrimeMovers}(
     "Conventional Hydroelectric" => PrimeMovers.HA,
     "Hydroelectric Pumped Storage" => PrimeMovers.HY,
@@ -54,6 +58,35 @@ const RAMP_LIMIT_DICT = Dict(
     # unmatched to RTS-GMLC; documented here as a known, deliberate outlier.
     (PrimeMovers.ST, ThermalFuels.NUCLEAR) => (up = 0.0001, down = 0.0001),
     (PrimeMovers.ST, ThermalFuels.GEOTHERMAL) => (up = 0.01, down = 0.01), # no geothermal unit in RTS-GMLC or other source found; unverified estimate, left as-is
+
+    # Below: gaps opened up by the EIA prime-mover enrichment (data/generator_prime_movers.csv).
+    # GT and CT previously only ever paired with NATURAL_GAS (the only FuelType that used to
+    # map to them); EIA prime movers now reclassify some Petroleum Liquids/Landfill Gas/Other
+    # Waste Biomass/Other Gases units as GT or CT too. Ramp/duration physics for a simple- or
+    # combined-cycle turbine are governed by the turbine hardware, not the fuel, so these reuse
+    # the existing NATURAL_GAS figures for the same prime mover.
+    (PrimeMovers.GT, ThermalFuels.RESIDUAL_FUEL_OIL) => (up = 0.0673, down = 0.0673),
+    (PrimeMovers.GT, ThermalFuels.MUNICIPAL_WASTE) => (up = 0.0673, down = 0.0673),
+    (PrimeMovers.GT, ThermalFuels.OTHER_GAS) => (up = 0.0673, down = 0.0673),
+    (PrimeMovers.CT, ThermalFuels.MUNICIPAL_WASTE) => (up = 0.0673, down = 0.0673),
+    (PrimeMovers.CA, ThermalFuels.MUNICIPAL_WASTE) => (up = 0.0117, down = 0.0117),
+    (PrimeMovers.CA, ThermalFuels.OTHER_GAS) => (up = 0.0117, down = 0.0117),
+
+    # CS (single-shaft combined cycle): no RTS-GMLC or WECC single-shaft figure exists;
+    # approximated from the CA/combined-cycle-steam figure above, since a single-shaft unit's
+    # ramp is likewise governed by the shared steam cycle, not the fuel.
+    (PrimeMovers.CS, ThermalFuels.NATURAL_GAS) => (up = 0.0117, down = 0.0117),
+
+    # BT (binary-cycle geothermal): no RTS-GMLC or WECC figure; approximated from the ST/
+    # GEOTHERMAL figure above (binary-cycle plants ramp similarly to geothermal steam plants
+    # absent better data).
+    (PrimeMovers.BT, ThermalFuels.GEOTHERMAL) => (up = 0.01, down = 0.01),
+
+    # FC (fuel cell): median unit here is ~1.1 MW (Bloom Energy-class, behind-the-meter);
+    # electrochemical generation ramps far faster than any combustion prime mover. Unverified
+    # estimate reflecting that fast-ramp character, not a cited source.
+    (PrimeMovers.FC, ThermalFuels.MUNICIPAL_WASTE) => (up = 1.0, down = 1.0),
+    (PrimeMovers.FC, ThermalFuels.NATURAL_GAS) => (up = 1.0, down = 1.0),
 )
 
 const PSY_TO_WECC_DICT = Dict(
@@ -66,6 +99,19 @@ const PSY_TO_WECC_DICT = Dict(
     # not from WECC: my own invented abbreviations.
     (PrimeMovers.ST, ThermalFuels.GEOTHERMAL) => "GEO",
     (PrimeMovers.ST, ThermalFuels.NUCLEAR) => "NUC",
+
+    # See the matching comments in RAMP_LIMIT_DICT above for the rationale behind each of
+    # these (EIA prime-mover enrichment gap-fill).
+    (PrimeMovers.GT, ThermalFuels.RESIDUAL_FUEL_OIL) => "SC",
+    (PrimeMovers.GT, ThermalFuels.MUNICIPAL_WASTE) => "SC",
+    (PrimeMovers.GT, ThermalFuels.OTHER_GAS) => "SC",
+    (PrimeMovers.CT, ThermalFuels.MUNICIPAL_WASTE) => "SC",
+    (PrimeMovers.CA, ThermalFuels.MUNICIPAL_WASTE) => "CC",
+    (PrimeMovers.CA, ThermalFuels.OTHER_GAS) => "CC",
+    (PrimeMovers.CS, ThermalFuels.NATURAL_GAS) => "CC",
+    (PrimeMovers.BT, ThermalFuels.GEOTHERMAL) => "GEO",
+    (PrimeMovers.FC, ThermalFuels.MUNICIPAL_WASTE) => "FC",
+    (PrimeMovers.FC, ThermalFuels.NATURAL_GAS) => "FC",
 )
 
 
@@ -76,7 +122,7 @@ function get_size(WECC_key::String, maxPower::Float64)
         else
             return "GT90"
         end
-    elseif WECC_key in ("GEO", "NUC")
+    elseif WECC_key in ("GEO", "NUC", "FC")
         return "ANY"
     elseif WECC_key == "CLLIG"
         if maxPower <= 300
@@ -114,6 +160,9 @@ const DURATION_LIMIT_DICT = Dict(
     # refueling outages, not load-following. Documented here as a known, deliberate outlier.
     ("GEO", "ANY") => (up = 1000, down = 300), # no geothermal unit in RTS-GMLC or other source found; unverified estimate, left as-is
     ("NUC", "ANY") => (up = 8000, down = 8000),
+    # FC (fuel cell): near-instantaneous electrochemical response; unverified estimate, not a
+    # cited source -- see the FC comment in RAMP_LIMIT_DICT above.
+    ("FC", "ANY") => (up = 0.1, down = 0.1),
 )
 
 const OTHER_TYPES = ("Synchronous Condenser", "IMPORT", "All Other")

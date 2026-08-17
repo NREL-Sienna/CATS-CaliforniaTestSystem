@@ -1,0 +1,2124 @@
+row_index,new_name,FuelType,current_pm,eia_pm,changed
+1,Rollins_1P,Conventional Hydroelectric,HA,HY,true
+2,McClure_1,Petroleum Liquids,IC,GT,true
+3,McClure_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+4,Turlock Lake_1,Conventional Hydroelectric,HA,HY,true
+5,Turlock Lake_2,Conventional Hydroelectric,HA,HY,true
+6,Turlock Lake_3,Conventional Hydroelectric,HA,HY,true
+7,Hickman_1,Conventional Hydroelectric,HA,HY,true
+8,Hickman_2,Conventional Hydroelectric,HA,HY,true
+9,Volta 2_1,Conventional Hydroelectric,HA,HY,true
+10,Alta Powerhouse_1,Conventional Hydroelectric,HA,HY,true
+11,Angels_1,Conventional Hydroelectric,HA,HY,true
+12,Belden_1,Conventional Hydroelectric,HA,HY,true
+13,Bucks Creek_H1,Conventional Hydroelectric,HA,HY,true
+14,Bucks Creek_H2,Conventional Hydroelectric,HA,HY,true
+15,Butt Valley_1,Conventional Hydroelectric,HA,HY,true
+16,Caribou 1_1,Conventional Hydroelectric,HA,HY,true
+17,Caribou 1_2,Conventional Hydroelectric,HA,HY,true
+18,Caribou 1_3,Conventional Hydroelectric,HA,HY,true
+19,Caribou 2_4,Conventional Hydroelectric,HA,HY,true
+20,Caribou 2_5,Conventional Hydroelectric,HA,HY,true
+21,Coleman PH_1,Conventional Hydroelectric,HA,HY,true
+22,Cow Creek_1,Conventional Hydroelectric,HA,HY,true
+23,Cow Creek_2,Conventional Hydroelectric,HA,HY,true
+24,Drum 1_1,Conventional Hydroelectric,HA,HY,true
+25,Drum 1_2,Conventional Hydroelectric,HA,HY,true
+26,Drum 1_3,Conventional Hydroelectric,HA,HY,true
+27,Drum 1_4,Conventional Hydroelectric,HA,HY,true
+28,Dutch Flat_1,Conventional Hydroelectric,HA,HY,true
+29,El Dorado_1,Conventional Hydroelectric,HA,HY,true
+30,El Dorado_2,Conventional Hydroelectric,HA,HY,true
+31,Electra_1,Conventional Hydroelectric,HA,HY,true
+32,Electra_2,Conventional Hydroelectric,HA,HY,true
+33,Electra_3,Conventional Hydroelectric,HA,HY,true
+34,Haas_H1,Conventional Hydroelectric,HA,HY,true
+35,Haas_H2,Conventional Hydroelectric,HA,HY,true
+36,Halsey_1,Conventional Hydroelectric,HA,HY,true
+37,Hamilton Branch_1,Conventional Hydroelectric,HA,HY,true
+38,Hamilton Branch_2,Conventional Hydroelectric,HA,HY,true
+39,Hat Creek 1_1,Conventional Hydroelectric,HA,HY,true
+40,Hat Creek 2_1,Conventional Hydroelectric,HA,HY,true
+41,Humboldt Bay_IC1,Natural Gas Internal Combustion Engine,IC,IC,false
+42,Humboldt Bay_IC10,Natural Gas Internal Combustion Engine,IC,IC,false
+43,Humboldt Bay_IC2,Natural Gas Internal Combustion Engine,IC,IC,false
+44,Humboldt Bay_IC3,Natural Gas Internal Combustion Engine,IC,IC,false
+45,Humboldt Bay_IC4,Natural Gas Internal Combustion Engine,IC,IC,false
+46,Humboldt Bay_IC5,Natural Gas Internal Combustion Engine,IC,IC,false
+47,Humboldt Bay_IC6,Natural Gas Internal Combustion Engine,IC,IC,false
+48,Humboldt Bay_IC7,Natural Gas Internal Combustion Engine,IC,IC,false
+49,Humboldt Bay_IC8,Natural Gas Internal Combustion Engine,IC,IC,false
+50,Humboldt Bay_IC9,Natural Gas Internal Combustion Engine,IC,IC,false
+51,Inskip_1,Conventional Hydroelectric,HA,HY,true
+52,James B Black_1,Conventional Hydroelectric,HA,HY,true
+53,James B Black_2,Conventional Hydroelectric,HA,HY,true
+54,Kerckhoff_H1,Conventional Hydroelectric,HA,HY,true
+55,Kerckhoff_H3,Conventional Hydroelectric,HA,HY,true
+56,Kilarc_1,Conventional Hydroelectric,HA,HY,true
+57,Merced Falls_1,Conventional Hydroelectric,HA,HY,true
+58,Dynegy Moss Landing Power Plant Hybrid_CT1A,Natural Gas Fired Combined Cycle,CT,CT,false
+59,Dynegy Moss Landing Power Plant Hybrid_CT1B,Natural Gas Fired Combined Cycle,CT,CT,false
+60,Dynegy Moss Landing Power Plant Hybrid_CT2A,Natural Gas Fired Combined Cycle,CT,CT,false
+61,Dynegy Moss Landing Power Plant Hybrid_CT2B,Natural Gas Fired Combined Cycle,CT,CT,false
+62,Dynegy Moss Landing Power Plant Hybrid_ST1,Natural Gas Fired Combined Cycle,CT,CA,true
+63,Dynegy Moss Landing Power Plant Hybrid_ST2,Natural Gas Fired Combined Cycle,CT,CA,true
+64,Murphys_1,Conventional Hydroelectric,HA,HY,true
+65,Phoenix_1,Conventional Hydroelectric,HA,HY,true
+66,Pit 1_H1,Conventional Hydroelectric,HA,HY,true
+67,Pit 1_H2,Conventional Hydroelectric,HA,HY,true
+68,Pit 4_1,Conventional Hydroelectric,HA,HY,true
+69,Pit 4_2,Conventional Hydroelectric,HA,HY,true
+70,Pit 5_H1,Conventional Hydroelectric,HA,HY,true
+71,Pit 5_H2,Conventional Hydroelectric,HA,HY,true
+72,Pit 5_H3,Conventional Hydroelectric,HA,HY,true
+73,Pit 5_H4,Conventional Hydroelectric,HA,HY,true
+74,Pit 6_H1,Conventional Hydroelectric,HA,HY,true
+75,Pit 6_H2,Conventional Hydroelectric,HA,HY,true
+76,Potter Valley_1,Conventional Hydroelectric,HA,HY,true
+77,Potter Valley_2,Conventional Hydroelectric,HA,HY,true
+78,Potter Valley_3,Conventional Hydroelectric,HA,HY,true
+79,Rock Creek_H1,Conventional Hydroelectric,HA,HY,true
+80,Rock Creek_H2,Conventional Hydroelectric,HA,HY,true
+81,Salt Springs_1,Conventional Hydroelectric,HA,HY,true
+82,Salt Springs_2,Conventional Hydroelectric,HA,HY,true
+83,South_1,Conventional Hydroelectric,HA,HY,true
+84,Spaulding 1_1,Conventional Hydroelectric,HA,HY,true
+85,Spaulding 2_1,Conventional Hydroelectric,HA,HY,true
+86,Spaulding 3_1,Conventional Hydroelectric,HA,HY,true
+87,Spring Gap_1,Conventional Hydroelectric,HA,HY,true
+88,Stanislaus_HC1,Conventional Hydroelectric,HA,HY,true
+89,Tiger Creek_H1,Conventional Hydroelectric,HA,HY,true
+90,Tiger Creek_H2,Conventional Hydroelectric,HA,HY,true
+91,Tule River_1,Conventional Hydroelectric,HA,HY,true
+92,Tule River_2,Conventional Hydroelectric,HA,HY,true
+93,Volta 1_1,Conventional Hydroelectric,HA,HY,true
+94,West Point PH_1,Conventional Hydroelectric,HA,HY,true
+95,Wise_1,Conventional Hydroelectric,HA,HY,true
+96,Wise_2,Conventional Hydroelectric,HA,HY,true
+97,Copco 1_1,Conventional Hydroelectric,HA,HY,true
+98,Copco 1_2,Conventional Hydroelectric,HA,HY,true
+99,Copco 2_1,Conventional Hydroelectric,HA,HY,true
+100,Copco 2_2,Conventional Hydroelectric,HA,HY,true
+101,Fall Creek_1,Conventional Hydroelectric,HA,HY,true
+102,Fall Creek_2,Conventional Hydroelectric,HA,HY,true
+103,Fall Creek_3,Conventional Hydroelectric,HA,HY,true
+104,Iron Gate_1,Conventional Hydroelectric,HA,HY,true
+105,Drop 5_1,Conventional Hydroelectric,HA,HY,true
+106,Drop 5_2,Conventional Hydroelectric,HA,HY,true
+107,AES Alamitos LLC_3,Natural Gas Steam Turbine,ST,ST,false
+108,AES Alamitos LLC_4,Natural Gas Steam Turbine,ST,ST,false
+109,AES Alamitos LLC_5,Natural Gas Steam Turbine,ST,ST,false
+110,Big Creek 2_3,Conventional Hydroelectric,HA,HY,true
+111,Big Creek 2_4,Conventional Hydroelectric,HA,HY,true
+112,Big Creek 2_5,Conventional Hydroelectric,HA,HY,true
+113,Big Creek 2_6,Conventional Hydroelectric,HA,HY,true
+114,Big Creek 3_1,Conventional Hydroelectric,HA,HY,true
+115,Big Creek 3_2,Conventional Hydroelectric,HA,HY,true
+116,Big Creek 3_3,Conventional Hydroelectric,HA,HY,true
+117,Big Creek 3_4,Conventional Hydroelectric,HA,HY,true
+118,Big Creek 3_5,Conventional Hydroelectric,HA,HY,true
+119,Big Creek 8_1,Conventional Hydroelectric,HA,HY,true
+120,Big Creek 8_2,Conventional Hydroelectric,HA,HY,true
+121,Big Creek 2A_1,Conventional Hydroelectric,HA,HY,true
+122,Big Creek 2A_2,Conventional Hydroelectric,HA,HY,true
+123,Bishop Creek 2_1,Conventional Hydroelectric,HA,HY,true
+124,Bishop Creek 2_2,Conventional Hydroelectric,HA,HY,true
+125,Bishop Creek 2_3,Conventional Hydroelectric,HA,HY,true
+126,Bishop Creek 3_1,Conventional Hydroelectric,HA,HY,true
+127,Bishop Creek 3_2,Conventional Hydroelectric,HA,HY,true
+128,Bishop Creek 3_3,Conventional Hydroelectric,HA,HY,true
+129,Bishop Creek 4_1,Conventional Hydroelectric,HA,HY,true
+130,Bishop Creek 4_2,Conventional Hydroelectric,HA,HY,true
+131,Bishop Creek 4_3,Conventional Hydroelectric,HA,HY,true
+132,Bishop Creek 4_4,Conventional Hydroelectric,HA,HY,true
+133,Bishop Creek 4_5,Conventional Hydroelectric,HA,HY,true
+134,Bishop Creek 5_1,Conventional Hydroelectric,HA,HY,true
+135,Bishop Creek 5_2,Conventional Hydroelectric,HA,HY,true
+136,Bishop Creek 6_1,Conventional Hydroelectric,HA,HY,true
+137,Borel_1,Conventional Hydroelectric,HA,HY,true
+138,Borel_2,Conventional Hydroelectric,HA,HY,true
+139,Borel_3,Conventional Hydroelectric,HA,HY,true
+140,Fontana_1,Conventional Hydroelectric,HA,HY,true
+141,Fontana_2,Conventional Hydroelectric,HA,HY,true
+142,AES Huntington Beach LLC_2,Natural Gas Steam Turbine,ST,ST,false
+143,Kaweah 1_1,Conventional Hydroelectric,HA,HY,true
+144,Kern River 3_1,Conventional Hydroelectric,HA,HY,true
+145,Kern River 3_2,Conventional Hydroelectric,HA,HY,true
+146,Kern River 1_1,Conventional Hydroelectric,HA,HY,true
+147,Kern River 1_2,Conventional Hydroelectric,HA,HY,true
+148,Kern River 1_3,Conventional Hydroelectric,HA,HY,true
+149,Kern River 1_4,Conventional Hydroelectric,HA,HY,true
+150,Long Beach Generation LLC_CT1,Natural Gas Fired Combustion Turbine,GT,GT,false
+151,Long Beach Generation LLC_CT2,Natural Gas Fired Combustion Turbine,GT,GT,false
+152,Long Beach Generation LLC_CT3,Natural Gas Fired Combustion Turbine,GT,GT,false
+153,Long Beach Generation LLC_CT4,Natural Gas Fired Combustion Turbine,GT,GT,false
+154,Mammoth Pool_1,Conventional Hydroelectric,HA,HY,true
+155,Mammoth Pool_2,Conventional Hydroelectric,HA,HY,true
+156,Ormond Beach_1,Natural Gas Steam Turbine,ST,ST,false
+157,Ormond Beach_2,Natural Gas Steam Turbine,ST,ST,false
+158,Poole_1,Conventional Hydroelectric,HA,HY,true
+159,AES Redondo Beach LLC_5,Natural Gas Steam Turbine,ST,ST,false
+160,AES Redondo Beach LLC_6,Natural Gas Steam Turbine,ST,ST,false
+161,AES Redondo Beach LLC_8,Natural Gas Steam Turbine,ST,ST,false
+162,Rush Creek_1,Conventional Hydroelectric,HA,HY,true
+163,Rush Creek_2,Conventional Hydroelectric,HA,HY,true
+164,Mountainview Generating Station_MV3A,Natural Gas Fired Combined Cycle,CT,CT,false
+165,Mountainview Generating Station_MV3B,Natural Gas Fired Combined Cycle,CT,CT,false
+166,Mountainview Generating Station_MV3C,Natural Gas Fired Combined Cycle,CT,CA,true
+167,Mountainview Generating Station_MV4A,Natural Gas Fired Combined Cycle,CT,CT,false
+168,Mountainview Generating Station_MV4B,Natural Gas Fired Combined Cycle,CT,CT,false
+169,Mountainview Generating Station_MV4C,Natural Gas Fired Combined Cycle,CT,CA,true
+170,Santa Ana 1_1,Conventional Hydroelectric,HA,HY,true
+171,Santa Ana 1_2,Conventional Hydroelectric,HA,HY,true
+172,Santa Ana 1_3,Conventional Hydroelectric,HA,HY,true
+173,Santa Ana 1_4,Conventional Hydroelectric,HA,HY,true
+174,Lower Tule River_1,Conventional Hydroelectric,HA,HY,true
+175,Lower Tule River_2,Conventional Hydroelectric,HA,HY,true
+176,Pardee_1,Conventional Hydroelectric,HA,HY,true
+177,Pardee_2,Conventional Hydroelectric,HA,HY,true
+178,Pardee_3,Conventional Hydroelectric,HA,HY,true
+179,Grayson_1,Natural Gas Fired Combined Cycle,CT,CA,true
+180,Grayson_2,Natural Gas Fired Combined Cycle,CT,CA,true
+181,Grayson_3,Landfill Gas,OT,ST,true
+182,Grayson_4,Natural Gas Steam Turbine,ST,ST,false
+183,Grayson_5,Natural Gas Steam Turbine,ST,ST,false
+184,Grayson_8A,Natural Gas Fired Combined Cycle,CT,CT,false
+185,Grayson_8BC,Natural Gas Fired Combined Cycle,CT,CT,false
+186,Grayson_9,Natural Gas Fired Combustion Turbine,GT,GT,false
+187,Dion R Holm_1,Conventional Hydroelectric,HA,HY,true
+188,Dion R Holm_2,Conventional Hydroelectric,HA,HY,true
+189,R C Kirkwood_1,Conventional Hydroelectric,HA,HY,true
+190,R C Kirkwood_2,Conventional Hydroelectric,HA,HY,true
+191,R C Kirkwood_3,Conventional Hydroelectric,HA,HY,true
+192,Drop 2 (CA)_1,Conventional Hydroelectric,HA,HY,true
+193,Drop 2 (CA)_2,Conventional Hydroelectric,HA,HY,true
+194,Drop 3 (CA)_1,Conventional Hydroelectric,HA,HY,true
+195,Drop 3 (CA)_2,Conventional Hydroelectric,HA,HY,true
+196,Drop 4_1,Conventional Hydroelectric,HA,HY,true
+197,Drop 4_2,Conventional Hydroelectric,HA,HY,true
+198,Pilot Knob_1,Conventional Hydroelectric,HA,HY,true
+199,Pilot Knob_2,Conventional Hydroelectric,HA,HY,true
+200,El Centro Hybrid_2,Natural Gas Fired Combined Cycle,CT,CA,true
+201,El Centro Hybrid_2A,Natural Gas Fired Combined Cycle,CT,CT,false
+202,El Centro Hybrid_30,Natural Gas Fired Combined Cycle,CT,CA,true
+203,El Centro Hybrid_31,Natural Gas Fired Combined Cycle,CT,CT,false
+204,El Centro Hybrid_32,Natural Gas Fired Combined Cycle,CT,CT,false
+205,El Centro Hybrid_4,Natural Gas Steam Turbine,ST,ST,false
+206,El Centro Hybrid_BESS,Batteries,BA,BA,false
+207,Big Pine Creek_1,Conventional Hydroelectric,HA,HY,true
+208,Foothill_1,Conventional Hydroelectric,HA,HY,true
+209,Franklin (CA)_1,Conventional Hydroelectric,HA,HY,true
+210,Haiwee_1,Conventional Hydroelectric,HA,HY,true
+211,Haiwee_2,Conventional Hydroelectric,HA,HY,true
+212,Harbor_10A,Natural Gas Fired Combined Cycle,CT,CT,false
+213,Harbor_10B,Natural Gas Fired Combined Cycle,CT,CT,false
+214,Harbor_5,Natural Gas Fired Combined Cycle,CT,CA,true
+215,Harbor_GT10,Natural Gas Fired Combustion Turbine,GT,GT,false
+216,Harbor_GT11,Natural Gas Fired Combustion Turbine,GT,GT,false
+217,Harbor_GT12,Natural Gas Fired Combustion Turbine,GT,GT,false
+218,Harbor_GT13,Natural Gas Fired Combustion Turbine,GT,GT,false
+219,Harbor_GT14,Natural Gas Fired Combustion Turbine,GT,GT,false
+220,Haynes_1,Natural Gas Steam Turbine,ST,ST,false
+221,Haynes_10,Natural Gas Fired Combined Cycle,CT,CT,false
+222,Haynes_11,Natural Gas Fired Combustion Turbine,GT,GT,false
+223,Haynes_12,Natural Gas Fired Combustion Turbine,GT,GT,false
+224,Haynes_13,Natural Gas Fired Combustion Turbine,GT,GT,false
+225,Haynes_14,Natural Gas Fired Combustion Turbine,GT,GT,false
+226,Haynes_15,Natural Gas Fired Combustion Turbine,GT,GT,false
+227,Haynes_16,Natural Gas Fired Combustion Turbine,GT,GT,false
+228,Haynes_2,Natural Gas Steam Turbine,ST,ST,false
+229,Haynes_8,Natural Gas Fired Combined Cycle,CT,CA,true
+230,Haynes_9,Natural Gas Fired Combined Cycle,CT,CT,false
+231,Middle Gorge_1,Conventional Hydroelectric,HA,HY,true
+232,San Fernando_1,Conventional Hydroelectric,HA,HY,true
+233,San Fernando_2,Conventional Hydroelectric,HA,HY,true
+234,Scattergood_1,Natural Gas Steam Turbine,ST,ST,false
+235,Scattergood_2,Natural Gas Steam Turbine,ST,ST,false
+236,Scattergood_4,Natural Gas Fired Combined Cycle,CT,CT,false
+237,Scattergood_5,Natural Gas Fired Combined Cycle,CT,CA,true
+238,Scattergood_6,Natural Gas Fired Combustion Turbine,GT,GT,false
+239,Scattergood_7,Natural Gas Fired Combustion Turbine,GT,GT,false
+240,Upper Gorge_1,Conventional Hydroelectric,HA,HY,true
+241,Valley (CA)_5,Natural Gas Fired Combustion Turbine,GT,GT,false
+242,Valley (CA)_6,Natural Gas Fired Combined Cycle,CT,CT,false
+243,Valley (CA)_7,Natural Gas Fired Combined Cycle,CT,CT,false
+244,Valley (CA)_8,Natural Gas Fired Combined Cycle,CT,CA,true
+245,McSwain_1,Conventional Hydroelectric,HA,HY,true
+246,Chicago Park_2P,Conventional Hydroelectric,HA,HY,true
+247,Dutch Flat 2_3P,Conventional Hydroelectric,HA,HY,true
+248,Beardsley_1,Conventional Hydroelectric,HA,HY,true
+249,Donnells_H1,Conventional Hydroelectric,HA,HY,true
+250,Tulloch_1,Conventional Hydroelectric,HA,HY,true
+251,Tulloch_2,Conventional Hydroelectric,HA,HY,true
+252,Tulloch_3,Conventional Hydroelectric,HA,HY,true
+253,Kelly Ridge_1,Conventional Hydroelectric,HA,HY,true
+254,Glenarm_GT1,Natural Gas Fired Combustion Turbine,GT,GT,false
+255,Glenarm_GT2,Natural Gas Fired Combustion Turbine,GT,GT,false
+256,Glenarm_GT3,Natural Gas Fired Combustion Turbine,GT,GT,false
+257,Glenarm_GT4,Natural Gas Fired Combustion Turbine,GT,GT,false
+258,Glenarm_GT5,Natural Gas Fired Combined Cycle,CT,CT,false
+259,Glenarm_ST1,Natural Gas Fired Combined Cycle,CT,CA,true
+260,French Meadows_1,Conventional Hydroelectric,HA,HY,true
+261,Middle Fork_1,Conventional Hydroelectric,HA,HY,true
+262,Middle Fork_2,Conventional Hydroelectric,HA,HY,true
+263,Oxbow (CA)_1,Conventional Hydroelectric,HA,HY,true
+264,Ralston_1,Conventional Hydroelectric,HA,HY,true
+265,Camino_H1,Conventional Hydroelectric,HA,HY,true
+266,Camino_H2,Conventional Hydroelectric,HA,HY,true
+267,Jaybird_H1,Conventional Hydroelectric,HA,HY,true
+268,Jaybird_H2,Conventional Hydroelectric,HA,HY,true
+269,Loon Lake_H1,Conventional Hydroelectric,HA,HY,true
+270,Robbs Peak_1,Conventional Hydroelectric,HA,HY,true
+271,Devil Canyon_1,Conventional Hydroelectric,HA,HY,true
+272,Devil Canyon_2,Conventional Hydroelectric,HA,HY,true
+273,Devil Canyon_3,Conventional Hydroelectric,HA,HY,true
+274,Devil Canyon_4,Conventional Hydroelectric,HA,HY,true
+275,Edward C Hyatt_1,Conventional Hydroelectric,HA,HY,true
+276,Edward C Hyatt_2,Hydroelectric Pumped Storage,HY,PS,true
+277,Edward C Hyatt_3,Conventional Hydroelectric,HA,HY,true
+278,Edward C Hyatt_4,Hydroelectric Pumped Storage,HY,PS,true
+279,Edward C Hyatt_5,Conventional Hydroelectric,HA,HY,true
+280,Edward C Hyatt_6,Hydroelectric Pumped Storage,HY,PS,true
+281,Don Pedro_1,Conventional Hydroelectric,HA,HY,true
+282,Don Pedro_2,Conventional Hydroelectric,HA,HY,true
+283,Don Pedro_3,Conventional Hydroelectric,HA,HY,true
+284,Don Pedro_4,Conventional Hydroelectric,HA,HY,true
+285,Folsom_1,Conventional Hydroelectric,HA,HY,true
+286,Folsom_2,Conventional Hydroelectric,HA,HY,true
+287,Folsom_3,Conventional Hydroelectric,HA,HY,true
+288,Judge F Carr_1,Conventional Hydroelectric,HA,HY,true
+289,Judge F Carr_2,Conventional Hydroelectric,HA,HY,true
+290,Keswick_1,Conventional Hydroelectric,HA,HY,true
+291,Keswick_2,Conventional Hydroelectric,HA,HY,true
+292,Keswick_3,Conventional Hydroelectric,HA,HY,true
+293,Nimbus_1,Conventional Hydroelectric,HA,HY,true
+294,Nimbus_2,Conventional Hydroelectric,HA,HY,true
+295,Shasta_1,Conventional Hydroelectric,HA,HY,true
+296,Shasta_2,Conventional Hydroelectric,HA,HY,true
+297,Shasta_3,Conventional Hydroelectric,HA,HY,true
+298,Shasta_4,Conventional Hydroelectric,HA,HY,true
+299,Shasta_5,Conventional Hydroelectric,HA,HY,true
+300,Shasta_S1,Conventional Hydroelectric,HA,HY,true
+301,Shasta_S2,Conventional Hydroelectric,HA,HY,true
+302,Parker Dam_1,Conventional Hydroelectric,HA,HY,true
+303,Parker Dam_2,Conventional Hydroelectric,HA,HY,true
+304,Parker Dam_3,Conventional Hydroelectric,HA,HY,true
+305,Parker Dam_4,Conventional Hydroelectric,HA,HY,true
+306,W R Gianelli_1,Hydroelectric Pumped Storage,HY,PS,true
+307,W R Gianelli_2,Hydroelectric Pumped Storage,HY,PS,true
+308,W R Gianelli_3,Hydroelectric Pumped Storage,HY,PS,true
+309,W R Gianelli_4,Hydroelectric Pumped Storage,HY,PS,true
+310,W R Gianelli_5,Hydroelectric Pumped Storage,HY,PS,true
+311,W R Gianelli_6,Hydroelectric Pumped Storage,HY,PS,true
+312,W R Gianelli_7,Hydroelectric Pumped Storage,HY,PS,true
+313,W R Gianelli_8,Hydroelectric Pumped Storage,HY,PS,true
+314,Spring Creek_1,Conventional Hydroelectric,HA,HY,true
+315,Spring Creek_2,Conventional Hydroelectric,HA,HY,true
+316,Trinity_1,Conventional Hydroelectric,HA,HY,true
+317,Trinity_2,Conventional Hydroelectric,HA,HY,true
+318,Colgate_1,Conventional Hydroelectric,HA,HY,true
+319,Colgate_2,Conventional Hydroelectric,HA,HY,true
+320,Bear Valley_HC1,Conventional Hydroelectric,HA,HY,true
+321,Bear Valley_HC2,Conventional Hydroelectric,HA,HY,true
+322,Temescal_1,Conventional Hydroelectric,HA,HY,true
+323,Corona_1,Conventional Hydroelectric,HA,HY,true
+324,Perris_1,Conventional Hydroelectric,HA,HY,true
+325,Rio Hondo_1,Conventional Hydroelectric,HA,HY,true
+326,Coyote Creek_1,Conventional Hydroelectric,HA,HY,true
+327,Valley View_1,Conventional Hydroelectric,HA,HY,true
+328,Jones Fork_1,Conventional Hydroelectric,HA,HY,true
+329,Camanche_1,Conventional Hydroelectric,HA,HY,true
+330,Camanche_2,Conventional Hydroelectric,HA,HY,true
+331,Camanche_3,Conventional Hydroelectric,HA,HY,true
+332,Drop 1_1,Conventional Hydroelectric,HA,HY,true
+333,Drop 1_2,Conventional Hydroelectric,HA,HY,true
+334,Drop 1_3,Conventional Hydroelectric,HA,HY,true
+335,East Highline_1,Conventional Hydroelectric,HA,HY,true
+336,Oak Flat_1,Conventional Hydroelectric,HA,HY,true
+337,Newcastle_1,Conventional Hydroelectric,HA,HY,true
+338,Kerckhoff 2_1,Conventional Hydroelectric,HA,HY,true
+339,Etiwanda_1,Conventional Hydroelectric,HA,HY,true
+340,Sly Creek_1,Conventional Hydroelectric,HA,HY,true
+341,Scott Flat_7P,Conventional Hydroelectric,HA,HY,true
+342,Bottle Rock Power_1,Geothermal,ST,ST,false
+343,Alamo_1,Conventional Hydroelectric,HA,HY,true
+344,Walnut_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+345,Walnut_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+346,Coachella_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+347,Coachella_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+348,Coachella_3,Natural Gas Fired Combustion Turbine,GT,GT,false
+349,Coachella_4,Natural Gas Fired Combustion Turbine,GT,GT,false
+350,Diablo Canyon_1,Nuclear,ST,ST,false
+351,Diablo Canyon_2,Nuclear,ST,ST,false
+352,New Melones_1,Conventional Hydroelectric,HA,HY,true
+353,New Melones_2,Conventional Hydroelectric,HA,HY,true
+354,W E Warne_1,Conventional Hydroelectric,HA,HY,true
+355,W E Warne_2,Conventional Hydroelectric,HA,HY,true
+356,Dynegy Oakland Power Plant_GEN1,Petroleum Liquids,IC,GT,true
+357,Dynegy Oakland Power Plant_GEN2,Petroleum Liquids,IC,GT,true
+358,Dynegy Oakland Power Plant_GEN3,Petroleum Liquids,IC,GT,true
+359,Azusa_1,Conventional Hydroelectric,HA,HY,true
+360,San Francisquito 2_1,Conventional Hydroelectric,HA,HY,true
+361,San Francisquito 2_2,Conventional Hydroelectric,HA,HY,true
+362,San Francisquito 2_3,Conventional Hydroelectric,HA,HY,true
+363,Kings Beach_KB1,Petroleum Liquids,IC,IC,false
+364,Kings Beach_KB2,Petroleum Liquids,IC,IC,false
+365,Kings Beach_KB3,Petroleum Liquids,IC,IC,false
+366,Kings Beach_KB4,Petroleum Liquids,IC,IC,false
+367,Kings Beach_KB5,Petroleum Liquids,IC,IC,false
+368,Kings Beach_KB6,Petroleum Liquids,IC,IC,false
+369,Union Valley_1,Conventional Hydroelectric,HA,HY,true
+370,Greg Avenue_1,Conventional Hydroelectric,HA,HY,true
+371,Lake Mathews_1,Conventional Hydroelectric,HA,HY,true
+372,Foothill Feeder_1,Conventional Hydroelectric,HA,HY,true
+373,Foothill Feeder_2,Conventional Hydroelectric,HA,HY,true
+374,San Dimas_1,Conventional Hydroelectric,HA,HY,true
+375,Yorba Linda_1,Conventional Hydroelectric,HA,HY,true
+376,Stampede_1,Conventional Hydroelectric,HA,HY,true
+377,Stampede_2,Conventional Hydroelectric,HA,HY,true
+378,Mojave Siphon_1,Conventional Hydroelectric,HA,HY,true
+379,Mojave Siphon_2,Conventional Hydroelectric,HA,HY,true
+380,Mojave Siphon_3,Conventional Hydroelectric,HA,HY,true
+381,Thermalito Diverson Dam_TD1,Conventional Hydroelectric,HA,HY,true
+382,Mill Creek 3_3,Conventional Hydroelectric,HA,HY,true
+383,Mill Creek 3_4,Conventional Hydroelectric,HA,HY,true
+384,Mill Creek 3_5,Conventional Hydroelectric,HA,HY,true
+385,Stony Gorge_1,Conventional Hydroelectric,HA,HY,true
+386,Stony Gorge_2,Conventional Hydroelectric,HA,HY,true
+387,Whiskeytown_1,Conventional Hydroelectric,HA,HY,true
+388,Santa Clara Cogen_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+389,Santa Clara Cogen_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+390,Woodland_2,Natural Gas Fired Combined Cycle,CT,CA,true
+391,Woodland_3,Natural Gas Fired Combined Cycle,CT,CT,false
+392,Woodland_3A,Natural Gas Internal Combustion Engine,IC,IC,false
+393,Woodland_3B,Natural Gas Internal Combustion Engine,IC,IC,false
+394,Woodland_3C,Natural Gas Internal Combustion Engine,IC,IC,false
+395,Woodland_3D,Natural Gas Internal Combustion Engine,IC,IC,false
+396,Woodland_3E,Natural Gas Internal Combustion Engine,IC,IC,false
+397,Woodland_3F,Natural Gas Internal Combustion Engine,IC,IC,false
+398,Woodland_NA1,Natural Gas Fired Combustion Turbine,GT,GT,false
+399,Redding Power_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+400,Redding Power_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+401,Redding Power_3,Natural Gas Fired Combustion Turbine,GT,GT,false
+402,Redding Power_4,Natural Gas Fired Combined Cycle,CT,CA,true
+403,Redding Power_5,Natural Gas Fired Combined Cycle,CT,CT,false
+404,Redding Power_6,Natural Gas Fired Combined Cycle,CT,CT,false
+405,Grizzly_NA1,Conventional Hydroelectric,HA,HY,true
+406,Geothermal 1_1,Geothermal,ST,ST,false
+407,Geothermal 1_2,Geothermal,ST,ST,false
+408,Vernon_JH1,Petroleum Liquids,IC,IC,false
+409,Vernon_JH2,Petroleum Liquids,IC,IC,false
+410,Vernon_JH3,Petroleum Liquids,IC,IC,false
+411,Vernon_JH4,Petroleum Liquids,IC,IC,false
+412,Vernon_JH5,Petroleum Liquids,IC,IC,false
+413,Combustion Turbine Project No 2_NA1,Natural Gas Fired Combustion Turbine,GT,GT,false
+414,Alameda_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+415,Alameda_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+416,Deadwood Creek_1,Conventional Hydroelectric,HA,HY,true
+417,Solano Wind_1,Onshore Wind Turbine,WT,WT,false
+418,Solano Wind_2,Onshore Wind Turbine,WT,WT,false
+419,Solano Wind_2B,Onshore Wind Turbine,WT,WT,false
+420,Solano Wind_3,Onshore Wind Turbine,WT,WT,false
+421,SCA Cogen 2_CCST,Natural Gas Fired Combined Cycle,CT,CA,true
+422,SCA Cogen 2_CT1A,Natural Gas Fired Combined Cycle,CT,CT,false
+423,SCA Cogen 2_CT1B,Natural Gas Fired Combined Cycle,CT,CT,false
+424,SCA Cogen 2_CT1C,Natural Gas Fired Combustion Turbine,GT,GT,false
+425,SPA Cogen 3_CCCT,Natural Gas Fired Combined Cycle,CT,CT,false
+426,SPA Cogen 3_CCST,Natural Gas Fired Combined Cycle,CT,CA,true
+427,Rockwood_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+428,Rockwood_2,Petroleum Liquids,IC,GT,true
+429,Pine Flat_1,Conventional Hydroelectric,HA,HY,true
+430,Pine Flat_2,Conventional Hydroelectric,HA,HY,true
+431,Pine Flat_3,Conventional Hydroelectric,HA,HY,true
+432,Kern Canyon_1,Conventional Hydroelectric,HA,HY,true
+433,Diamond Valley Lake_10,Conventional Hydroelectric,HA,HY,true
+434,Diamond Valley Lake_11,Conventional Hydroelectric,HA,HY,true
+435,Diamond Valley Lake_12,Conventional Hydroelectric,HA,HY,true
+436,Diamond Valley Lake_2,Conventional Hydroelectric,HA,HY,true
+437,Diamond Valley Lake_3,Conventional Hydroelectric,HA,HY,true
+438,Diamond Valley Lake_4,Conventional Hydroelectric,HA,HY,true
+439,Diamond Valley Lake_6,Conventional Hydroelectric,HA,HY,true
+440,Diamond Valley Lake_7,Conventional Hydroelectric,HA,HY,true
+441,Diamond Valley Lake_8,Conventional Hydroelectric,HA,HY,true
+442,Lake One_L1,Natural Gas Fired Combustion Turbine,GT,GT,false
+443,Ellwood_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+444,Dinosaur Point_WTGS,Onshore Wind Turbine,WT,WT,false
+445,Encina Water Pollution Control_EG10,Other Waste Biomass,ST,IC,true
+446,Encina Water Pollution Control_EG20,Other Waste Biomass,ST,IC,true
+447,Encina Water Pollution Control_EG30,Other Waste Biomass,ST,IC,true
+448,Encina Water Pollution Control_EG40,Other Waste Biomass,ST,IC,true
+449,Gilroy Power Plant_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+450,Gilroy Power Plant_GEN2,Natural Gas Fired Combined Cycle,CT,CA,true
+451,Kaweah Delta District Hospital_KDHT1,Natural Gas Fired Combustion Turbine,GT,GT,false
+452,Fairhaven Power_GEN1,Wood/Wood Waste Biomass,ST,ST,false
+453,Total Energy Facilities_G2,Other Waste Biomass,ST,CT,true
+454,Total Energy Facilities_G3,Other Waste Biomass,ST,CT,true
+455,Total Energy Facilities_GEN1,Other Waste Biomass,ST,CT,true
+456,Total Energy Facilities_GEN4,Other Waste Biomass,ST,CA,true
+457,Frito-Lay Cogen Plant_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+458,Grossmont Hospital_GEN3,Natural Gas Fired Combustion Turbine,GT,GT,false
+459,Gosselin Hydro Plant_GEN1,Conventional Hydroelectric,HA,HY,true
+460,Gosselin Hydro Plant_GEN2,Conventional Hydroelectric,HA,HY,true
+461,Isabella Hydro Project_GEN1,Conventional Hydroelectric,HA,HY,true
+462,Isabella Hydro Project_GEN2,Conventional Hydroelectric,HA,HY,true
+463,Sierra Pacific Lincoln Facility_GEN4,Wood/Wood Waste Biomass,ST,ST,false
+464,Carson Cogeneration_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+465,Carson Cogeneration_GEN2,Natural Gas Fired Combined Cycle,CT,CA,true
+466,Childrens Hospital_1711,Natural Gas Fired Combustion Turbine,GT,GT,false
+467,Childrens Hospital_5083,Petroleum Liquids,IC,IC,false
+468,Childrens Hospital_5084,Petroleum Liquids,IC,IC,false
+469,Childrens Hospital_5085,Petroleum Liquids,IC,IC,false
+470,Tehachapi Wind Resource I_EXIS,Onshore Wind Turbine,WT,WT,false
+471,Loma Linda University Cogen_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+472,Loma Linda University Cogen_GEN2,Natural Gas Fired Combustion Turbine,GT,GT,false
+473,El Segundo Cogen_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+474,El Segundo Cogen_GEN2,Natural Gas Fired Combined Cycle,CT,CT,false
+475,El Segundo Cogen_GEN5,Natural Gas Fired Combined Cycle,CT,CT,false
+476,El Segundo Cogen_GEN6,Natural Gas Fired Combined Cycle,CT,CA,true
+477,El Segundo Cogen_GEN7,Natural Gas Fired Combined Cycle,CT,CT,false
+478,El Segundo Cogen_GEN8,Natural Gas Fired Combined Cycle,CT,CA,true
+479,Big Valley Power LLC_IS27,Wood/Wood Waste Biomass,ST,ST,false
+480,King City Power Plant_GTG,Natural Gas Fired Combined Cycle,CT,CT,false
+481,King City Power Plant_STG,Natural Gas Fired Combined Cycle,CT,CA,true
+482,Desert View Power_GEN1,Wood/Wood Waste Biomass,ST,ST,false
+483,Greenleaf 2 Power Plant_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+484,Sycamore Energy LLC_1A,Landfill Gas,OT,GT,true
+485,Sycamore Energy LLC_2A,Landfill Gas,OT,GT,true
+486,Sycamore Energy LLC_3,Landfill Gas,OT,GT,true
+487,Kingsburg Cogen_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+488,Kingsburg Cogen_GEN2,Natural Gas Fired Combined Cycle,CT,CA,true
+489,New-Indy Ontario Mill_GEN2,Natural Gas Fired Combustion Turbine,GT,GT,false
+490,New-Indy Ontario Mill_GEN3,Natural Gas Fired Combustion Turbine,GT,GT,false
+491,Sunray 2_SUN2,Solar Photovoltaic,PVe,PVe,false
+492,Sunray 3_SUN3,Solar Photovoltaic,PVe,PVe,false
+493,SEGS III_GEN1,Solar Thermal without Energy Storage,PVe,ST,true
+494,SEGS IV_GEN1,Solar Thermal without Energy Storage,PVe,ST,true
+495,SEGS V_GEN1,Solar Thermal without Energy Storage,PVe,ST,true
+496,SEGS VI_GEN1,Solar Thermal without Energy Storage,PVe,ST,true
+497,SEGS VII_GEN1,Solar Thermal without Energy Storage,PVe,ST,true
+498,SEGS VIII_GEN1,Solar Thermal without Energy Storage,PVe,ST,true
+499,SEGS IX_GEN1,Solar Thermal without Energy Storage,PVe,ST,true
+500,Muck Valley Hydroelectric_GEN1,Conventional Hydroelectric,HA,HY,true
+501,Puente Hills Energy Recovery_GEN1,Landfill Gas,OT,ST,true
+502,Ples I_T101,Geothermal,ST,BT,true
+503,Ples I_T102,Geothermal,ST,BT,true
+504,Ples I_T103,Geothermal,ST,BT,true
+505,Mammoth Pacific I_GEN1,Geothermal,ST,BT,true
+506,Mammoth Pacific I_GEN2,Geothermal,ST,BT,true
+507,Mammoth Pacific II_1,Geothermal,ST,BT,true
+508,Mammoth Pacific II_2,Geothermal,ST,BT,true
+509,Mammoth Pacific II_3,Geothermal,ST,BT,true
+510,Kern River Cogeneration_GTAG,Natural Gas Fired Combustion Turbine,GT,GT,false
+511,Kern River Cogeneration_GTBG,Natural Gas Fired Combustion Turbine,GT,GT,false
+512,Kern River Cogeneration_GTCG,Natural Gas Fired Combustion Turbine,GT,GT,false
+513,Kern River Cogeneration_GTDG,Natural Gas Fired Combustion Turbine,GT,GT,false
+514,Mid-Set Cogeneration_K100,Natural Gas Fired Combustion Turbine,GT,GT,false
+515,San Jose Cogeneration_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+516,Cameron Ridge LLC_EXIS,Onshore Wind Turbine,WT,WT,false
+517,Ridgetop Energy LLC_WGN1,Onshore Wind Turbine,WT,WT,false
+518,Tesoro Wilmington Calciner_GEN1,All Other,OT,ST,true
+519,Civic Center_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+520,Civic Center_GEN2,Natural Gas Fired Combined Cycle,CT,CA,true
+521,CE Leathers_GEN1,Geothermal,ST,ST,false
+522,Del Ranch Company_GEN1,Geothermal,ST,ST,false
+523,Elmore Company_GEN1,Geothermal,ST,ST,false
+524,Collins Pine Project_GEN4,Wood/Wood Waste Biomass,ST,ST,false
+525,CES Placerita Power Plant_UNT2,Natural Gas Fired Combined Cycle,CT,CT,false
+526,CES Placerita Power Plant_UNT3,Natural Gas Fired Combined Cycle,CT,CA,true
+527,Argus Cogen Plant_TG8,Conventional Steam Coal,ST,ST,false
+528,Argus Cogen Plant_TG9,Conventional Steam Coal,ST,ST,false
+529,Westend Facility_PINA,Natural Gas Fired Combustion Turbine,GT,GT,false
+530,Lost Creek I_GEN1,Conventional Hydroelectric,HA,HY,true
+531,Ponderosa Bailey Creek_GEN1,Conventional Hydroelectric,HA,HY,true
+532,Karen Avenue Wind Farm_WND,Onshore Wind Turbine,WT,WT,false
+533,Marina Landfill Gas_U1C06,Landfill Gas,OT,IC,true
+534,Marina Landfill Gas_U2J02,Landfill Gas,OT,IC,true
+535,Marina Landfill Gas_U3J17,Landfill Gas,OT,IC,true
+536,Marina Landfill Gas_U4J16,Landfill Gas,OT,IC,true
+537,Salton Sea Power Gen Co - Unit 3_GEN1,Geothermal,ST,ST,false
+538,Geo East Mesa III_GBU,Geothermal,ST,BT,true
+539,Geo East Mesa III_GEN1,Geothermal,ST,ST,false
+540,Blue Lake Power LLC_GEN1,Wood/Wood Waste Biomass,ST,ST,false
+541,Rio Bravo Fresno_GEN1,Wood/Wood Waste Biomass,ST,ST,false
+542,E F Oxnard Energy Facility_GTG,Natural Gas Fired Combustion Turbine,GT,GT,false
+543,HL Power_GEN1,Wood/Wood Waste Biomass,ST,ST,false
+544,Woodland Biomass Power Ltd_GEN1,Wood/Wood Waste Biomass,ST,ST,false
+545,Covanta Mendota_GEN1,Wood/Wood Waste Biomass,ST,ST,false
+546,Covanta Delano Energy_GEN1,Wood/Wood Waste Biomass,ST,ST,false
+547,Covanta Delano Energy_GEN2,Wood/Wood Waste Biomass,ST,ST,false
+548,Coso Finance Partners_GEN1,Geothermal,ST,ST,false
+549,Coso Finance Partners_GEN2,Geothermal,ST,ST,false
+550,Coso Finance Partners_GEN3,Geothermal,ST,ST,false
+551,Coso Power Developers_GEN4,Geothermal,ST,ST,false
+552,Coso Power Developers_GEN5,Geothermal,ST,ST,false
+553,Coso Power Developers_GEN6,Geothermal,ST,ST,false
+554,Coso Energy Developers_GEN7,Geothermal,ST,ST,false
+555,Coso Energy Developers_GEN8,Geothermal,ST,ST,false
+556,Coso Energy Developers_GEN9,Geothermal,ST,ST,false
+557,Bidwell Ditch Project_GEN1,Conventional Hydroelectric,HA,HY,true
+558,Olive View Medical Center_CTC1,Natural Gas Fired Combustion Turbine,GT,GT,false
+559,Olive View Medical Center_CTC2,Natural Gas Fired Combustion Turbine,GT,GT,false
+560,Chalk Cliff Limited_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+561,Rio Bravo Hydro Project_UNT2,Conventional Hydroelectric,HA,HY,true
+562,Humboldt Sawmill Company_GEN1,Wood/Wood Waste Biomass,ST,ST,false
+563,Humboldt Sawmill Company_GEN2,Wood/Wood Waste Biomass,ST,ST,false
+564,Humboldt Sawmill Company_GEN3,Wood/Wood Waste Biomass,ST,ST,false
+565,San Diego State University_GEN2,Natural Gas Fired Combined Cycle,CT,CT,false
+566,San Diego State University_GEN3,Natural Gas Fired Combined Cycle,CT,CT,false
+567,San Diego State University_GEN4,Natural Gas Fired Combined Cycle,CT,CA,true
+568,San Diego State University_GEN5,Solar Photovoltaic,PVe,PVe,false
+569,San Diego State University_GEN6,Solar Photovoltaic,PVe,PVe,false
+570,San Diego State University_GEN7,Solar Photovoltaic,PVe,PVe,false
+571,San Diego State University_GEN8,Solar Photovoltaic,PVe,PVe,false
+572,Santa Felicia Dam_UNT1,Conventional Hydroelectric,HA,HY,true
+573,Santa Felicia Dam_UNT2,Conventional Hydroelectric,HA,HY,true
+574,Univ of San Francisco Cogen_S-17,Natural Gas Internal Combustion Engine,IC,IC,false
+575,US Borax_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+576,Phillips 66 Rodeo Refinery_GENA,Other Gases,OT,GT,true
+577,Phillips 66 Rodeo Refinery_GENB,Other Gases,OT,GT,true
+578,Phillips 66 Rodeo Refinery_GENC,Other Gases,OT,GT,true
+579,Coalinga Cogeneration_K100,Natural Gas Fired Combustion Turbine,GT,GT,false
+580,Sycamore Cogeneration_GTAG,Natural Gas Fired Combustion Turbine,GT,GT,false
+581,Sycamore Cogeneration_GTBG,Natural Gas Fired Combustion Turbine,GT,GT,false
+582,Sycamore Cogeneration_GTCG,Natural Gas Fired Combustion Turbine,GT,GT,false
+583,Sycamore Cogeneration_GTDG,Natural Gas Fired Combustion Turbine,GT,GT,false
+584,R E Badger Filtration Plant_1,Conventional Hydroelectric,HA,HY,true
+585,Bear Creek_GEN1,Conventional Hydroelectric,HA,HY,true
+586,Berry Cogen_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+587,Box Canyon Dam_GEN1,Conventional Hydroelectric,HA,HY,true
+588,Box Canyon Dam_GEN2,Conventional Hydroelectric,HA,HY,true
+589,Olsen_GEN1,Conventional Hydroelectric,HA,HY,true
+590,B Braun Medical_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+591,B Braun Medical_GEN2,Natural Gas Fired Combustion Turbine,GT,GT,false
+592,Vulcan-BN Geothermal Power Company_GEN1,Geothermal,ST,ST,false
+593,Vulcan-BN Geothermal Power Company_GEN2,Geothermal,ST,ST,false
+594,Watson Cogeneration_GN91,Natural Gas Fired Combined Cycle,CT,CT,false
+595,Watson Cogeneration_GN92,Natural Gas Fired Combined Cycle,CT,CT,false
+596,Watson Cogeneration_GN93,Natural Gas Fired Combined Cycle,CT,CT,false
+597,Watson Cogeneration_GN94,Natural Gas Fired Combined Cycle,CT,CT,false
+598,Watson Cogeneration_GN95,Natural Gas Fired Combined Cycle,CT,CA,true
+599,Watson Cogeneration_GN96,Natural Gas Fired Combined Cycle,CT,CA,true
+600,Woodward Power Plant_U1,Conventional Hydroelectric,HA,HY,true
+601,Nelson Creek_1296,Conventional Hydroelectric,HA,HY,true
+602,Oxnard Wastewater Treatment Plant_7610,Other Waste Biomass,ST,IC,true
+603,Oxnard Wastewater Treatment Plant_7710,Other Waste Biomass,ST,IC,true
+604,Oxnard Wastewater Treatment Plant_7810,Other Waste Biomass,ST,IC,true
+605,San Antonio Regional Hospital_2074,Natural Gas Internal Combustion Engine,IC,IC,false
+606,San Antonio Regional Hospital_2075,Natural Gas Internal Combustion Engine,IC,IC,false
+607,San Antonio Regional Hospital_2076,Natural Gas Internal Combustion Engine,IC,IC,false
+608,Wintec Energy Ltd_EXIS,Onshore Wind Turbine,WT,WT,false
+609,San Gorgonio Farms Wind Farm_WGEN,Onshore Wind Turbine,WT,WT,false
+610,Wadham Energy LP_GEN1,Other Waste Biomass,ST,ST,false
+611,VESI Pomona_BESS1,Batteries,BA,BA,false
+612,Mesquite Lake Energy Park Plant 2_L313,Wood/Wood Waste Biomass,ST,ST,false
+613,East Portal Generator_GEN1,Conventional Hydroelectric,HA,HY,true
+614,Windland_WING,Onshore Wind Turbine,WT,WT,false
+615,Phillips 66 Carbon Plant_GEN1,Petroleum Coke,ST,ST,false
+616,Friant Hydro Facility_FR1,Conventional Hydroelectric,HA,HY,true
+617,Friant Hydro Facility_M1,Conventional Hydroelectric,HA,HY,true
+618,Friant Hydro Facility_RO1,Conventional Hydroelectric,HA,HY,true
+619,Friant Hydro Facility_RO2,Conventional Hydroelectric,HA,HY,true
+620,Sand Bar Power Plant_GEN1,Conventional Hydroelectric,HA,HY,true
+621,Oxnard_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+622,Oxnard_GEN2,Natural Gas Fired Combustion Turbine,GT,GT,false
+623,Altech III_GEN1,Onshore Wind Turbine,WT,WT,false
+624,Altech III_GEN2,Onshore Wind Turbine,WT,WT,false
+625,Gas Utilization Facility_1,Other Waste Biomass,ST,IC,true
+626,Gas Utilization Facility_2,Other Waste Biomass,ST,IC,true
+627,Gas Utilization Facility_3,Conventional Hydroelectric,HA,HY,true
+628,Double C Generation Limited Partnership_DC1,Natural Gas Fired Combustion Turbine,GT,GT,false
+629,Double C Generation Limited Partnership_DC2,Natural Gas Fired Combustion Turbine,GT,GT,false
+630,Kern Front Limited_KF1,Natural Gas Fired Combustion Turbine,GT,GT,false
+631,Kern Front Limited_KF2,Natural Gas Fired Combustion Turbine,GT,GT,false
+632,High Sierra Limited_HS1,Natural Gas Fired Combustion Turbine,GT,GT,false
+633,High Sierra Limited_HS2,Natural Gas Fired Combustion Turbine,GT,GT,false
+634,Equilon Los Angeles Refining_GEN1,Other Gases,OT,GT,true
+635,Equilon Los Angeles Refining_GEN2,Other Gases,OT,GT,true
+636,Equilon Los Angeles Refining_GEN3,Other Gases,OT,ST,true
+637,Victory Garden (Tehachapi)_15SLE,Onshore Wind Turbine,WT,WT,false
+638,Victory Garden (Tehachapi)_WGNS,Onshore Wind Turbine,WT,WT,false
+639,Mesa Wind Power Corp_WGNS,Onshore Wind Turbine,WT,WT,false
+640,Sky River LLC_WGNS,Onshore Wind Turbine,WT,WT,false
+641,SRI International Cogen Project_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+642,BP Carson Refinery_GEN2,Natural Gas Steam Turbine,ST,ST,false
+643,Harbor Cogen_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+644,Harbor Cogen_ST1,Natural Gas Fired Combined Cycle,CT,CA,true
+645,Harbor Cogen_ST2,Natural Gas Fired Combined Cycle,CT,CA,true
+646,GPS Cabazon Wind LLC_WGNS,Onshore Wind Turbine,WT,WT,false
+647,Edom Hills Project 1 LLC_1,Onshore Wind Turbine,WT,WT,false
+648,Pacific-Ultrapower Chinese Station_GEN1,Wood/Wood Waste Biomass,ST,ST,false
+649,Altamont Gas Recovery_GEN1,Landfill Gas,OT,GT,true
+650,Altamont Gas Recovery_GEN2,Landfill Gas,OT,GT,true
+651,Saint Johns Health Center_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+652,McKittrick Limited_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+653,Berry Cogen Tanne Hills 18_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+654,Berry Cogen Tanne Hills 18_GEN2,Natural Gas Fired Combustion Turbine,GT,GT,false
+655,Gaviota Oil Plant_GENA,Natural Gas Fired Combustion Turbine,GT,GT,false
+656,Gaviota Oil Plant_GENB,Natural Gas Fired Combustion Turbine,GT,GT,false
+657,Gaviota Oil Plant_GENC,Natural Gas Fired Combustion Turbine,GT,GT,false
+658,Gaviota Oil Plant_GEND,Natural Gas Fired Combustion Turbine,GT,GT,false
+659,Torrance Refining Company LLC_EXP1,All Other,OT,ST,true
+660,Torrance Refining Company LLC_GTG1,Other Gases,OT,GT,true
+661,Torrance Refining Company LLC_STG1,All Other,OT,ST,true
+662,Covanta Stanislaus Energy_GEN1,Municipal Solid Waste,ST,ST,false
+663,Municipal Cogen Plant_GEN1A,Natural Gas Internal Combustion Engine,IC,IC,false
+664,San Gorgonio Westwinds II LLC_GEN1,Onshore Wind Turbine,WT,WT,false
+665,Plant No 1 Orange County_GEN1,Other Waste Biomass,ST,IC,true
+666,Plant No 1 Orange County_GEN2,Other Waste Biomass,ST,IC,true
+667,Plant No 1 Orange County_GEN3,Other Waste Biomass,ST,IC,true
+668,Agnews Power Plant_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+669,Agnews Power Plant_GEN2,Natural Gas Fired Combined Cycle,CT,CA,true
+670,Coalinga Cogeneration Facility_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+671,Coalinga Cogeneration Facility_GEN2,Natural Gas Fired Combustion Turbine,GT,GT,false
+672,Southeast Kern River Cogen_GTG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+673,Southeast Kern River Cogen_GTG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+674,Southeast Kern River Cogen_GTG3,Natural Gas Fired Combustion Turbine,GT,GT,false
+675,South Belridge Cogeneration Facility_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+676,South Belridge Cogeneration Facility_GEN2,Natural Gas Fired Combustion Turbine,GT,GT,false
+677,South Belridge Cogeneration Facility_GEN3,Natural Gas Fired Combustion Turbine,GT,GT,false
+678,Oak Creek Energy Systems I_GEN1,Onshore Wind Turbine,WT,WT,false
+679,Oak Creek Energy Systems I_GEN2,Onshore Wind Turbine,WT,WT,false
+680,Oak Creek Energy Systems I_GEN3,Onshore Wind Turbine,WT,WT,false
+681,Oak Creek Energy Systems I_GEN4,Onshore Wind Turbine,WT,WT,false
+682,East Winds Project_GEN1,Onshore Wind Turbine,WT,WT,false
+683,Mojave 16_GEN1,Onshore Wind Turbine,WT,WT,false
+684,Mojave 18_GEN1,Onshore Wind Turbine,WT,WT,false
+685,Nove Power Plant_GEN1,Landfill Gas,OT,IC,true
+686,Nove Power Plant_GEN2,Landfill Gas,OT,IC,true
+687,Nove Power Plant_GEN3,Landfill Gas,OT,IC,true
+688,PE Berkeley_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+689,PE Berkeley_GEN2,Natural Gas Fired Combined Cycle,CT,CA,true
+690,OLS Energy Chino_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+691,OLS Energy Chino_GEN2,Natural Gas Fired Combined Cycle,CT,CA,true
+692,CSUCI Site Authority_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+693,CSUCI Site Authority_GEN2,Natural Gas Fired Combined Cycle,CT,CA,true
+694,Salinas River Cogeneration_K100,Natural Gas Fired Combustion Turbine,GT,GT,false
+695,Slate Creek_GEN1,Conventional Hydroelectric,HA,HY,true
+696,Naval Hospital Medical Center_4TG,Natural Gas Fired Combustion Turbine,GT,GT,false
+697,Amedee Geothermal Venture I_IND,Geothermal,ST,ST,false
+698,Amedee Geothermal Venture I_SYN,Geothermal,ST,ST,false
+699,Solano County Cogen Plant_3163,Natural Gas Internal Combustion Engine,IC,IC,false
+700,Solano County Cogen Plant_3164,Natural Gas Internal Combustion Engine,IC,IC,false
+701,Solano County Cogen Plant_3165,Natural Gas Internal Combustion Engine,IC,IC,false
+702,Martinez Sulfuric Acid Regeneration Plt_GEN1,All Other,OT,ST,true
+703,Dominguez Plant_GEN1,All Other,OT,ST,true
+704,UCLA So Campus Cogen Project_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+705,UCLA So Campus Cogen Project_GEN2,Natural Gas Fired Combined Cycle,CT,CT,false
+706,UCLA So Campus Cogen Project_GEN3,Natural Gas Fired Combined Cycle,CT,CA,true
+707,McKittrick Cogen_UNIT1,Natural Gas Fired Combustion Turbine,GT,GT,false
+708,McKittrick Cogen_UNIT2,Natural Gas Fired Combustion Turbine,GT,GT,false
+709,North Midway Cogen_GEN7,Natural Gas Fired Combustion Turbine,GT,GT,false
+710,North Midway Cogen_GEN8,Natural Gas Fired Combustion Turbine,GT,GT,false
+711,North Midway Cogen_GEN9,Natural Gas Fired Combustion Turbine,GT,GT,false
+712,Cymric 31X Cogen_TG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+713,Cymric 31X Cogen_TG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+714,Cymric 6Z Cogen_TG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+715,Cymric 6Z Cogen_TG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+716,Coalinga 6C Cogen_TG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+717,Coalinga 6C Cogen_TG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+718,Taft 26C Cogen_TG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+719,Taft 26C Cogen_TG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+720,Taft 26C Cogen_TG3,Natural Gas Fired Combustion Turbine,GT,GT,false
+721,Taft 26C Cogen_TG4,Natural Gas Fired Combustion Turbine,GT,GT,false
+722,Coalinga 25D Cogen_TG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+723,Coalinga 25D Cogen_TG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+724,Coalinga 25D Cogen_TG3,Natural Gas Fired Combustion Turbine,GT,GT,false
+725,Coalinga 25D Cogen_TG4,Natural Gas Fired Combustion Turbine,GT,GT,false
+726,Berry Placerita Cogen_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+727,Berry Placerita Cogen_GEN2,Natural Gas Fired Combustion Turbine,GT,GT,false
+728,Plant No 2 Orange County_GEN1,Other Waste Biomass,ST,IC,true
+729,Plant No 2 Orange County_GEN2,Other Waste Biomass,ST,IC,true
+730,Plant No 2 Orange County_GEN3,Other Waste Biomass,ST,IC,true
+731,Plant No 2 Orange County_GEN4,Other Waste Biomass,ST,IC,true
+732,Plant No 2 Orange County_GEN5,Other Waste Biomass,ST,IC,true
+733,Plant No 2 Orange County_GEN6,Other Waste Biomass,ST,ST,false
+734,Cymric 36W Cogen_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+735,Cymric 36W Cogen_GEN2,Natural Gas Fired Combustion Turbine,GT,GT,false
+736,Cymric 36W Cogen_GEN3,Natural Gas Fired Combustion Turbine,GT,GT,false
+737,Cymric 36W Cogen_GEN4,Natural Gas Fired Combustion Turbine,GT,GT,false
+738,Kern River Eastridge Cogen_101A,Natural Gas Fired Combustion Turbine,GT,GT,false
+739,Kern River Eastridge Cogen_101B,Natural Gas Fired Combustion Turbine,GT,GT,false
+740,Richmond Cogen_GEN1,Natural Gas Fired Combined Cycle,CT,CT,false
+741,Richmond Cogen_GEN2,Natural Gas Fired Combined Cycle,CT,CT,false
+742,Richmond Cogen_GEN5,Natural Gas Fired Combined Cycle,CT,CA,true
+743,Mojave 4_GEN1,Onshore Wind Turbine,WT,WT,false
+744,Mojave 3_GEN1,Onshore Wind Turbine,WT,WT,false
+745,Mojave 5_GEN1,Onshore Wind Turbine,WT,WT,false
+746,C P Kelco San Diego Plant_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+747,C P Kelco San Diego Plant_GEN2,Natural Gas Fired Combustion Turbine,GT,GT,false
+748,C P Kelco San Diego Plant_GEN3,Natural Gas Fired Combustion Turbine,GT,GT,false
+749,Victory Garden Phase IV LLC_WGNS,Onshore Wind Turbine,WT,WT,false
+750,Terra-Gen 251 Wind LLC_WGNS,Onshore Wind Turbine,WT,WT,false
+751,85 A_WGNS,Onshore Wind Turbine,WT,WT,false
+752,85 B_WTGN,Onshore Wind Turbine,WT,WT,false
+753,Helzel & Schwarzhoff 88 Wind Farm_WGNS,Onshore Wind Turbine,WT,WT,false
+754,Yuba City Cogen Partners_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+755,MM West Covina_GEN2,Landfill Gas,OT,ST,true
+756,San Gabriel Hydro Project_U1,Conventional Hydroelectric,HA,HY,true
+757,San Gabriel Hydro Project_U2,Conventional Hydroelectric,HA,HY,true
+758,Geo East Mesa II_GEN1,Geothermal,ST,ST,false
+759,Stockton Biomass_STG,Wood/Wood Waste Biomass,ST,ST,false
+760,Biola University Hybrid_BATT,Batteries,BA,BA,false
+761,Biola University Hybrid_EG1,Natural Gas Internal Combustion Engine,IC,IC,false
+762,Biola University Hybrid_EG2,Natural Gas Internal Combustion Engine,IC,IC,false
+763,Biola University Hybrid_EG3,Natural Gas Internal Combustion Engine,IC,IC,false
+764,Coram Energy LLC (ECT)_GEWE,Onshore Wind Turbine,WT,WT,false
+765,Coram Energy LLC_GEWE,Onshore Wind Turbine,WT,WT,false
+766,CTV Power Purchase Contract Trust_GEWE,Onshore Wind Turbine,WT,WT,false
+767,CTV Power Purchase Contract Trust_SX1S,Onshore Wind Turbine,WT,WT,false
+768,Three Forks Water Power Project_1,Conventional Hydroelectric,HA,HY,true
+769,NRG Energy San Diego_1,Natural Gas Internal Combustion Engine,IC,IC,false
+770,NRG Energy San Diego_2,Natural Gas Internal Combustion Engine,IC,IC,false
+771,Terminus Hydroelectric Project_GEN1,Conventional Hydroelectric,HA,HY,true
+772,Western Power & Steam Inc_CTG,Natural Gas Fired Combustion Turbine,GT,GT,false
+773,Welport Lease Project_TI,Natural Gas Fired Combustion Turbine,GT,GT,false
+774,Dome Project_T1,Natural Gas Fired Combustion Turbine,GT,GT,false
+775,Dome Project_T2,Natural Gas Fired Combustion Turbine,GT,GT,false
+776,Los Angeles Refinery Wilmington_G1,Other Natural Gas,OT,OT,false
+777,Los Angeles Refinery Wilmington_G2,Other Gases,OT,GT,true
+778,EDF Renewable Windfarm V Inc_GEN2,Onshore Wind Turbine,WT,WT,false
+779,San Gorgonio Windplant WPP1993_GEN11,Onshore Wind Turbine,WT,WT,false
+780,Spicer Meadow Project_GEN1,Conventional Hydroelectric,HA,HY,true
+781,Spicer Meadow Project_GEN2,Conventional Hydroelectric,HA,HY,true
+782,Spicer Meadow Project_GEN3,Conventional Hydroelectric,HA,HY,true
+783,MM Yolo Power_1,Landfill Gas,OT,IC,true
+784,MM Yolo Power_2,Landfill Gas,OT,IC,true
+785,MM Yolo Power_3,Landfill Gas,OT,IC,true
+786,MM Yolo Power_4,Landfill Gas,OT,IC,true
+787,MM Yolo Power_5,Landfill Gas,OT,IC,true
+788,TPC Windfarms LLC_EXIS,Onshore Wind Turbine,WT,WT,false
+789,Swanmill Windfarm I_EXI2,Onshore Wind Turbine,WT,WT,false
+790,Swanmill Windfarm I_EXIS,Onshore Wind Turbine,WT,WT,false
+791,Kekawaka Power House_KEK1,Conventional Hydroelectric,HA,HY,true
+792,Difwind Farms Ltd I_EXIS,Onshore Wind Turbine,WT,WT,false
+793,Difwind Farms Ltd II_EXIS,Onshore Wind Turbine,WT,WT,false
+794,Difwind Farms Ltd V_EXIS,Onshore Wind Turbine,WT,WT,false
+795,Difwind Farms Ltd VI_EXIS,Onshore Wind Turbine,WT,WT,false
+796,Heber Geothermal_1,Geothermal,ST,ST,false
+797,Heber Geothermal_2,Geothermal,ST,BT,true
+798,Heber Geothermal_3,Geothermal,ST,BT,true
+799,Heber Geothermal_4,Geothermal,ST,BT,true
+800,Goal Line LP_CTG,Natural Gas Fired Combined Cycle,CT,CT,false
+801,Goal Line LP_STG,Natural Gas Fired Combined Cycle,CT,CA,true
+802,Coram Tehachapi_VW1,Onshore Wind Turbine,WT,WT,false
+803,Tehachapi Wind Resource II_EXI2,Onshore Wind Turbine,WT,WT,false
+804,Tehachapi Wind Resource II_EXIS,Onshore Wind Turbine,WT,WT,false
+805,Martinez Refining_GTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+806,Martinez Refining_GTG2,Natural Gas Fired Combined Cycle,CT,CT,false
+807,Martinez Refining_STG1,Other Gases,OT,CA,true
+808,Ridgetop_WGN1,Onshore Wind Turbine,WT,WT,false
+809,Richard J Donovan Correctional Facility_3,Natural Gas Fired Combustion Turbine,GT,GT,false
+810,Monterey One Water_EG1,Other Waste Biomass,ST,IC,true
+811,Monterey One Water_EG2,Other Waste Biomass,ST,IC,true
+812,Monterey One Water_EG3,Other Waste Biomass,ST,IC,true
+813,Salton Sea Power Gen Co - Unit 4_4100,Geothermal,ST,ST,false
+814,Crockett Cogen Project_GE1,Natural Gas Fired Combined Cycle,CT,CS,true
+815,MM San Diego-Miramar_UNT1,Landfill Gas,OT,IC,true
+816,MM San Diego-Miramar_UNT2,Landfill Gas,OT,IC,true
+817,MM San Diego-Miramar_UNT3,Landfill Gas,OT,IC,true
+818,MM San Diego-Miramar_UNT4,Landfill Gas,OT,IC,true
+819,Sutter Energy Center_CT01,Natural Gas Fired Combined Cycle,CT,CT,false
+820,Sutter Energy Center_CT02,Natural Gas Fired Combined Cycle,CT,CT,false
+821,Sutter Energy Center_ST01,Natural Gas Fired Combined Cycle,CT,CA,true
+822,La Paloma Generating Plant_GEN1,Natural Gas Fired Combined Cycle,CT,CS,true
+823,La Paloma Generating Plant_GEN2,Natural Gas Fired Combined Cycle,CT,CS,true
+824,La Paloma Generating Plant_GEN3,Natural Gas Fired Combined Cycle,CT,CS,true
+825,La Paloma Generating Plant_GEN4,Natural Gas Fired Combined Cycle,CT,CS,true
+826,MM Lopez Energy_UNT1,Landfill Gas,OT,IC,true
+827,Sunrise Power LLC_STG,Natural Gas Fired Combined Cycle,CT,CA,true
+828,Sunrise Power LLC_X718,Natural Gas Fired Combined Cycle,CT,CT,false
+829,Sunrise Power LLC_X719,Natural Gas Fired Combined Cycle,CT,CT,false
+830,Aera San Ardo Cogen Facility_UN-A,Natural Gas Fired Combustion Turbine,GT,GT,false
+831,Aera San Ardo Cogen Facility_UN-B,Natural Gas Fired Combustion Turbine,GT,GT,false
+832,Los Medanos Energy Center_CTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+833,Los Medanos Energy Center_CTG2,Natural Gas Fired Combined Cycle,CT,CT,false
+834,Los Medanos Energy Center_STG3,Natural Gas Fired Combined Cycle,CT,CA,true
+835,Blythe Energy Inc_CT1,Natural Gas Fired Combined Cycle,CT,CT,false
+836,Blythe Energy Inc_CT2,Natural Gas Fired Combined Cycle,CT,CT,false
+837,Blythe Energy Inc_ST1,Natural Gas Fired Combined Cycle,CT,CA,true
+838,Otay Mesa Generating Project_1-Jan,Natural Gas Fired Combined Cycle,CT,CT,false
+839,Otay Mesa Generating Project_2-Jan,Natural Gas Fired Combined Cycle,CT,CT,false
+840,Otay Mesa Generating Project_3-Jan,Natural Gas Fired Combined Cycle,CT,CA,true
+841,Metcalf Energy Center_CTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+842,Metcalf Energy Center_CTG2,Natural Gas Fired Combined Cycle,CT,CT,false
+843,Metcalf Energy Center_STG1,Natural Gas Fired Combined Cycle,CT,CA,true
+844,Green Power I_WGNS,Onshore Wind Turbine,WT,WT,false
+845,Elk Hills Power LLC_CTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+846,Elk Hills Power LLC_CTG2,Natural Gas Fired Combined Cycle,CT,CT,false
+847,Elk Hills Power LLC_STG,Natural Gas Fired Combined Cycle,CT,CA,true
+848,CalPeak Power Vaca Dixon Peaker Plant_CPP1,Natural Gas Fired Combustion Turbine,GT,GT,false
+849,CalPeak Power Panoche Peaker Plant_CPP2,Natural Gas Fired Combustion Turbine,GT,GT,false
+850,CalPeak Power Border Peaker Plant_CPP4,Natural Gas Fired Combustion Turbine,GT,GT,false
+851,CalPeak Power Enterprise Peaker Plant_CPP7,Natural Gas Fired Combustion Turbine,GT,GT,false
+852,High Desert Power Plant_CTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+853,High Desert Power Plant_CTG2,Natural Gas Fired Combined Cycle,CT,CT,false
+854,High Desert Power Plant_CTG3,Natural Gas Fired Combined Cycle,CT,CT,false
+855,High Desert Power Plant_STG1,Natural Gas Fired Combined Cycle,CT,CA,true
+856,Escondido Energy Center_CTG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+857,Chula Vista Energy Center_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+858,Indigo Energy Facility_CTG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+859,Indigo Energy Facility_CTG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+860,Indigo Energy Facility_CTG3,Natural Gas Fired Combustion Turbine,GT,GT,false
+861,Larkspur Energy Facility_CTG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+862,Larkspur Energy Facility_CTG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+863,Wilmington Hydrogen Plant_T101,All Other,OT,ST,true
+864,North City - Landfill Gas Engines South_UNT1,Landfill Gas,OT,IC,true
+865,North City - Landfill Gas Engines South_UNT2,Landfill Gas,OT,IC,true
+866,North City - Landfill Gas Engines South_UNT3,Landfill Gas,OT,IC,true
+867,North City - Landfill Gas Engines South_UNT4,Landfill Gas,OT,IC,true
+868,Tajiguas Plant_UNT1,Landfill Gas,OT,IC,true
+869,Creed Energy Center_CT1,Natural Gas Fired Combustion Turbine,GT,GT,false
+870,Lambie Energy Center_CT1,Natural Gas Fired Combustion Turbine,GT,GT,false
+871,Goose Haven Energy Center_CT1,Natural Gas Fired Combustion Turbine,GT,GT,false
+872,Pastoria Energy Facility LLC_CT01,Natural Gas Fired Combined Cycle,CT,CT,false
+873,Pastoria Energy Facility LLC_CT02,Natural Gas Fired Combined Cycle,CT,CT,false
+874,Pastoria Energy Facility LLC_CT04,Natural Gas Fired Combined Cycle,CT,CT,false
+875,Pastoria Energy Facility LLC_ST03,Natural Gas Fired Combined Cycle,CT,CA,true
+876,Pastoria Energy Facility LLC_ST05,Natural Gas Fired Combined Cycle,CT,CA,true
+877,Hanford Energy Park Peaker_HEP1,Natural Gas Fired Combustion Turbine,GT,GT,false
+878,Hanford Energy Park Peaker_HEP2,Natural Gas Fired Combustion Turbine,GT,GT,false
+879,Mountain View I&2_GEN2,Onshore Wind Turbine,WT,WT,false
+880,Mountain View I&2_GENI,Onshore Wind Turbine,WT,WT,false
+881,Los Esteros Critical Energy Center_CAG5,Natural Gas Fired Combined Cycle,CT,CA,true
+882,Los Esteros Critical Energy Center_CTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+883,Los Esteros Critical Energy Center_CTG2,Natural Gas Fired Combined Cycle,CT,CT,false
+884,Los Esteros Critical Energy Center_CTG3,Natural Gas Fired Combined Cycle,CT,CT,false
+885,Los Esteros Critical Energy Center_CTG4,Natural Gas Fired Combined Cycle,CT,CT,false
+886,Henrietta Peaker_HPP1,Natural Gas Fired Combustion Turbine,GT,GT,false
+887,Henrietta Peaker_HPP2,Natural Gas Fired Combustion Turbine,GT,GT,false
+888,Gilroy Peaking Energy Center_S3,Natural Gas Fired Combustion Turbine,GT,GT,false
+889,Gilroy Peaking Energy Center_S4,Natural Gas Fired Combustion Turbine,GT,GT,false
+890,Gilroy Peaking Energy Center_S5,Natural Gas Fired Combustion Turbine,GT,GT,false
+891,Valero Refinery Cogeneration Unit 1_GT 1,Natural Gas Fired Combustion Turbine,GT,GT,false
+892,Wolfskill Energy Center_CTG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+893,Panoche Peaker_8,Natural Gas Fired Combustion Turbine,GT,GT,false
+894,Tracy Combined Cycle Power Plant_TCC1,Natural Gas Fired Combined Cycle,CT,CA,true
+895,Tracy Combined Cycle Power Plant_TPP1,Natural Gas Fired Combined Cycle,CT,CT,false
+896,Tracy Combined Cycle Power Plant_TPP2,Natural Gas Fired Combined Cycle,CT,CT,false
+897,Century Generating Facility_C1,Natural Gas Fired Combustion Turbine,GT,GT,false
+898,Century Generating Facility_C2,Natural Gas Fired Combustion Turbine,GT,GT,false
+899,Century Generating Facility_C3,Natural Gas Fired Combustion Turbine,GT,GT,false
+900,Century Generating Facility_C4,Natural Gas Fired Combustion Turbine,GT,GT,false
+901,Drews Generating Facility_D1,Natural Gas Fired Combustion Turbine,GT,GT,false
+902,Drews Generating Facility_D2,Natural Gas Fired Combustion Turbine,GT,GT,false
+903,Drews Generating Facility_D3,Natural Gas Fired Combustion Turbine,GT,GT,false
+904,Drews Generating Facility_D4,Natural Gas Fired Combustion Turbine,GT,GT,false
+905,Agua Mansa Power Plant_AMP1,Natural Gas Fired Combustion Turbine,GT,GT,false
+906,Riverview Energy Center_CTG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+907,Salton Sea Power LLC - Unit 5_TG51,Geothermal,ST,ST,false
+908,CE Turbo LLC_TG21,Geothermal,ST,ST,false
+909,Palomar Energy_CTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+910,Palomar Energy_CTG2,Natural Gas Fired Combined Cycle,CT,CT,false
+911,Palomar Energy_STG,Natural Gas Fired Combined Cycle,CT,CA,true
+912,Cabazon Wind Partners_V-47,Onshore Wind Turbine,WT,WT,false
+913,Whitewater Hill Wind Partners_1,Onshore Wind Turbine,WT,WT,false
+914,Donald Von Raesfeld Power Plant_CTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+915,Donald Von Raesfeld Power Plant_CTG2,Natural Gas Fired Combined Cycle,CT,CT,false
+916,Donald Von Raesfeld Power Plant_STG,Natural Gas Fired Combined Cycle,CT,CA,true
+917,H. Gonzales_G1,Natural Gas Fired Combustion Turbine,GT,GT,false
+918,H. Gonzales_G2,Natural Gas Fired Combustion Turbine,GT,GT,false
+919,Malburg_M1,Natural Gas Fired Combined Cycle,CT,CT,false
+920,Malburg_M2,Natural Gas Fired Combined Cycle,CT,CT,false
+921,Malburg_M3,Natural Gas Fired Combined Cycle,CT,CA,true
+922,Magnolia Power Project_1,Natural Gas Fired Combined Cycle,CT,CT,false
+923,Magnolia Power Project_2,Natural Gas Fired Combined Cycle,CT,CA,true
+924,THUMS_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+925,High Winds LLC_1,Onshore Wind Turbine,WT,WT,false
+926,High Winds LLC_2,Onshore Wind Turbine,WT,WT,false
+927,Walnut Energy Center_1,Natural Gas Fired Combined Cycle,CT,CT,false
+928,Walnut Energy Center_2,Natural Gas Fired Combined Cycle,CT,CT,false
+929,Walnut Energy Center_3,Natural Gas Fired Combined Cycle,CT,CA,true
+930,SJ/SC WPCP_EG1,Natural Gas Internal Combustion Engine,IC,IC,false
+931,SJ/SC WPCP_EG2,Natural Gas Internal Combustion Engine,IC,IC,false
+932,SJ/SC WPCP_EG3,Natural Gas Internal Combustion Engine,IC,IC,false
+933,Blacksand Generating Facility_D182,Other Gases,OT,GT,true
+934,Blacksand Generating Facility_D189,Other Gases,OT,GT,true
+935,Blacksand Generating Facility_D190,Other Gases,OT,GT,true
+936,Mountain View III_V47,Onshore Wind Turbine,WT,WT,false
+937,Springville Hydroelectric_4152,Conventional Hydroelectric,HA,HY,true
+938,Regional Wastewater Control Facility_101,Other Waste Biomass,ST,IC,true
+939,Regional Wastewater Control Facility_301,Other Waste Biomass,ST,IC,true
+940,Regional Wastewater Control Facility_401,Other Waste Biomass,ST,IC,true
+941,Riverside Energy Resource Center_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+942,Riverside Energy Resource Center_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+943,Riverside Energy Resource Center_3,Natural Gas Fired Combustion Turbine,GT,GT,false
+944,Riverside Energy Resource Center_4,Natural Gas Fired Combustion Turbine,GT,GT,false
+945,Springs Generating Station_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+946,Springs Generating Station_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+947,Springs Generating Station_3,Natural Gas Fired Combustion Turbine,GT,GT,false
+948,Springs Generating Station_4,Natural Gas Fired Combustion Turbine,GT,GT,false
+949,Red Bluff_IC1,Natural Gas Internal Combustion Engine,IC,IC,false
+950,Red Bluff_IC10,Natural Gas Internal Combustion Engine,IC,IC,false
+951,Red Bluff_IC11,Natural Gas Internal Combustion Engine,IC,IC,false
+952,Red Bluff_IC12,Natural Gas Internal Combustion Engine,IC,IC,false
+953,Red Bluff_IC13,Natural Gas Internal Combustion Engine,IC,IC,false
+954,Red Bluff_IC14,Natural Gas Internal Combustion Engine,IC,IC,false
+955,Red Bluff_IC15,Natural Gas Internal Combustion Engine,IC,IC,false
+956,Red Bluff_IC16,Natural Gas Internal Combustion Engine,IC,IC,false
+957,Red Bluff_IC2,Natural Gas Internal Combustion Engine,IC,IC,false
+958,Red Bluff_IC3,Natural Gas Internal Combustion Engine,IC,IC,false
+959,Red Bluff_IC4,Natural Gas Internal Combustion Engine,IC,IC,false
+960,Red Bluff_IC5,Natural Gas Internal Combustion Engine,IC,IC,false
+961,Red Bluff_IC6,Natural Gas Internal Combustion Engine,IC,IC,false
+962,Red Bluff_IC7,Natural Gas Internal Combustion Engine,IC,IC,false
+963,Red Bluff_IC8,Natural Gas Internal Combustion Engine,IC,IC,false
+964,Red Bluff_IC9,Natural Gas Internal Combustion Engine,IC,IC,false
+965,Miramar Energy Facility_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+966,Miramar Energy Facility_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+967,Malaga Power LLC_GT-1,Natural Gas Fired Combustion Turbine,GT,GT,false
+968,Malaga Power LLC_GT-2,Natural Gas Fired Combustion Turbine,GT,GT,false
+969,Diablo Winds LLC_VEST,Onshore Wind Turbine,WT,WT,false
+970,Helzel & Schwarzhoff 86_WGNS,Onshore Wind Turbine,WT,WT,false
+971,ZCO_WGNS,Onshore Wind Turbine,WT,WT,false
+972,Santa Maria EPG_EPG,Other Gases,OT,ST,true
+973,Kumeyaay Wind_1,Onshore Wind Turbine,WT,WT,false
+974,Oasis Wind_1,Onshore Wind Turbine,WT,WT,false
+975,Bear Valley Power Plant_ICE1,Natural Gas Internal Combustion Engine,IC,IC,false
+976,Bear Valley Power Plant_ICE2,Natural Gas Internal Combustion Engine,IC,IC,false
+977,Bear Valley Power Plant_ICE3,Natural Gas Internal Combustion Engine,IC,IC,false
+978,Bear Valley Power Plant_ICE4,Natural Gas Internal Combustion Engine,IC,IC,false
+979,Bear Valley Power Plant_ICE5,Natural Gas Internal Combustion Engine,IC,IC,false
+980,Bear Valley Power Plant_ICE6,Natural Gas Internal Combustion Engine,IC,IC,false
+981,Bear Valley Power Plant_ICE7,Natural Gas Internal Combustion Engine,IC,IC,false
+982,Clearwater Power Plant_CT1,Natural Gas Fired Combined Cycle,CT,CT,false
+983,Clearwater Power Plant_ST1,Natural Gas Fired Combined Cycle,CT,CA,true
+984,Shiloh I Wind Project_1,Onshore Wind Turbine,WT,WT,false
+985,Ameresco Santa Cruz Energy_Unit1,Landfill Gas,OT,IC,true
+986,Ameresco Santa Cruz Energy_Unit2,Landfill Gas,OT,IC,true
+987,Ameresco Santa Cruz Energy_Unit3,Landfill Gas,OT,IC,true
+988,Buena Vista Energy LLC_1,Onshore Wind Turbine,WT,WT,false
+989,Russell City Energy Center_CTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+990,Russell City Energy Center_CTG2,Natural Gas Fired Combined Cycle,CT,CT,false
+991,Russell City Energy Center_STG1,Natural Gas Fired Combined Cycle,CT,CA,true
+992,Roseburg Forest Products Biomass_1,Wood/Wood Waste Biomass,ST,ST,false
+993,McGrath Peaker_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+994,Grapeland Hybrid_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+995,Grapeland Hybrid_BA1,Batteries,BA,BA,false
+996,Mira Loma Peaker_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+997,Barre Peaker_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+998,Center Hybrid_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+999,Center Hybrid_BA1,Batteries,BA,BA,false
+1000,Gateway Generating Station_A,Natural Gas Fired Combined Cycle,CT,CT,false
+1001,Gateway Generating Station_B,Natural Gas Fired Combined Cycle,CT,CT,false
+1002,Gateway Generating Station_C,Natural Gas Fired Combined Cycle,CT,CA,true
+1003,Colusa Generating Station_A,Natural Gas Fired Combined Cycle,CT,CT,false
+1004,Colusa Generating Station_B,Natural Gas Fired Combined Cycle,CT,CT,false
+1005,Colusa Generating Station_C,Natural Gas Fired Combined Cycle,CT,CA,true
+1006,Niland Gas Turbine Plant_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1007,Niland Gas Turbine Plant_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1008,Terra-Gen VG Wind LLC_WGNS,Onshore Wind Turbine,WT,WT,false
+1009,Rancho Penasquitos_G100,Conventional Hydroelectric,HA,HY,true
+1010,Midway Peaking LLC_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1011,Midway Peaking LLC_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1012,Hatchet Ridge Wind Project_1,Onshore Wind Turbine,WT,WT,false
+1013,El Nido Facility_AMPC,Wood/Wood Waste Biomass,ST,ST,false
+1014,CalRenew-1_CR1,Solar Photovoltaic,PVe,PVe,false
+1015,Dillon Wind LLC_1,Onshore Wind Turbine,WT,WT,false
+1016,Panoche Energy Center_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1017,Panoche Energy Center_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1018,Panoche Energy Center_3,Natural Gas Fired Combustion Turbine,GT,GT,false
+1019,Panoche Energy Center_4,Natural Gas Fired Combustion Turbine,GT,GT,false
+1020,ELACC Photovoltaic Power Facility_PV1,Solar Photovoltaic,PVe,PVe,false
+1021,ELACC Photovoltaic Power Facility_PV2,Solar Photovoltaic,PVe,PVe,false
+1022,North Brawley Geothermal Plant_GE1,Geothermal,ST,BT,true
+1023,North Brawley Geothermal Plant_GE2,Geothermal,ST,BT,true
+1024,North Brawley Geothermal Plant_GE3,Geothermal,ST,BT,true
+1025,North Brawley Geothermal Plant_GE4,Geothermal,ST,BT,true
+1026,North Brawley Geothermal Plant_GE5,Geothermal,ST,BT,true
+1027,Bolthouse S&P and Rowen Farms Solar_1,Solar Photovoltaic,PVe,PVe,false
+1028,Bolthouse S&P and Rowen Farms Solar_2,Solar Photovoltaic,PVe,PVe,false
+1029,Bolthouse S&P and Rowen Farms Solar_3,Solar Photovoltaic,PVe,PVe,false
+1030,Bolthouse S&P and Rowen Farms Solar_4,Solar Photovoltaic,PVe,PVe,false
+1031,Sacramento Soleil LLC_TBD,Solar Photovoltaic,PVe,PVe,false
+1032,Ameresco Ox Mountain_1,Landfill Gas,OT,IC,true
+1033,Ameresco Ox Mountain_2,Landfill Gas,OT,IC,true
+1034,Ameresco Ox Mountain_3,Landfill Gas,OT,IC,true
+1035,Ameresco Ox Mountain_4,Landfill Gas,OT,IC,true
+1036,Ameresco Ox Mountain_5,Landfill Gas,OT,IC,true
+1037,Ameresco Ox Mountain_6,Landfill Gas,OT,IC,true
+1038,Ameresco Keller Canyon_1,Landfill Gas,OT,IC,true
+1039,Ameresco Keller Canyon_2,Landfill Gas,OT,IC,true
+1040,Ameresco Chiquita Canyon_1,Landfill Gas,OT,GT,true
+1041,Ameresco Chiquita Canyon_2,Landfill Gas,OT,GT,true
+1042,Gap Pacific Distribution Center_1,Solar Photovoltaic,PVe,PVe,false
+1043,Gap Pacific Distribution Center_2,Solar Photovoltaic,PVe,PVe,false
+1044,Gap Pacific Distribution Center_3,Solar Photovoltaic,PVe,PVe,false
+1045,Gap Pacific Distribution Center_4,Solar Photovoltaic,PVe,PVe,false
+1046,Orange Grove Peaking Facility_CTG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1047,Orange Grove Peaking Facility_CTG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1048,Solar Blythe LLC_1,Solar Photovoltaic,PVe,PVe,false
+1049,Solar Photovoltaic Project No02_S1A,Solar Photovoltaic,PVe,PVe,false
+1050,Solar Photovoltaic Project No02_S1B,Solar Photovoltaic,PVe,PVe,false
+1051,SunEdison Walgreens Moreno Valley_1,Solar Photovoltaic,PVe,PVe,false
+1052,Mariani Packing Vacaville Solar_1,Solar Photovoltaic,PVe,PVe,false
+1053,Walgreens Woodland Distribution Center_1,Solar Photovoltaic,PVe,PVe,false
+1054,SunEdison Ironwood State Prison_1,Solar Photovoltaic,PVe,PVe,false
+1055,Kohls San Bernardino Solar Facility_1,Solar Photovoltaic,PVe,PVe,false
+1056,SunEdison Anheuser Busch Fairfield_1,Solar Photovoltaic,PVe,PVe,false
+1057,Chuckawalla Valley State Prison_1,Solar Photovoltaic,PVe,PVe,false
+1058,SunEdison Walmart Apple Valley DC_1,Solar Photovoltaic,PVe,PVe,false
+1059,Canyon Power Plant_CPP1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1060,Canyon Power Plant_CPP2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1061,Canyon Power Plant_CPP3,Natural Gas Fired Combustion Turbine,GT,GT,false
+1062,Canyon Power Plant_CPP4,Natural Gas Fired Combustion Turbine,GT,GT,false
+1063,Vaca Dixon Solar Station_1,Solar Photovoltaic,PVe,PVe,false
+1064,CSU East Bay_1,Other Natural Gas,OT,FC,true
+1065,SF State University_1,Other Natural Gas,OT,FC,true
+1066,SF State University_2,Other Natural Gas,OT,FC,true
+1067,Whittier LFG Power Plant No1_EN01,Landfill Gas,OT,IC,true
+1068,Whittier LFG Power Plant No1_EN02,Landfill Gas,OT,IC,true
+1069,UCI Facilities Management Central Plant_CTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+1070,UCI Facilities Management Central Plant_STG1,Natural Gas Fired Combined Cycle,CT,CA,true
+1071,G2 Energy Ostrom Road LLC_359,Landfill Gas,OT,IC,true
+1072,G2 Energy Ostrom Road LLC_361,Landfill Gas,OT,IC,true
+1073,Mesquite Lake Water & Power Plant 1_1209,Wood/Wood Waste Biomass,ST,ST,false
+1074,Calabasas Gas to Energy Facility_GEN1,Landfill Gas,OT,GT,true
+1075,Calabasas Gas to Energy Facility_GEN3,Landfill Gas,OT,GT,true
+1076,Solar Photovoltaic Project No03_S003A,Solar Photovoltaic,PVe,PVe,false
+1077,Solar Photovoltaic Project No03_S003B,Solar Photovoltaic,PVe,PVe,false
+1078,Solar Photovoltaic Project No05_S005A,Solar Photovoltaic,PVe,PVe,false
+1079,Solar Photovoltaic Project No05_S005B,Solar Photovoltaic,PVe,PVe,false
+1080,Solar Photovoltaic Project No05_S005C,Solar Photovoltaic,PVe,PVe,false
+1081,Solar Photovoltaic Project No05_S005D,Solar Photovoltaic,PVe,PVe,false
+1082,Solar Photovoltaic Project No05_S005E,Solar Photovoltaic,PVe,PVe,false
+1083,Solar Photovoltaic Project No06_S006A,Solar Photovoltaic,PVe,PVe,false
+1084,Solar Photovoltaic Project No06_S006B,Solar Photovoltaic,PVe,PVe,false
+1085,Solar Photovoltaic Project No06_S006C,Solar Photovoltaic,PVe,PVe,false
+1086,Solar Photovoltaic Project No06_S006D,Solar Photovoltaic,PVe,PVe,false
+1087,Solar Photovoltaic Project No07_S007A,Solar Photovoltaic,PVe,PVe,false
+1088,Solar Photovoltaic Project No07_S007B,Solar Photovoltaic,PVe,PVe,false
+1089,Solar Photovoltaic Project No07_S007C,Solar Photovoltaic,PVe,PVe,false
+1090,Solar Photovoltaic Project No07_S007D,Solar Photovoltaic,PVe,PVe,false
+1091,Solar Photovoltaic Project No07_S007E,Solar Photovoltaic,PVe,PVe,false
+1092,Solar Photovoltaic Project No08_S008A,Solar Photovoltaic,PVe,PVe,false
+1093,Solar Photovoltaic Project No08_S008B,Solar Photovoltaic,PVe,PVe,false
+1094,Solar Photovoltaic Project No08_S008C,Solar Photovoltaic,PVe,PVe,false
+1095,Solar Photovoltaic Project No08_S008D,Solar Photovoltaic,PVe,PVe,false
+1096,Solar Photovoltaic Project No09_S009A,Solar Photovoltaic,PVe,PVe,false
+1097,Solar Photovoltaic Project No09_S009B,Solar Photovoltaic,PVe,PVe,false
+1098,Solar Photovoltaic Project No10_S010A,Solar Photovoltaic,PVe,PVe,false
+1099,Solar Photovoltaic Project No10_S010B,Solar Photovoltaic,PVe,PVe,false
+1100,Solar Photovoltaic Project No10_S010C,Solar Photovoltaic,PVe,PVe,false
+1101,Solar Photovoltaic Project No11_S011A,Solar Photovoltaic,PVe,PVe,false
+1102,Solar Photovoltaic Project No11_S011B,Solar Photovoltaic,PVe,PVe,false
+1103,Solar Photovoltaic Project No11_S011C,Solar Photovoltaic,PVe,PVe,false
+1104,Solar Photovoltaic Project No11_S011D,Solar Photovoltaic,PVe,PVe,false
+1105,Solar Photovoltaic Project No11_S011E,Solar Photovoltaic,PVe,PVe,false
+1106,Solar Photovoltaic Project No11_S011F,Solar Photovoltaic,PVe,PVe,false
+1107,Solar Photovoltaic Project No11_S011G,Solar Photovoltaic,PVe,PVe,false
+1108,Solar Photovoltaic Project No12_S012A,Solar Photovoltaic,PVe,PVe,false
+1109,Solar Photovoltaic Project No13_S013A,Solar Photovoltaic,PVe,PVe,false
+1110,Solar Photovoltaic Project No13_S013B,Solar Photovoltaic,PVe,PVe,false
+1111,Solar Photovoltaic Project No13_S013C,Solar Photovoltaic,PVe,PVe,false
+1112,Solar Photovoltaic Project No13_S013D,Solar Photovoltaic,PVe,PVe,false
+1113,Solar Photovoltaic Project No13_S013E,Solar Photovoltaic,PVe,PVe,false
+1114,Solar Photovoltaic Project No13_S013F,Solar Photovoltaic,PVe,PVe,false
+1115,Solar Photovoltaic Project No13_S013G,Solar Photovoltaic,PVe,PVe,false
+1116,Solar Photovoltaic Project No15_S015A,Solar Photovoltaic,PVe,PVe,false
+1117,Solar Photovoltaic Project No15_S015B,Solar Photovoltaic,PVe,PVe,false
+1118,Solar Photovoltaic Project No15_S015C,Solar Photovoltaic,PVe,PVe,false
+1119,Solar Photovoltaic Project No15_S015D,Solar Photovoltaic,PVe,PVe,false
+1120,Solar Photovoltaic Project No15_S015E,Solar Photovoltaic,PVe,PVe,false
+1121,Solar Photovoltaic Project No15_S015F,Solar Photovoltaic,PVe,PVe,false
+1122,Solar Photovoltaic Project No15_S015G,Solar Photovoltaic,PVe,PVe,false
+1123,Solar Photovoltaic Project No16_S016A,Solar Photovoltaic,PVe,PVe,false
+1124,Solar Photovoltaic Project No16_S016B,Solar Photovoltaic,PVe,PVe,false
+1125,Solar Photovoltaic Project No16_S016C,Solar Photovoltaic,PVe,PVe,false
+1126,Solar Photovoltaic Project No17_S017A,Solar Photovoltaic,PVe,PVe,false
+1127,Solar Photovoltaic Project No17_S017B,Solar Photovoltaic,PVe,PVe,false
+1128,Solar Photovoltaic Project No17_S017C,Solar Photovoltaic,PVe,PVe,false
+1129,Solar Photovoltaic Project No17_S017D,Solar Photovoltaic,PVe,PVe,false
+1130,Solar Photovoltaic Project No17_S017E,Solar Photovoltaic,PVe,PVe,false
+1131,Solar Photovoltaic Project No17_S017F,Solar Photovoltaic,PVe,PVe,false
+1132,Solar Photovoltaic Project No17_S017G,Solar Photovoltaic,PVe,PVe,false
+1133,Solar Photovoltaic Project No18_S018A,Solar Photovoltaic,PVe,PVe,false
+1134,Solar Photovoltaic Project No18_S018B,Solar Photovoltaic,PVe,PVe,false
+1135,Solar Photovoltaic Project No18_S018C,Solar Photovoltaic,PVe,PVe,false
+1136,Solar Photovoltaic Project No23_S023A,Solar Photovoltaic,PVe,PVe,false
+1137,Solar Photovoltaic Project No23_S023B,Solar Photovoltaic,PVe,PVe,false
+1138,Solar Photovoltaic Project No23_S023C,Solar Photovoltaic,PVe,PVe,false
+1139,Solar Photovoltaic Project No23_S023D,Solar Photovoltaic,PVe,PVe,false
+1140,Solar Photovoltaic Project No23_S023E,Solar Photovoltaic,PVe,PVe,false
+1141,Solar Photovoltaic Project No26_S026A,Solar Photovoltaic,PVe,PVe,false
+1142,Solar Photovoltaic Project No26_S026B,Solar Photovoltaic,PVe,PVe,false
+1143,Solar Photovoltaic Project No26_S026C,Solar Photovoltaic,PVe,PVe,false
+1144,Solar Photovoltaic Project No26_S026D,Solar Photovoltaic,PVe,PVe,false
+1145,Solar Photovoltaic Project No26_S026E,Solar Photovoltaic,PVe,PVe,false
+1146,Solar Photovoltaic Project No26_S026F,Solar Photovoltaic,PVe,PVe,false
+1147,Solar Photovoltaic Project No26_S026G,Solar Photovoltaic,PVe,PVe,false
+1148,Solar Photovoltaic Project No26_S026H,Solar Photovoltaic,PVe,PVe,false
+1149,Solar Photovoltaic Project No26_S026I,Solar Photovoltaic,PVe,PVe,false
+1150,Solar Photovoltaic Project No26_S026J,Solar Photovoltaic,PVe,PVe,false
+1151,Solar Photovoltaic Project No26_SO26K,Solar Photovoltaic,PVe,PVe,false
+1152,Solar Photovoltaic Project No26_SO26L,Solar Photovoltaic,PVe,PVe,false
+1153,Solar Photovoltaic Project No27_S027A,Solar Photovoltaic,PVe,PVe,false
+1154,Solar Photovoltaic Project No27_S027B,Solar Photovoltaic,PVe,PVe,false
+1155,Solar Photovoltaic Project No27_S027C,Solar Photovoltaic,PVe,PVe,false
+1156,Solar Photovoltaic Project No27_S027D,Solar Photovoltaic,PVe,PVe,false
+1157,Solar Photovoltaic Project No28_S028A,Solar Photovoltaic,PVe,PVe,false
+1158,Solar Photovoltaic Project No28_S028B,Solar Photovoltaic,PVe,PVe,false
+1159,Solar Photovoltaic Project No28_S028C,Solar Photovoltaic,PVe,PVe,false
+1160,Solar Photovoltaic Project No28_S028D,Solar Photovoltaic,PVe,PVe,false
+1161,Solar Photovoltaic Project No28_S028E,Solar Photovoltaic,PVe,PVe,false
+1162,Solar Photovoltaic Project No28_S028F,Solar Photovoltaic,PVe,PVe,false
+1163,Solar Photovoltaic Project No28_S028G,Solar Photovoltaic,PVe,PVe,false
+1164,Marsh Landing Generating Station_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1165,Marsh Landing Generating Station_2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1166,Marsh Landing Generating Station_3,Natural Gas Fired Combustion Turbine,GT,GT,false
+1167,Marsh Landing Generating Station_4,Natural Gas Fired Combustion Turbine,GT,GT,false
+1168,Alta Wind Energy Center I_AW01,Onshore Wind Turbine,WT,WT,false
+1169,Alta Wind Energy Center II_AW02,Onshore Wind Turbine,WT,WT,false
+1170,Alta Wind Energy Center III_AW03,Onshore Wind Turbine,WT,WT,false
+1171,Alta Wind Energy Center IV_AW04,Onshore Wind Turbine,WT,WT,false
+1172,Alta Wind Energy Center V_AW05,Onshore Wind Turbine,WT,WT,false
+1173,Alpine Solar_1,Solar Photovoltaic,PVe,PVe,false
+1174,Dutch Wind Energy_DEC,Onshore Wind Turbine,WT,WT,false
+1175,Garnet Wind Energy Center_1,Onshore Wind Turbine,WT,WT,false
+1176,Adelanto Solar Project_1,Solar Photovoltaic,PVe,PVe,false
+1177,Maclay Solar Project_1,Solar Photovoltaic,PVe,PVe,false
+1178,Pacific Cruise Ship Terminals Berth 93_1,Solar Photovoltaic,PVe,PVe,false
+1179,1420 Coil Av NoC_1,Solar Photovoltaic,PVe,PVe,false
+1180,Occidental College Solar Project_1,Solar Photovoltaic,PVe,PVe,false
+1181,Metro Support Services Center Solar_1,Solar Photovoltaic,PVe,PVe,false
+1182,Los Angeles Harbor College_1,Solar Photovoltaic,PVe,PVe,false
+1183,Sierra SunTower Solar Gen Station_UNIT1,Solar Thermal without Energy Storage,PVe,ST,true
+1184,Mojave Solar Project_MSP1,Solar Thermal without Energy Storage,PVe,ST,true
+1185,Mojave Solar Project_MSP2,Solar Thermal without Energy Storage,PVe,ST,true
+1186,Panoche Valley Solar Farm_1,Solar Photovoltaic,PVe,PVe,false
+1187,Avenal Park_1,Solar Photovoltaic,PVe,PVe,false
+1188,Sun City Project LLC_1,Solar Photovoltaic,PVe,PVe,false
+1189,Sand Drag LLC_1,Solar Photovoltaic,PVe,PVe,false
+1190,Siphon Drop Power Plant_1,Conventional Hydroelectric,HA,HY,true
+1191,Siphon Drop Power Plant_2,Conventional Hydroelectric,HA,HY,true
+1192,AV Solar Ranch One_AVSR,Solar Photovoltaic,PVe,PVe,false
+1193,Genesis Solar Energy Project_GEN01,Solar Thermal without Energy Storage,PVe,ST,true
+1194,Genesis Solar Energy Project_GEN02,Solar Thermal without Energy Storage,PVe,ST,true
+1195,Yolo County Solar Project_1,Solar Photovoltaic,PVe,PVe,false
+1196,California Valley Solar Ranch_HPR2,Solar Photovoltaic,PVe,PVe,false
+1197,California Valley Solar Ranch_HPR2A,Solar Photovoltaic,PVe,PVe,false
+1198,California Valley Solar Ranch_HPR2B,Solar Photovoltaic,PVe,PVe,false
+1199,California Valley Solar Ranch_HPR2C,Solar Photovoltaic,PVe,PVe,false
+1200,California Valley Solar Ranch_HPR2D,Solar Photovoltaic,PVe,PVe,false
+1201,Solar Photovoltaic Project No42_S42A,Solar Photovoltaic,PVe,PVe,false
+1202,Solar Photovoltaic Project No42_S42B,Solar Photovoltaic,PVe,PVe,false
+1203,Solar Photovoltaic Project No42_S42C,Solar Photovoltaic,PVe,PVe,false
+1204,Solar Photovoltaic Project No42_S42D,Solar Photovoltaic,PVe,PVe,false
+1205,Solar Photovoltaic Project No42_S42E,Solar Photovoltaic,PVe,PVe,false
+1206,Solar Photovoltaic Project No42_S42F,Solar Photovoltaic,PVe,PVe,false
+1207,Solar Photovoltaic Project No42_S42G,Solar Photovoltaic,PVe,PVe,false
+1208,Solar Photovoltaic Project No42_S42H,Solar Photovoltaic,PVe,PVe,false
+1209,Solar Photovoltaic Project No42_S42I,Solar Photovoltaic,PVe,PVe,false
+1210,Solar Photovoltaic Project No42_S42J,Solar Photovoltaic,PVe,PVe,false
+1211,Solar Borrego I_SB1,Solar Photovoltaic,PVe,PVe,false
+1212,Mountain View IV_1,Onshore Wind Turbine,WT,WT,false
+1213,Caltech Central_CL00,Other Waste Biomass,ST,FC,true
+1214,Caltech Central_CL01,Other Waste Biomass,ST,FC,true
+1215,Caltech Central_CL02,Other Waste Biomass,ST,FC,true
+1216,Caltech Central_CL03,Other Waste Biomass,ST,FC,true
+1217,Caltech Central_CL04,Other Waste Biomass,ST,FC,true
+1218,Caltech Central_CL05,Other Waste Biomass,ST,FC,true
+1219,Caltech Central_CL06,Other Waste Biomass,ST,FC,true
+1220,Caltech Central_CL07,Other Waste Biomass,ST,FC,true
+1221,Caltech Central_CL08,Other Waste Biomass,ST,FC,true
+1222,Caltech Central_CL09,Other Waste Biomass,ST,FC,true
+1223,Caltech Central_CL10,Other Waste Biomass,ST,FC,true
+1224,John L. Featherstone Plant_HRP1,Geothermal,ST,ST,false
+1225,Sentinel Energy Center LLC_CTG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1226,Sentinel Energy Center LLC_CTG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1227,Sentinel Energy Center LLC_CTG3,Natural Gas Fired Combustion Turbine,GT,GT,false
+1228,Sentinel Energy Center LLC_CTG4,Natural Gas Fired Combustion Turbine,GT,GT,false
+1229,Sentinel Energy Center LLC_CTG5,Natural Gas Fired Combustion Turbine,GT,GT,false
+1230,Sentinel Energy Center LLC_CTG6,Natural Gas Fired Combustion Turbine,GT,GT,false
+1231,Sentinel Energy Center LLC_CTG7,Natural Gas Fired Combustion Turbine,GT,GT,false
+1232,Sentinel Energy Center LLC_CTG8,Natural Gas Fired Combustion Turbine,GT,GT,false
+1233,Mariposa Energy Project_CTG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1234,Mariposa Energy Project_CTG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1235,Mariposa Energy Project_CTG3,Natural Gas Fired Combustion Turbine,GT,GT,false
+1236,Mariposa Energy Project_CTG4,Natural Gas Fired Combustion Turbine,GT,GT,false
+1237,Manzana Wind LLC_GEN1,Onshore Wind Turbine,WT,WT,false
+1238,Imperial Solar Energy Center South_56819,Solar Photovoltaic,PVe,PVe,false
+1239,Imperial Solar Energy Center West_56819,Solar Photovoltaic,PVe,PVe,false
+1240,Stroud Solar Station_1,Solar Photovoltaic,PVe,PVe,false
+1241,Five Points Solar Station_1,Solar Photovoltaic,PVe,PVe,false
+1242,Westside Solar Station_1,Solar Photovoltaic,PVe,PVe,false
+1243,FRV SI Transport Solar LP_SEIM,Solar Photovoltaic,PVe,PVe,false
+1244,Walnut Creek Energy Park_GT1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1245,Walnut Creek Energy Park_GT2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1246,Walnut Creek Energy Park_GT3,Natural Gas Fired Combustion Turbine,GT,GT,false
+1247,Walnut Creek Energy Park_GT4,Natural Gas Fired Combustion Turbine,GT,GT,false
+1248,Walnut Creek Energy Park_GT5,Natural Gas Fired Combustion Turbine,GT,GT,false
+1249,Cantua Solar Station_1,Solar Photovoltaic,PVe,PVe,false
+1250,Huron Solar Station_1,Solar Photovoltaic,PVe,PVe,false
+1251,Solar Photovoltaic Project No32_S32A,Solar Photovoltaic,PVe,PVe,false
+1252,Solar Photovoltaic Project No32_S32B,Solar Photovoltaic,PVe,PVe,false
+1253,Solar Photovoltaic Project No32_S32C,Solar Photovoltaic,PVe,PVe,false
+1254,Solar Photovoltaic Project No33_S33A,Solar Photovoltaic,PVe,PVe,false
+1255,Solar Photovoltaic Project No33_S33B,Solar Photovoltaic,PVe,PVe,false
+1256,Cal State Univ San Bernardino FC01_FC01,Other Natural Gas,OT,FC,true
+1257,Pio Pico Energy Center_CTG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1258,Pio Pico Energy Center_CTG2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1259,Pio Pico Energy Center_CTG3,Natural Gas Fired Combustion Turbine,GT,GT,false
+1260,Sunnyvale City of WPCP_S-14,Landfill Gas,OT,IC,true
+1261,Sunnyvale City of WPCP_S-15,Landfill Gas,OT,IC,true
+1262,Sunset Reservoir North Basin_1,Solar Photovoltaic,PVe,PVe,false
+1263,Algonquin Power Sanger LLC_CTG,Natural Gas Fired Combined Cycle,CT,CT,false
+1264,Algonquin Power Sanger LLC_STG2,Natural Gas Fired Combined Cycle,CT,CA,true
+1265,GE - Tehachapi_2.5P2,Onshore Wind Turbine,WT,WT,false
+1266,GE - Tehachapi_2.8P3,Onshore Wind Turbine,WT,WT,false
+1267,CCCSD Wastewater Treatment Plnt_S188,Natural Gas Fired Combustion Turbine,GT,GT,false
+1268,Robert O Schulz Solar Farm_1,Solar Photovoltaic,PVe,PVe,false
+1269,Robert O Schulz Solar Farm_2,Solar Photovoltaic,PVe,PVe,false
+1270,Broadridge Cogen_CG1,Natural Gas Internal Combustion Engine,IC,IC,false
+1271,Broadridge Cogen_CG2,Natural Gas Internal Combustion Engine,IC,IC,false
+1272,Broadridge Cogen_PV1,Solar Photovoltaic,PVe,PVe,false
+1273,Broadridge Cogen_PV2,Solar Photovoltaic,PVe,PVe,false
+1274,University of California San Diego Hybrid_BS1,Batteries,BA,BA,false
+1275,University of California San Diego Hybrid_NT2,Natural Gas Fired Combined Cycle,CT,CT,false
+1276,University of California San Diego Hybrid_ST1,Natural Gas Fired Combined Cycle,CT,CT,false
+1277,University of California San Diego Hybrid_STG,Natural Gas Fired Combined Cycle,CT,CA,true
+1278,Oxnard Paper Mill_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1279,Rising Tree Wind Farm_GEN1,Onshore Wind Turbine,WT,WT,false
+1280,Foundation ST_WTG1,Onshore Wind Turbine,WT,WT,false
+1281,Bakersfield College Solar 01_BC01,Solar Photovoltaic,PVe,PVe,false
+1282,Temescal Canyon RV LLC_1,Solar Photovoltaic,PVe,PVe,false
+1283,SMUD at Grundman_PV1,Solar Photovoltaic,PVe,PVe,false
+1284,SMUD at Van Conett_PV1,Solar Photovoltaic,PVe,PVe,false
+1285,SMUD at Fleshman_PV1,Solar Photovoltaic,PVe,PVe,false
+1286,City of Madera WWTP_1,Solar Photovoltaic,PVe,PVe,false
+1287,Staples La Mirada CA_1,Solar Photovoltaic,PVe,PVe,false
+1288,Topaz Solar Farm_TPZ1,Solar Photovoltaic,PVe,PVe,false
+1289,Topaz Solar Farm_TPZ2,Solar Photovoltaic,PVe,PVe,false
+1290,Topaz Solar Farm_TPZ3,Solar Photovoltaic,PVe,PVe,false
+1291,Topaz Solar Farm_TPZ4,Solar Photovoltaic,PVe,PVe,false
+1292,Topaz Solar Farm_TPZ5,Solar Photovoltaic,PVe,PVe,false
+1293,Aerojet I_1,Solar Photovoltaic,PVe,PVe,false
+1294,Aerojet II_1,Solar Photovoltaic,PVe,PVe,false
+1295,Vasco Winds_1,Onshore Wind Turbine,WT,WT,false
+1296,Montezuma Wind II_1,Onshore Wind Turbine,WT,WT,false
+1297,Signal Hill West Unit_1,Other Gases,OT,GT,true
+1298,Catalina Solar LLC_INV,Solar Photovoltaic,PVe,PVe,false
+1299,Watkins Manufacturing Co._GEN1,Natural Gas Internal Combustion Engine,IC,IC,false
+1300,Watkins Manufacturing Co._GEN2,Natural Gas Internal Combustion Engine,IC,IC,false
+1301,North Palm Springs 4A_1,Solar Photovoltaic,PVe,PVe,false
+1302,Shiloh IV Wind Project LLC_1,Onshore Wind Turbine,WT,WT,false
+1303,Lake Hodges Hydroelectric Facility_1,Hydroelectric Pumped Storage,HY,PS,true
+1304,Lake Hodges Hydroelectric Facility_2,Hydroelectric Pumped Storage,HY,PS,true
+1305,UCSD Fuel Cell Plant_UCSD,Other Waste Biomass,ST,FC,true
+1306,North Palm Springs 1A_1,Solar Photovoltaic,PVe,PVe,false
+1307,SMUD at Lawrence_PV1,Solar Photovoltaic,PVe,PVe,false
+1308,Pacific Wind LLC_1,Onshore Wind Turbine,WT,WT,false
+1309,Naval Air Weapons Station China Lake_1,Solar Photovoltaic,PVe,PVe,false
+1310,South Bay Fuel Cell Plant_SBFC,Other Waste Biomass,ST,FC,true
+1311,Ameresco Butte County_1,Landfill Gas,OT,IC,true
+1312,Palo Verde College_1,Solar Photovoltaic,PVe,PVe,false
+1313,Windstar 1_WGNS,Onshore Wind Turbine,WT,WT,false
+1314,RE Dillard 1 LLC_DL1,Solar Photovoltaic,PVe,PVe,false
+1315,RE Kammerer 1 LLC_KAM1,Solar Photovoltaic,PVe,PVe,false
+1316,RE Dillard 2 LLC_DIL2,Solar Photovoltaic,PVe,PVe,false
+1317,RE Kammerer 2 LLC_KAM2,Solar Photovoltaic,PVe,PVe,false
+1318,RE Dillard 3 LLC_DIL3,Solar Photovoltaic,PVe,PVe,false
+1319,RE Kammerer 3 LLC_KAM3,Solar Photovoltaic,PVe,PVe,false
+1320,RE Bruceville 1 LLC_BRU1,Solar Photovoltaic,PVe,PVe,false
+1321,RE Bruceville 2 LLC_BRU2,Solar Photovoltaic,PVe,PVe,false
+1322,RE Bruceville 3 LLC_BRU3,Solar Photovoltaic,PVe,PVe,false
+1323,Foundation AB_WTG1,Onshore Wind Turbine,WT,WT,false
+1324,Foundation IE_WTG1,Onshore Wind Turbine,WT,WT,false
+1325,Golden Springs Building C-1_1,Solar Photovoltaic,PVe,PVe,false
+1326,Golden Springs Building D_1,Solar Photovoltaic,PVe,PVe,false
+1327,RE Dillard 4 LLC_DIL4,Solar Photovoltaic,PVe,PVe,false
+1328,Coca Cola American Canyon_COK01,Other Natural Gas,OT,FC,true
+1329,Lockheed Martin Sunnyvale_LOK00,Other Natural Gas,OT,FC,true
+1330,Franklin Templeton San Mateo_FRK00,Other Natural Gas,OT,FC,true
+1331,Adobe San Jose_ADB00,Other Natural Gas,OT,FC,true
+1332,Adobe San Jose_ADB01,Other Natural Gas,OT,FC,true
+1333,RE McKenzie 1 LLC_MCK1,Solar Photovoltaic,PVe,PVe,false
+1334,RE McKenzie 2 LLC_MCK2,Solar Photovoltaic,PVe,PVe,false
+1335,RE McKenzie 3 LLC_MCK3,Solar Photovoltaic,PVe,PVe,false
+1336,RE McKenzie 4 LLC_MCK4,Solar Photovoltaic,PVe,PVe,false
+1337,RE McKenzie 5 LLC_MCK5,Solar Photovoltaic,PVe,PVe,false
+1338,RE McKenzie 6 LLC_MCK6,Solar Photovoltaic,PVe,PVe,false
+1339,Dinuba Wastewater Treatment Plant_DSPV,Solar Photovoltaic,PVe,PVe,false
+1340,Heliocentric_1,Solar Photovoltaic,PVe,PVe,false
+1341,Mustang Hills LLC_AW06,Onshore Wind Turbine,WT,WT,false
+1342,Pinyon Pine I_AW07,Onshore Wind Turbine,WT,WT,false
+1343,Alta Wind VIII_AW08,Onshore Wind Turbine,WT,WT,false
+1344,L-8 Solar Project_TSM,Solar Photovoltaic,PVe,PVe,false
+1345,Pinyon Pine II_AW09,Onshore Wind Turbine,WT,WT,false
+1346,ISH Solar Hospital SDMC_1,Solar Photovoltaic,PVe,PVe,false
+1347,ISH Solar Hospital Downey_1,Solar Photovoltaic,PVe,PVe,false
+1348,Green Acres Solar Facility 1_GASF1,Solar Photovoltaic,PVe,PVe,false
+1349,Green Acres Solar Facility 2_GASF2,Solar Photovoltaic,PVe,PVe,false
+1350,North Hollywood_1PT1,Conventional Hydroelectric,HA,HY,true
+1351,North Hollywood_2T3,Conventional Hydroelectric,HA,HY,true
+1352,Univ of California San Diego Solar_SGU1,Solar Photovoltaic,PVe,PVe,false
+1353,Industry MetroLink PV 1_1,Solar Photovoltaic,PVe,PVe,false
+1354,2555 E Olympic Bl_1,Solar Photovoltaic,PVe,PVe,false
+1355,Guernsey Solar Station_1,Solar Photovoltaic,PVe,PVe,false
+1356,Gates Solar Station_1,Solar Photovoltaic,PVe,PVe,false
+1357,Improvement Dst No. 4_ID4,Solar Photovoltaic,PVe,PVe,false
+1358,Solar Photovoltaic Project No48_S48A,Solar Photovoltaic,PVe,PVe,false
+1359,Solar Photovoltaic Project No48_S48B,Solar Photovoltaic,PVe,PVe,false
+1360,Solar Photovoltaic Project No48_S48C,Solar Photovoltaic,PVe,PVe,false
+1361,Solar Photovoltaic Project No48_S48D,Solar Photovoltaic,PVe,PVe,false
+1362,Solar Photovoltaic Project No48_S48E,Solar Photovoltaic,PVe,PVe,false
+1363,Solar Photovoltaic Project No48_S48F,Solar Photovoltaic,PVe,PVe,false
+1364,Solar Photovoltaic Project No48_S48G,Solar Photovoltaic,PVe,PVe,false
+1365,Solar Photovoltaic Project No48_S48H,Solar Photovoltaic,PVe,PVe,false
+1366,Solar Photovoltaic Project No48_S48I,Solar Photovoltaic,PVe,PVe,false
+1367,Solar Photovoltaic Project No48_S48J,Solar Photovoltaic,PVe,PVe,false
+1368,El Segundo Energy Center LLC_5,Natural Gas Fired Combined Cycle,CT,CT,false
+1369,El Segundo Energy Center LLC_6,Natural Gas Fired Combined Cycle,CT,CA,true
+1370,El Segundo Energy Center LLC_7,Natural Gas Fired Combined Cycle,CT,CT,false
+1371,El Segundo Energy Center LLC_8,Natural Gas Fired Combined Cycle,CT,CA,true
+1372,San Antonio West Solar Rooftop_CHNO,Solar Photovoltaic,PVe,PVe,false
+1373,Tule Wind LLC_1,Onshore Wind Turbine,WT,WT,false
+1374,Spreckels Sugar Company_1,Natural Gas Steam Turbine,ST,ST,false
+1375,Solar Star California II LLC_1,Solar Photovoltaic,PVe,PVe,false
+1376,Desert Green Solar Farm LLC_1,Solar Photovoltaic,PVe,PVe,false
+1377,Brookfield Tehachapi 1_BT1,Onshore Wind Turbine,WT,WT,false
+1378,Butte College Main Campus Solar_SOL1,Solar Photovoltaic,PVe,PVe,false
+1379,SF Southeast Cogen Plant_COGEN,Other Waste Biomass,ST,IC,true
+1380,Lodi Energy Center_CT1,Natural Gas Fired Combined Cycle,CT,CT,false
+1381,Lodi Energy Center_ST1,Natural Gas Fired Combined Cycle,CT,CA,true
+1382,Meridian Vineyards_PV-1,Solar Photovoltaic,PVe,PVe,false
+1383,Meridian Vineyards_PV-2,Solar Photovoltaic,PVe,PVe,false
+1384,Desert Sunlight 300 LLC_DSL1,Solar Photovoltaic,PVe,PVe,false
+1385,Desert Sunlight 300 LLC_DSL10,Solar Photovoltaic,PVe,PVe,false
+1386,Desert Sunlight 300 LLC_DSL11,Solar Photovoltaic,PVe,PVe,false
+1387,Desert Sunlight 300 LLC_DSL2,Solar Photovoltaic,PVe,PVe,false
+1388,Desert Sunlight 300 LLC_DSL3,Solar Photovoltaic,PVe,PVe,false
+1389,Desert Sunlight 300 LLC_DSL4,Solar Photovoltaic,PVe,PVe,false
+1390,Desert Sunlight 300 LLC_DSL5,Solar Photovoltaic,PVe,PVe,false
+1391,Desert Sunlight 300 LLC_DSL6,Solar Photovoltaic,PVe,PVe,false
+1392,Desert Sunlight 300 LLC_DSL7,Solar Photovoltaic,PVe,PVe,false
+1393,Desert Sunlight 300 LLC_DSL8,Solar Photovoltaic,PVe,PVe,false
+1394,Desert Sunlight 300 LLC_DSL9,Solar Photovoltaic,PVe,PVe,false
+1395,Alpaugh North_SPS,Solar Photovoltaic,PVe,PVe,false
+1396,Alpaugh 50_SPS50,Solar Photovoltaic,PVe,PVe,false
+1397,Brea Expansion Plant_G1,Landfill Gas,OT,CT,true
+1398,Brea Expansion Plant_G2,Landfill Gas,OT,CT,true
+1399,Brea Expansion Plant_G3,Landfill Gas,OT,CT,true
+1400,Brea Expansion Plant_G4,Landfill Gas,OT,CT,true
+1401,Brea Expansion Plant_G5,Landfill Gas,OT,CA,true
+1402,Axium Modesto Solar_1,Solar Photovoltaic,PVe,PVe,false
+1403,MolsonCoors Irwindale Brewery_JEN1,Other Waste Biomass,ST,IC,true
+1404,MolsonCoors Irwindale Brewery_JEN2,Other Waste Biomass,ST,IC,true
+1405,MolsonCoors Irwindale Brewery_PV,Solar Photovoltaic,PVe,PVe,false
+1406,MolsonCoors Irwindale Brewery_T100,Natural Gas Fired Combustion Turbine,GT,GT,false
+1407,MolsonCoors Irwindale Brewery_T200,Natural Gas Fired Combustion Turbine,GT,GT,false
+1408,Paramount Refinery_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1409,SEPV 1_SEPV,Solar Photovoltaic,PVe,PVe,false
+1410,Edwards Air Force Base_1,Solar Photovoltaic,PVe,PVe,false
+1411,Edwards Air Force Base_2,Solar Photovoltaic,PVe,PVe,false
+1412,Edwards Air Force Base_3,Solar Photovoltaic,PVe,PVe,false
+1413,Fullerton Mill CHP_GTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+1414,Fullerton Mill CHP_STG1,Natural Gas Fired Combined Cycle,CT,CA,true
+1415,Intel Folsom_1,Solar Photovoltaic,PVe,PVe,false
+1416,Intel Folsom_2,Solar Photovoltaic,PVe,PVe,false
+1417,Kern Oil & Refining Co_5900,Natural Gas Fired Combustion Turbine,GT,GT,false
+1418,Foundation Cemex River Plant_WTG1,Onshore Wind Turbine,WT,WT,false
+1419,Foundation Cemex River Plant_WTG2,Onshore Wind Turbine,WT,WT,false
+1420,Foundation Superior Farms_WTG1,Onshore Wind Turbine,WT,WT,false
+1421,Foundation Wal-Mart Red Bluff_WTG1,Onshore Wind Turbine,WT,WT,false
+1422,Foundation Cemex Madison_WTG1,Onshore Wind Turbine,WT,WT,false
+1423,Foundation NWNA_WTG1,Onshore Wind Turbine,WT,WT,false
+1424,Foundation NWNA_WTG2,Onshore Wind Turbine,WT,WT,false
+1425,Foundation NWNA_WTG3,Onshore Wind Turbine,WT,WT,false
+1426,La Joya Del Sol_JDS1,Solar Photovoltaic,PVe,PVe,false
+1427,Depot Park Solar System_DPSS,Solar Photovoltaic,PVe,PVe,false
+1428,Delano Energy Center_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1429,Kaiser Downey_KRSO1,Landfill Gas,OT,FC,true
+1430,Kaiser Downey_KRSO2,Landfill Gas,OT,FC,true
+1431,Kaiser Downey_KRSO3,Landfill Gas,OT,FC,true
+1432,Kaiser Downey_KRSO4,Landfill Gas,OT,FC,true
+1433,Kaiser Downey_KRSO5,Landfill Gas,OT,FC,true
+1434,Kaiser Ontario_KSRO1,Other Waste Biomass,ST,FC,true
+1435,Kaiser Ontario_KSRO2,Other Waste Biomass,ST,FC,true
+1436,Kaiser Ontario_KSRO3,Other Waste Biomass,ST,FC,true
+1437,Kaiser Ontario_KSRO4,Other Waste Biomass,ST,FC,true
+1438,Kaiser Ontario_KSRO5,Other Waste Biomass,ST,FC,true
+1439,RE Kansas South LLC_KS,Solar Photovoltaic,PVe,PVe,false
+1440,TA-High Desert LLC_TAHD,Solar Photovoltaic,PVe,PVe,false
+1441,Energy Center_TURB1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1442,Energy Center_TURB2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1443,Energy Center_TURB3,Natural Gas Fired Combustion Turbine,GT,GT,false
+1444,CSUF Trigeneration_1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1445,CSUF Trigeneration_CPAC,Solar Photovoltaic,PVe,PVe,false
+1446,CSUF Trigeneration_KHS,Solar Photovoltaic,PVe,PVe,false
+1447,CSUF Trigeneration_NPS,Solar Photovoltaic,PVe,PVe,false
+1448,CSUF Trigeneration_PS4,Solar Photovoltaic,PVe,PVe,false
+1449,CSUF Trigeneration_SCPS,Solar Photovoltaic,PVe,PVe,false
+1450,Crafton Hills College Solar Farm_GEN1,Solar Photovoltaic,PVe,PVe,false
+1451,Thomas M Knott Cogen Facility_CG,Natural Gas Fired Combustion Turbine,GT,GT,false
+1452,Parnassus Central Utility Plant_GTG1,Natural Gas Fired Combined Cycle,CT,CT,false
+1453,Parnassus Central Utility Plant_GTG2,Natural Gas Fired Combined Cycle,CT,CT,false
+1454,Parnassus Central Utility Plant_STG1,Natural Gas Fired Combined Cycle,CT,CA,true
+1455,RE Victor Phelan Solar One LLC_VPS1,Solar Photovoltaic,PVe,PVe,false
+1456,Grassland 3&4 Solar Project_INV3,Solar Photovoltaic,PVe,PVe,false
+1457,West Gates Solar Station_1,Solar Photovoltaic,PVe,PVe,false
+1458,J.R. Simplot Company_1,All Other,OT,ST,true
+1459,Grassland 1&2 Solar Project_INV4,Solar Photovoltaic,PVe,PVe,false
+1460,Hoag Hospital Cogen Plant_1,Natural Gas Internal Combustion Engine,IC,IC,false
+1461,Hoag Hospital Cogen Plant_2,Natural Gas Internal Combustion Engine,IC,IC,false
+1462,Hoag Hospital Cogen Plant_3,Natural Gas Internal Combustion Engine,IC,IC,false
+1463,Newberry Solar 1 LLC_1,Solar Photovoltaic,PVe,PVe,false
+1464,Tahquitz High School_TAHQ,Solar Photovoltaic,PVe,PVe,false
+1465,Wagner Wind LLC_GEN1,Onshore Wind Turbine,WT,WT,false
+1466,West Valley High School Solar_WEST,Solar Photovoltaic,PVe,PVe,false
+1467,Pierce College_GEN1,Solar Photovoltaic,PVe,PVe,false
+1468,VA Sepulveda Ambulatory Care Center_GEN1,Solar Photovoltaic,PVe,PVe,false
+1469,C&H Sugar Plant_TG3,All Other,OT,ST,true
+1470,C&H Sugar Plant_TG4,All Other,OT,ST,true
+1471,CBS Television City_GEN1,Solar Photovoltaic,PVe,PVe,false
+1472,CBS Television City_GEN2,Other Natural Gas,OT,FC,true
+1473,CBS Television City_GEN3,Other Natural Gas,OT,FC,true
+1474,CBS Television City_GEN4,Other Natural Gas,OT,FC,true
+1475,Central Utilities Plant LAX 2_GEN1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1476,Central Utilities Plant LAX 2_GEN2,Natural Gas Fired Combustion Turbine,GT,GT,false
+1477,Venable Solar 1_VNPV,Solar Photovoltaic,PVe,PVe,false
+1478,Venable Solar 2_VSPV,Solar Photovoltaic,PVe,PVe,false
+1479,Roll Delano 2_ROL6,Other Natural Gas,OT,FC,true
+1480,Roll Delano_ROL4,Other Natural Gas,OT,FC,true
+1481,Roll Lost Hills_ROL3,Other Natural Gas,OT,FC,true
+1482,Xilinx San Jose_XLX,Other Natural Gas,OT,FC,true
+1483,Honda Torrance_HON,Other Natural Gas,OT,FC,true
+1484,Juniper Networks Sunnyvale_JPR,Other Natural Gas,OT,FC,true
+1485,Life Technologies Carlsbad_LFT,Other Natural Gas,OT,FC,true
+1486,Taylor Farms Salinas_TLR,Other Natural Gas,OT,FC,true
+1487,Kingsburg Solar_1,Solar Photovoltaic,PVe,PVe,false
+1488,Kingsburg Solar_2,Solar Photovoltaic,PVe,PVe,false
+1489,Kingsburg Solar_3,Solar Photovoltaic,PVe,PVe,false
+1490,Exeter Solar_1,Solar Photovoltaic,PVe,PVe,false
+1491,Exeter Solar_2,Solar Photovoltaic,PVe,PVe,false
+1492,Exeter Solar_3,Solar Photovoltaic,PVe,PVe,false
+1493,Ivanhoe Solar_1,Solar Photovoltaic,PVe,PVe,false
+1494,Ivanhoe Solar_2,Solar Photovoltaic,PVe,PVe,false
+1495,Ivanhoe Solar_3,Solar Photovoltaic,PVe,PVe,false
+1496,Lindsay Solar_1,Solar Photovoltaic,PVe,PVe,false
+1497,Lindsay Solar_3,Solar Photovoltaic,PVe,PVe,false
+1498,Lindsay Solar_4,Solar Photovoltaic,PVe,PVe,false
+1499,Porterville Solar_1,Solar Photovoltaic,PVe,PVe,false
+1500,Porterville Solar_2,Solar Photovoltaic,PVe,PVe,false
+1501,Porterville Solar_5,Solar Photovoltaic,PVe,PVe,false
+1502,G2 Energy Hay Rd_362,Landfill Gas,OT,IC,true
+1503,Radiance Solar 4_1,Solar Photovoltaic,PVe,PVe,false
+1504,Radiance Solar 5_1,Solar Photovoltaic,PVe,PVe,false
+1505,Atwell Island_1,Solar Photovoltaic,PVe,PVe,false
+1506,Gridley Main_GEN1,Solar Photovoltaic,PVe,PVe,false
+1507,Gridley Main Two_GEN1,Solar Photovoltaic,PVe,PVe,false
+1508,White River Solar_WRCA,Solar Photovoltaic,PVe,PVe,false
+1509,Corcoran Solar_CSCA,Solar Photovoltaic,PVe,PVe,false
+1510,Oakley Solar Project_1,Solar Photovoltaic,PVe,PVe,false
+1511,Cold Canyon 1_W3998,Landfill Gas,OT,IC,true
+1512,Solar Star 1_AVS1,Solar Photovoltaic,PVe,PVe,false
+1513,Solar Star 1_SS11,Solar Photovoltaic,PVe,PVe,false
+1514,Solar Star 1_SS12,Solar Photovoltaic,PVe,PVe,false
+1515,Solar Star 1_SS13,Solar Photovoltaic,PVe,PVe,false
+1516,Solar Star 1_SS14,Solar Photovoltaic,PVe,PVe,false
+1517,Solar Star 1_SS15,Solar Photovoltaic,PVe,PVe,false
+1518,Solar Star 1_SS16,Solar Photovoltaic,PVe,PVe,false
+1519,Solar Star 2_AVS2,Solar Photovoltaic,PVe,PVe,false
+1520,Solar Star 2_SS21,Solar Photovoltaic,PVe,PVe,false
+1521,Solar Star 2_SS22,Solar Photovoltaic,PVe,PVe,false
+1522,Solar Star 2_SS23,Solar Photovoltaic,PVe,PVe,false
+1523,Solar Star 2_SS24,Solar Photovoltaic,PVe,PVe,false
+1524,Solar Star 2_SS25,Solar Photovoltaic,PVe,PVe,false
+1525,Alta Wind X_AW10,Onshore Wind Turbine,WT,WT,false
+1526,Alta Wind XI_AW11,Onshore Wind Turbine,WT,WT,false
+1527,Ameresco Johnson Canyon_ENG1,Landfill Gas,OT,IC,true
+1528,Victor Dry Farm Ranch A_1,Solar Photovoltaic,PVe,PVe,false
+1529,Victor Dry Farm Ranch B_1,Solar Photovoltaic,PVe,PVe,false
+1530,Sunshine Gas Producers_1,Landfill Gas,OT,GT,true
+1531,Sunshine Gas Producers_2,Landfill Gas,OT,GT,true
+1532,Sunshine Gas Producers_3,Landfill Gas,OT,GT,true
+1533,Sunshine Gas Producers_4,Landfill Gas,OT,GT,true
+1534,Sunshine Gas Producers_5,Landfill Gas,OT,GT,true
+1535,Centinela Solar Energy_CSE1,Solar Photovoltaic,PVe,PVe,false
+1536,Centinela Solar Energy_CSE2,Solar Photovoltaic,PVe,PVe,false
+1537,Centinela Solar Energy_CSE3,Solar Photovoltaic,PVe,PVe,false
+1538,Centinela Solar Energy_CSE4,Solar Photovoltaic,PVe,PVe,false
+1539,Centinela Solar Energy_CSE5,Solar Photovoltaic,PVe,PVe,false
+1540,Centinela Solar Energy_CSE6,Solar Photovoltaic,PVe,PVe,false
+1541,Houweling Nurseries_COG1,Natural Gas Internal Combustion Engine,IC,IC,false
+1542,Houweling Nurseries_COG2,Natural Gas Internal Combustion Engine,IC,IC,false
+1543,Houweling Nurseries_COG3,Natural Gas Internal Combustion Engine,IC,IC,false
+1544,Ameresco San Joaquin_ENG1,Landfill Gas,OT,IC,true
+1545,Ameresco San Joaquin_ENG2,Landfill Gas,OT,IC,true
+1546,Ameresco Forward_ENG1,Landfill Gas,OT,IC,true
+1547,Ameresco Forward_ENG2,Landfill Gas,OT,IC,true
+1548,CBS Studio Center_9560,Other Natural Gas,OT,FC,true
+1549,CBS Studio Center_9580,Other Natural Gas,OT,FC,true
+1550,CBS Studio Center_9581,Other Natural Gas,OT,FC,true
+1551,CBS Studio Center_9583,Other Natural Gas,OT,FC,true
+1552,CBS Studio Center_9585,Other Natural Gas,OT,FC,true
+1553,CBS Studio Center_9587,Other Natural Gas,OT,FC,true
+1554,Arrache 4006_1,Solar Photovoltaic,PVe,PVe,false
+1555,Arrache 4006_2,Solar Photovoltaic,PVe,PVe,false
+1556,Arrache 4013_1,Solar Photovoltaic,PVe,PVe,false
+1557,Arrache 8083_1,Solar Photovoltaic,PVe,PVe,false
+1558,Arrache 8083_2,Solar Photovoltaic,PVe,PVe,false
+1559,Arrache 8083_3,Solar Photovoltaic,PVe,PVe,false
+1560,Nunn_1,Solar Photovoltaic,PVe,PVe,false
+1561,Rutan_1,Solar Photovoltaic,PVe,PVe,false
+1562,Rutan_2,Solar Photovoltaic,PVe,PVe,false
+1563,Rutan_3,Solar Photovoltaic,PVe,PVe,false
+1564,Vinam_1,Solar Photovoltaic,PVe,PVe,false
+1565,Ma_1,Solar Photovoltaic,PVe,PVe,false
+1566,Horn_1,Solar Photovoltaic,PVe,PVe,false
+1567,Watts 3115_1,Solar Photovoltaic,PVe,PVe,false
+1568,Watts 3115_2,Solar Photovoltaic,PVe,PVe,false
+1569,McCoy Solar Energy Project Hybrid_1,Solar Photovoltaic,PVe,PVe,false
+1570,McCoy Solar Energy Project Hybrid_BLK2,Solar Photovoltaic,PVe,PVe,false
+1571,McCoy Solar Energy Project Hybrid_BLK3,Solar Photovoltaic,PVe,PVe,false
+1572,McCoy Solar Energy Project Hybrid_BLK4,Solar Photovoltaic,PVe,PVe,false
+1573,McCoy Solar Energy Project Hybrid_BLK5,Solar Photovoltaic,PVe,PVe,false
+1574,McCoy Solar Energy Project Hybrid_BLK6,Solar Photovoltaic,PVe,PVe,false
+1575,McCoy Solar Energy Project Hybrid_BLK7,Solar Photovoltaic,PVe,PVe,false
+1576,McCoy Solar Energy Project Hybrid_BLK8,Solar Photovoltaic,PVe,PVe,false
+1577,Campo Verde Solar_CVS1,Solar Photovoltaic,PVe,PVe,false
+1578,Buena Vista Biomass Power_1,Wood/Wood Waste Biomass,ST,ST,false
+1579,RE Rosamond One LLC_RONE,Solar Photovoltaic,PVe,PVe,false
+1580,RE Rosamond Two LLC_RTWO,Solar Photovoltaic,PVe,PVe,false
+1581,RE Rio Grande Solar LLC_RIO,Solar Photovoltaic,PVe,PVe,false
+1582,RE Columbia 3 LLC_COL3,Solar Photovoltaic,PVe,PVe,false
+1583,Chuckawalla Solar_937,Solar Photovoltaic,PVe,PVe,false
+1584,Bear Creek Solar_PV3,Solar Photovoltaic,PVe,PVe,false
+1585,Vintner Solar_PV4,Solar Photovoltaic,PVe,PVe,false
+1586,Kettleman Solar Project_PV5,Solar Photovoltaic,PVe,PVe,false
+1587,Ironwood Solar LLC_937,Solar Photovoltaic,PVe,PVe,false
+1588,Desert Hot Springs Solar_DHCA,Solar Photovoltaic,PVe,PVe,false
+1589,Madera Community Hospital_1,Solar Photovoltaic,PVe,PVe,false
+1590,City of Hayward WWTP_1,Solar Photovoltaic,PVe,PVe,false
+1591,City of Hayward WWTP_COGEN,Other Waste Biomass,ST,IC,true
+1592,Crown Cooling Facility_1,Solar Photovoltaic,PVe,PVe,false
+1593,Garnet Solar Generation Station I LLC_WDT44,Solar Photovoltaic,PVe,PVe,false
+1594,Desert Sunlight 250 LLC_DSL12,Solar Photovoltaic,PVe,PVe,false
+1595,Desert Sunlight 250 LLC_DSL13,Solar Photovoltaic,PVe,PVe,false
+1596,Desert Sunlight 250 LLC_DSL14,Solar Photovoltaic,PVe,PVe,false
+1597,Desert Sunlight 250 LLC_DSL15,Solar Photovoltaic,PVe,PVe,false
+1598,Desert Sunlight 250 LLC_DSL16,Solar Photovoltaic,PVe,PVe,false
+1599,Desert Sunlight 250 LLC_DSL17,Solar Photovoltaic,PVe,PVe,false
+1600,Desert Sunlight 250 LLC_DSL18,Solar Photovoltaic,PVe,PVe,false
+1601,Desert Sunlight 250 LLC_DSL19,Solar Photovoltaic,PVe,PVe,false
+1602,Desert Sunlight 250 LLC_DSL20,Solar Photovoltaic,PVe,PVe,false
+1603,Community Solar 1_1,Solar Photovoltaic,PVe,PVe,false
+1604,Sonora 1_SON1,Solar Photovoltaic,PVe,PVe,false
+1605,Oltmans SCE at Champagne_1,Solar Photovoltaic,PVe,PVe,false
+1606,Oltmans SCE at Jurupa_1,Solar Photovoltaic,PVe,PVe,false
+1607,Sierra Nevada Brewing Co Hybrid_BESS,Batteries,BA,BA,false
+1608,Sierra Nevada Brewing Co Hybrid_COGN,Natural Gas Fired Combustion Turbine,GT,GT,false
+1609,Sierra Nevada Brewing Co Hybrid_SOLR,Solar Photovoltaic,PVe,PVe,false
+1610,Cascade Solar_1,Solar Photovoltaic,PVe,PVe,false
+1611,One Market Plaza_1,Natural Gas Internal Combustion Engine,IC,IC,false
+1612,One Market Plaza_2,Natural Gas Internal Combustion Engine,IC,IC,false
+1613,One Market Plaza_3,Natural Gas Internal Combustion Engine,IC,IC,false
+1614,Industry Solar Power Generation Station 1 LLC_ISP1,Solar Photovoltaic,PVe,PVe,false
+1615,Navajo Solar Power Generation Station 1 LLC_NSP1,Solar Photovoltaic,PVe,PVe,false
+1616,Powhatan Solar Power Generation Station 1 LLC_1,Solar Photovoltaic,PVe,PVe,false
+1617,Otoe Solar Power Generation Station 1 LLC_1,Solar Photovoltaic,PVe,PVe,false
+1618,Westlands Solar PV Farm_WSF1,Solar Photovoltaic,PVe,PVe,false
+1619,Transamerica Pyramid_1,Natural Gas Internal Combustion Engine,IC,IC,false
+1620,Transamerica Pyramid_2,Natural Gas Internal Combustion Engine,IC,IC,false
+1621,Sol Orchard El Centro PV_ECPV,Solar Photovoltaic,PVe,PVe,false
+1622,Santa Rita Jail Hybrid_SRFC2,Other Natural Gas,OT,FC,true
+1623,Santa Rita Jail Hybrid_SRJBA,Batteries,BA,BA,false
+1624,Santa Rita Jail Hybrid_SRPV2,Solar Photovoltaic,PVe,PVe,false
+1625,Santa Rita Jail Hybrid_SRPV3,Solar Photovoltaic,PVe,PVe,false
+1626,Western Antelope Blue Sky Ranch A_WABSA,Solar Photovoltaic,PVe,PVe,false
+1627,Western Antelope Dry Ranch_WADR,Solar Photovoltaic,PVe,PVe,false
+1628,Monterey Regional Water Pollution Control Agency_1,Solar Photovoltaic,PVe,PVe,false
+1629,Lancaster Baptist Church_1,Solar Photovoltaic,PVe,PVe,false
+1630,Sacramento Fairbain Water Treatment Plant_1,Solar Photovoltaic,PVe,PVe,false
+1631,Tulare 1 and 2_1,Solar Photovoltaic,PVe,PVe,false
+1632,Tulare 1 and 2_2,Solar Photovoltaic,PVe,PVe,false
+1633,Mira Loma_D960,Solar Photovoltaic,PVe,PVe,false
+1634,Mira Loma_D9611,Solar Photovoltaic,PVe,PVe,false
+1635,Mira Loma_D9612,Solar Photovoltaic,PVe,PVe,false
+1636,ABEC Bidart-Old River LLC_GEN 1,Other Waste Biomass,ST,IC,true
+1637,ABEC Bidart-Old River LLC_GEN 2,Other Waste Biomass,ST,IC,true
+1638,Lost Hills/Blackwell_BLKW,Solar Photovoltaic,PVe,PVe,false
+1639,Lost Hills/Blackwell_LTHL,Solar Photovoltaic,PVe,PVe,false
+1640,North Star Solar_NSTR,Solar Photovoltaic,PVe,PVe,false
+1641,Orion Solar I_PV1,Solar Photovoltaic,PVe,PVe,false
+1642,Orion Solar II_ORION,Solar Photovoltaic,PVe,PVe,false
+1643,North Bay Solar 1_NBWT,Solar Photovoltaic,PVe,PVe,false
+1644,Lancaster Dry Farm Ranch B_LDFRB,Solar Photovoltaic,PVe,PVe,false
+1645,Rodeo Solar C2_RSC2,Solar Photovoltaic,PVe,PVe,false
+1646,Rodeo Solar D2_RSD2,Solar Photovoltaic,PVe,PVe,false
+1647,Summer Solar A2_SSA2,Solar Photovoltaic,PVe,PVe,false
+1648,Summer Solar B2_SSB2,Solar Photovoltaic,PVe,PVe,false
+1649,Summer Solar C2_SSC2,Solar Photovoltaic,PVe,PVe,false
+1650,Summer Solar D2_SSD2,Solar Photovoltaic,PVe,PVe,false
+1651,Summer North Solar_UE2,Solar Photovoltaic,PVe,PVe,false
+1652,Summer North Solar_UF2,Solar Photovoltaic,PVe,PVe,false
+1653,Summer North Solar_UG2,Solar Photovoltaic,PVe,PVe,false
+1654,Summer North Solar_UH2,Solar Photovoltaic,PVe,PVe,false
+1655,Expressway Solar A_EXSA,Solar Photovoltaic,PVe,PVe,false
+1656,Expressway Solar B_EXSB,Solar Photovoltaic,PVe,PVe,false
+1657,Expressway Solar C2_EXSC2,Solar Photovoltaic,PVe,PVe,false
+1658,Shasta Solar Farm_GENA,Solar Photovoltaic,PVe,PVe,false
+1659,Shasta Solar Farm_GENB,Solar Photovoltaic,PVe,PVe,false
+1660,Beringer_BERI,Solar Photovoltaic,PVe,PVe,false
+1661,Valley Center 1_VC1,Solar Photovoltaic,PVe,PVe,false
+1662,Valley Center 2_VC2,Solar Photovoltaic,PVe,PVe,false
+1663,Ramona 1_RAM1,Solar Photovoltaic,PVe,PVe,false
+1664,Ramona 2_RAM2,Solar Photovoltaic,PVe,PVe,false
+1665,Santa Fe Springs Rooftop Solar BLDG M_1,Solar Photovoltaic,PVe,PVe,false
+1666,Santa Fe Springs Rooftop Solar BLDG H_1,Solar Photovoltaic,PVe,PVe,false
+1667,2127 Harris Solar Project_2127,Solar Photovoltaic,PVe,PVe,false
+1668,Intel Folsom Phase 2_PV,Solar Photovoltaic,PVe,PVe,false
+1669,Laguna Water Reclamation Facility_S200,Other Waste Biomass,ST,IC,true
+1670,Laguna Water Reclamation Facility_S201,Other Waste Biomass,ST,IC,true
+1671,Laguna Water Reclamation Facility_S202,Other Waste Biomass,ST,IC,true
+1672,Laguna Water Reclamation Facility_S203,Other Waste Biomass,ST,IC,true
+1673,Las Virgenes Municipal Water District_PV,Solar Photovoltaic,PVe,PVe,false
+1674,White River Solar 2_W2CA,Solar Photovoltaic,PVe,PVe,false
+1675,Henrietta Solar Project_PV1,Solar Photovoltaic,PVe,PVe,false
+1676,Central Valley Ag Power_CVAP,Other Waste Biomass,ST,IC,true
+1677,RE Camelot LLC_1,Solar Photovoltaic,PVe,PVe,false
+1678,RE Adams East LLC_1,Solar Photovoltaic,PVe,PVe,false
+1679,RE Kansas Solar LLC_1,Solar Photovoltaic,PVe,PVe,false
+1680,RE Old River One LLC_1,Solar Photovoltaic,PVe,PVe,false
+1681,RE Columbia Two LLC_1,Solar Photovoltaic,PVe,PVe,false
+1682,Carlsbad Energy Center_CEC 6,Natural Gas Fired Combustion Turbine,GT,GT,false
+1683,Carlsbad Energy Center_CEC 7,Natural Gas Fired Combustion Turbine,GT,GT,false
+1684,Carlsbad Energy Center_CEC 8,Natural Gas Fired Combustion Turbine,GT,GT,false
+1685,Carlsbad Energy Center_CEC 9,Natural Gas Fired Combustion Turbine,GT,GT,false
+1686,Carlsbad Energy Center_CEC10,Natural Gas Fired Combustion Turbine,GT,GT,false
+1687,Vacaville_GEN 1,Solar Photovoltaic,PVe,PVe,false
+1688,Cottonwood Solar LLC (City of Corcoran)_GEN 1,Solar Photovoltaic,PVe,PVe,false
+1689,Calipatria Solar Farm_GEN 1,Solar Photovoltaic,PVe,PVe,false
+1690,Division 1_GEN 1,Solar Photovoltaic,PVe,PVe,false
+1691,Division 2_GEN 1,Solar Photovoltaic,PVe,PVe,false
+1692,Division 3_GEN1,Solar Photovoltaic,PVe,PVe,false
+1693,Kettering Solar 1_PV1,Solar Photovoltaic,PVe,PVe,false
+1694,Kettering Solar 2_PV1,Solar Photovoltaic,PVe,PVe,false
+1695,CSD 2- Freedom High_57449,Solar Photovoltaic,PVe,PVe,false
+1696,CSD 2 - Heritage High_57449,Solar Photovoltaic,PVe,PVe,false
+1697,EAFB - North Base_57449,Solar Photovoltaic,PVe,PVe,false
+1698,EAFB - South Base_57449,Solar Photovoltaic,PVe,PVe,false
+1699,SDCCD - Miramar_57449,Solar Photovoltaic,PVe,PVe,false
+1700,SDCWA - Twin Oaks_57449,Solar Photovoltaic,PVe,PVe,false
+1701,Lancaster Solar 1_LS1,Solar Photovoltaic,PVe,PVe,false
+1702,Lancaster Solar 2_LS2,Solar Photovoltaic,PVe,PVe,false
+1703,Hesperia_Oct-94,Solar Photovoltaic,PVe,PVe,false
+1704,CID Solar LLC_PV1,Solar Photovoltaic,PVe,PVe,false
+1705,Farmersville_PV1,Solar Photovoltaic,PVe,PVe,false
+1706,Farmersville_PV2,Solar Photovoltaic,PVe,PVe,false
+1707,Farmersville_PV3,Solar Photovoltaic,PVe,PVe,false
+1708,Porterville 6 and 7_PV1,Solar Photovoltaic,PVe,PVe,false
+1709,Porterville 6 and 7_PV2,Solar Photovoltaic,PVe,PVe,false
+1710,Rising Tree Wind Farm II_GEN1,Onshore Wind Turbine,WT,WT,false
+1711,Rising Tree Wind Farm III_GEN1,Onshore Wind Turbine,WT,WT,false
+1712,Rio Bravo Solar 1 LLC_PV1,Solar Photovoltaic,PVe,PVe,false
+1713,Rio Bravo Solar II LLC_PV1,Solar Photovoltaic,PVe,PVe,false
+1714,Vaca Dixon Battery Storage System_BAT1,Batteries,BA,BA,false
+1715,Yerba Buena_YB1,Batteries,BA,BA,false
+1716,Verizon-Torrance_VZ300,Other Natural Gas,OT,FC,true
+1717,Lancaster Little Rock_LLRC,Solar Photovoltaic,PVe,PVe,false
+1718,Merced Solar LLC_PV8,Solar Photovoltaic,PVe,PVe,false
+1719,Mission Solar LLC_PV9,Solar Photovoltaic,PVe,PVe,false
+1720,Victor Mesa Linda B2_VMLB2,Solar Photovoltaic,PVe,PVe,false
+1721,Victor Mesa Linda C2_VMLC2,Solar Photovoltaic,PVe,PVe,false
+1722,Victor Mesa Linda D2_VMLD2,Solar Photovoltaic,PVe,PVe,false
+1723,Victor Mesa Linda E2_VMLE2,Solar Photovoltaic,PVe,PVe,false
+1724,SEPV Palmdale East_PALME,Solar Photovoltaic,PVe,PVe,false
+1725,Life Technologies - Pleasanton_LFT01,Other Natural Gas,OT,FC,true
+1726,Kellogg's - San Jose_KLG00,Other Natural Gas,OT,FC,true
+1727,California PV Energy at ISD WWTP_W4236,Solar Photovoltaic,PVe,PVe,false
+1728,Waste Mangement Redwood LFGTE_RED1,Landfill Gas,OT,IC,true
+1729,Waste Mangement Redwood LFGTE_RED2,Landfill Gas,OT,IC,true
+1730,Hanford 1 and 2_HAN1,Solar Photovoltaic,PVe,PVe,false
+1731,Hanford 1 and 2_HAN2,Solar Photovoltaic,PVe,PVe,false
+1732,Pumpjack Solar I_GEN1,Solar Photovoltaic,PVe,PVe,false
+1733,Sacramento (SMUD)_SMUPV,Solar Photovoltaic,PVe,PVe,false
+1734,Golden Acorn Casino_GAC1,Onshore Wind Turbine,WT,WT,false
+1735,City of Soledad Water Reclamation_SOL1,Onshore Wind Turbine,WT,WT,false
+1736,Taylor Farms_TAY1,Onshore Wind Turbine,WT,WT,false
+1737,Anheuser-Busch No2_ANB2,Onshore Wind Turbine,WT,WT,false
+1738,Catalina Solar 2 LLC_INV-1,Solar Photovoltaic,PVe,PVe,false
+1739,Quinto Solar PV Project_SSC13,Solar Photovoltaic,PVe,PVe,false
+1740,SCE-Snowline-Duncan Road (North)_10400,Solar Photovoltaic,PVe,PVe,false
+1741,SCE-Snowline-Duncan Road (South)_11113,Solar Photovoltaic,PVe,PVe,false
+1742,City of Tulare Water Facility_SC500,Solar Photovoltaic,PVe,PVe,false
+1743,Diamond Valley Solar Project_PV11,Solar Photovoltaic,PVe,PVe,false
+1744,Shafter Solar LLC_1,Solar Photovoltaic,PVe,PVe,false
+1745,Madelyn Solar LLC_SNL17,Solar Photovoltaic,PVe,PVe,false
+1746,Rudy Solar LLC_SNL19,Solar Photovoltaic,PVe,PVe,false
+1747,Mitchell Solar LLC_SNL18,Solar Photovoltaic,PVe,PVe,false
+1748,Algonquin SKIC20 Solar LLC_SKI20,Solar Photovoltaic,PVe,PVe,false
+1749,Corcoran Solar 2_C2CA,Solar Photovoltaic,PVe,PVe,false
+1750,Atwell Island West Solar_AWCA,Solar Photovoltaic,PVe,PVe,false
+1751,Anaheim Solar Energy Plant_PV1,Solar Photovoltaic,PVe,PVe,false
+1752,SCE-Snowline-White Road (South)_11111,Solar Photovoltaic,PVe,PVe,false
+1753,SCE-Snowline-White Road (North)_10401,Solar Photovoltaic,PVe,PVe,false
+1754,SCE-Snowline-White Rd (Central)_10402,Solar Photovoltaic,PVe,PVe,false
+1755,Baker Creek Hydroelectric_GENE1,Conventional Hydroelectric,HA,HY,true
+1756,Baker Creek Hydroelectric_GENE2,Conventional Hydroelectric,HA,HY,true
+1757,Sierra Solar Greenworks_SSG1,Solar Photovoltaic,PVe,PVe,false
+1758,Adelanto Solar II LLC_SAS,Solar Photovoltaic,PVe,PVe,false
+1759,Adelanto Solar LLC_SAS,Solar Photovoltaic,PVe,PVe,false
+1760,TA-Acacia LLC_WAS1,Solar Photovoltaic,PVe,PVe,false
+1761,P Plant_P-TG4,Natural Gas Fired Combustion Turbine,GT,GT,false
+1762,P Plant_P-TG5,Natural Gas Fired Combustion Turbine,GT,GT,false
+1763,Q Plant_Q-TG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1764,W Plant_W-TG1,Natural Gas Fired Combustion Turbine,GT,GT,false
+1765,Bowerman Power LFG LLC_GEN01,Landfill Gas,OT,IC,true
+1766,Bowerman Power LFG LLC_GEN02,Landfill Gas,OT,IC,true
+1767,Bowerman Power LFG LLC_GEN03,Landfill Gas,OT,IC,true
+1768,Bowerman Power LFG LLC_GEN04,Landfill Gas,OT,IC,true
+1769,Bowerman Power LFG LLC_GEN05,Landfill Gas,OT,IC,true
+1770,Bowerman Power LFG LLC_GEN06,Landfill Gas,OT,IC,true
+1771,Bowerman Power LFG LLC_GEN07,Landfill Gas,OT,IC,true
+1772,Alamo Solar_ALAMO,Solar Photovoltaic,PVe,PVe,false
+1773,Apple Campus 2 PV_AC2PV,Solar Photovoltaic,PVe,PVe,false
+1774,Five Points Solar Park_FRFSP,Solar Photovoltaic,PVe,PVe,false
+1775,Blackwell Solar Park_FRBSP,Solar Photovoltaic,PVe,PVe,false
+1776,Wright Solar Park_FRWSP,Solar Photovoltaic,PVe,PVe,false
+1777,Solar Oasis LLC_OASIS,Solar Photovoltaic,PVe,PVe,false
+1778,Coronus Adelanto West 1_AWI,Solar Photovoltaic,PVe,PVe,false
+1779,Coronus Adelanto West 2_AW2,Solar Photovoltaic,PVe,PVe,false
+1780,Park Meridian No1_1,Solar Photovoltaic,PVe,PVe,false
+1781,Rancho Cucamonga Dist No1_2,Solar Photovoltaic,PVe,PVe,false
+1782,Terra Francesco_3,Solar Photovoltaic,PVe,PVe,false
+1783,Putah Creek Solar Farm_PCSF,Solar Photovoltaic,PVe,PVe,false
+1784,Vega Solar_VEGA1,Solar Photovoltaic,PVe,PVe,false
+1785,Apple Campus 2 Fuel Cell_AC2FC,Landfill Gas,OT,FC,true
+1786,Colton Solar One LLC_CS001,Solar Photovoltaic,PVe,PVe,false
+1787,Colton Solar Two LLC_CS002,Solar Photovoltaic,PVe,PVe,false
+1788,Tropico Solar PV Plant_GEN1,Solar Photovoltaic,PVe,PVe,false
+1789,Nicolis Solar PV Plant_GEN1,Solar Photovoltaic,PVe,PVe,false
+1790,Maricopa West Solar PV LLC_MWS,Solar Photovoltaic,PVe,PVe,false
+1791,AP North Lake I LP_APNLI,Solar Photovoltaic,PVe,PVe,false
+1792,Kettleman Solar -Centaurus_KS,Solar Photovoltaic,PVe,PVe,false
+1793,Coronal Lost Hills_CLH,Solar Photovoltaic,PVe,PVe,false
+1794,Forever 21 Retail Inc._W4161,Solar Photovoltaic,PVe,PVe,false
+1795,Tehachapi Energy Storage Project_TSP1,Batteries,BA,BA,false
+1796,Sun Harvest Solar NDP1_NDP1,Solar Photovoltaic,PVe,PVe,false
+1797,Cottonwood Solar LLC Cottonwood Carport_1,Solar Photovoltaic,PVe,PVe,false
+1798,Seville 1_SEV1,Solar Photovoltaic,PVe,PVe,false
+1799,Seville 2_SEV2,Solar Photovoltaic,PVe,PVe,false
+1800,SEPV 18_SPV18,Solar Photovoltaic,PVe,PVe,false
+1801,Citizen B_CSB,Solar Photovoltaic,PVe,PVe,false
+1802,Lancaster WAD B_LWADB,Solar Photovoltaic,PVe,PVe,false
+1803,SEPV Mojave West_SPVMW,Solar Photovoltaic,PVe,PVe,false
+1804,DSH (CA) - Coalinga State Hospital_1,Solar Photovoltaic,PVe,PVe,false
+1805,CDCR (CA) - Pleasant Valley State Prison_1,Solar Photovoltaic,PVe,PVe,false
+1806,Colon PV_W4172,Solar Photovoltaic,PVe,PVe,false
+1807,Amazon San Bernardino_AMZ00,Other Natural Gas,OT,FC,true
+1808,Maxim_MXM00,Other Natural Gas,OT,FC,true
+1809,Pixar - Emeryville_PXR00,Other Natural Gas,OT,FC,true
+1810,Starbucks - Evolution Fresh_SBK00,Other Natural Gas,OT,FC,true
+1811,Yahoo! - HQ_YAH00,Other Natural Gas,OT,FC,true
+1812,Kingbird A Solar LLC_GEN01,Solar Photovoltaic,PVe,PVe,false
+1813,UC Davis South Campus_UCD1,Solar Photovoltaic,PVe,PVe,false
+1814,Riverside RWQCP Fuel Cell_MB20,Other Waste Biomass,ST,FC,true
+1815,Windhub Solar A LLC_GEN01,Solar Photovoltaic,PVe,PVe,false
+1816,North Rosamond Solar LLC_GEN01,Solar Photovoltaic,PVe,PVe,false
+1817,Corcoran Solar 3_C3CA,Solar Photovoltaic,PVe,PVe,false
+1818,Oro Loma_ORCA,Solar Photovoltaic,PVe,PVe,false
+1819,SunE- E Philadelphia Ontario_12307,Solar Photovoltaic,PVe,PVe,false
+1820,Morgan Lancaster 1_ML1,Solar Photovoltaic,PVe,PVe,false
+1821,Bakersfield 111_BF111,Solar Photovoltaic,PVe,PVe,false
+1822,Potrero Hills Energy Producers_1,Landfill Gas,OT,IC,true
+1823,Potrero Hills Energy Producers_2,Landfill Gas,OT,IC,true
+1824,Potrero Hills Energy Producers_3,Landfill Gas,OT,IC,true
+1825,Potrero Hills Energy Producers_4,Landfill Gas,OT,IC,true
+1826,Potrero Hills Energy Producers_5,Landfill Gas,OT,IC,true
+1827,Western Antelope Blue Sky B_WABSB,Solar Photovoltaic,PVe,PVe,false
+1828,North Lancaster Ranch_NLR,Solar Photovoltaic,PVe,PVe,false
+1829,Central Antelope Dry Ranch C_CADRC,Solar Photovoltaic,PVe,PVe,false
+1830,Elevation Solar C_ELVSC,Solar Photovoltaic,PVe,PVe,false
+1831,RE Astoria_ASTR1,Solar Photovoltaic,PVe,PVe,false
+1832,RE Astoria 2_ASTR2,Solar Photovoltaic,PVe,PVe,false
+1833,Enerparc CA2 LLC_ECA22,Solar Photovoltaic,PVe,PVe,false
+1834,Columbia Solar Energy LLC_GEN1,Solar Photovoltaic,PVe,PVe,false
+1835,Morelos del Sol_MORLS,Solar Photovoltaic,PVe,PVe,false
+1836,Little Rock Pham Solar_PV1,Solar Photovoltaic,PVe,PVe,false
+1837,SunE Rochester_RCHTR,Solar Photovoltaic,PVe,PVe,false
+1838,CA Flats Solar 130 LLC_GEN01,Solar Photovoltaic,PVe,PVe,false
+1839,CA Flats Solar 150 LLC_GEN01,Solar Photovoltaic,PVe,PVe,false
+1840,Tequesquite Landfill Solar PV Project_RPU1,Solar Photovoltaic,PVe,PVe,false
+1841,Frontier Solar LLC_FTRS,Solar Photovoltaic,PVe,PVe,false
+1842,Cuyama Solar LLC_GEN01,Solar Photovoltaic,PVe,PVe,false
+1843,Golden Hills Wind_GE,Onshore Wind Turbine,WT,WT,false
+1844,Lindberg FIeld Solar_SDIA2,Solar Photovoltaic,PVe,PVe,false
+1845,Lindberg FIeld Solar_SDIAA,Solar Photovoltaic,PVe,PVe,false
+1846,Lindberg FIeld Solar_SDIAB,Solar Photovoltaic,PVe,PVe,false
+1847,CED Avenal_AVCA,Solar Photovoltaic,PVe,PVe,false
+1848,CED Ducor 1_DU1CA,Solar Photovoltaic,PVe,PVe,false
+1849,CED Ducor 2_DU2CA,Solar Photovoltaic,PVe,PVe,false
+1850,CED Ducor 3_DU3CA,Solar Photovoltaic,PVe,PVe,false
+1851,CED Ducor 4_DU4CA,Solar Photovoltaic,PVe,PVe,false
+1852,AVS Lancaster 1_PV1,Solar Photovoltaic,PVe,PVe,false
+1853,US-TOPCO (Soccer Center)_PV1,Solar Photovoltaic,PVe,PVe,false
+1854,Kingbird B Solar LLC_GEN01,Solar Photovoltaic,PVe,PVe,false
+1855,Blythe Solar II LLC_BLCK4,Solar Photovoltaic,PVe,PVe,false
+1856,Blythe Solar II LLC_BLCK5,Solar Photovoltaic,PVe,PVe,false
+1857,Blythe Solar II LLC_BLCK6,Solar Photovoltaic,PVe,PVe,false
+1858,Blythe Solar II LLC_BLCK7,Solar Photovoltaic,PVe,PVe,false
+1859,Blythe Solar 110 LLC_BLCK1,Solar Photovoltaic,PVe,PVe,false
+1860,Blythe Solar 110 LLC_BLCK2,Solar Photovoltaic,PVe,PVe,false
+1861,Blythe Solar 110 LLC_BLCK3,Solar Photovoltaic,PVe,PVe,false
+1862,UCI Fuel Cell_MB-16,Other Natural Gas,OT,FC,true
+1863,Lemoore 1_LEPV1,Solar Photovoltaic,PVe,PVe,false
+1864,Building F_BLDGF,Solar Photovoltaic,PVe,PVe,false
+1865,Building G_BLDGG,Solar Photovoltaic,PVe,PVe,false
+1866,Buidling L_BLDG1,Solar Photovoltaic,PVe,PVe,false
+1867,Dulles_DULLE,Solar Photovoltaic,PVe,PVe,false
+1868,Freeway Springs_FSPRI,Solar Photovoltaic,PVe,PVe,false
+1869,Solverde 1_SOLV1,Solar Photovoltaic,PVe,PVe,false
+1870,Antelope DSR 1_DSR1,Solar Photovoltaic,PVe,PVe,false
+1871,Antelope DSR 2_DSR2,Solar Photovoltaic,PVe,PVe,false
+1872,Whitethorn Solar LLC_GEN1,Solar Photovoltaic,PVe,PVe,false
+1873,Zero Waste Energy Development Co LLC_ZWED1,Other Waste Biomass,ST,IC,true
+1874,Zero Waste Energy Development Co LLC_ZWED2,Other Waste Biomass,ST,IC,true
+1875,Equinix San Jose_EQXOO,Other Natural Gas,OT,FC,true
+1876,Intel Santa Clara_NTL00,Other Natural Gas,OT,FC,true
+1877,Genentech-Oceanside Hybrid_BA1,Batteries,BA,BA,false
+1878,Genentech-Oceanside Hybrid_PV1,Solar Photovoltaic,PVe,PVe,false
+1879,RE Garland_PV2,Solar Photovoltaic,PVe,PVe,false
+1880,Midway Solar Farm II_MSF2,Solar Photovoltaic,PVe,PVe,false
+1881,Algonquin SKIC 10 Solar LLC_SKI10,Solar Photovoltaic,PVe,PVe,false
+1882,Weymouth Solar Plant_1,Solar Photovoltaic,PVe,PVe,false
+1883,Weymouth Solar Plant_2,Solar Photovoltaic,PVe,PVe,false
+1884,Castor Solar_CASTR,Solar Photovoltaic,PVe,PVe,false
+1885,Antelope Big Sky Ranch_ABSR,Solar Photovoltaic,PVe,PVe,false
+1886,Summer Solar LLC_SUMSL,Solar Photovoltaic,PVe,PVe,false
+1887,Central Antelope Dry Ranch B LLC_CADRB,Solar Photovoltaic,PVe,PVe,false
+1888,Portal Ridge Solar B LLC_GEN01,Solar Photovoltaic,PVe,PVe,false
+1889,Portal Ridge Solar C LLC_GEN01,Solar Photovoltaic,PVe,PVe,false
+1890,Midway Solar Farm III_MSF3,Solar Photovoltaic,PVe,PVe,false
+1891,Willow Spring Solar LLC_GEN01,Solar Photovoltaic,PVe,PVe,false
+1892,Midway Solar Farm 1_MSF1,Solar Photovoltaic,PVe,PVe,false
+1893,Santa Rita Jail Fuel Cell_MB-18,Other Natural Gas,OT,FC,true
+1894,RE Garland A_PV1,Solar Photovoltaic,PVe,PVe,false
+1895,Munro Valley Solar_MUN,Solar Photovoltaic,PVe,PVe,false
+1896,CA Dept of Public Health at Richmond_PV1,Solar Photovoltaic,PVe,PVe,false
+1897,Corcoran_PVCR,Solar Photovoltaic,PVe,PVe,false
+1898,Bayshore Solar B LLC_BSHRB,Solar Photovoltaic,PVe,PVe,false
+1899,Bayshore Solar C LLC_BSHRC,Solar Photovoltaic,PVe,PVe,false
+1900,Bayshore Solar A LLC_BSHRA,Solar Photovoltaic,PVe,PVe,false
+1901,Springbok 3 Solar Farm Hybrid_SB3BS,Batteries,BA,BA,false
+1902,Springbok 3 Solar Farm Hybrid_SB3SF,Solar Photovoltaic,PVe,PVe,false
+1903,Valley Center_PV1,Solar Photovoltaic,PVe,PVe,false
+1904,Granger_PV1,Solar Photovoltaic,PVe,PVe,false
+1905,Solar Blythe 2_PV1,Solar Photovoltaic,PVe,PVe,false
+1906,Borrego Springs Energy Storage_SES1,Batteries,BA,BA,false
+1907,Borrego Springs Energy Storage_SES2,Batteries,BA,BA,false
+1908,Pala Energy Storage Yard_SES1,Batteries,BA,BA,false
+1909,Pala Energy Storage Yard_SES2,Batteries,BA,BA,false
+1910,Canyon Crest Academy_SES,Batteries,BA,BA,false
+1911,El Cajon Energy Storage_SES,Batteries,BA,BA,false
+1912,Escondido Energy Storage_SES,Batteries,BA,BA,false
+1913,North City - Landfill Gas Engine North_NCEP,Landfill Gas,OT,IC,true
+1914,Golden Fields Solar I LLC_RS1,Solar Photovoltaic,PVe,PVe,false
+1915,Solar Star California XLI LLC_RS1,Solar Photovoltaic,PVe,PVe,false
+1916,Voyager Wind I_VYGR1,Onshore Wind Turbine,WT,WT,false
+1917,Mira Loma Energy Storage Facility_013A,Batteries,BA,BA,false
+1918,Mira Loma Energy Storage Facility_013B,Batteries,BA,BA,false
+1919,San Joaquin Solar_SJ1A,Solar Photovoltaic,PVe,PVe,false
+1920,San Joaquin Solar_SJ1B,Solar Photovoltaic,PVe,PVe,false
+1921,SEPV Imperial Dixieland West_SESI2,Solar Photovoltaic,PVe,PVe,false
+1922,SEPV Imperial Dixieland East_SESI1,Solar Photovoltaic,PVe,PVe,false
+1923,Millikan BESS_PE101,Batteries,BA,BA,false
+1924,PVN Milliken LLC_PV,Solar Photovoltaic,PVe,PVe,false
+1925,Valley Sanitary District WTP Solar_PV1,Solar Photovoltaic,PVe,PVe,false
+1926,Colgreen North Shore Solar Farm_CNS1,Solar Photovoltaic,PVe,PVe,false
+1927,Genentech Vacaville Meter No1_PV1,Solar Photovoltaic,PVe,PVe,false
+1928,Genentech Vacaville Meter No1_PV2,Solar Photovoltaic,PVe,PVe,false
+1929,US GSA - Sacramento_PV1,Solar Photovoltaic,PVe,PVe,false
+1930,Dept of General Services -FTB_PV1,Solar Photovoltaic,PVe,PVe,false
+1931,Solar Star California XLIV LLC_PB1,Solar Photovoltaic,PVe,PVe,false
+1932,Westmont 300B_W5328,Solar Photovoltaic,PVe,PVe,false
+1933,Verwey-Hanford Dairy Digester No1_3,Other Waste Biomass,ST,IC,true
+1934,Hyperion Treatment Plant CHP Plant_CTG1,Other Waste Biomass,ST,GT,true
+1935,Hyperion Treatment Plant CHP Plant_CTG2,Other Waste Biomass,ST,GT,true
+1936,Hyperion Treatment Plant CHP Plant_STG1,Other Waste Biomass,ST,GT,true
+1937,Glendale Battery Energy Storage System_2BESS,Batteries,BA,BA,false
+1938,Whitney Point Solar_WS532,Solar Photovoltaic,PVe,PVe,false
+1939,CSUF State College_PV1,Solar Photovoltaic,PVe,PVe,false
+1940,CSUF Nutwood Solar_PV1,Solar Photovoltaic,PVe,PVe,false
+1941,NextEra Westside PV_WS526,Solar Photovoltaic,PVe,PVe,false
+1942,Lindberg Field Solar 2_PV1,Solar Photovoltaic,PVe,PVe,false
+1943,Ramona Solar Energy_1,Solar Photovoltaic,PVe,PVe,false
+1944,SCDA Solar 1_SCAIR,Solar Photovoltaic,PVe,PVe,false
+1945,Marin Clean Energy Solar One_MCES1,Solar Photovoltaic,PVe,PVe,false
+1946,Pacific Ethanol Stockton Cogen Plant_PESCT,Natural Gas Fired Combustion Turbine,GT,GT,false
+1947,Foundation CDCR LAC_WTG1,Onshore Wind Turbine,WT,WT,false
+1948,Vanadium Redox Flow Battery Plant_VRF,Batteries,BA,BA,false
+1949,Manteca Land PV_MANT1,Solar Photovoltaic,PVe,PVe,false
+1950,Delano Land 1_DELA1,Solar Photovoltaic,PVe,PVe,false
+1951,Bakersfield PV 1_BAKE1,Solar Photovoltaic,PVe,PVe,false
+1952,Bakersfield Industrial PV 1_BIND1,Solar Photovoltaic,PVe,PVe,false
+1953,Intel Folsom Phase 3_PV1,Solar Photovoltaic,PVe,PVe,false
+1954,AT&T Holger_AT057,Other Natural Gas,OT,FC,true
+1955,AT&T Anaheim_AT058,Other Natural Gas,OT,FC,true
+1956,Sacramento Regional County Sanitation PV_PV1,Solar Photovoltaic,PVe,PVe,false
+1957,Green Beanworks C PV_GBWXC,Solar Photovoltaic,PVe,PVe,false
+1958,Green Beanworks D PV_GBWXD,Solar Photovoltaic,PVe,PVe,false
+1959,Golden Hills North Wind Energy Center_1,Onshore Wind Turbine,WT,WT,false
+1960,Westmont 300A_W5531,Solar Photovoltaic,PVe,PVe,false
+1961,USPS PV_USPS1,Solar Photovoltaic,PVe,PVe,false
+1962,Antelope Expansion 2_ANTX2,Solar Photovoltaic,PVe,PVe,false
+1963,Antelope DSR 3_ADSR3,Solar Photovoltaic,PVe,PVe,false
+1964,Port of LA Solar FiT Project_W4885,Solar Photovoltaic,PVe,PVe,false
+1965,Green Beanworks B PV_GBWXB,Solar Photovoltaic,PVe,PVe,false
+1966,Westmont 400A_W5691,Solar Photovoltaic,PVe,PVe,false
+1967,Westmont 400B_W5694,Solar Photovoltaic,PVe,PVe,false
+1968,Valencia 1 Solar CA_VAL1,Solar Photovoltaic,PVe,PVe,false
+1969,One Ten Partners PV_OTP,Solar Photovoltaic,PVe,PVe,false
+1970,Merced 1 PV_MRCD1,Solar Photovoltaic,PVe,PVe,false
+1971,Madera 1 PV_MDRA1,Solar Photovoltaic,PVe,PVe,false
+1972,Foundation California Training Facility_WTG1,Onshore Wind Turbine,WT,WT,false
+1973,Foundation Mann Packing_WTG1,Onshore Wind Turbine,WT,WT,false
+1974,Foundation SaIinas Valley State Prison_WTG1,Onshore Wind Turbine,WT,WT,false
+1975,Gaskell West 1 Solar Facility_PV1,Solar Photovoltaic,PVe,PVe,false
+1976,Vandenberg Solar Project_VBERG,Solar Photovoltaic,PVe,PVe,false
+1977,ABEC No2 dba West-Star Dairy_GEN1,Other Waste Biomass,ST,IC,true
+1978,ABEC No3 dba Lakeview Dairy_GEN1,Other Waste Biomass,ST,IC,true
+1979,ABEC No4 dba CE&S Dairy_GEN1,Other Waste Biomass,ST,IC,true
+1980,Voyager Wind II_VYGR2,Onshore Wind Turbine,WT,WT,false
+1981,Voyager Wind III_VYGR3,Onshore Wind Turbine,WT,WT,false
+1982,Voyager Wind IV_VYGR4,Onshore Wind Turbine,WT,WT,false
+1983,Westmont 301_W5791,Solar Photovoltaic,PVe,PVe,false
+1984,Westmont 401_W5792,Solar Photovoltaic,PVe,PVe,false
+1985,Stenner Creek Solar_CPOLY,Solar Photovoltaic,PVe,PVe,false
+1986,CDCR (CA) - Corcoran State Prison_CORSP,Solar Photovoltaic,PVe,PVe,false
+1987,CDCR (CA) - Wasco State Prison_WASCO,Solar Photovoltaic,PVe,PVe,false
+1988,Kilroy Solar_KILRO,Solar Photovoltaic,PVe,PVe,false
+1989,Vista Energy Storage System_VISTA,Batteries,BA,BA,false
+1990,USG 1_USG1,Solar Photovoltaic,PVe,PVe,false
+1991,USG 2_USG2,Solar Photovoltaic,PVe,PVe,false
+1992,Folsom SP and CSP Sacramento_FOLSM,Solar Photovoltaic,PVe,PVe,false
+1993,Aerolease_APLEX,Solar Photovoltaic,PVe,PVe,false
+1994,HEBT WLA 1_WLA01,Batteries,BA,BA,false
+1995,HEBT Irvine 1_IRV01,Batteries,BA,BA,false
+1996,HEBT Irvine 1_IRV1W,Batteries,BA,BA,false
+1997,HEBT Irvine 2_IRV06,Batteries,BA,BA,false
+1998,HEBT Irvine 2_IRV2W,Batteries,BA,BA,false
+1999,Wistaria Ranch Solar_WICA,Solar Photovoltaic,PVe,PVe,false
+2000,SunSelect1_1,Natural Gas Internal Combustion Engine,IC,IC,false
+2001,SunSelect1_2,Natural Gas Internal Combustion Engine,IC,IC,false
+2002,Stage Gulch Solar_5001,Solar Photovoltaic,PVe,PVe,false
+2003,Lavio Solar_5002,Solar Photovoltaic,PVe,PVe,false
+2004,Target Shafter_RPU2,Solar Photovoltaic,PVe,PVe,false
+2005,Soboba Community Solar Project_SCSP1,Solar Photovoltaic,PVe,PVe,false
+2006,SeaWorld Aquatica_10276,Solar Photovoltaic,PVe,PVe,false
+2007,Tulare BioMAT Fuel Cell_MM27,Other Waste Biomass,ST,FC,true
+2008,National Raisin_CR1,Solar Photovoltaic,PVe,PVe,false
+2009,National Raisin_CR2,Solar Photovoltaic,PVe,PVe,false
+2010,National Raisin_CR3,Solar Photovoltaic,PVe,PVe,false
+2011,National Raisin_CR4,Solar Photovoltaic,PVe,PVe,false
+2012,Pacific Ethanol Madera Solar Array_PV,Solar Photovoltaic,PVe,PVe,false
+2013,Gavilan District College Solar Project_GDCBA,Batteries,BA,BA,false
+2014,Gavilan District College Solar Project_GDCPV,Solar Photovoltaic,PVe,PVe,false
+2015,San Pablo Raceway_SPRWY,Solar Photovoltaic,PVe,PVe,false
+2016,UC Riverside Lots 30 & 32_UCRIV,Solar Photovoltaic,PVe,PVe,false
+2017,Stanford Campus Solar_STANF,Solar Photovoltaic,PVe,PVe,false
+2018,CSU Long Beach Lots 7 & 14_CSULB,Solar Photovoltaic,PVe,PVe,false
+2019,Citizens Imperial Solar_CIS1,Solar Photovoltaic,PVe,PVe,false
+2020,Lancaster_LANC,Solar Photovoltaic,PVe,PVe,false
+2021,Blue Shld Of Cal- El Dorado Hlls Mtr B_PV1,Solar Photovoltaic,PVe,PVe,false
+2022,Chaffey College Rancho Cucamonga Campus_SOLAR,Solar Photovoltaic,PVe,PVe,false
+2023,Berry NMW Cogens_21Z,Natural Gas Fired Combustion Turbine,GT,GT,false
+2024,Berry NMW Cogens_PF,Natural Gas Fired Combustion Turbine,GT,GT,false
+2025,County of San Diego SBRC_SBRC,Solar Photovoltaic,PVe,PVe,false
+2026,Target Woodland Solar Project_TWSP,Solar Photovoltaic,PVe,PVe,false
+2027,Liberty HS Solar Project_LHSSP,Solar Photovoltaic,PVe,PVe,false
+2028,Frontier HS Solar Project_FHSSP,Solar Photovoltaic,PVe,PVe,false
+2029,Xebec 1_W7188,Solar Photovoltaic,PVe,PVe,false
+2030,Francisco St. Solar_W7190,Solar Photovoltaic,PVe,PVe,false
+2031,Valentine Solar LLC_VAL01,Solar Photovoltaic,PVe,PVe,false
+2032,CFW Solar X LLC - Vaughn_VSCFW,Solar Photovoltaic,PVe,PVe,false
+2033,Verwey-Hanford Dairy Digester No2_4,Other Waste Biomass,ST,IC,true
+2034,Verwey-Hanford Dairy Digester No3_4,Other Waste Biomass,ST,IC,true
+2035,Ratkovich Alhambra_RAT00,Other Natural Gas,OT,FC,true
+2036,Micro Santa Clara_SMC01,Other Natural Gas,OT,FC,true
+2037,Disney Prospect_DSY01,Other Natural Gas,OT,FC,true
+2038,ATT Kelvin_ATT56,Other Natural Gas,OT,FC,true
+2039,ATT Van Nyus_ATT93,Other Natural Gas,OT,FC,true
+2040,FLEX Gibraltar_FLX01,Other Natural Gas,OT,FC,true
+2041,APP Prune A-D_AP11A,Other Natural Gas,OT,FC,true
+2042,APP Prune A-D_AP11B,Other Natural Gas,OT,FC,true
+2043,APP Prune A-D_AP11C,Other Natural Gas,OT,FC,true
+2044,APP Prune A-D_AP11D,Other Natural Gas,OT,FC,true
+2045,Preferred Freezer San Leandro_SLPV1,Solar Photovoltaic,PVe,PVe,false
+2046,PFMG Solar Grossmont Helix LLC_HELIX,Solar Photovoltaic,PVe,PVe,false
+2047,SFDK Solar_SFDK,Solar Photovoltaic,PVe,PVe,false
+2048,HL Solar_HLS,Solar Photovoltaic,PVe,PVe,false
+2049,Equinix Caspian Dr. Fuel Cell_EQX1A,Other Natural Gas,OT,FC,true
+2050,Equinix Caspian Dr. Fuel Cell_EQX1B,Other Natural Gas,OT,FC,true
+2051,American Canyon Solar_RPNPA,Solar Photovoltaic,PVe,PVe,false
+2052,American Canyon Solar_RPNPB,Solar Photovoltaic,PVe,PVe,false
+2053,American Canyon Solar_RPNPC,Solar Photovoltaic,PVe,PVe,false
+2054,Malech Solar Farm_MFARM,Solar Photovoltaic,PVe,PVe,false
+2055,Guadalupe Solar Farm_GFARM,Solar Photovoltaic,PVe,PVe,false
+2056,Mission College Blvd. Fuel Cell_NTL3A,Other Natural Gas,OT,FC,true
+2057,Mission College Blvd. Fuel Cell_NTL3B,Other Natural Gas,OT,FC,true
+2058,Kaiser East La Palma Ave. Fuel Cell_KR059,Other Natural Gas,OT,FC,true
+2059,Kaiser Deer Valley Rd. Fuel Cell_KSR24,Other Natural Gas,OT,FC,true
+2060,Kaiser Owens Dr. Fuel Cell_KSR23,Other Natural Gas,OT,FC,true
+2061,Kaiser Napa Valley Corporate Dr Fuel Cell_KS18A,Other Natural Gas,OT,FC,true
+2062,Kaiser Napa Valley Corporate Dr Fuel Cell_KS18B,Other Natural Gas,OT,FC,true
+2063,Equinix Great Oaks Blvd. Fuel Cell_EQ14A,Other Natural Gas,OT,FC,true
+2064,Equinix Great Oaks Blvd. Fuel Cell_EQ14B,Other Natural Gas,OT,FC,true
+2065,Equinix Lundy Ave. Fuel Cell_EQ13A,Other Natural Gas,OT,FC,true
+2066,Equinix Lundy Ave. Fuel Cell_EQ13B,Other Natural Gas,OT,FC,true
+2067,Equinix Douglas St. Fuel Cell_EQX09,Other Natural Gas,OT,FC,true
+2068,Equinix Maple Ave. Fuel Cell_EQX08,Other Natural Gas,OT,FC,true
+2069,Solar Star Palo Alto I LLC_SSPAI,Solar Photovoltaic,PVe,PVe,false
+2070,Grossmont HS Solar Project_GHSP,Solar Photovoltaic,PVe,PVe,false
+2071,CalCity Solar 1_CALTR,Solar Photovoltaic,PVe,PVe,false
+2072,Eagle Creek_EGCRK,Solar Photovoltaic,PVe,PVe,false
+2073,CID Solar (CA)_HLS,Solar Photovoltaic,PVe,PVe,false
+2074,Valero Wilmington Cogeneration Plant_79G1,Natural Gas Fired Combustion Turbine,GT,GT,false
+2075,Alticor Inc - Solar Project_AISP,Solar Photovoltaic,PVe,PVe,false
+2076,Medline Ind. Phase 2 Tracy_MIP2T,Solar Photovoltaic,PVe,PVe,false
+2077,Niagara Bottling Stockton_NBS,Solar Photovoltaic,PVe,PVe,false
+2078,Phelan Pinon Hills CSD Solar_PPHS,Solar Photovoltaic,PVe,PVe,false
+2079,Castaic Lake Phase II_CA135,Solar Photovoltaic,PVe,PVe,false
+2080,San Diego Zoo_SDZOO,Batteries,BA,BA,false
+2081,Central CA Fuel Cell 1_CCFC1,Other Natural Gas,OT,FC,true
+2082,RE-VFO LLC_INV1,Solar Photovoltaic,PVe,PVe,false
+2083,RE-VFO LLC_INV2,Solar Photovoltaic,PVe,PVe,false
+2084,D'Arrigo Brothers - Phase 4_DA04,Solar Photovoltaic,PVe,PVe,false
+2085,PSREC/SIAD Solar_SIAD,Solar Photovoltaic,PVe,PVe,false
+2086,California City_CACTY,Solar Photovoltaic,PVe,PVe,false
+2087,Illumina Way SD_ILM01,Other Natural Gas,OT,FC,true
+2088,Extreme San Ignacio_EXN02,Other Natural Gas,OT,FC,true
+2089,ATT North Watney_ATT35,Other Natural Gas,OT,FC,true
+2090,ATT Ventura Blvd_ATT27,Other Natural Gas,OT,FC,true
+2091,Extreme Via Del Oro_EXN01,Other Natural Gas,OT,FC,true
+2092,Allergan_ALRGN,Batteries,BA,BA,false
+2093,Baker_BAKER,Batteries,BA,BA,false
+2094,CSU Long Beach_CSULB,Batteries,BA,BA,false
+2095,DATS_DATS0,Batteries,BA,BA,false
+2096,Downey_DOWNY,Batteries,BA,BA,false
+2097,LAWRP_LAWRP,Batteries,BA,BA,false
+2098,OCSD_OCSD1,Batteries,BA,BA,false
+2099,SOCCD_SOCCD,Batteries,BA,BA,false
+2100,Pleasanton - Amador Valley High School_AVHS,Solar Photovoltaic,PVe,PVe,false
+2101,Costco Lake Drive_CTC13,Other Natural Gas,OT,FC,true
+2102,North Kern State Prison Phase II_5812,Solar Photovoltaic,PVe,PVe,false
+2103,Dedeaux_DEDEA,Solar Photovoltaic,PVe,PVe,false
+2104,AGT000 Stevens Creek Fuel Cell_AGT0A,Other Natural Gas,OT,FC,true
+2105,AGT000 Stevens Creek Fuel Cell_AGT0B,Other Natural Gas,OT,FC,true
+2106,CST001 McCarthy Fuel Cell_CST1A,Other Natural Gas,OT,FC,true
+2107,CST001 McCarthy Fuel Cell_CST1B,Other Natural Gas,OT,FC,true
+2108,EQX010 Great Oaks Fuel Cell_EQ10A,Other Natural Gas,OT,FC,true
+2109,EQX010 Great Oaks Fuel Cell_EQ10B,Other Natural Gas,OT,FC,true
+2110,EQX011 Duane Fuel Cell_EQ11A,Other Natural Gas,OT,FC,true
+2111,EQX011 Duane Fuel Cell_EQ11B,Other Natural Gas,OT,FC,true
+2112,EQX011 Duane Fuel Cell_EQ11C,Other Natural Gas,OT,FC,true
+2113,EQX015 Great Oaks Fuel Cell_EQ15A,Other Natural Gas,OT,FC,true
+2114,EQX015 Great Oaks Fuel Cell_EQ15B,Other Natural Gas,OT,FC,true
+2115,JSR000 N Mathilda Fuel Cell_JSR00,Other Natural Gas,OT,FC,true
+2116,KSR028 Merced Fuel Cell_KSR28,Other Natural Gas,OT,FC,true
+2117,GEN005 Antibody Fuel Cell_GEN05,Other Natural Gas,OT,FC,true
+2118,SCU000 El Camino Real Fuel Cell_SCU00,Other Natural Gas,OT,FC,true
+2119,KSR053 Cantara Fuel Cell_KSR53,Other Natural Gas,OT,FC,true
+2120,TLR000 Hansen Fuel Cell_TLR0A,Other Natural Gas,OT,FC,true
+2121,TLR000 Hansen Fuel Cell_TLR0B,Other Natural Gas,OT,FC,true
+2122,TLR000 Hansen Fuel Cell_TLR0C,Other Natural Gas,OT,FC,true
+2123,Vacaville Hospital_6701,Solar Photovoltaic,PVe,PVe,false

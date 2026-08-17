@@ -81,6 +81,289 @@ function try_convert(T::Type{<:StaticInjection}, gen::ThermalStandard, pm_type::
     )
 end
 
+"""
+Rename `gen` to `new_name` in `system`, preserving every other field exactly. A no-op if
+`gen` already carries `new_name` (imports and synchronous condensers, which the EIA
+enrichment never renames). The renamed component gets a fresh `InfrastructureSystemsInternal`
+(new UUID), matching the convention `try_convert` below already uses when it reconstructs a
+component under a new identity.
+"""
+function rename_generator!(system::System, gen::ThermalStandard, new_name::AbstractString)
+    if get_name(gen) == new_name
+        return gen
+    end
+    old_data = Dict(key => getfield(gen, key) for key in fieldnames(ThermalStandard))
+    delete!(old_data, :internal)
+    old_data[:name] = new_name
+    remove_component!(system, gen)
+    renamed = ThermalStandard(; old_data...)
+    add_component!(system, renamed)
+    return renamed
+end
+
+"""
+No extra fields needed to promote `gen` into a HydroTurbine.
+"""
+_extra_hydro_fields(::Type{HydroTurbine}, ::HydroDispatch) = Dict{Symbol, Any}()
+
+"""
+HydroPumpTurbine has four fields with no HydroDispatch analog and no default value:
+`active_power_limits_pump` (this dataset carries no per-unit EIA pump nameplate, so the pump
+range is assumed symmetric to the unit's own turbine active_power_limits -- a guess, recorded
+in the audit report), `outflow_limits` (no source; left unconstrained), and
+`powerhouse_elevation` (the design's relative-datum convention: 0.0, matching HydroTurbine's
+own default).
+"""
+function _extra_hydro_fields(::Type{HydroPumpTurbine}, gen::HydroDispatch)
+    return Dict{Symbol, Any}(
+        :active_power_limits_pump => getfield(gen, :active_power_limits),
+        :outflow_limits => nothing,
+        :powerhouse_elevation => 0.0,
+    )
+end
+
+"""
+Convert `gen::HydroDispatch` into a HydroTurbine or HydroPumpTurbine, carrying over every
+shared physical field (bus, active/reactive power, ratings, power limits, ramp/time limits,
+base_power, operation_cost). `status`/`time_at_status` are dropped rather than copied:
+HydroDispatch.status is a commitment Bool, HydroPumpTurbine.status is an unrelated
+HydroPumpTurbineStatus mode flag (same field name, incompatible type), and HydroTurbine has
+no such field at all.
+
+The result is not yet attached to a HydroReservoir -- see `attach_hydro_reservoirs!` below;
+neither HydroTurbine nor HydroPumpTurbine is meaningful without one.
+"""
+function promote_hydro(
+    T::Type{<:Union{HydroTurbine, HydroPumpTurbine}},
+    gen::HydroDispatch,
+    pm_type::PSY.PrimeMovers,
+)
+    common_keys = intersect(fieldnames(HydroDispatch), fieldnames(T))
+    old_data = Dict(key => getfield(gen, key) for key in common_keys)
+    delete!.((old_data,), (:internal, :prime_mover_type, :status, :time_at_status))
+    old_data[:prime_mover_type] = pm_type
+    return T(; old_data..., _extra_hydro_fields(T, gen)...)
+end
+
+function hydro_target_type(target_type::AbstractString)
+    if target_type == "HydroTurbine"
+        return HydroTurbine
+    elseif target_type == "HydroPumpTurbine"
+        return HydroPumpTurbine
+    else
+        error("Unknown hydro target_type \"$target_type\" in hydro_units.csv")
+    end
+end
+
+"""
+Stage 4 of the EIA hydro enrichment (data/hydro_units.csv): promote every unit marked
+`promoted == true` from HydroDispatch into a HydroTurbine or HydroPumpTurbine per its
+`target_type` column. Carries any attached GeographicInfo across the type change, since
+`remove_component!`/`add_component!` (required for a type change) does not do so on its own.
+Returns a name -> component map of the promoted units for `attach_hydro_reservoirs!`.
+"""
+function promote_hydro_units!(system::System, hydro_df::DataFrame)
+    promoted_units = Dict{String, Union{HydroTurbine, HydroPumpTurbine}}()
+    for row in eachrow(hydro_df)
+        row.promoted || continue
+        name = row.new_name
+        gen = get_component(HydroDispatch, system, name)
+        isnothing(gen) && error(
+            "hydro_units.csv marks \"$name\" (PlantCode $(row.PlantCode)) as promoted, but " *
+            "no HydroDispatch by that name exists in the system.",
+        )
+        T = hydro_target_type(row.target_type)
+        # String(...): the enum's own String constructor requires a concrete String, not
+        # CSV.jl's InlineStrings short-string types (String3/String7/...) -- verified this
+        # throws a MethodError ("cannot convert ... to Int64") without the conversion.
+        pm_type = PrimeMovers(String(row.eia_pm))
+
+        geo_attrs = collect(get_supplemental_attributes(GeographicInfo, gen))
+        for geo in geo_attrs
+            remove_supplemental_attribute!(system, gen, geo)
+        end
+        remove_component!(system, gen)
+        turbine = promote_hydro(T, gen, pm_type)
+        add_component!(system, turbine)
+        for geo in geo_attrs
+            add_supplemental_attribute!(system, turbine, geo)
+        end
+        promoted_units[name] = turbine
+    end
+    return promoted_units
+end
+
+"""hydro_reservoirs.csv's own `turbine_type` column already applies the design's head-band
+rule (verified: every one of the 32 real rows carries FRANCIS/PELTON/KAPLAN) -- read it
+directly rather than recomputing it here, so there is exactly one place that rule lives."""
+apply_turbine_type!(turbine::HydroTurbine, turbine_type::AbstractString) =
+    set_turbine_type!(turbine, HydroTurbineType(String(turbine_type)))
+
+"""HydroPumpTurbine has no `turbine_type` field (verified in
+PowerSystems.jl/src/models/generated/HydroPumpTurbine.jl): the design's head-band assignment
+rule is inapplicable to it, so this is a documented no-op rather than an error."""
+apply_turbine_type!(::HydroPumpTurbine, turbine_type::AbstractString) = nothing
+
+"""`inflow_m3s` is the mean 2019 daily inflow from CDEC sensor 76 or a USGS NWIS gauge, real
+for 14 of the 32 reservoirs. The other 18 have no flow gauge and stay blank rather than being
+estimated from basin neighbours; those default to 0.0 here."""
+_reservoir_inflow_m3ph(inflow_m3s::Missing) = 0.0
+_reservoir_inflow_m3ph(inflow_m3s::Real) = inflow_m3s * 3600.0  # m^3/s -> m^3/h
+
+"""
+Stage 5 of the EIA hydro enrichment (data/hydro_reservoirs.csv): build one HydroReservoir per
+promoted plant and wire the plant's promoted turbines into `downstream_turbines`.
+`upstream_reservoirs` is left empty everywhere -- cascade topology (Big Creek, Pit River) is
+deferred by design decision, not oversight.
+
+Every HydroPumpTurbine therefore ends up with only the single (upper) reservoir this stage
+builds, not the second (lower) reservoir its own docstring calls for: no source in this
+dataset identifies a paired lower reservoir for any of the 13 promoted PS units, and inventing
+one would be a fabrication rather than an approximation. This is a known model
+simplification, not a bug -- flagged here and in the final report.
+"""
+function attach_hydro_reservoirs!(
+    system::System,
+    reservoirs_df::DataFrame,
+    hydro_df::DataFrame,
+    promoted_units::Dict{String, <:Union{HydroTurbine, HydroPumpTurbine}},
+)
+    plant_code_to_names = Dict{Int, Vector{String}}()
+    for row in eachrow(hydro_df)
+        row.promoted || continue
+        push!(get!(plant_code_to_names, row.PlantCode, String[]), row.new_name)
+    end
+
+    for row in eachrow(reservoirs_df)
+        plant_code = row.eia_plant_code
+        names = get(plant_code_to_names, plant_code, String[])
+        isempty(names) && error(
+            "hydro_reservoirs.csv has a reservoir for EIA plant code $plant_code " *
+            "(\"$(row.reservoir_name)\"), but hydro_units.csv has no promoted unit at that " *
+            "plant code.",
+        )
+        turbines = [promoted_units[name] for name in names]
+        max_storage = row.storage_level_max_m3
+        inflow = _reservoir_inflow_m3ph(row.inflow_m3s)
+
+        reservoir = HydroReservoir(;
+            name = row.reservoir_name,
+            available = true,
+            storage_level_limits = (min = row.storage_level_min_m3, max = max_storage),
+            initial_level = row.initial_level_m3 / max_storage,
+            spillage_limits = nothing,
+            inflow = inflow,
+            # No outflow source anywhere in scope (only inflow is in the field-mapping table);
+            # long-run mass-balance assumption, recorded as a gap in the final report.
+            outflow = inflow,
+            level_targets = nothing,
+            intake_elevation = row.intake_elevation_m,
+            head_to_volume_factor = LinearFunctionData(row.head_to_volume_slope),
+            evaporative_loss = row.evaporative_loss,
+            downstream_turbines = Vector{PSY.HydroUnit}(turbines),
+            level_data_type = ReservoirDataType.USABLE_VOLUME,
+        )
+        add_component!(system, reservoir)
+
+        for turbine in turbines
+            apply_turbine_type!(turbine, row.turbine_type)
+        end
+    end
+    return
+end
+
+"""
+One CombinedCycleBlock's `configuration` must be a single value, but a handful of blocks in
+generator_plants.csv carry more than one distinct `cc_configuration` across their member rows
+(several raw EIA Unit Codes were folded into a single group_index upstream). Resolves each
+block to its most common configuration (ties broken alphabetically) and `@warn`s every block
+where this happens, so the substitution is visible rather than silently picked.
+"""
+function resolve_cc_configurations(plants_df::DataFrame)
+    cc_rows = plants_df[plants_df.plant_type .== "CombinedCycleBlock", :]
+    resolved = Dict{Tuple{Int, Int}, CombinedCycleConfiguration}()
+    for block_rows in groupby(cc_rows, [:PlantCode, :group_index])
+        plant_code = block_rows.PlantCode[1]
+        group_index = block_rows.group_index[1]
+        counts = Dict{String, Int}()
+        for c in block_rows.cc_configuration
+            counts[c] = get(counts, c, 0) + 1
+        end
+        chosen = first(sort(collect(counts); by = kv -> (-kv[2], kv[1])))[1]
+        if length(counts) > 1
+            @warn "Combined-cycle block \"$(block_rows.plant_name[1])\" (PlantCode " *
+                "$plant_code, group $group_index) carries $(length(counts)) distinct " *
+                "cc_configuration values in generator_plants.csv ($counts); using " *
+                "\"$chosen\" (the most common)"
+        end
+        resolved[(plant_code, group_index)] = CombinedCycleConfiguration(String(chosen))
+    end
+    return resolved
+end
+
+"""
+Stage 3 of the EIA enrichment (data/generator_plants.csv): attach one PowerPlant supplemental
+attribute per PlantCode per plant_type. HydroPowerPlant is attached only for `promoted`
+plants: `add_supplemental_attribute!(sys, ::HydroDispatch, ::HydroPowerPlant, ...)` throws
+unconditionally in this psy6 checkout (plant_attribute.jl:604), and generator_plants.csv
+marks every hydro unit's plant_type as HydroPowerPlant regardless of promotion -- so
+unpromoted plants are skipped here rather than attempted and failed.
+"""
+function attach_plant_groups!(
+    system::System,
+    plants_df::DataFrame,
+    promoted_plant_codes::Set{Int},
+)
+    thermal_plants = Dict{Int, ThermalPowerPlant}()
+    renewable_plants = Dict{Int, RenewablePowerPlant}()
+    hydro_plants = Dict{Int, HydroPowerPlant}()
+    cc_blocks = Dict{Tuple{Int, Int}, CombinedCycleBlock}()
+    cc_configs = resolve_cc_configurations(plants_df)
+
+    for row in eachrow(plants_df)
+        plant_code = row.PlantCode
+        plant_type = row.plant_type
+        gen = get_component(StaticInjection, system, row.new_name)
+        isnothing(gen) && error(
+            "generator_plants.csv references \"$(row.new_name)\" (PlantCode $plant_code), " *
+            "which is not in the system.",
+        )
+
+        if plant_type == "ThermalPowerPlant"
+            plant = get!(thermal_plants, plant_code) do
+                ThermalPowerPlant(; name = row.plant_name)
+            end
+            add_supplemental_attribute!(system, gen, plant; shaft_number = row.group_index)
+        elseif plant_type == "RenewablePowerPlant"
+            plant = get!(renewable_plants, plant_code) do
+                RenewablePowerPlant(; name = row.plant_name)
+            end
+            add_supplemental_attribute!(system, gen, plant, row.group_index)
+        elseif plant_type == "HydroPowerPlant"
+            plant_code in promoted_plant_codes || continue
+            plant = get!(hydro_plants, plant_code) do
+                HydroPowerPlant(; name = row.plant_name)
+            end
+            add_supplemental_attribute!(system, gen, plant, row.group_index)
+        elseif plant_type == "CombinedCycleBlock"
+            block_key = (plant_code, row.group_index)
+            block = get!(cc_blocks, block_key) do
+                CombinedCycleBlock(;
+                    name = "$(row.plant_name)_block$(row.group_index)",
+                    configuration = cc_configs[block_key],
+                )
+            end
+            add_supplemental_attribute!(system, gen, block; hrsg_number = 1)
+        else
+            error(
+                "Unknown plant_type \"$plant_type\" in generator_plants.csv for " *
+                "$(row.new_name)",
+            )
+        end
+    end
+    return
+end
+
 function fix_missings!(data::Vector{Union{Float64, Missing}})
     last_valid = 0.0
     for i in eachindex(data)
@@ -110,6 +393,12 @@ attach_cost!(gen::HydroDispatch, cost::CostCurve) =
     set_operation_cost!(gen, HydroGenerationCost(cost, 0.0))
 
 attach_cost!(gen::HydroDispatch, ::Nothing) =
+    set_operation_cost!(gen, HydroGenerationCost(nothing))
+
+attach_cost!(gen::Union{HydroTurbine, HydroPumpTurbine}, cost::CostCurve) =
+    set_operation_cost!(gen, HydroGenerationCost(cost, 0.0))
+
+attach_cost!(gen::Union{HydroTurbine, HydroPumpTurbine}, ::Nothing) =
     set_operation_cost!(gen, HydroGenerationCost(nothing))
 
 attach_cost!(gen::Source, cost::CostCurve) =
@@ -226,6 +515,303 @@ function rebase_base_power!(gen::Source)
     isnothing(q_limits) || set_reactive_power_limits!(gen, _mw(q_limits))
 end
 
+# MATPOWER gives every one of the 1743 synchronous condensers the same ±200 MVAr placeholder
+# (Pmax = 0, no distinct value anywhere in the file), so the retained fleet carries no
+# information about reactive need at any bus. fixed_admittance_candidates.csv measured what
+# they actually inject: a median of 0.064 MVAr against that 200 MVAr nameplate.
+const CURTAILED_CONDENSER_MVAR = 100.0
+
+"""
+Component names become serialization keys and result-file columns, so reduce an Appendix A
+substation label to word characters: "Mesa 500/230 kV" would otherwise carry a path separator.
+"""
+function _component_label(name::AbstractString)
+    return strip(replace(name, r"[^A-Za-z0-9]+" => "_"), '_')
+end
+
+"""
+Apply the reactive resources listed in the CAISO Board-Approved 2025-2026 ISO Transmission
+Plan, Appendix A section 3, sited on the nearest CATS bus by `data/reactive_resources.csv`.
+
+Two changes, in this order:
+
+ 1. Every `SynchronousCondenser` already in the system is a MATPOWER placeholder, and is
+    curtailed to `CURTAILED_CONDENSER_MVAR`. Running before step 2 is what keeps the real
+    Appendix A units at their true ratings.
+ 2. The 18 shunt capacitor banks (3,666 MVAr), 10 real synchronous condensers (1,818 MVAr),
+    and 3 SVCs (1,105 MVAr) are added. CATS models no bulk shunt compensation at all
+    otherwise, and had no dynamic support beyond the placeholders.
+
+The SVCs are built as `SynchronousCondenser` for simplicity — both give continuously variable
+dynamic reactive support, and CATS has no SVC representation. `data/reactive_resources.csv`
+keeps `technology` (what Appendix A says) separate from `component_type` (what is built), so
+the substitution stays visible.
+"""
+# Every value in this system that came from outside the MATPOWER file has a citable origin, and
+# the retrieval dates are fixed rather than `now()` so a rebuild is reproducible.
+const EIA_RETRIEVED = DateTime("2026-08-17T00:00:00")
+
+"""
+Build one `DataSource` per (publisher, field group, confidence). IS shares a single
+supplemental-attribute instance across every component it describes, so ~2200 components carry
+provenance through about ten objects rather than one each.
+"""
+function _data_source(organization, dataset, url, version, confidence, fields)
+    return DataSource(;
+        organization = organization,
+        retrieved_at = EIA_RETRIEVED,
+        dataset = dataset,
+        url = url,
+        version = version,
+        confidence = confidence,
+        recorded_by = "CATS EIA enrichment (Sienna/hydro_enrichment)",
+        fields = fields,
+    )
+end
+
+"""
+Record where this system's non-MATPOWER data came from, using IS `DataSource` supplemental
+attributes. Ten shared instances cover the EIA-derived generator identity, the CAISO reactive
+inventory, and each reservoir field group, with the weaker provenance (dam-height head fallback,
+defaulted initial level) carried as its own low-confidence source rather than blended into the
+strong ones.
+"""
+function attach_data_sources!(system::System, names_df::DataFrame, reservoirs_df::DataFrame)
+    eia = _data_source(
+        "U.S. Energy Information Administration", "EIA-860 (2019), Schedule 3",
+        "https://www.eia.gov/electricity/data/eia860/", "2019 final", "high",
+        ["name", "prime_mover_type"],
+    )
+    caiso_url = "https://www.caiso.com/documents/board-approved-2025-2026-transmission-plan-appendix-a-system-data.pdf"
+    caiso_shunt = _data_source(
+        "California ISO", "Board-Approved 2025-2026 ISO Transmission Plan, Appendix A, section 3",
+        caiso_url, "May 2026", "high", ["Y"],
+    )
+    caiso_dynamic = _data_source(
+        "California ISO", "Board-Approved 2025-2026 ISO Transmission Plan, Appendix A, section 3",
+        caiso_url, "May 2026", "high", ["rating", "reactive_power_limits"],
+    )
+    nid = _data_source(
+        "U.S. Army Corps of Engineers", "National Inventory of Dams",
+        "https://nid.sec.usace.army.mil", "2026 public FeatureServer", "high",
+        ["storage_level_limits"],
+    )
+    eha = _data_source(
+        "Oak Ridge National Laboratory", "EHA Unit Database FY2026 / HILARRI v4",
+        "https://hydrosource.ornl.gov", "FY2026", "medium",
+        ["intake_elevation", "head_to_volume_factor"],
+    )
+    eha_fallback = _data_source(
+        "U.S. Army Corps of Engineers", "National Inventory of Dams (dam height used as head proxy)",
+        "https://nid.sec.usace.army.mil", "2026 public FeatureServer", "low",
+        ["intake_elevation", "head_to_volume_factor"],
+    )
+    cdec_level = _data_source(
+        "California Department of Water Resources", "CDEC reservoir storage, sensor 15, 2019-01-01",
+        "https://cdec.water.ca.gov", "2019", "high", ["initial_level"],
+    )
+    default_level = _data_source(
+        "CATS enrichment default", "50% of storage_level_limits; no CDEC station for this reservoir",
+        "", "2026-08-17", "low", ["initial_level"],
+    )
+    cdec_inflow = _data_source(
+        "California Department of Water Resources", "CDEC reservoir inflow, sensor 76, 2019 daily",
+        "https://cdec.water.ca.gov", "2019", "high", ["inflow"],
+    )
+    usgs_inflow = _data_source(
+        "U.S. Geological Survey", "NWIS daily values, parameter 00060, 2019",
+        "https://waterservices.usgs.gov/nwis/dv/", "2019", "medium", ["inflow"],
+    )
+
+    attached = 0
+    for row in eachrow(names_df)
+        component = get_component(Component, system, row.new_name)
+        isnothing(component) && continue
+        add_supplemental_attribute!(system, component, eia)
+        attached += 1
+    end
+    for capacitor in get_components(x -> startswith(get_name(x), "ShuntCapacitor_"), FixedAdmittance, system)
+        add_supplemental_attribute!(system, capacitor, caiso_shunt)
+        attached += 1
+    end
+    for condenser in get_components(
+        x -> startswith(get_name(x), "SynchronousCondenser_") || startswith(get_name(x), "SVC_"),
+        SynchronousCondenser, system,
+    )
+        add_supplemental_attribute!(system, condenser, caiso_dynamic)
+        attached += 1
+    end
+
+    for row in eachrow(reservoirs_df)
+        reservoir = get_component(HydroReservoir, system, row.reservoir_name)
+        isnothing(reservoir) && error(
+            "hydro_reservoirs.csv names \"$(row.reservoir_name)\", which is not in the system",
+        )
+        add_supplemental_attribute!(system, reservoir, nid)
+        attached += 1
+        if row.head_is_fallback
+            add_supplemental_attribute!(system, reservoir, eha_fallback)
+        else
+            add_supplemental_attribute!(system, reservoir, eha)
+        end
+        if row.initial_is_default
+            add_supplemental_attribute!(system, reservoir, default_level)
+        else
+            add_supplemental_attribute!(system, reservoir, cdec_level)
+        end
+        attached += 2
+        source = row.inflow_source
+        if !ismissing(source) && occursin("CDEC", source)
+            add_supplemental_attribute!(system, reservoir, cdec_inflow)
+            attached += 1
+        elseif !ismissing(source) && occursin("USGS", source)
+            add_supplemental_attribute!(system, reservoir, usgs_inflow)
+            attached += 1
+        end
+    end
+
+    @info "Attached $attached DataSource associations across " *
+          "$(length(get_supplemental_attributes(DataSource, system))) shared DataSource attributes"
+    return system
+end
+
+"""
+Attach the 2019 daily reservoir inflow series from `data/hydro_inflow_2019_daily.csv`.
+
+POM reads this series by the name `"inflow"`
+(`PowerOperationsModels/src/static_injector_models/hydro_generation.jl:368`). Values are stored
+in **m³/h**, matching the unit PSY documents for the `inflow` field itself, and carry no scaling
+multiplier: POM's default formulation applies a multiplier of 1.0. Note that
+`HydroEnergyModelReservoir` and `HydroWaterFactorModel` instead multiply by `get_inflow(d)` and
+expect a normalised series — the two conventions cannot both be served by one series, so this
+targets the default.
+
+Daily gauge readings are held constant across each day's 24 hours to match the hourly epoch the
+rest of the system uses. Short gaps — days the source agent dropped because CDEC reported a
+negative value — are filled by carrying the previous reading forward, and the per-reservoir
+count is logged rather than left implicit.
+"""
+function attach_reservoir_inflow_time_series!(system::System, daily_file::AbstractString)
+    if !isfile(daily_file)
+        error("no reservoir inflow series at $daily_file; run Sienna/hydro_enrichment/derive_inflows.py")
+    end
+    daily = CSV.read(daily_file, DataFrame)
+    timestamps = range(DateTime("2019-01-01T00:00:00"); step = Hour(1), length = 24 * 365)
+    days = Date(2019, 1, 1):Day(1):Date(2019, 12, 31)
+
+    attached = 0
+    filled_total = 0
+    for group in groupby(daily, :reservoir_name)
+        name = first(group.reservoir_name)
+        reservoir = get_component(HydroReservoir, system, name)
+        if isnothing(reservoir)
+            error("hydro_inflow_2019_daily.csv names \"$name\", which is not in the system")
+        end
+        by_day = Dict(Date(row.date) => row.inflow_m3s for row in eachrow(group))
+
+        hourly = Vector{Float64}(undef, length(timestamps))
+        carried = 0.0
+        have_carried = false
+        filled = 0
+        for (index, day) in enumerate(days)
+            if haskey(by_day, day)
+                carried = by_day[day]
+                have_carried = true
+            else
+                filled += 1
+                # A leading gap has nothing to carry forward, so reach back from the first
+                # reading that does exist rather than emitting a zero.
+                if !have_carried
+                    carried = by_day[minimum(keys(by_day))]
+                    have_carried = true
+                end
+            end
+            hourly[((index - 1) * 24 + 1):(index * 24)] .= carried * 3600.0
+        end
+
+        add_time_series!(system, reservoir, SingleTimeSeries(;
+            name = "inflow",
+            data = TimeArray(collect(timestamps), hourly),
+        ))
+        attached += 1
+        filled_total += filled
+        if filled > 0
+            @info "  $name: $filled of 365 days carried forward"
+        end
+    end
+
+    @info "Attached inflow time series to $attached of " *
+          "$(length(get_components(HydroReservoir, system))) reservoirs " *
+          "($filled_total days carried forward in total)"
+    return system
+end
+
+function add_caiso_reactive_resources!(system::System)
+    curtailed = 0
+    for condenser in get_components(SynchronousCondenser, system)
+        set_rating!(condenser, CURTAILED_CONDENSER_MVAR * PSY.MW)
+        set_reactive_power_limits!(
+            condenser,
+            _mw((min = -CURTAILED_CONDENSER_MVAR, max = CURTAILED_CONDENSER_MVAR)),
+        )
+        curtailed += 1
+    end
+    @info "Curtailed $curtailed placeholder synchronous condensers to " *
+          "±$CURTAILED_CONDENSER_MVAR MVAr"
+
+    resources = CSV.read(joinpath(DATA_DIR, "reactive_resources.csv"), DataFrame)
+    buses = Dict(get_number(bus) => bus for bus in get_components(ACBus, system))
+    base_power = get_base_power(system)
+    capacitor_mvar = 0.0
+    condenser_mvar = 0.0
+    capacitors = 0
+    condensers = 0
+
+    for row in eachrow(resources)
+        bus = get(buses, row[:bus], nothing)
+        if isnothing(bus)
+            error("reactive_resources.csv references bus $(row[:bus]), which is not in the system")
+        end
+        label = _component_label(row[:substation])
+        prefix = row[:name_prefix]
+        mvar = row[:mvar_per_unit]
+        if row[:component_type] == "FixedAdmittance"
+            add_component!(system, FixedAdmittance(;
+                name = "$(prefix)_$label",
+                available = true,
+                bus = bus,
+                Y = complex(0.0, mvar / base_power),
+            ))
+            capacitors += 1
+            capacitor_mvar += mvar
+        elseif row[:component_type] == "SynchronousCondenser"
+            for unit in 1:row[:n_units]
+                # base_power = the unit's own MVAr rating, so the device-base 1.0 values
+                # below read back as ±mvar in natural units.
+                add_component!(system, SynchronousCondenser(;
+                    name = "$(prefix)_$(label)_$unit",
+                    available = true,
+                    bus = bus,
+                    reactive_power = 0.0,
+                    rating = 1.0,
+                    reactive_power_limits = (min = -1.0, max = 1.0),
+                    base_power = mvar,
+                    active_power_losses = 0.0,
+                ))
+                condensers += 1
+                condenser_mvar += mvar
+            end
+        else
+            error("unknown component_type $(row[:component_type]) in reactive_resources.csv")
+        end
+    end
+
+    @info "Added $capacitors CAISO shunt capacitor banks ($(round(Int, capacitor_mvar)) MVAr) " *
+          "and $condensers dynamic units ($(round(Int, condenser_mvar)) MVAr), the latter " *
+          "including the 3 SVCs modelled as synchronous condensers"
+    return system
+end
+
 function build_CATS_system(;
     matpower_file::String = "$BASE_DIR/MATPOWER/CaliforniaTestSystem.m",
     generator_csv::String = "$BASE_DIR/GIS/CATS_gens.csv", # oh I think the problem is that we've changed this for the
@@ -257,6 +843,37 @@ function build_CATS_system(;
     gen_csv = CSV.read(generator_csv, DataFrame)
     gen_df = generator_data_to_dataframe(matpower_file)
 
+    # EIA enrichment inputs (data/*.csv). All five are row_index-keyed to the same 2123
+    # EIA-matched generators (see the design doc); hydro_reservoirs.csv is produced by a
+    # concurrent process and is required, not optional -- see the isfile check below.
+    names_df = CSV.read(joinpath(DATA_DIR, "generator_names.csv"), DataFrame)
+    prime_movers_df = CSV.read(joinpath(DATA_DIR, "generator_prime_movers.csv"), DataFrame)
+    plants_df = CSV.read(joinpath(DATA_DIR, "generator_plants.csv"), DataFrame)
+    hydro_df = CSV.read(joinpath(DATA_DIR, "hydro_units.csv"), DataFrame)
+    reservoirs_file = joinpath(DATA_DIR, "hydro_reservoirs.csv")
+    if !isfile(reservoirs_file)
+        error("Data directory $DATA_DIR does not contain hydro_reservoirs.csv (Stage 5 of " *
+            "the EIA hydro enrichment). Regenerate it via Sienna/hydro_enrichment/ before " *
+            "running the build.")
+    end
+    reservoirs_df = CSV.read(reservoirs_file, DataFrame)
+
+    row_to_new_name = Dict{Int, String}(row.row_index => row.new_name for row in eachrow(names_df))
+    # String(...): PrimeMovers' String constructor requires a concrete String, not CSV.jl's
+    # InlineStrings short-string types (String3/String7/...) that eia_pm is read as.
+    row_to_eia_pm = Dict{Int, PSY.PrimeMovers}(
+        row.row_index => PrimeMovers(String(row.eia_pm)) for row in eachrow(prime_movers_df)
+    )
+
+    # STEP 2's per-column time series filter needs to identify solar units by their original
+    # CATS fuel type, not by prime mover -- see the col_to_type_and_kwargs comment below.
+    solar_names = Set{String}(
+        row.new_name for row in eachrow(prime_movers_df) if occursin("Solar", row.FuelType)
+    )
+    solar_thermal_names = Set{String}(
+        row.new_name for row in eachrow(prime_movers_df)
+        if row.FuelType == "Solar Thermal without Energy Storage"
+    )
 
     scs_convert_df = CSV.read(joinpath(BASE_DIR, "data", "scs_to_storage.csv"), DataFrame)
     scs_convert = Set{String}([replace(x, " " => "-") for x in scs_convert_df.generator])
@@ -277,7 +894,22 @@ function build_CATS_system(;
         gen = get_component(ThermalStandard, system, gen_name)
         @assert !isnothing(gen) "Generator $gen_name not found in system."
         gen_type  = row[:FuelType]
-        pm_type = PM_TYPE_DICT[gen_type]
+
+        # Stage 1 of the EIA enrichment: rename EIA-matched units at construction. SCs and
+        # imports have no EIA match and keep their positional gen-N name (data/generator_names.csv
+        # only has rows for the 2123 matched units).
+        final_name = get(row_to_new_name, i, gen_name)
+        if final_name != gen_name
+            gen = rename_generator!(system, gen, final_name)
+        end
+
+        # Stage 2: EIA prime mover replaces PM_TYPE_DICT wherever a match exists; SCs/imports
+        # (no CSV row) fall back to the original CATS-fuel-type-keyed lookup.
+        if haskey(row_to_eia_pm, i)
+            pm_type = row_to_eia_pm[i]
+        else
+            pm_type = PM_TYPE_DICT[gen_type]
+        end
         if occursin("Hydroelectric", gen_type)
             hydro_gen = try_convert(HydroDispatch, gen, pm_type)
             remove_component!(system, gen)
@@ -358,13 +990,16 @@ function build_CATS_system(;
             end
         end
 
-        # comp may be different than gen if we converted it
+        # comp may be different than gen if we converted it. Re-fetch by final_name: renamed
+        # units (Stage 1) no longer live under gen_name.
         if gen_type == "Synchronous Condenser" && !(gen_name in scs_keep) && !(gen_name in scs_convert)
             continue
         end
-        comp  = get_component(StaticInjection, system, gen_name)
+        comp  = get_component(StaticInjection, system, final_name)
         if !(comp isa Source) && !(comp isa SynchronousCondenser) && !(comp isa EnergyReservoirStorage) && !(comp isa FixedAdmittance)
-            set_prime_mover_type!(comp, PM_TYPE_DICT[row[:FuelType]])
+            # Same pm_type computed above (eia_pm-derived where available) -- not a fresh
+            # PM_TYPE_DICT lookup, which would silently clobber the Stage 2 prime mover.
+            set_prime_mover_type!(comp, pm_type)
         elseif comp isa SynchronousCondenser && gen_name in scs_convert
             set_prime_mover_type!(comp, PrimeMovers.BA)
         end
@@ -412,16 +1047,19 @@ function build_CATS_system(;
     @assert kept_sc_count == length(scs_keep) - length(scs_to_fixed_admittance)
     @assert fixed_admittance_count == length(scs_to_fixed_admittance)
     if VALIDITY_CHECKS
-        # check first one
+        # check first one -- "gen-1" is renamed (Stage 1) to its EIA name, since it's one of
+        # the 2123 EIA-matched units.
         @assert n_gens == nrow(gen_csv)
-        first_gen = get_component(StaticInjection, system, "gen-1")
+        first_gen_name = get(row_to_new_name, 1, "gen-1")
+        first_gen = get_component(StaticInjection, system, first_gen_name)
         @assert first_gen isa HydroDispatch
         @assert isapprox(get_reactive_power_limits(first_gen, PSY.NU).max, 18.7771429)
         @assert get_number(get_bus(first_gen)) == 745
-        # check last non-SC non-import generator.
+        # check last non-SC non-import generator (also renamed).
         n_imports = length(get_components(Source, system))
         last_gen_index = n_gens - n_imports - original_sc_count
-        last_gen = get_component(StaticInjection, system, "gen-$(last_gen_index)")
+        last_gen_name = get(row_to_new_name, last_gen_index, "gen-$(last_gen_index)")
+        last_gen = get_component(StaticInjection, system, last_gen_name)
         @assert last_gen isa RenewableDispatch && get_prime_mover_type(last_gen) == PrimeMovers.PVe
 
         first_import = get_component(Source, system, "gen-$(last_gen_index + 1)")
@@ -439,11 +1077,35 @@ function build_CATS_system(;
         #end
     end
 
+    # STEP 1B: hydro reservoir promotion + plant grouping (Stages 3-5 of the EIA
+    # enrichment). Hydro promotion must run before plant grouping: HydroPowerPlant can only
+    # be attached to a HydroTurbine/HydroPumpTurbine, never a HydroDispatch (see
+    # attach_plant_groups! docstring).
+    promoted_units = promote_hydro_units!(system, hydro_df)
+    attach_hydro_reservoirs!(system, reservoirs_df, hydro_df, promoted_units)
+
+    promoted_plant_codes =
+        Set{Int}(row.PlantCode for row in eachrow(hydro_df) if row.promoted)
+    attach_plant_groups!(system, plants_df, promoted_plant_codes)
+
     # STEP 2: attach timeseries data
+    if !isempty(solar_thermal_names)
+        @warn "The 12 solar-thermal units below get the Solar column's photovoltaic (PV) " *
+            "time series, standing in for a solar-thermal profile that does not exist in " *
+            "this dataset (no solar-thermal column in HourlyProduction2019.csv). This is a " *
+            "deliberate, accepted compromise -- see 'Solar thermal keeps the PV profile' in " *
+            "the design doc. Affected units: $(join(sort(collect(solar_thermal_names)), ", "))"
+    end
+
     col_to_type_and_kwargs = Dict(
-        "Solar" => (RenewableDispatch, Dict(:prime_mover_type => PrimeMovers.PVe)),
+        # Keyed on the CATS FuelType (via solar_names/solar_thermal_names, built above from
+        # generator_prime_movers.csv), not :prime_mover_type: the 12 solar-thermal units are
+        # now ST (Stage 2), not PVe, and would otherwise silently lose their PV time series.
+        "Solar" => (RenewableDispatch, Dict()),
         "Wind" => (RenewableDispatch, Dict(:prime_mover_type => PrimeMovers.WT)),
-        "Large Hydro" => (HydroDispatch, Dict()),
+        # HydroGen (not HydroDispatch): Stage 4 promotes 93 units to HydroTurbine/
+        # HydroPumpTurbine, which must still receive their share of this column's profile.
+        "Large Hydro" => (HydroGen, Dict()),
         "Nuclear" => (ThermalStandard, Dict(:fuel => ThermalFuels.NUCLEAR)),
         # here I should really have "fuel not nuclear", but I'll special-case it.
         "Thermal" => (ThermalStandard, Dict()),
@@ -466,6 +1128,8 @@ function build_CATS_system(;
         comp_type, kwargs = col_info
         if col_name == "Thermal"
             filter_func = comp -> get_fuel(comp) != ThermalFuels.NUCLEAR
+        elseif col_name == "Solar"
+            filter_func = comp -> get_name(comp) in solar_names
         else
             filter_func = comp -> all(getfield(comp, key) == value for (key, value) in kwargs)
         end
@@ -624,7 +1288,8 @@ function build_CATS_system(;
     @assert n_gens == nrow(cost_df) "Number of generators in system ($n_gens) does not "*
         "match number of rows in cost data ($nrow(cost_df))"
     for (i, row) in enumerate(eachrow(cost_df))
-        gen_name = "gen-$(i)"
+        # Renamed units (Stage 1) no longer live under the positional "gen-$(i)" name.
+        gen_name = get(row_to_new_name, i, "gen-$(i)")
         comp = get_component(StaticInjection, system, gen_name)
         isnothing(comp) && continue  # skip removed components (e.g., SCs)
         @assert isapprox(row[:startup], 0.0; atol=1e-6)
@@ -657,7 +1322,7 @@ function build_CATS_system(;
             vom = LinearCurve(c1, c0)
             cost_curve = CostCurve(vom)
             attach_cost!(comp, cost_curve)
-        elseif comp isa HydroDispatch
+        elseif comp isa HydroGen
             max_power = get_max_active_power(comp, PSY.NU)
             slope = 2*c2*max_power*0.8 + c1
             intercept = c0 - c2*(max_power*0.8)^2
@@ -746,6 +1411,12 @@ function build_CATS_system(;
         end
     end
     @info "Attached GeographicInfo to $lines_with_geo / $(length(get_components(Line, system))) lines"
+
+    add_caiso_reactive_resources!(system)
+    attach_reservoir_inflow_time_series!(
+        system, joinpath(DATA_DIR, "hydro_inflow_2019_daily.csv"),
+    )
+    attach_data_sources!(system, names_df, reservoirs_df)
 
     return system
 end

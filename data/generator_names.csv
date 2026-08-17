@@ -1,0 +1,2124 @@
+row_index,old_name,PlantCode,GenID,new_name,source
+1,gen-1,34,1P,Rollins_1P,eia_exact
+2,gen-2,151,1,McClure_1,eia_exact
+3,gen-3,151,2,McClure_2,eia_exact
+4,gen-4,161,1,Turlock Lake_1,eia_exact
+5,gen-5,161,2,Turlock Lake_2,eia_exact
+6,gen-6,161,3,Turlock Lake_3,eia_exact
+7,gen-7,162,1,Hickman_1,eia_exact
+8,gen-8,162,2,Hickman_2,eia_exact
+9,gen-9,180,1,Volta 2_1,eia_exact
+10,gen-10,214,1,Alta Powerhouse_1,eia_exact
+11,gen-11,215,1,Angels_1,eia_exact
+12,gen-12,219,1,Belden_1,eia_exact
+13,gen-13,220,H1,Bucks Creek_H1,eia_exact
+14,gen-14,220,H2,Bucks Creek_H2,eia_exact
+15,gen-15,221,1,Butt Valley_1,eia_exact
+16,gen-16,222,1,Caribou 1_1,eia_exact
+17,gen-17,222,2,Caribou 1_2,eia_exact
+18,gen-18,222,3,Caribou 1_3,eia_exact
+19,gen-19,223,4,Caribou 2_4,eia_exact
+20,gen-20,223,5,Caribou 2_5,eia_exact
+21,gen-21,227,1,Coleman PH_1,eia_exact
+22,gen-22,229,1,Cow Creek_1,eia_exact
+23,gen-23,229,2,Cow Creek_2,eia_exact
+24,gen-24,235,1,Drum 1_1,eia_exact
+25,gen-25,235,2,Drum 1_2,eia_exact
+26,gen-26,235,3,Drum 1_3,eia_exact
+27,gen-27,235,4,Drum 1_4,eia_exact
+28,gen-28,237,1,Dutch Flat_1,eia_exact
+29,gen-29,238,1,El Dorado_1,eia_exact
+30,gen-30,238,2,El Dorado_2,eia_exact
+31,gen-31,239,1,Electra_1,eia_exact
+32,gen-32,239,2,Electra_2,eia_exact
+33,gen-33,239,3,Electra_3,eia_exact
+34,gen-34,240,H1,Haas_H1,eia_exact
+35,gen-35,240,H2,Haas_H2,eia_exact
+36,gen-36,241,1,Halsey_1,eia_exact
+37,gen-37,242,1,Hamilton Branch_1,eia_exact
+38,gen-38,242,2,Hamilton Branch_2,eia_exact
+39,gen-39,243,1,Hat Creek 1_1,eia_exact
+40,gen-40,244,1,Hat Creek 2_1,eia_exact
+41,gen-41,246,IC1,Humboldt Bay_IC1,eia_exact
+42,gen-42,246,IC10,Humboldt Bay_IC10,eia_exact
+43,gen-43,246,IC2,Humboldt Bay_IC2,eia_exact
+44,gen-44,246,IC3,Humboldt Bay_IC3,eia_exact
+45,gen-45,246,IC4,Humboldt Bay_IC4,eia_exact
+46,gen-46,246,IC5,Humboldt Bay_IC5,eia_exact
+47,gen-47,246,IC6,Humboldt Bay_IC6,eia_exact
+48,gen-48,246,IC7,Humboldt Bay_IC7,eia_exact
+49,gen-49,246,IC8,Humboldt Bay_IC8,eia_exact
+50,gen-50,246,IC9,Humboldt Bay_IC9,eia_exact
+51,gen-51,248,1,Inskip_1,eia_exact
+52,gen-52,249,1,James B Black_1,eia_exact
+53,gen-53,249,2,James B Black_2,eia_exact
+54,gen-54,250,H1,Kerckhoff_H1,eia_exact
+55,gen-55,250,H3,Kerckhoff_H3,eia_exact
+56,gen-56,253,1,Kilarc_1,eia_exact
+57,gen-57,258,1,Merced Falls_1,eia_exact
+58,gen-58,260,CT1A,Dynegy Moss Landing Power Plant Hybrid_CT1A,eia_exact
+59,gen-59,260,CT1B,Dynegy Moss Landing Power Plant Hybrid_CT1B,eia_exact
+60,gen-60,260,CT2A,Dynegy Moss Landing Power Plant Hybrid_CT2A,eia_exact
+61,gen-61,260,CT2B,Dynegy Moss Landing Power Plant Hybrid_CT2B,eia_exact
+62,gen-62,260,ST1,Dynegy Moss Landing Power Plant Hybrid_ST1,eia_exact
+63,gen-63,260,ST2,Dynegy Moss Landing Power Plant Hybrid_ST2,eia_exact
+64,gen-64,261,1,Murphys_1,eia_exact
+65,gen-65,264,1,Phoenix_1,eia_exact
+66,gen-66,265,H1,Pit 1_H1,eia_exact
+67,gen-67,265,H2,Pit 1_H2,eia_exact
+68,gen-68,267,1,Pit 4_1,eia_exact
+69,gen-69,267,2,Pit 4_2,eia_exact
+70,gen-70,268,H1,Pit 5_H1,eia_exact
+71,gen-71,268,H2,Pit 5_H2,eia_exact
+72,gen-72,268,H3,Pit 5_H3,eia_exact
+73,gen-73,268,H4,Pit 5_H4,eia_exact
+74,gen-74,269,H1,Pit 6_H1,eia_exact
+75,gen-75,269,H2,Pit 6_H2,eia_exact
+76,gen-76,274,1,Potter Valley_1,eia_exact
+77,gen-77,274,2,Potter Valley_2,eia_exact
+78,gen-78,274,3,Potter Valley_3,eia_exact
+79,gen-79,275,H1,Rock Creek_H1,eia_exact
+80,gen-80,275,H2,Rock Creek_H2,eia_exact
+81,gen-81,279,1,Salt Springs_1,eia_exact
+82,gen-82,279,2,Salt Springs_2,eia_exact
+83,gen-83,280,1,South_1,eia_exact
+84,gen-84,281,1,Spaulding 1_1,eia_exact
+85,gen-85,282,1,Spaulding 2_1,eia_exact
+86,gen-86,283,1,Spaulding 3_1,eia_exact
+87,gen-87,284,1,Spring Gap_1,eia_exact
+88,gen-88,285,HC1,Stanislaus_HC1,eia_exact
+89,gen-89,287,H1,Tiger Creek_H1,eia_exact
+90,gen-90,287,H2,Tiger Creek_H2,eia_exact
+91,gen-91,289,1,Tule River_1,eia_exact
+92,gen-92,289,2,Tule River_2,eia_exact
+93,gen-93,290,1,Volta 1_1,eia_exact
+94,gen-94,291,1,West Point PH_1,eia_exact
+95,gen-95,292,1,Wise_1,eia_exact
+96,gen-96,292,2,Wise_2,eia_exact
+97,gen-97,294,1,Copco 1_1,eia_exact
+98,gen-98,294,2,Copco 1_2,eia_exact
+99,gen-99,295,1,Copco 2_1,eia_exact
+100,gen-100,295,2,Copco 2_2,eia_exact
+101,gen-101,296,1,Fall Creek_1,eia_exact
+102,gen-102,296,2,Fall Creek_2,eia_exact
+103,gen-103,296,3,Fall Creek_3,eia_exact
+104,gen-104,297,1,Iron Gate_1,eia_exact
+105,gen-105,314,1,Drop 5_1,eia_exact
+106,gen-106,314,2,Drop 5_2,eia_exact
+107,gen-107,315,3,AES Alamitos LLC_3,eia_exact
+108,gen-108,315,4,AES Alamitos LLC_4,eia_exact
+109,gen-109,315,5,AES Alamitos LLC_5,eia_exact
+110,gen-110,318,3,Big Creek 2_3,eia_exact
+111,gen-111,318,4,Big Creek 2_4,eia_exact
+112,gen-112,318,5,Big Creek 2_5,eia_exact
+113,gen-113,318,6,Big Creek 2_6,eia_exact
+114,gen-114,319,1,Big Creek 3_1,eia_exact
+115,gen-115,319,2,Big Creek 3_2,eia_exact
+116,gen-116,319,3,Big Creek 3_3,eia_exact
+117,gen-117,319,4,Big Creek 3_4,eia_exact
+118,gen-118,319,5,Big Creek 3_5,eia_exact
+119,gen-119,321,1,Big Creek 8_1,eia_exact
+120,gen-120,321,2,Big Creek 8_2,eia_exact
+121,gen-121,322,1,Big Creek 2A_1,eia_exact
+122,gen-122,322,2,Big Creek 2A_2,eia_exact
+123,gen-123,323,1,Bishop Creek 2_1,eia_exact
+124,gen-124,323,2,Bishop Creek 2_2,eia_exact
+125,gen-125,323,3,Bishop Creek 2_3,eia_exact
+126,gen-126,324,1,Bishop Creek 3_1,eia_exact
+127,gen-127,324,2,Bishop Creek 3_2,eia_exact
+128,gen-128,324,3,Bishop Creek 3_3,eia_exact
+129,gen-129,325,1,Bishop Creek 4_1,eia_exact
+130,gen-130,325,2,Bishop Creek 4_2,eia_exact
+131,gen-131,325,3,Bishop Creek 4_3,eia_exact
+132,gen-132,325,4,Bishop Creek 4_4,eia_exact
+133,gen-133,325,5,Bishop Creek 4_5,eia_exact
+134,gen-134,326,1,Bishop Creek 5_1,eia_exact
+135,gen-135,326,2,Bishop Creek 5_2,eia_exact
+136,gen-136,327,1,Bishop Creek 6_1,eia_exact
+137,gen-137,328,1,Borel_1,eia_exact
+138,gen-138,328,2,Borel_2,eia_exact
+139,gen-139,328,3,Borel_3,eia_exact
+140,gen-140,332,1,Fontana_1,eia_exact
+141,gen-141,332,2,Fontana_2,eia_exact
+142,gen-142,335,2,AES Huntington Beach LLC_2,eia_exact
+143,gen-143,337,1,Kaweah 1_1,eia_exact
+144,gen-144,339,1,Kern River 3_1,eia_exact
+145,gen-145,339,2,Kern River 3_2,eia_exact
+146,gen-146,340,1,Kern River 1_1,eia_exact
+147,gen-147,340,2,Kern River 1_2,eia_exact
+148,gen-148,340,3,Kern River 1_3,eia_exact
+149,gen-149,340,4,Kern River 1_4,eia_exact
+150,gen-150,341,CT1,Long Beach Generation LLC_CT1,eia_exact
+151,gen-151,341,CT2,Long Beach Generation LLC_CT2,eia_exact
+152,gen-152,341,CT3,Long Beach Generation LLC_CT3,eia_exact
+153,gen-153,341,CT4,Long Beach Generation LLC_CT4,eia_exact
+154,gen-154,344,1,Mammoth Pool_1,eia_exact
+155,gen-155,344,2,Mammoth Pool_2,eia_exact
+156,gen-156,350,1,Ormond Beach_1,eia_exact
+157,gen-157,350,2,Ormond Beach_2,eia_exact
+158,gen-158,353,1,Poole_1,eia_exact
+159,gen-159,356,5,AES Redondo Beach LLC_5,eia_exact
+160,gen-160,356,6,AES Redondo Beach LLC_6,eia_exact
+161,gen-161,356,8,AES Redondo Beach LLC_8,eia_exact
+162,gen-162,357,1,Rush Creek_1,eia_exact
+163,gen-163,357,2,Rush Creek_2,eia_exact
+164,gen-164,358,MV3A,Mountainview Generating Station_MV3A,eia_exact
+165,gen-165,358,MV3B,Mountainview Generating Station_MV3B,eia_exact
+166,gen-166,358,MV3C,Mountainview Generating Station_MV3C,eia_exact
+167,gen-167,358,MV4A,Mountainview Generating Station_MV4A,eia_exact
+168,gen-168,358,MV4B,Mountainview Generating Station_MV4B,eia_exact
+169,gen-169,358,MV4C,Mountainview Generating Station_MV4C,eia_exact
+170,gen-170,361,1,Santa Ana 1_1,eia_exact
+171,gen-171,361,2,Santa Ana 1_2,eia_exact
+172,gen-172,361,3,Santa Ana 1_3,eia_exact
+173,gen-173,361,4,Santa Ana 1_4,eia_exact
+174,gen-174,365,1,Lower Tule River_1,eia_exact
+175,gen-175,365,2,Lower Tule River_2,eia_exact
+176,gen-176,376,1,Pardee_1,eia_exact
+177,gen-177,376,2,Pardee_2,eia_exact
+178,gen-178,376,3,Pardee_3,eia_exact
+179,gen-179,377,1,Grayson_1,eia_exact
+180,gen-180,377,2,Grayson_2,eia_exact
+181,gen-181,377,3,Grayson_3,eia_exact
+182,gen-182,377,4,Grayson_4,eia_exact
+183,gen-183,377,5,Grayson_5,eia_exact
+184,gen-184,377,8A,Grayson_8A,eia_exact
+185,gen-185,377,8BC,Grayson_8BC,eia_exact
+186,gen-186,377,9,Grayson_9,eia_exact
+187,gen-187,380,1,Dion R Holm_1,eia_exact
+188,gen-188,380,2,Dion R Holm_2,eia_exact
+189,gen-189,382,1,R C Kirkwood_1,eia_exact
+190,gen-190,382,2,R C Kirkwood_2,eia_exact
+191,gen-191,382,3,R C Kirkwood_3,eia_exact
+192,gen-192,385,1,Drop 2 (CA)_1,eia_exact
+193,gen-193,385,2,Drop 2 (CA)_2,eia_exact
+194,gen-194,386,1,Drop 3 (CA)_1,eia_exact
+195,gen-195,386,2,Drop 3 (CA)_2,eia_exact
+196,gen-196,387,1,Drop 4_1,eia_exact
+197,gen-197,387,2,Drop 4_2,eia_exact
+198,gen-198,388,1,Pilot Knob_1,eia_exact
+199,gen-199,388,2,Pilot Knob_2,eia_exact
+200,gen-200,389,2,El Centro Hybrid_2,eia_exact
+201,gen-201,389,2A,El Centro Hybrid_2A,eia_exact
+202,gen-202,389,30,El Centro Hybrid_30,eia_exact
+203,gen-203,389,31,El Centro Hybrid_31,eia_exact
+204,gen-204,389,32,El Centro Hybrid_32,eia_exact
+205,gen-205,389,4,El Centro Hybrid_4,eia_exact
+206,gen-206,389,BESS,El Centro Hybrid_BESS,eia_exact
+207,gen-207,391,1,Big Pine Creek_1,eia_exact
+208,gen-208,396,1,Foothill_1,eia_exact
+209,gen-209,397,1,Franklin (CA)_1,eia_exact
+210,gen-210,398,1,Haiwee_1,eia_exact
+211,gen-211,398,2,Haiwee_2,eia_exact
+212,gen-212,399,10A,Harbor_10A,eia_exact
+213,gen-213,399,10B,Harbor_10B,eia_exact
+214,gen-214,399,5,Harbor_5,eia_exact
+215,gen-215,399,GT10,Harbor_GT10,eia_exact
+216,gen-216,399,GT11,Harbor_GT11,eia_exact
+217,gen-217,399,GT12,Harbor_GT12,eia_exact
+218,gen-218,399,GT13,Harbor_GT13,eia_exact
+219,gen-219,399,GT14,Harbor_GT14,eia_exact
+220,gen-220,400,1,Haynes_1,eia_exact
+221,gen-221,400,10,Haynes_10,eia_exact
+222,gen-222,400,11,Haynes_11,eia_exact
+223,gen-223,400,12,Haynes_12,eia_exact
+224,gen-224,400,13,Haynes_13,eia_exact
+225,gen-225,400,14,Haynes_14,eia_exact
+226,gen-226,400,15,Haynes_15,eia_exact
+227,gen-227,400,16,Haynes_16,eia_exact
+228,gen-228,400,2,Haynes_2,eia_exact
+229,gen-229,400,8,Haynes_8,eia_exact
+230,gen-230,400,9,Haynes_9,eia_exact
+231,gen-231,401,1,Middle Gorge_1,eia_exact
+232,gen-232,403,1,San Fernando_1,eia_exact
+233,gen-233,403,2,San Fernando_2,eia_exact
+234,gen-234,404,1,Scattergood_1,eia_exact
+235,gen-235,404,2,Scattergood_2,eia_exact
+236,gen-236,404,4,Scattergood_4,eia_exact
+237,gen-237,404,5,Scattergood_5,eia_exact
+238,gen-238,404,6,Scattergood_6,eia_exact
+239,gen-239,404,7,Scattergood_7,eia_exact
+240,gen-240,407,1,Upper Gorge_1,eia_exact
+241,gen-241,408,5,Valley (CA)_5,eia_exact
+242,gen-242,408,6,Valley (CA)_6,eia_exact
+243,gen-243,408,7,Valley (CA)_7,eia_exact
+244,gen-244,408,8,Valley (CA)_8,eia_exact
+245,gen-245,410,1,McSwain_1,eia_exact
+246,gen-246,412,2P,Chicago Park_2P,eia_exact
+247,gen-247,413,3P,Dutch Flat 2_3P,eia_exact
+248,gen-248,414,1,Beardsley_1,eia_exact
+249,gen-249,415,H1,Donnells_H1,eia_exact
+250,gen-250,416,1,Tulloch_1,eia_exact
+251,gen-251,416,2,Tulloch_2,eia_exact
+252,gen-252,416,3,Tulloch_3,eia_exact
+253,gen-253,418,1,Kelly Ridge_1,eia_exact
+254,gen-254,422,GT1,Glenarm_GT1,eia_exact
+255,gen-255,422,GT2,Glenarm_GT2,eia_exact
+256,gen-256,422,GT3,Glenarm_GT3,eia_exact
+257,gen-257,422,GT4,Glenarm_GT4,eia_exact
+258,gen-258,422,GT5,Glenarm_GT5,eia_exact
+259,gen-259,422,ST1,Glenarm_ST1,eia_exact
+260,gen-260,424,1,French Meadows_1,eia_exact
+261,gen-261,425,1,Middle Fork_1,eia_exact
+262,gen-262,425,2,Middle Fork_2,eia_exact
+263,gen-263,426,1,Oxbow (CA)_1,eia_exact
+264,gen-264,427,1,Ralston_1,eia_exact
+265,gen-265,430,H1,Camino_H1,eia_exact
+266,gen-266,430,H2,Camino_H2,eia_exact
+267,gen-267,431,H1,Jaybird_H1,eia_exact
+268,gen-268,431,H2,Jaybird_H2,eia_exact
+269,gen-269,432,H1,Loon Lake_H1,eia_exact
+270,gen-270,433,1,Robbs Peak_1,eia_exact
+271,gen-271,436,1,Devil Canyon_1,eia_exact
+272,gen-272,436,2,Devil Canyon_2,eia_exact
+273,gen-273,436,3,Devil Canyon_3,eia_exact
+274,gen-274,436,4,Devil Canyon_4,eia_exact
+275,gen-275,437,1,Edward C Hyatt_1,eia_exact
+276,gen-276,437,2,Edward C Hyatt_2,eia_exact
+277,gen-277,437,3,Edward C Hyatt_3,eia_exact
+278,gen-278,437,4,Edward C Hyatt_4,eia_exact
+279,gen-279,437,5,Edward C Hyatt_5,eia_exact
+280,gen-280,437,6,Edward C Hyatt_6,eia_exact
+281,gen-281,439,1,Don Pedro_1,eia_exact
+282,gen-282,439,2,Don Pedro_2,eia_exact
+283,gen-283,439,3,Don Pedro_3,eia_exact
+284,gen-284,439,4,Don Pedro_4,eia_exact
+285,gen-285,441,1,Folsom_1,eia_exact
+286,gen-286,441,2,Folsom_2,eia_exact
+287,gen-287,441,3,Folsom_3,eia_exact
+288,gen-288,442,1,Judge F Carr_1,eia_exact
+289,gen-289,442,2,Judge F Carr_2,eia_exact
+290,gen-290,443,1,Keswick_1,eia_exact
+291,gen-291,443,2,Keswick_2,eia_exact
+292,gen-292,443,3,Keswick_3,eia_exact
+293,gen-293,444,1,Nimbus_1,eia_exact
+294,gen-294,444,2,Nimbus_2,eia_exact
+295,gen-295,445,1,Shasta_1,eia_exact
+296,gen-296,445,2,Shasta_2,eia_exact
+297,gen-297,445,3,Shasta_3,eia_exact
+298,gen-298,445,4,Shasta_4,eia_exact
+299,gen-299,445,5,Shasta_5,eia_exact
+300,gen-300,445,S1,Shasta_S1,eia_exact
+301,gen-301,445,S2,Shasta_S2,eia_exact
+302,gen-302,447,1,Parker Dam_1,eia_exact
+303,gen-303,447,2,Parker Dam_2,eia_exact
+304,gen-304,447,3,Parker Dam_3,eia_exact
+305,gen-305,447,4,Parker Dam_4,eia_exact
+306,gen-306,448,1,W R Gianelli_1,eia_exact
+307,gen-307,448,2,W R Gianelli_2,eia_exact
+308,gen-308,448,3,W R Gianelli_3,eia_exact
+309,gen-309,448,4,W R Gianelli_4,eia_exact
+310,gen-310,448,5,W R Gianelli_5,eia_exact
+311,gen-311,448,6,W R Gianelli_6,eia_exact
+312,gen-312,448,7,W R Gianelli_7,eia_exact
+313,gen-313,448,8,W R Gianelli_8,eia_exact
+314,gen-314,450,1,Spring Creek_1,eia_exact
+315,gen-315,450,2,Spring Creek_2,eia_exact
+316,gen-316,451,1,Trinity_1,eia_exact
+317,gen-317,451,2,Trinity_2,eia_exact
+318,gen-318,454,1,Colgate_1,eia_exact
+319,gen-319,454,2,Colgate_2,eia_exact
+320,gen-320,457,HC1,Bear Valley_HC1,eia_exact
+321,gen-321,457,HC2,Bear Valley_HC2,eia_exact
+322,gen-322,479,1,Temescal_1,eia_exact
+323,gen-323,480,1,Corona_1,eia_exact
+324,gen-324,481,1,Perris_1,eia_exact
+325,gen-325,482,1,Rio Hondo_1,eia_exact
+326,gen-326,483,1,Coyote Creek_1,eia_exact
+327,gen-327,487,1,Valley View_1,eia_exact
+328,gen-328,534,1,Jones Fork_1,eia_exact
+329,gen-329,537,1,Camanche_1,eia_exact
+330,gen-330,537,2,Camanche_2,eia_exact
+331,gen-331,537,3,Camanche_3,eia_exact
+332,gen-332,585,1,Drop 1_1,eia_exact
+333,gen-333,585,2,Drop 1_2,eia_exact
+334,gen-334,585,3,Drop 1_3,eia_exact
+335,gen-335,586,1,East Highline_1,eia_exact
+336,gen-336,626,1,Oak Flat_1,eia_exact
+337,gen-337,632,1,Newcastle_1,eia_exact
+338,gen-338,682,1,Kerckhoff 2_1,eia_exact
+339,gen-339,745,1,Etiwanda_1,eia_exact
+340,gen-340,776,1,Sly Creek_1,eia_exact
+341,gen-341,839,7P,Scott Flat_7P,eia_exact
+342,gen-342,902,1,Bottle Rock Power_1,eia_exact
+343,gen-343,905,1,Alamo_1,eia_exact
+344,gen-344,4256,1,Walnut_1,eia_exact
+345,gen-345,4256,2,Walnut_2,eia_exact
+346,gen-346,6060,1,Coachella_1,eia_exact
+347,gen-347,6060,2,Coachella_2,eia_exact
+348,gen-348,6060,3,Coachella_3,eia_exact
+349,gen-349,6060,4,Coachella_4,eia_exact
+350,gen-350,6099,1,Diablo Canyon_1,eia_exact
+351,gen-351,6099,2,Diablo Canyon_2,eia_exact
+352,gen-352,6158,1,New Melones_1,eia_exact
+353,gen-353,6158,2,New Melones_2,eia_exact
+354,gen-354,6196,1,W E Warne_1,eia_exact
+355,gen-355,6196,2,W E Warne_2,eia_exact
+356,gen-356,6211,GEN1,Dynegy Oakland Power Plant_GEN1,eia_exact
+357,gen-357,6211,GEN2,Dynegy Oakland Power Plant_GEN2,eia_exact
+358,gen-358,6211,GEN3,Dynegy Oakland Power Plant_GEN3,eia_exact
+359,gen-359,6449,1,Azusa_1,eia_exact
+360,gen-360,6480,1,San Francisquito 2_1,eia_exact
+361,gen-361,6480,2,San Francisquito 2_2,eia_exact
+362,gen-362,6480,3,San Francisquito 2_3,eia_exact
+363,gen-363,6518,KB1,Kings Beach_KB1,eia_exact
+364,gen-364,6518,KB2,Kings Beach_KB2,eia_exact
+365,gen-365,6518,KB3,Kings Beach_KB3,eia_exact
+366,gen-366,6518,KB4,Kings Beach_KB4,eia_exact
+367,gen-367,6518,KB5,Kings Beach_KB5,eia_exact
+368,gen-368,6518,KB6,Kings Beach_KB6,eia_exact
+369,gen-369,6612,1,Union Valley_1,eia_exact
+370,gen-370,6643,1,Greg Avenue_1,eia_exact
+371,gen-371,6644,1,Lake Mathews_1,eia_exact
+372,gen-372,6645,1,Foothill Feeder_1,eia_exact
+373,gen-373,6645,2,Foothill Feeder_2,eia_exact
+374,gen-374,6646,1,San Dimas_1,eia_exact
+375,gen-375,6647,1,Yorba Linda_1,eia_exact
+376,gen-376,7066,1,Stampede_1,eia_exact
+377,gen-377,7066,2,Stampede_2,eia_exact
+378,gen-378,7072,1,Mojave Siphon_1,eia_exact
+379,gen-379,7072,2,Mojave Siphon_2,eia_exact
+380,gen-380,7072,3,Mojave Siphon_3,eia_exact
+381,gen-381,7129,TD1,Thermalito Diverson Dam_TD1,eia_exact
+382,gen-382,7147,3,Mill Creek 3_3,eia_exact
+383,gen-383,7147,4,Mill Creek 3_4,eia_exact
+384,gen-384,7147,5,Mill Creek 3_5,eia_exact
+385,gen-385,7151,1,Stony Gorge_1,eia_exact
+386,gen-386,7151,2,Stony Gorge_2,eia_exact
+387,gen-387,7189,1,Whiskeytown_1,eia_exact
+388,gen-388,7232,1,Santa Clara Cogen_1,eia_exact
+389,gen-389,7232,2,Santa Clara Cogen_2,eia_exact
+390,gen-390,7266,2,Woodland_2,eia_exact
+391,gen-391,7266,3,Woodland_3,eia_exact
+392,gen-392,7266,3A,Woodland_3A,eia_exact
+393,gen-393,7266,3B,Woodland_3B,eia_exact
+394,gen-394,7266,3C,Woodland_3C,eia_exact
+395,gen-395,7266,3D,Woodland_3D,eia_exact
+396,gen-396,7266,3E,Woodland_3E,eia_exact
+397,gen-397,7266,3F,Woodland_3F,eia_exact
+398,gen-398,7266,NA1,Woodland_NA1,eia_exact
+399,gen-399,7307,1,Redding Power_1,eia_exact
+400,gen-400,7307,2,Redding Power_2,eia_exact
+401,gen-401,7307,3,Redding Power_3,eia_exact
+402,gen-402,7307,4,Redding Power_4,eia_exact
+403,gen-403,7307,5,Redding Power_5,eia_exact
+404,gen-404,7307,6,Redding Power_6,eia_exact
+405,gen-405,7338,NA1,Grizzly_NA1,eia_exact
+406,gen-406,7368,1,Geothermal 1_1,eia_exact
+407,gen-407,7368,2,Geothermal 1_2,eia_exact
+408,gen-408,7436,JH1,Vernon_JH1,eia_exact
+409,gen-409,7436,JH2,Vernon_JH2,eia_exact
+410,gen-410,7436,JH3,Vernon_JH3,eia_exact
+411,gen-411,7436,JH4,Vernon_JH4,eia_exact
+412,gen-412,7436,JH5,Vernon_JH5,eia_exact
+413,gen-413,7449,NA1,Combustion Turbine Project No 2_NA1,eia_exact
+414,gen-414,7450,1,Alameda_1,eia_exact
+415,gen-415,7450,2,Alameda_2,eia_exact
+416,gen-416,7507,1,Deadwood Creek_1,eia_exact
+417,gen-417,7526,1,Solano Wind_1,eia_exact
+418,gen-418,7526,2,Solano Wind_2,eia_exact
+419,gen-419,7526,2B,Solano Wind_2B,eia_exact
+420,gen-420,7526,3,Solano Wind_3,eia_exact
+421,gen-421,7551,CCST,SCA Cogen 2_CCST,eia_exact
+422,gen-422,7551,CT1A,SCA Cogen 2_CT1A,eia_exact
+423,gen-423,7551,CT1B,SCA Cogen 2_CT1B,eia_exact
+424,gen-424,7551,CT1C,SCA Cogen 2_CT1C,eia_exact
+425,gen-425,7552,CCCT,SPA Cogen 3_CCCT,eia_exact
+426,gen-426,7552,CCST,SPA Cogen 3_CCST,eia_exact
+427,gen-427,7824,1,Rockwood_1,eia_exact
+428,gen-428,7824,2,Rockwood_2,eia_exact
+429,gen-429,7907,1,Pine Flat_1,eia_exact
+430,gen-430,7907,2,Pine Flat_2,eia_exact
+431,gen-431,7907,3,Pine Flat_3,eia_exact
+432,gen-432,7911,1,Kern Canyon_1,eia_exact
+433,gen-433,7942,10,Diamond Valley Lake_10,eia_exact
+434,gen-434,7942,11,Diamond Valley Lake_11,eia_exact
+435,gen-435,7942,12,Diamond Valley Lake_12,eia_exact
+436,gen-436,7942,2,Diamond Valley Lake_2,eia_exact
+437,gen-437,7942,3,Diamond Valley Lake_3,eia_exact
+438,gen-438,7942,4,Diamond Valley Lake_4,eia_exact
+439,gen-439,7942,6,Diamond Valley Lake_6,eia_exact
+440,gen-440,7942,7,Diamond Valley Lake_7,eia_exact
+441,gen-441,7942,8,Diamond Valley Lake_8,eia_exact
+442,gen-442,7987,L1,Lake One_L1,eia_exact
+443,gen-443,8076,1,Ellwood_1,eia_exact
+444,gen-444,10005,WTGS,Dinosaur Point_WTGS,eia_exact
+445,gen-445,10026,EG10,Encina Water Pollution Control_EG10,eia_exact
+446,gen-446,10026,EG20,Encina Water Pollution Control_EG20,eia_exact
+447,gen-447,10026,EG30,Encina Water Pollution Control_EG30,eia_exact
+448,gen-448,10026,EG40,Encina Water Pollution Control_EG40,eia_exact
+449,gen-449,10034,GEN1,Gilroy Power Plant_GEN1,eia_exact
+450,gen-450,10034,GEN2,Gilroy Power Plant_GEN2,eia_exact
+451,gen-451,10042,KDHT1,Kaweah Delta District Hospital_KDHT1,eia_exact
+452,gen-452,10052,GEN1,Fairhaven Power_GEN1,eia_exact
+453,gen-453,10091,G2,Total Energy Facilities_G2,eia_exact
+454,gen-454,10091,G3,Total Energy Facilities_G3,eia_exact
+455,gen-455,10091,GEN1,Total Energy Facilities_GEN1,eia_exact
+456,gen-456,10091,GEN4,Total Energy Facilities_GEN4,eia_exact
+457,gen-457,10110,GEN1,Frito-Lay Cogen Plant_GEN1,eia_exact
+458,gen-458,10115,GEN3,Grossmont Hospital_GEN3,eia_exact
+459,gen-459,10128,GEN1,Gosselin Hydro Plant_GEN1,eia_exact
+460,gen-460,10128,GEN2,Gosselin Hydro Plant_GEN2,eia_exact
+461,gen-461,10139,GEN1,Isabella Hydro Project_GEN1,eia_exact
+462,gen-462,10139,GEN2,Isabella Hydro Project_GEN2,eia_exact
+463,gen-463,10144,GEN4,Sierra Pacific Lincoln Facility_GEN4,eia_exact
+464,gen-464,10169,GEN1,Carson Cogeneration_GEN1,eia_exact
+465,gen-465,10169,GEN2,Carson Cogeneration_GEN2,eia_exact
+466,gen-466,10175,1711,Childrens Hospital_1711,eia_exact
+467,gen-467,10175,5083,Childrens Hospital_5083,eia_exact
+468,gen-468,10175,5084,Childrens Hospital_5084,eia_exact
+469,gen-469,10175,5085,Childrens Hospital_5085,eia_exact
+470,gen-470,10191,EXIS,Tehachapi Wind Resource I_EXIS,eia_exact
+471,gen-471,10206,GEN1,Loma Linda University Cogen_GEN1,eia_exact
+472,gen-472,10206,GEN2,Loma Linda University Cogen_GEN2,eia_exact
+473,gen-473,10213,GEN1,El Segundo Cogen_GEN1,eia_exact
+474,gen-474,10213,GEN2,El Segundo Cogen_GEN2,eia_exact
+475,gen-475,10213,GEN5,El Segundo Cogen_GEN5,eia_exact
+476,gen-476,10213,GEN6,El Segundo Cogen_GEN6,eia_exact
+477,gen-477,10213,GEN7,El Segundo Cogen_GEN7,eia_exact
+478,gen-478,10213,GEN8,El Segundo Cogen_GEN8,eia_exact
+479,gen-479,10288,IS27,Big Valley Power LLC_IS27,eia_exact
+480,gen-480,10294,GTG,King City Power Plant_GTG,eia_exact
+481,gen-481,10294,STG,King City Power Plant_STG,eia_exact
+482,gen-482,10300,GEN1,Desert View Power_GEN1,eia_exact
+483,gen-483,10349,GEN1,Greenleaf 2 Power Plant_GEN1,eia_exact
+484,gen-484,10387,1A,Sycamore Energy LLC_1A,eia_exact
+485,gen-485,10387,2A,Sycamore Energy LLC_2A,eia_exact
+486,gen-486,10387,3,Sycamore Energy LLC_3,eia_exact
+487,gen-487,10405,GEN1,Kingsburg Cogen_GEN1,eia_exact
+488,gen-488,10405,GEN2,Kingsburg Cogen_GEN2,eia_exact
+489,gen-489,10427,GEN2,New-Indy Ontario Mill_GEN2,eia_exact
+490,gen-490,10427,GEN3,New-Indy Ontario Mill_GEN3,eia_exact
+491,gen-491,10437,SUN2,Sunray 2_SUN2,eia_exact
+492,gen-492,10438,SUN3,Sunray 3_SUN3,eia_exact
+493,gen-493,10439,GEN1,SEGS III_GEN1,eia_exact
+494,gen-494,10440,GEN1,SEGS IV_GEN1,eia_exact
+495,gen-495,10441,GEN1,SEGS V_GEN1,eia_exact
+496,gen-496,10442,GEN1,SEGS VI_GEN1,eia_exact
+497,gen-497,10443,GEN1,SEGS VII_GEN1,eia_exact
+498,gen-498,10444,GEN1,SEGS VIII_GEN1,eia_exact
+499,gen-499,10446,GEN1,SEGS IX_GEN1,eia_exact
+500,gen-500,10458,GEN1,Muck Valley Hydroelectric_GEN1,eia_exact
+501,gen-501,10472,GEN1,Puente Hills Energy Recovery_GEN1,eia_exact
+502,gen-502,10479,T101,Ples I_T101,eia_exact
+503,gen-503,10479,T102,Ples I_T102,eia_exact
+504,gen-504,10479,T103,Ples I_T103,eia_exact
+505,gen-505,10480,GEN1,Mammoth Pacific I_GEN1,eia_exact
+506,gen-506,10480,GEN2,Mammoth Pacific I_GEN2,eia_exact
+507,gen-507,10481,1,Mammoth Pacific II_1,eia_exact
+508,gen-508,10481,2,Mammoth Pacific II_2,eia_exact
+509,gen-509,10481,3,Mammoth Pacific II_3,eia_exact
+510,gen-510,10496,GTAG,Kern River Cogeneration_GTAG,eia_exact
+511,gen-511,10496,GTBG,Kern River Cogeneration_GTBG,eia_exact
+512,gen-512,10496,GTCG,Kern River Cogeneration_GTCG,eia_exact
+513,gen-513,10496,GTDG,Kern River Cogeneration_GTDG,eia_exact
+514,gen-514,10501,K100,Mid-Set Cogeneration_K100,eia_exact
+515,gen-515,10548,GEN1,San Jose Cogeneration_GEN1,eia_exact
+516,gen-516,10586,EXIS,Cameron Ridge LLC_EXIS,eia_exact
+517,gen-517,10597,WGN1,Ridgetop Energy LLC_WGN1,eia_exact
+518,gen-518,10601,GEN1,Tesoro Wilmington Calciner_GEN1,eia_exact
+519,gen-519,10623,GEN1,Civic Center_GEN1,eia_exact
+520,gen-520,10623,GEN2,Civic Center_GEN2,eia_exact
+521,gen-521,10631,GEN1,CE Leathers_GEN1,eia_exact
+522,gen-522,10632,GEN1,Del Ranch Company_GEN1,eia_exact
+523,gen-523,10634,GEN1,Elmore Company_GEN1,eia_exact
+524,gen-524,10661,GEN4,Collins Pine Project_GEN4,eia_exact
+525,gen-525,10677,UNT2,CES Placerita Power Plant_UNT2,eia_exact
+526,gen-526,10677,UNT3,CES Placerita Power Plant_UNT3,eia_exact
+527,gen-527,10684,TG8,Argus Cogen Plant_TG8,eia_exact
+528,gen-528,10684,TG9,Argus Cogen Plant_TG9,eia_exact
+529,gen-529,10685,PINA,Westend Facility_PINA,eia_exact
+530,gen-530,10708,GEN1,Lost Creek I_GEN1,eia_exact
+531,gen-531,10709,GEN1,Ponderosa Bailey Creek_GEN1,eia_exact
+532,gen-532,10718,WND,Karen Avenue Wind Farm_WND,eia_exact
+533,gen-533,10748,U1C06,Marina Landfill Gas_U1C06,eia_exact
+534,gen-534,10748,U2J02,Marina Landfill Gas_U2J02,eia_exact
+535,gen-535,10748,U3J17,Marina Landfill Gas_U3J17,eia_exact
+536,gen-536,10748,U4J16,Marina Landfill Gas_U4J16,eia_exact
+537,gen-537,10759,GEN1,Salton Sea Power Gen Co - Unit 3_GEN1,eia_exact
+538,gen-538,10763,GBU,Geo East Mesa III_GBU,eia_exact
+539,gen-539,10763,GEN1,Geo East Mesa III_GEN1,eia_exact
+540,gen-540,10764,GEN1,Blue Lake Power LLC_GEN1,eia_exact
+541,gen-541,10767,GEN1,Rio Bravo Fresno_GEN1,eia_exact
+542,gen-542,10776,GTG,E F Oxnard Energy Facility_GTG,eia_exact
+543,gen-543,10777,GEN1,HL Power_GEN1,eia_exact
+544,gen-544,10836,GEN1,Woodland Biomass Power Ltd_GEN1,eia_exact
+545,gen-545,10837,GEN1,Covanta Mendota_GEN1,eia_exact
+546,gen-546,10840,GEN1,Covanta Delano Energy_GEN1,eia_exact
+547,gen-547,10840,GEN2,Covanta Delano Energy_GEN2,eia_exact
+548,gen-548,10873,GEN1,Coso Finance Partners_GEN1,eia_exact
+549,gen-549,10873,GEN2,Coso Finance Partners_GEN2,eia_exact
+550,gen-550,10873,GEN3,Coso Finance Partners_GEN3,eia_exact
+551,gen-551,10874,GEN4,Coso Power Developers_GEN4,eia_exact
+552,gen-552,10874,GEN5,Coso Power Developers_GEN5,eia_exact
+553,gen-553,10874,GEN6,Coso Power Developers_GEN6,eia_exact
+554,gen-554,10875,GEN7,Coso Energy Developers_GEN7,eia_exact
+555,gen-555,10875,GEN8,Coso Energy Developers_GEN8,eia_exact
+556,gen-556,10875,GEN9,Coso Energy Developers_GEN9,eia_exact
+557,gen-557,10880,GEN1,Bidwell Ditch Project_GEN1,eia_exact
+558,gen-558,10884,CTC1,Olive View Medical Center_CTC1,eia_exact
+559,gen-559,10884,CTC2,Olive View Medical Center_CTC2,eia_exact
+560,gen-560,50003,GEN1,Chalk Cliff Limited_GEN1,eia_exact
+561,gen-561,50037,UNT2,Rio Bravo Hydro Project_UNT2,eia_exact
+562,gen-562,50049,GEN1,Humboldt Sawmill Company_GEN1,eia_exact
+563,gen-563,50049,GEN2,Humboldt Sawmill Company_GEN2,eia_exact
+564,gen-564,50049,GEN3,Humboldt Sawmill Company_GEN3,eia_exact
+565,gen-565,50061,GEN2,San Diego State University_GEN2,eia_exact
+566,gen-566,50061,GEN3,San Diego State University_GEN3,eia_exact
+567,gen-567,50061,GEN4,San Diego State University_GEN4,eia_exact
+568,gen-568,50061,GEN5,San Diego State University_GEN5,eia_exact
+569,gen-569,50061,GEN6,San Diego State University_GEN6,eia_exact
+570,gen-570,50061,GEN7,San Diego State University_GEN7,eia_exact
+571,gen-571,50061,GEN8,San Diego State University_GEN8,eia_exact
+572,gen-572,50076,UNT1,Santa Felicia Dam_UNT1,eia_exact
+573,gen-573,50076,UNT2,Santa Felicia Dam_UNT2,eia_exact
+574,gen-574,50089,S-17,Univ of San Francisco Cogen_S-17,eia_exact
+575,gen-575,50115,GEN1,US Borax_GEN1,eia_exact
+576,gen-576,50119,GENA,Phillips 66 Rodeo Refinery_GENA,eia_exact
+577,gen-577,50119,GENB,Phillips 66 Rodeo Refinery_GENB,eia_exact
+578,gen-578,50119,GENC,Phillips 66 Rodeo Refinery_GENC,eia_exact
+579,gen-579,50131,K100,Coalinga Cogeneration_K100,eia_exact
+580,gen-580,50134,GTAG,Sycamore Cogeneration_GTAG,eia_exact
+581,gen-581,50134,GTBG,Sycamore Cogeneration_GTBG,eia_exact
+582,gen-582,50134,GTCG,Sycamore Cogeneration_GTCG,eia_exact
+583,gen-583,50134,GTDG,Sycamore Cogeneration_GTDG,eia_exact
+584,gen-584,50147,1,R E Badger Filtration Plant_1,eia_exact
+585,gen-585,50156,GEN1,Bear Creek_GEN1,eia_exact
+586,gen-586,50170,GEN1,Berry Cogen_GEN1,eia_exact
+587,gen-587,50179,GEN1,Box Canyon Dam_GEN1,eia_exact
+588,gen-588,50179,GEN2,Box Canyon Dam_GEN2,eia_exact
+589,gen-589,50180,GEN1,Olsen_GEN1,eia_exact
+590,gen-590,50200,GEN1,B Braun Medical_GEN1,eia_exact
+591,gen-591,50200,GEN2,B Braun Medical_GEN2,eia_exact
+592,gen-592,50210,GEN1,Vulcan-BN Geothermal Power Company_GEN1,eia_exact
+593,gen-593,50210,GEN2,Vulcan-BN Geothermal Power Company_GEN2,eia_exact
+594,gen-594,50216,GN91,Watson Cogeneration_GN91,eia_exact
+595,gen-595,50216,GN92,Watson Cogeneration_GN92,eia_exact
+596,gen-596,50216,GN93,Watson Cogeneration_GN93,eia_exact
+597,gen-597,50216,GN94,Watson Cogeneration_GN94,eia_exact
+598,gen-598,50216,GN95,Watson Cogeneration_GN95,eia_exact
+599,gen-599,50216,GN96,Watson Cogeneration_GN96,eia_exact
+600,gen-600,50218,U1,Woodward Power Plant_U1,eia_exact
+601,gen-601,50223,1296,Nelson Creek_1296,eia_exact
+602,gen-602,50224,7610,Oxnard Wastewater Treatment Plant_7610,eia_exact
+603,gen-603,50224,7710,Oxnard Wastewater Treatment Plant_7710,eia_exact
+604,gen-604,50224,7810,Oxnard Wastewater Treatment Plant_7810,eia_exact
+605,gen-605,50234,2074,San Antonio Regional Hospital_2074,eia_exact
+606,gen-606,50234,2075,San Antonio Regional Hospital_2075,eia_exact
+607,gen-607,50234,2076,San Antonio Regional Hospital_2076,eia_exact
+608,gen-608,50276,EXIS,Wintec Energy Ltd_EXIS,eia_exact
+609,gen-609,50281,WGEN,San Gorgonio Farms Wind Farm_WGEN,eia_exact
+610,gen-610,50293,GEN1,Wadham Energy LP_GEN1,eia_exact
+611,gen-611,50300,BESS1,VESI Pomona_BESS1,eia_exact
+612,gen-612,50363,L313,Mesquite Lake Energy Park Plant 2_L313,eia_exact
+613,gen-613,50375,GEN1,East Portal Generator_GEN1,eia_exact
+614,gen-614,50386,WING,Windland_WING,eia_exact
+615,gen-615,50388,GEN1,Phillips 66 Carbon Plant_GEN1,eia_exact
+616,gen-616,50393,FR1,Friant Hydro Facility_FR1,eia_exact
+617,gen-617,50393,M1,Friant Hydro Facility_M1,eia_exact
+618,gen-618,50393,RO1,Friant Hydro Facility_RO1,eia_exact
+619,gen-619,50393,RO2,Friant Hydro Facility_RO2,eia_exact
+620,gen-620,50400,GEN1,Sand Bar Power Plant_GEN1,eia_exact
+621,gen-621,50464,GEN1,Oxnard_GEN1,eia_exact
+622,gen-622,50464,GEN2,Oxnard_GEN2,eia_exact
+623,gen-623,50485,GEN1,Altech III_GEN1,eia_exact
+624,gen-624,50485,GEN2,Altech III_GEN2,eia_exact
+625,gen-625,50492,1,Gas Utilization Facility_1,eia_exact
+626,gen-626,50492,2,Gas Utilization Facility_2,eia_exact
+627,gen-627,50492,3,Gas Utilization Facility_3,eia_exact
+628,gen-628,50493,DC1,Double C Generation Limited Partnership_DC1,eia_exact
+629,gen-629,50493,DC2,Double C Generation Limited Partnership_DC2,eia_exact
+630,gen-630,50494,KF1,Kern Front Limited_KF1,eia_exact
+631,gen-631,50494,KF2,Kern Front Limited_KF2,eia_exact
+632,gen-632,50495,HS1,High Sierra Limited_HS1,eia_exact
+633,gen-633,50495,HS2,High Sierra Limited_HS2,eia_exact
+634,gen-634,50530,GEN1,Equilon Los Angeles Refining_GEN1,eia_exact
+635,gen-635,50530,GEN2,Equilon Los Angeles Refining_GEN2,eia_exact
+636,gen-636,50530,GEN3,Equilon Los Angeles Refining_GEN3,eia_exact
+637,gen-637,50532,15SLE,Victory Garden (Tehachapi)_15SLE,eia_exact
+638,gen-638,50532,WGNS,Victory Garden (Tehachapi)_WGNS,eia_exact
+639,gen-639,50535,WGNS,Mesa Wind Power Corp_WGNS,eia_exact
+640,gen-640,50536,WGNS,Sky River LLC_WGNS,eia_exact
+641,gen-641,50537,GEN1,SRI International Cogen Project_GEN1,eia_exact
+642,gen-642,50540,GEN2,BP Carson Refinery_GEN2,eia_exact
+643,gen-643,50541,GEN1,Harbor Cogen_GEN1,eia_exact
+644,gen-644,50541,ST1,Harbor Cogen_ST1,eia_exact
+645,gen-645,50541,ST2,Harbor Cogen_ST2,eia_exact
+646,gen-646,50552,WGNS,GPS Cabazon Wind LLC_WGNS,eia_exact
+647,gen-647,50553,1,Edom Hills Project 1 LLC_1,eia_exact
+648,gen-648,50560,GEN1,Pacific-Ultrapower Chinese Station_GEN1,eia_exact
+649,gen-649,50571,GEN1,Altamont Gas Recovery_GEN1,eia_exact
+650,gen-650,50571,GEN2,Altamont Gas Recovery_GEN2,eia_exact
+651,gen-651,50610,1,Saint Johns Health Center_1,eia_exact
+652,gen-652,50612,GEN1,McKittrick Limited_GEN1,eia_exact
+653,gen-653,50622,GEN1,Berry Cogen Tanne Hills 18_GEN1,eia_exact
+654,gen-654,50622,GEN2,Berry Cogen Tanne Hills 18_GEN2,eia_exact
+655,gen-655,50623,GENA,Gaviota Oil Plant_GENA,eia_exact
+656,gen-656,50623,GENB,Gaviota Oil Plant_GENB,eia_exact
+657,gen-657,50623,GENC,Gaviota Oil Plant_GENC,eia_exact
+658,gen-658,50623,GEND,Gaviota Oil Plant_GEND,eia_exact
+659,gen-659,50624,EXP1,Torrance Refining Company LLC_EXP1,eia_exact
+660,gen-660,50624,GTG1,Torrance Refining Company LLC_GTG1,eia_exact
+661,gen-661,50624,STG1,Torrance Refining Company LLC_STG1,eia_exact
+662,gen-662,50632,GEN1,Covanta Stanislaus Energy_GEN1,eia_exact
+663,gen-663,50674,GEN1A,Municipal Cogen Plant_GEN1A,eia_exact
+664,gen-664,50690,GEN1,San Gorgonio Westwinds II LLC_GEN1,eia_exact
+665,gen-665,50696,GEN1,Plant No 1 Orange County_GEN1,eia_exact
+666,gen-666,50696,GEN2,Plant No 1 Orange County_GEN2,eia_exact
+667,gen-667,50696,GEN3,Plant No 1 Orange County_GEN3,eia_exact
+668,gen-668,50748,GEN1,Agnews Power Plant_GEN1,eia_exact
+669,gen-669,50748,GEN2,Agnews Power Plant_GEN2,eia_exact
+670,gen-670,50750,GEN1,Coalinga Cogeneration Facility_GEN1,eia_exact
+671,gen-671,50750,GEN2,Coalinga Cogeneration Facility_GEN2,eia_exact
+672,gen-672,50751,GTG1,Southeast Kern River Cogen_GTG1,eia_exact
+673,gen-673,50751,GTG2,Southeast Kern River Cogen_GTG2,eia_exact
+674,gen-674,50751,GTG3,Southeast Kern River Cogen_GTG3,eia_exact
+675,gen-675,50752,GEN1,South Belridge Cogeneration Facility_GEN1,eia_exact
+676,gen-676,50752,GEN2,South Belridge Cogeneration Facility_GEN2,eia_exact
+677,gen-677,50752,GEN3,South Belridge Cogeneration Facility_GEN3,eia_exact
+678,gen-678,50754,GEN1,Oak Creek Energy Systems I_GEN1,eia_exact
+679,gen-679,50754,GEN2,Oak Creek Energy Systems I_GEN2,eia_exact
+680,gen-680,50754,GEN3,Oak Creek Energy Systems I_GEN3,eia_exact
+681,gen-681,50754,GEN4,Oak Creek Energy Systems I_GEN4,eia_exact
+682,gen-682,50820,GEN1,East Winds Project_GEN1,eia_exact
+683,gen-683,50821,GEN1,Mojave 16_GEN1,eia_exact
+684,gen-684,50823,GEN1,Mojave 18_GEN1,eia_exact
+685,gen-685,50831,GEN1,Nove Power Plant_GEN1,eia_exact
+686,gen-686,50831,GEN2,Nove Power Plant_GEN2,eia_exact
+687,gen-687,50831,GEN3,Nove Power Plant_GEN3,eia_exact
+688,gen-688,50849,GEN1,PE Berkeley_GEN1,eia_exact
+689,gen-689,50849,GEN2,PE Berkeley_GEN2,eia_exact
+690,gen-690,50850,GEN1,OLS Energy Chino_GEN1,eia_exact
+691,gen-691,50850,GEN2,OLS Energy Chino_GEN2,eia_exact
+692,gen-692,50851,GEN1,CSUCI Site Authority_GEN1,eia_exact
+693,gen-693,50851,GEN2,CSUCI Site Authority_GEN2,eia_exact
+694,gen-694,50865,K100,Salinas River Cogeneration_K100,eia_exact
+695,gen-695,50961,GEN1,Slate Creek_GEN1,eia_exact
+696,gen-696,50963,4TG,Naval Hospital Medical Center_4TG,eia_exact
+697,gen-697,50964,IND,Amedee Geothermal Venture I_IND,eia_exact
+698,gen-698,50964,SYN,Amedee Geothermal Venture I_SYN,eia_exact
+699,gen-699,50985,3163,Solano County Cogen Plant_3163,eia_exact
+700,gen-700,50985,3164,Solano County Cogen Plant_3164,eia_exact
+701,gen-701,50985,3165,Solano County Cogen Plant_3165,eia_exact
+702,gen-702,52063,GEN1,Martinez Sulfuric Acid Regeneration Plt_GEN1,eia_exact
+703,gen-703,52064,GEN1,Dominguez Plant_GEN1,eia_exact
+704,gen-704,52073,GEN1,UCLA So Campus Cogen Project_GEN1,eia_exact
+705,gen-705,52073,GEN2,UCLA So Campus Cogen Project_GEN2,eia_exact
+706,gen-706,52073,GEN3,UCLA So Campus Cogen Project_GEN3,eia_exact
+707,gen-707,52076,UNIT1,McKittrick Cogen_UNIT1,eia_exact
+708,gen-708,52076,UNIT2,McKittrick Cogen_UNIT2,eia_exact
+709,gen-709,52078,GEN7,North Midway Cogen_GEN7,eia_exact
+710,gen-710,52078,GEN8,North Midway Cogen_GEN8,eia_exact
+711,gen-711,52078,GEN9,North Midway Cogen_GEN9,eia_exact
+712,gen-712,52081,TG1,Cymric 31X Cogen_TG1,eia_exact
+713,gen-713,52081,TG2,Cymric 31X Cogen_TG2,eia_exact
+714,gen-714,52082,TG1,Cymric 6Z Cogen_TG1,eia_exact
+715,gen-715,52082,TG2,Cymric 6Z Cogen_TG2,eia_exact
+716,gen-716,52083,TG1,Coalinga 6C Cogen_TG1,eia_exact
+717,gen-717,52083,TG2,Coalinga 6C Cogen_TG2,eia_exact
+718,gen-718,52085,TG1,Taft 26C Cogen_TG1,eia_exact
+719,gen-719,52085,TG2,Taft 26C Cogen_TG2,eia_exact
+720,gen-720,52085,TG3,Taft 26C Cogen_TG3,eia_exact
+721,gen-721,52085,TG4,Taft 26C Cogen_TG4,eia_exact
+722,gen-722,52086,TG1,Coalinga 25D Cogen_TG1,eia_exact
+723,gen-723,52086,TG2,Coalinga 25D Cogen_TG2,eia_exact
+724,gen-724,52086,TG3,Coalinga 25D Cogen_TG3,eia_exact
+725,gen-725,52086,TG4,Coalinga 25D Cogen_TG4,eia_exact
+726,gen-726,52096,GEN1,Berry Placerita Cogen_GEN1,eia_exact
+727,gen-727,52096,GEN2,Berry Placerita Cogen_GEN2,eia_exact
+728,gen-728,52099,GEN1,Plant No 2 Orange County_GEN1,eia_exact
+729,gen-729,52099,GEN2,Plant No 2 Orange County_GEN2,eia_exact
+730,gen-730,52099,GEN3,Plant No 2 Orange County_GEN3,eia_exact
+731,gen-731,52099,GEN4,Plant No 2 Orange County_GEN4,eia_exact
+732,gen-732,52099,GEN5,Plant No 2 Orange County_GEN5,eia_exact
+733,gen-733,52099,GEN6,Plant No 2 Orange County_GEN6,eia_exact
+734,gen-734,52104,GEN1,Cymric 36W Cogen_GEN1,eia_exact
+735,gen-735,52104,GEN2,Cymric 36W Cogen_GEN2,eia_exact
+736,gen-736,52104,GEN3,Cymric 36W Cogen_GEN3,eia_exact
+737,gen-737,52104,GEN4,Cymric 36W Cogen_GEN4,eia_exact
+738,gen-738,52107,101A,Kern River Eastridge Cogen_101A,eia_exact
+739,gen-739,52107,101B,Kern River Eastridge Cogen_101B,eia_exact
+740,gen-740,52109,GEN1,Richmond Cogen_GEN1,eia_exact
+741,gen-741,52109,GEN2,Richmond Cogen_GEN2,eia_exact
+742,gen-742,52109,GEN5,Richmond Cogen_GEN5,eia_exact
+743,gen-743,52142,GEN1,Mojave 4_GEN1,eia_exact
+744,gen-744,52143,GEN1,Mojave 3_GEN1,eia_exact
+745,gen-745,52144,GEN1,Mojave 5_GEN1,eia_exact
+746,gen-746,52147,GEN1,C P Kelco San Diego Plant_GEN1,eia_exact
+747,gen-747,52147,GEN2,C P Kelco San Diego Plant_GEN2,eia_exact
+748,gen-748,52147,GEN3,C P Kelco San Diego Plant_GEN3,eia_exact
+749,gen-749,52160,WGNS,Victory Garden Phase IV LLC_WGNS,eia_exact
+750,gen-750,52161,WGNS,Terra-Gen 251 Wind LLC_WGNS,eia_exact
+751,gen-751,52162,WGNS,85 A_WGNS,eia_exact
+752,gen-752,52163,WTGN,85 B_WTGN,eia_exact
+753,gen-753,52165,WGNS,Helzel & Schwarzhoff 88 Wind Farm_WGNS,eia_exact
+754,gen-754,52186,GEN1,Yuba City Cogen Partners_GEN1,eia_exact
+755,gen-755,54015,GEN2,MM West Covina_GEN2,eia_exact
+756,gen-756,54017,U1,San Gabriel Hydro Project_U1,eia_exact
+757,gen-757,54017,U2,San Gabriel Hydro Project_U2,eia_exact
+758,gen-758,54038,GEN1,Geo East Mesa II_GEN1,eia_exact
+759,gen-759,54238,STG,Stockton Biomass_STG,eia_exact
+760,gen-760,54296,BATT,Biola University Hybrid_BATT,eia_exact
+761,gen-761,54296,EG1,Biola University Hybrid_EG1,eia_exact
+762,gen-762,54296,EG2,Biola University Hybrid_EG2,eia_exact
+763,gen-763,54296,EG3,Biola University Hybrid_EG3,eia_exact
+764,gen-764,54298,GEWE,Coram Energy LLC (ECT)_GEWE,eia_exact
+765,gen-765,54299,GEWE,Coram Energy LLC_GEWE,eia_exact
+766,gen-766,54300,GEWE,CTV Power Purchase Contract Trust_GEWE,eia_exact
+767,gen-767,54300,SX1S,CTV Power Purchase Contract Trust_SX1S,eia_exact
+768,gen-768,54308,1,Three Forks Water Power Project_1,eia_exact
+769,gen-769,54337,1,NRG Energy San Diego_1,eia_exact
+770,gen-770,54337,2,NRG Energy San Diego_2,eia_exact
+771,gen-771,54343,GEN1,Terminus Hydroelectric Project_GEN1,eia_exact
+772,gen-772,54410,CTG,Western Power & Steam Inc_CTG,eia_exact
+773,gen-773,54447,TI,Welport Lease Project_TI,eia_exact
+774,gen-774,54449,T1,Dome Project_T1,eia_exact
+775,gen-775,54449,T2,Dome Project_T2,eia_exact
+776,gen-776,54451,G1,Los Angeles Refinery Wilmington_G1,eia_exact
+777,gen-777,54451,G2,Los Angeles Refinery Wilmington_G2,eia_exact
+778,gen-778,54453,GEN2,EDF Renewable Windfarm V Inc_GEN2,eia_exact
+779,gen-779,54454,GEN11,San Gorgonio Windplant WPP1993_GEN11,eia_exact
+780,gen-780,54554,GEN1,Spicer Meadow Project_GEN1,eia_exact
+781,gen-781,54554,GEN2,Spicer Meadow Project_GEN2,eia_exact
+782,gen-782,54554,GEN3,Spicer Meadow Project_GEN3,eia_exact
+783,gen-783,54567,1,MM Yolo Power_1,eia_exact
+784,gen-784,54567,2,MM Yolo Power_2,eia_exact
+785,gen-785,54567,3,MM Yolo Power_3,eia_exact
+786,gen-786,54567,4,MM Yolo Power_4,eia_exact
+787,gen-787,54567,5,MM Yolo Power_5,eia_exact
+788,gen-788,54647,EXIS,TPC Windfarms LLC_EXIS,eia_exact
+789,gen-789,54650,EXI2,Swanmill Windfarm I_EXI2,eia_exact
+790,gen-790,54650,EXIS,Swanmill Windfarm I_EXIS,eia_exact
+791,gen-791,54654,KEK1,Kekawaka Power House_KEK1,eia_exact
+792,gen-792,54681,EXIS,Difwind Farms Ltd I_EXIS,eia_exact
+793,gen-793,54682,EXIS,Difwind Farms Ltd II_EXIS,eia_exact
+794,gen-794,54685,EXIS,Difwind Farms Ltd V_EXIS,eia_exact
+795,gen-795,54686,EXIS,Difwind Farms Ltd VI_EXIS,eia_exact
+796,gen-796,54689,1,Heber Geothermal_1,eia_exact
+797,gen-797,54689,2,Heber Geothermal_2,eia_exact
+798,gen-798,54689,3,Heber Geothermal_3,eia_exact
+799,gen-799,54689,4,Heber Geothermal_4,eia_exact
+800,gen-800,54749,CTG,Goal Line LP_CTG,eia_exact
+801,gen-801,54749,STG,Goal Line LP_STG,eia_exact
+802,gen-802,54750,VW1,Coram Tehachapi_VW1,eia_exact
+803,gen-803,54909,EXI2,Tehachapi Wind Resource II_EXI2,eia_exact
+804,gen-804,54909,EXIS,Tehachapi Wind Resource II_EXIS,eia_exact
+805,gen-805,54912,GTG1,Martinez Refining_GTG1,eia_exact
+806,gen-806,54912,GTG2,Martinez Refining_GTG2,eia_exact
+807,gen-807,54912,STG1,Martinez Refining_STG1,eia_exact
+808,gen-808,54931,WGN1,Ridgetop_WGN1,eia_exact
+809,gen-809,54936,3,Richard J Donovan Correctional Facility_3,eia_exact
+810,gen-810,54951,EG1,Monterey One Water_EG1,eia_exact
+811,gen-811,54951,EG2,Monterey One Water_EG2,eia_exact
+812,gen-812,54951,EG3,Monterey One Water_EG3,eia_exact
+813,gen-813,54996,4100,Salton Sea Power Gen Co - Unit 4_4100,eia_exact
+814,gen-814,55084,GE1,Crockett Cogen Project_GE1,eia_exact
+815,gen-815,55094,UNT1,MM San Diego-Miramar_UNT1,eia_exact
+816,gen-816,55094,UNT2,MM San Diego-Miramar_UNT2,eia_exact
+817,gen-817,55094,UNT3,MM San Diego-Miramar_UNT3,eia_exact
+818,gen-818,55094,UNT4,MM San Diego-Miramar_UNT4,eia_exact
+819,gen-819,55112,CT01,Sutter Energy Center_CT01,eia_exact
+820,gen-820,55112,CT02,Sutter Energy Center_CT02,eia_exact
+821,gen-821,55112,ST01,Sutter Energy Center_ST01,eia_exact
+822,gen-822,55151,GEN1,La Paloma Generating Plant_GEN1,eia_exact
+823,gen-823,55151,GEN2,La Paloma Generating Plant_GEN2,eia_exact
+824,gen-824,55151,GEN3,La Paloma Generating Plant_GEN3,eia_exact
+825,gen-825,55151,GEN4,La Paloma Generating Plant_GEN4,eia_exact
+826,gen-826,55161,UNT1,MM Lopez Energy_UNT1,eia_exact
+827,gen-827,55182,STG,Sunrise Power LLC_STG,eia_exact
+828,gen-828,55182,X718,Sunrise Power LLC_X718,eia_exact
+829,gen-829,55182,X719,Sunrise Power LLC_X719,eia_exact
+830,gen-830,55184,UN-A,Aera San Ardo Cogen Facility_UN-A,eia_exact
+831,gen-831,55184,UN-B,Aera San Ardo Cogen Facility_UN-B,eia_exact
+832,gen-832,55217,CTG1,Los Medanos Energy Center_CTG1,eia_exact
+833,gen-833,55217,CTG2,Los Medanos Energy Center_CTG2,eia_exact
+834,gen-834,55217,STG3,Los Medanos Energy Center_STG3,eia_exact
+835,gen-835,55295,CT1,Blythe Energy Inc_CT1,eia_exact
+836,gen-836,55295,CT2,Blythe Energy Inc_CT2,eia_exact
+837,gen-837,55295,ST1,Blythe Energy Inc_ST1,eia_exact
+838,gen-838,55345,44927,Otay Mesa Generating Project_1-Jan,eia_excel_repair
+839,gen-839,55345,44928,Otay Mesa Generating Project_2-Jan,eia_excel_repair
+840,gen-840,55345,44929,Otay Mesa Generating Project_3-Jan,eia_excel_repair
+841,gen-841,55393,CTG1,Metcalf Energy Center_CTG1,eia_exact
+842,gen-842,55393,CTG2,Metcalf Energy Center_CTG2,eia_exact
+843,gen-843,55393,STG1,Metcalf Energy Center_STG1,eia_exact
+844,gen-844,55396,WGNS,Green Power I_WGNS,eia_exact
+845,gen-845,55400,CTG1,Elk Hills Power LLC_CTG1,eia_exact
+846,gen-846,55400,CTG2,Elk Hills Power LLC_CTG2,eia_exact
+847,gen-847,55400,STG,Elk Hills Power LLC_STG,eia_exact
+848,gen-848,55499,CPP1,CalPeak Power Vaca Dixon Peaker Plant_CPP1,eia_exact
+849,gen-849,55508,CPP2,CalPeak Power Panoche Peaker Plant_CPP2,eia_exact
+850,gen-850,55510,CPP4,CalPeak Power Border Peaker Plant_CPP4,eia_exact
+851,gen-851,55513,CPP7,CalPeak Power Enterprise Peaker Plant_CPP7,eia_exact
+852,gen-852,55518,CTG1,High Desert Power Plant_CTG1,eia_exact
+853,gen-853,55518,CTG2,High Desert Power Plant_CTG2,eia_exact
+854,gen-854,55518,CTG3,High Desert Power Plant_CTG3,eia_exact
+855,gen-855,55518,STG1,High Desert Power Plant_STG1,eia_exact
+856,gen-856,55538,CTG1,Escondido Energy Center_CTG1,eia_exact
+857,gen-857,55540,GEN1,Chula Vista Energy Center_GEN1,eia_exact
+858,gen-858,55541,CTG1,Indigo Energy Facility_CTG1,eia_exact
+859,gen-859,55541,CTG2,Indigo Energy Facility_CTG2,eia_exact
+860,gen-860,55541,CTG3,Indigo Energy Facility_CTG3,eia_exact
+861,gen-861,55542,CTG1,Larkspur Energy Facility_CTG1,eia_exact
+862,gen-862,55542,CTG2,Larkspur Energy Facility_CTG2,eia_exact
+863,gen-863,55557,T101,Wilmington Hydrogen Plant_T101,eia_exact
+864,gen-864,55602,UNT1,North City - Landfill Gas Engines South_UNT1,eia_exact
+865,gen-865,55602,UNT2,North City - Landfill Gas Engines South_UNT2,eia_exact
+866,gen-866,55602,UNT3,North City - Landfill Gas Engines South_UNT3,eia_exact
+867,gen-867,55602,UNT4,North City - Landfill Gas Engines South_UNT4,eia_exact
+868,gen-868,55603,UNT1,Tajiguas Plant_UNT1,eia_exact
+869,gen-869,55625,CT1,Creed Energy Center_CT1,eia_exact
+870,gen-870,55626,CT1,Lambie Energy Center_CT1,eia_exact
+871,gen-871,55627,CT1,Goose Haven Energy Center_CT1,eia_exact
+872,gen-872,55656,CT01,Pastoria Energy Facility LLC_CT01,eia_exact
+873,gen-873,55656,CT02,Pastoria Energy Facility LLC_CT02,eia_exact
+874,gen-874,55656,CT04,Pastoria Energy Facility LLC_CT04,eia_exact
+875,gen-875,55656,ST03,Pastoria Energy Facility LLC_ST03,eia_exact
+876,gen-876,55656,ST05,Pastoria Energy Facility LLC_ST05,eia_exact
+877,gen-877,55698,HEP1,Hanford Energy Park Peaker_HEP1,eia_exact
+878,gen-878,55698,HEP2,Hanford Energy Park Peaker_HEP2,eia_exact
+879,gen-879,55719,GEN2,Mountain View I&2_GEN2,eia_exact
+880,gen-880,55719,GENI,Mountain View I&2_GENI,eia_exact
+881,gen-881,55748,CAG5,Los Esteros Critical Energy Center_CAG5,eia_exact
+882,gen-882,55748,CTG1,Los Esteros Critical Energy Center_CTG1,eia_exact
+883,gen-883,55748,CTG2,Los Esteros Critical Energy Center_CTG2,eia_exact
+884,gen-884,55748,CTG3,Los Esteros Critical Energy Center_CTG3,eia_exact
+885,gen-885,55748,CTG4,Los Esteros Critical Energy Center_CTG4,eia_exact
+886,gen-886,55807,HPP1,Henrietta Peaker_HPP1,eia_exact
+887,gen-887,55807,HPP2,Henrietta Peaker_HPP2,eia_exact
+888,gen-888,55810,S3,Gilroy Peaking Energy Center_S3,eia_exact
+889,gen-889,55810,S4,Gilroy Peaking Energy Center_S4,eia_exact
+890,gen-890,55810,S5,Gilroy Peaking Energy Center_S5,eia_exact
+891,gen-891,55851,GT 1,Valero Refinery Cogeneration Unit 1_GT 1,eia_exact
+892,gen-892,55855,CTG1,Wolfskill Energy Center_CTG1,eia_exact
+893,gen-893,55874,8,Panoche Peaker_8,eia_exact
+894,gen-894,55933,TCC1,Tracy Combined Cycle Power Plant_TCC1,eia_exact
+895,gen-895,55933,TPP1,Tracy Combined Cycle Power Plant_TPP1,eia_exact
+896,gen-896,55933,TPP2,Tracy Combined Cycle Power Plant_TPP2,eia_exact
+897,gen-897,55934,C1,Century Generating Facility_C1,eia_exact
+898,gen-898,55934,C2,Century Generating Facility_C2,eia_exact
+899,gen-899,55934,C3,Century Generating Facility_C3,eia_exact
+900,gen-900,55934,C4,Century Generating Facility_C4,eia_exact
+901,gen-901,55935,D1,Drews Generating Facility_D1,eia_exact
+902,gen-902,55935,D2,Drews Generating Facility_D2,eia_exact
+903,gen-903,55935,D3,Drews Generating Facility_D3,eia_exact
+904,gen-904,55935,D4,Drews Generating Facility_D4,eia_exact
+905,gen-905,55951,AMP1,Agua Mansa Power Plant_AMP1,eia_exact
+906,gen-906,55963,CTG1,Riverview Energy Center_CTG1,eia_exact
+907,gen-907,55983,TG51,Salton Sea Power LLC - Unit 5_TG51,eia_exact
+908,gen-908,55984,TG21,CE Turbo LLC_TG21,eia_exact
+909,gen-909,55985,CTG1,Palomar Energy_CTG1,eia_exact
+910,gen-910,55985,CTG2,Palomar Energy_CTG2,eia_exact
+911,gen-911,55985,STG,Palomar Energy_STG,eia_exact
+912,gen-912,56011,V-47,Cabazon Wind Partners_V-47,eia_exact
+913,gen-913,56012,1,Whitewater Hill Wind Partners_1,eia_exact
+914,gen-914,56026,CTG1,Donald Von Raesfeld Power Plant_CTG1,eia_exact
+915,gen-915,56026,CTG2,Donald Von Raesfeld Power Plant_CTG2,eia_exact
+916,gen-916,56026,STG,Donald Von Raesfeld Power Plant_STG,eia_exact
+917,gen-917,56039,G1,H. Gonzales_G1,eia_exact
+918,gen-918,56039,G2,H. Gonzales_G2,eia_exact
+919,gen-919,56041,M1,Malburg_M1,eia_exact
+920,gen-920,56041,M2,Malburg_M2,eia_exact
+921,gen-921,56041,M3,Malburg_M3,eia_exact
+922,gen-922,56046,1,Magnolia Power Project_1,eia_exact
+923,gen-923,56046,2,Magnolia Power Project_2,eia_exact
+924,gen-924,56051,GEN1,THUMS_GEN1,eia_exact
+925,gen-925,56075,1,High Winds LLC_1,eia_exact
+926,gen-926,56075,2,High Winds LLC_2,eia_exact
+927,gen-927,56078,1,Walnut Energy Center_1,eia_exact
+928,gen-928,56078,2,Walnut Energy Center_2,eia_exact
+929,gen-929,56078,3,Walnut Energy Center_3,eia_exact
+930,gen-930,56080,EG1,SJ/SC WPCP_EG1,eia_exact
+931,gen-931,56080,EG2,SJ/SC WPCP_EG2,eia_exact
+932,gen-932,56080,EG3,SJ/SC WPCP_EG3,eia_exact
+933,gen-933,56090,D182,Blacksand Generating Facility_D182,eia_exact
+934,gen-934,56090,D189,Blacksand Generating Facility_D189,eia_exact
+935,gen-935,56090,D190,Blacksand Generating Facility_D190,eia_exact
+936,gen-936,56112,V47,Mountain View III_V47,eia_exact
+937,gen-937,56125,4152,Springville Hydroelectric_4152,eia_exact
+938,gen-938,56134,101,Regional Wastewater Control Facility_101,eia_exact
+939,gen-939,56134,301,Regional Wastewater Control Facility_301,eia_exact
+940,gen-940,56134,401,Regional Wastewater Control Facility_401,eia_exact
+941,gen-941,56143,1,Riverside Energy Resource Center_1,eia_exact
+942,gen-942,56143,2,Riverside Energy Resource Center_2,eia_exact
+943,gen-943,56143,3,Riverside Energy Resource Center_3,eia_exact
+944,gen-944,56143,4,Riverside Energy Resource Center_4,eia_exact
+945,gen-945,56144,1,Springs Generating Station_1,eia_exact
+946,gen-946,56144,2,Springs Generating Station_2,eia_exact
+947,gen-947,56144,3,Springs Generating Station_3,eia_exact
+948,gen-948,56144,4,Springs Generating Station_4,eia_exact
+949,gen-949,56184,IC1,Red Bluff_IC1,eia_exact
+950,gen-950,56184,IC10,Red Bluff_IC10,eia_exact
+951,gen-951,56184,IC11,Red Bluff_IC11,eia_exact
+952,gen-952,56184,IC12,Red Bluff_IC12,eia_exact
+953,gen-953,56184,IC13,Red Bluff_IC13,eia_exact
+954,gen-954,56184,IC14,Red Bluff_IC14,eia_exact
+955,gen-955,56184,IC15,Red Bluff_IC15,eia_exact
+956,gen-956,56184,IC16,Red Bluff_IC16,eia_exact
+957,gen-957,56184,IC2,Red Bluff_IC2,eia_exact
+958,gen-958,56184,IC3,Red Bluff_IC3,eia_exact
+959,gen-959,56184,IC4,Red Bluff_IC4,eia_exact
+960,gen-960,56184,IC5,Red Bluff_IC5,eia_exact
+961,gen-961,56184,IC6,Red Bluff_IC6,eia_exact
+962,gen-962,56184,IC7,Red Bluff_IC7,eia_exact
+963,gen-963,56184,IC8,Red Bluff_IC8,eia_exact
+964,gen-964,56184,IC9,Red Bluff_IC9,eia_exact
+965,gen-965,56232,1,Miramar Energy Facility_1,eia_exact
+966,gen-966,56232,2,Miramar Energy Facility_2,eia_exact
+967,gen-967,56239,GT-1,Malaga Power LLC_GT-1,eia_exact
+968,gen-968,56239,GT-2,Malaga Power LLC_GT-2,eia_exact
+969,gen-969,56271,VEST,Diablo Winds LLC_VEST,eia_exact
+970,gen-970,56275,WGNS,Helzel & Schwarzhoff 86_WGNS,eia_exact
+971,gen-971,56276,WGNS,ZCO_WGNS,eia_exact
+972,gen-972,56284,EPG,Santa Maria EPG_EPG,eia_exact
+973,gen-973,56295,1,Kumeyaay Wind_1,eia_exact
+974,gen-974,56302,1,Oasis Wind_1,eia_exact
+975,gen-975,56346,ICE1,Bear Valley Power Plant_ICE1,eia_exact
+976,gen-976,56346,ICE2,Bear Valley Power Plant_ICE2,eia_exact
+977,gen-977,56346,ICE3,Bear Valley Power Plant_ICE3,eia_exact
+978,gen-978,56346,ICE4,Bear Valley Power Plant_ICE4,eia_exact
+979,gen-979,56346,ICE5,Bear Valley Power Plant_ICE5,eia_exact
+980,gen-980,56346,ICE6,Bear Valley Power Plant_ICE6,eia_exact
+981,gen-981,56346,ICE7,Bear Valley Power Plant_ICE7,eia_exact
+982,gen-982,56356,CT1,Clearwater Power Plant_CT1,eia_exact
+983,gen-983,56356,ST1,Clearwater Power Plant_ST1,eia_exact
+984,gen-984,56362,1,Shiloh I Wind Project_1,eia_exact
+985,gen-985,56428,Unit1,Ameresco Santa Cruz Energy_Unit1,eia_exact
+986,gen-986,56428,Unit2,Ameresco Santa Cruz Energy_Unit2,eia_exact
+987,gen-987,56428,Unit3,Ameresco Santa Cruz Energy_Unit3,eia_exact
+988,gen-988,56446,1,Buena Vista Energy LLC_1,eia_exact
+989,gen-989,56467,CTG1,Russell City Energy Center_CTG1,eia_exact
+990,gen-990,56467,CTG2,Russell City Energy Center_CTG2,eia_exact
+991,gen-991,56467,STG1,Russell City Energy Center_STG1,eia_exact
+992,gen-992,56469,1,Roseburg Forest Products Biomass_1,eia_exact
+993,gen-993,56471,1,McGrath Peaker_1,eia_exact
+994,gen-994,56472,1,Grapeland Hybrid_1,eia_exact
+995,gen-995,56472,BA1,Grapeland Hybrid_BA1,eia_exact
+996,gen-996,56473,1,Mira Loma Peaker_1,eia_exact
+997,gen-997,56474,1,Barre Peaker_1,eia_exact
+998,gen-998,56475,1,Center Hybrid_1,eia_exact
+999,gen-999,56475,BA1,Center Hybrid_BA1,eia_exact
+1000,gen-1000,56476,A,Gateway Generating Station_A,eia_exact
+1001,gen-1001,56476,B,Gateway Generating Station_B,eia_exact
+1002,gen-1002,56476,C,Gateway Generating Station_C,eia_exact
+1003,gen-1003,56532,A,Colusa Generating Station_A,eia_exact
+1004,gen-1004,56532,B,Colusa Generating Station_B,eia_exact
+1005,gen-1005,56532,C,Colusa Generating Station_C,eia_exact
+1006,gen-1006,56569,1,Niland Gas Turbine Plant_1,eia_exact
+1007,gen-1007,56569,2,Niland Gas Turbine Plant_2,eia_exact
+1008,gen-1008,56570,WGNS,Terra-Gen VG Wind LLC_WGNS,eia_exact
+1009,gen-1009,56615,G100,Rancho Penasquitos_G100,eia_exact
+1010,gen-1010,56639,1,Midway Peaking LLC_1,eia_exact
+1011,gen-1011,56639,2,Midway Peaking LLC_2,eia_exact
+1012,gen-1012,56654,1,Hatchet Ridge Wind Project_1,eia_exact
+1013,gen-1013,56707,AMPC,El Nido Facility_AMPC,eia_exact
+1014,gen-1014,56768,CR1,CalRenew-1_CR1,eia_exact
+1015,gen-1015,56791,1,Dillon Wind LLC_1,eia_exact
+1016,gen-1016,56803,1,Panoche Energy Center_1,eia_exact
+1017,gen-1017,56803,2,Panoche Energy Center_2,eia_exact
+1018,gen-1018,56803,3,Panoche Energy Center_3,eia_exact
+1019,gen-1019,56803,4,Panoche Energy Center_4,eia_exact
+1020,gen-1020,56814,PV1,ELACC Photovoltaic Power Facility_PV1,eia_exact
+1021,gen-1021,56814,PV2,ELACC Photovoltaic Power Facility_PV2,eia_exact
+1022,gen-1022,56832,GE1,North Brawley Geothermal Plant_GE1,eia_exact
+1023,gen-1023,56832,GE2,North Brawley Geothermal Plant_GE2,eia_exact
+1024,gen-1024,56832,GE3,North Brawley Geothermal Plant_GE3,eia_exact
+1025,gen-1025,56832,GE4,North Brawley Geothermal Plant_GE4,eia_exact
+1026,gen-1026,56832,GE5,North Brawley Geothermal Plant_GE5,eia_exact
+1027,gen-1027,56862,1,Bolthouse S&P and Rowen Farms Solar_1,eia_exact
+1028,gen-1028,56862,2,Bolthouse S&P and Rowen Farms Solar_2,eia_exact
+1029,gen-1029,56862,3,Bolthouse S&P and Rowen Farms Solar_3,eia_exact
+1030,gen-1030,56862,4,Bolthouse S&P and Rowen Farms Solar_4,eia_exact
+1031,gen-1031,56875,TBD,Sacramento Soleil LLC_TBD,eia_exact
+1032,gen-1032,56895,1,Ameresco Ox Mountain_1,eia_exact
+1033,gen-1033,56895,2,Ameresco Ox Mountain_2,eia_exact
+1034,gen-1034,56895,3,Ameresco Ox Mountain_3,eia_exact
+1035,gen-1035,56895,4,Ameresco Ox Mountain_4,eia_exact
+1036,gen-1036,56895,5,Ameresco Ox Mountain_5,eia_exact
+1037,gen-1037,56895,6,Ameresco Ox Mountain_6,eia_exact
+1038,gen-1038,56897,1,Ameresco Keller Canyon_1,eia_exact
+1039,gen-1039,56897,2,Ameresco Keller Canyon_2,eia_exact
+1040,gen-1040,56898,1,Ameresco Chiquita Canyon_1,eia_exact
+1041,gen-1041,56898,2,Ameresco Chiquita Canyon_2,eia_exact
+1042,gen-1042,56909,1,Gap Pacific Distribution Center_1,eia_exact
+1043,gen-1043,56909,2,Gap Pacific Distribution Center_2,eia_exact
+1044,gen-1044,56909,3,Gap Pacific Distribution Center_3,eia_exact
+1045,gen-1045,56909,4,Gap Pacific Distribution Center_4,eia_exact
+1046,gen-1046,56914,CTG1,Orange Grove Peaking Facility_CTG1,eia_exact
+1047,gen-1047,56914,CTG2,Orange Grove Peaking Facility_CTG2,eia_exact
+1048,gen-1048,56939,1,Solar Blythe LLC_1,eia_exact
+1049,gen-1049,56996,S1A,Solar Photovoltaic Project No02_S1A,eia_exact
+1050,gen-1050,56996,S1B,Solar Photovoltaic Project No02_S1B,eia_exact
+1051,gen-1051,57004,1,SunEdison Walgreens Moreno Valley_1,eia_exact
+1052,gen-1052,57005,1,Mariani Packing Vacaville Solar_1,eia_exact
+1053,gen-1053,57006,1,Walgreens Woodland Distribution Center_1,eia_exact
+1054,gen-1054,57007,1,SunEdison Ironwood State Prison_1,eia_exact
+1055,gen-1055,57009,1,Kohls San Bernardino Solar Facility_1,eia_exact
+1056,gen-1056,57010,1,SunEdison Anheuser Busch Fairfield_1,eia_exact
+1057,gen-1057,57011,1,Chuckawalla Valley State Prison_1,eia_exact
+1058,gen-1058,57012,1,SunEdison Walmart Apple Valley DC_1,eia_exact
+1059,gen-1059,57027,CPP1,Canyon Power Plant_CPP1,eia_exact
+1060,gen-1060,57027,CPP2,Canyon Power Plant_CPP2,eia_exact
+1061,gen-1061,57027,CPP3,Canyon Power Plant_CPP3,eia_exact
+1062,gen-1062,57027,CPP4,Canyon Power Plant_CPP4,eia_exact
+1063,gen-1063,57041,1,Vaca Dixon Solar Station_1,eia_exact
+1064,gen-1064,57042,1,CSU East Bay_1,eia_exact
+1065,gen-1065,57043,1,SF State University_1,eia_exact
+1066,gen-1066,57043,2,SF State University_2,eia_exact
+1067,gen-1067,57102,EN01,Whittier LFG Power Plant No1_EN01,eia_exact
+1068,gen-1068,57102,EN02,Whittier LFG Power Plant No1_EN02,eia_exact
+1069,gen-1069,57122,CTG1,UCI Facilities Management Central Plant_CTG1,eia_exact
+1070,gen-1070,57122,STG1,UCI Facilities Management Central Plant_STG1,eia_exact
+1071,gen-1071,57133,359,G2 Energy Ostrom Road LLC_359,eia_exact
+1072,gen-1072,57133,361,G2 Energy Ostrom Road LLC_361,eia_exact
+1073,gen-1073,57154,1209,Mesquite Lake Water & Power Plant 1_1209,eia_exact
+1074,gen-1074,57163,GEN1,Calabasas Gas to Energy Facility_GEN1,eia_exact
+1075,gen-1075,57163,GEN3,Calabasas Gas to Energy Facility_GEN3,eia_exact
+1076,gen-1076,57217,S003A,Solar Photovoltaic Project No03_S003A,eia_exact
+1077,gen-1077,57217,S003B,Solar Photovoltaic Project No03_S003B,eia_exact
+1078,gen-1078,57219,S005A,Solar Photovoltaic Project No05_S005A,eia_exact
+1079,gen-1079,57219,S005B,Solar Photovoltaic Project No05_S005B,eia_exact
+1080,gen-1080,57219,S005C,Solar Photovoltaic Project No05_S005C,eia_exact
+1081,gen-1081,57219,S005D,Solar Photovoltaic Project No05_S005D,eia_exact
+1082,gen-1082,57219,S005E,Solar Photovoltaic Project No05_S005E,eia_exact
+1083,gen-1083,57220,S006A,Solar Photovoltaic Project No06_S006A,eia_exact
+1084,gen-1084,57220,S006B,Solar Photovoltaic Project No06_S006B,eia_exact
+1085,gen-1085,57220,S006C,Solar Photovoltaic Project No06_S006C,eia_exact
+1086,gen-1086,57220,S006D,Solar Photovoltaic Project No06_S006D,eia_exact
+1087,gen-1087,57221,S007A,Solar Photovoltaic Project No07_S007A,eia_exact
+1088,gen-1088,57221,S007B,Solar Photovoltaic Project No07_S007B,eia_exact
+1089,gen-1089,57221,S007C,Solar Photovoltaic Project No07_S007C,eia_exact
+1090,gen-1090,57221,S007D,Solar Photovoltaic Project No07_S007D,eia_exact
+1091,gen-1091,57221,S007E,Solar Photovoltaic Project No07_S007E,eia_exact
+1092,gen-1092,57222,S008A,Solar Photovoltaic Project No08_S008A,eia_exact
+1093,gen-1093,57222,S008B,Solar Photovoltaic Project No08_S008B,eia_exact
+1094,gen-1094,57222,S008C,Solar Photovoltaic Project No08_S008C,eia_exact
+1095,gen-1095,57222,S008D,Solar Photovoltaic Project No08_S008D,eia_exact
+1096,gen-1096,57223,S009A,Solar Photovoltaic Project No09_S009A,eia_exact
+1097,gen-1097,57223,S009B,Solar Photovoltaic Project No09_S009B,eia_exact
+1098,gen-1098,57224,S010A,Solar Photovoltaic Project No10_S010A,eia_exact
+1099,gen-1099,57224,S010B,Solar Photovoltaic Project No10_S010B,eia_exact
+1100,gen-1100,57224,S010C,Solar Photovoltaic Project No10_S010C,eia_exact
+1101,gen-1101,57225,S011A,Solar Photovoltaic Project No11_S011A,eia_exact
+1102,gen-1102,57225,S011B,Solar Photovoltaic Project No11_S011B,eia_exact
+1103,gen-1103,57225,S011C,Solar Photovoltaic Project No11_S011C,eia_exact
+1104,gen-1104,57225,S011D,Solar Photovoltaic Project No11_S011D,eia_exact
+1105,gen-1105,57225,S011E,Solar Photovoltaic Project No11_S011E,eia_exact
+1106,gen-1106,57225,S011F,Solar Photovoltaic Project No11_S011F,eia_exact
+1107,gen-1107,57225,S011G,Solar Photovoltaic Project No11_S011G,eia_exact
+1108,gen-1108,57226,S012A,Solar Photovoltaic Project No12_S012A,eia_exact
+1109,gen-1109,57227,S013A,Solar Photovoltaic Project No13_S013A,eia_exact
+1110,gen-1110,57227,S013B,Solar Photovoltaic Project No13_S013B,eia_exact
+1111,gen-1111,57227,S013C,Solar Photovoltaic Project No13_S013C,eia_exact
+1112,gen-1112,57227,S013D,Solar Photovoltaic Project No13_S013D,eia_exact
+1113,gen-1113,57227,S013E,Solar Photovoltaic Project No13_S013E,eia_exact
+1114,gen-1114,57227,S013F,Solar Photovoltaic Project No13_S013F,eia_exact
+1115,gen-1115,57227,S013G,Solar Photovoltaic Project No13_S013G,eia_exact
+1116,gen-1116,57229,S015A,Solar Photovoltaic Project No15_S015A,eia_exact
+1117,gen-1117,57229,S015B,Solar Photovoltaic Project No15_S015B,eia_exact
+1118,gen-1118,57229,S015C,Solar Photovoltaic Project No15_S015C,eia_exact
+1119,gen-1119,57229,S015D,Solar Photovoltaic Project No15_S015D,eia_exact
+1120,gen-1120,57229,S015E,Solar Photovoltaic Project No15_S015E,eia_exact
+1121,gen-1121,57229,S015F,Solar Photovoltaic Project No15_S015F,eia_exact
+1122,gen-1122,57229,S015G,Solar Photovoltaic Project No15_S015G,eia_exact
+1123,gen-1123,57230,S016A,Solar Photovoltaic Project No16_S016A,eia_exact
+1124,gen-1124,57230,S016B,Solar Photovoltaic Project No16_S016B,eia_exact
+1125,gen-1125,57230,S016C,Solar Photovoltaic Project No16_S016C,eia_exact
+1126,gen-1126,57231,S017A,Solar Photovoltaic Project No17_S017A,eia_exact
+1127,gen-1127,57231,S017B,Solar Photovoltaic Project No17_S017B,eia_exact
+1128,gen-1128,57231,S017C,Solar Photovoltaic Project No17_S017C,eia_exact
+1129,gen-1129,57231,S017D,Solar Photovoltaic Project No17_S017D,eia_exact
+1130,gen-1130,57231,S017E,Solar Photovoltaic Project No17_S017E,eia_exact
+1131,gen-1131,57231,S017F,Solar Photovoltaic Project No17_S017F,eia_exact
+1132,gen-1132,57231,S017G,Solar Photovoltaic Project No17_S017G,eia_exact
+1133,gen-1133,57232,S018A,Solar Photovoltaic Project No18_S018A,eia_exact
+1134,gen-1134,57232,S018B,Solar Photovoltaic Project No18_S018B,eia_exact
+1135,gen-1135,57232,S018C,Solar Photovoltaic Project No18_S018C,eia_exact
+1136,gen-1136,57236,S023A,Solar Photovoltaic Project No23_S023A,eia_exact
+1137,gen-1137,57236,S023B,Solar Photovoltaic Project No23_S023B,eia_exact
+1138,gen-1138,57236,S023C,Solar Photovoltaic Project No23_S023C,eia_exact
+1139,gen-1139,57236,S023D,Solar Photovoltaic Project No23_S023D,eia_exact
+1140,gen-1140,57236,S023E,Solar Photovoltaic Project No23_S023E,eia_exact
+1141,gen-1141,57245,S026A,Solar Photovoltaic Project No26_S026A,eia_exact
+1142,gen-1142,57245,S026B,Solar Photovoltaic Project No26_S026B,eia_exact
+1143,gen-1143,57245,S026C,Solar Photovoltaic Project No26_S026C,eia_exact
+1144,gen-1144,57245,S026D,Solar Photovoltaic Project No26_S026D,eia_exact
+1145,gen-1145,57245,S026E,Solar Photovoltaic Project No26_S026E,eia_exact
+1146,gen-1146,57245,S026F,Solar Photovoltaic Project No26_S026F,eia_exact
+1147,gen-1147,57245,S026G,Solar Photovoltaic Project No26_S026G,eia_exact
+1148,gen-1148,57245,S026H,Solar Photovoltaic Project No26_S026H,eia_exact
+1149,gen-1149,57245,S026I,Solar Photovoltaic Project No26_S026I,eia_exact
+1150,gen-1150,57245,S026J,Solar Photovoltaic Project No26_S026J,eia_exact
+1151,gen-1151,57245,SO26K,Solar Photovoltaic Project No26_SO26K,eia_exact
+1152,gen-1152,57245,SO26L,Solar Photovoltaic Project No26_SO26L,eia_exact
+1153,gen-1153,57246,S027A,Solar Photovoltaic Project No27_S027A,eia_exact
+1154,gen-1154,57246,S027B,Solar Photovoltaic Project No27_S027B,eia_exact
+1155,gen-1155,57246,S027C,Solar Photovoltaic Project No27_S027C,eia_exact
+1156,gen-1156,57246,S027D,Solar Photovoltaic Project No27_S027D,eia_exact
+1157,gen-1157,57247,S028A,Solar Photovoltaic Project No28_S028A,eia_exact
+1158,gen-1158,57247,S028B,Solar Photovoltaic Project No28_S028B,eia_exact
+1159,gen-1159,57247,S028C,Solar Photovoltaic Project No28_S028C,eia_exact
+1160,gen-1160,57247,S028D,Solar Photovoltaic Project No28_S028D,eia_exact
+1161,gen-1161,57247,S028E,Solar Photovoltaic Project No28_S028E,eia_exact
+1162,gen-1162,57247,S028F,Solar Photovoltaic Project No28_S028F,eia_exact
+1163,gen-1163,57247,S028G,Solar Photovoltaic Project No28_S028G,eia_exact
+1164,gen-1164,57267,1,Marsh Landing Generating Station_1,eia_exact
+1165,gen-1165,57267,2,Marsh Landing Generating Station_2,eia_exact
+1166,gen-1166,57267,3,Marsh Landing Generating Station_3,eia_exact
+1167,gen-1167,57267,4,Marsh Landing Generating Station_4,eia_exact
+1168,gen-1168,57282,AW01,Alta Wind Energy Center I_AW01,eia_exact
+1169,gen-1169,57291,AW02,Alta Wind Energy Center II_AW02,eia_exact
+1170,gen-1170,57292,AW03,Alta Wind Energy Center III_AW03,eia_exact
+1171,gen-1171,57293,AW04,Alta Wind Energy Center IV_AW04,eia_exact
+1172,gen-1172,57294,AW05,Alta Wind Energy Center V_AW05,eia_exact
+1173,gen-1173,57295,1,Alpine Solar_1,eia_exact
+1174,gen-1174,57301,DEC,Dutch Wind Energy_DEC,eia_exact
+1175,gen-1175,57302,1,Garnet Wind Energy Center_1,eia_exact
+1176,gen-1176,57305,1,Adelanto Solar Project_1,eia_exact
+1177,gen-1177,57308,1,Maclay Solar Project_1,eia_exact
+1178,gen-1178,57309,1,Pacific Cruise Ship Terminals Berth 93_1,eia_exact
+1179,gen-1179,57310,1,1420 Coil Av NoC_1,eia_exact
+1180,gen-1180,57311,1,Occidental College Solar Project_1,eia_exact
+1181,gen-1181,57313,1,Metro Support Services Center Solar_1,eia_exact
+1182,gen-1182,57314,1,Los Angeles Harbor College_1,eia_exact
+1183,gen-1183,57323,UNIT1,Sierra SunTower Solar Gen Station_UNIT1,eia_exact
+1184,gen-1184,57331,MSP1,Mojave Solar Project_MSP1,eia_exact
+1185,gen-1185,57331,MSP2,Mojave Solar Project_MSP2,eia_exact
+1186,gen-1186,57340,1,Panoche Valley Solar Farm_1,eia_exact
+1187,gen-1187,57359,1,Avenal Park_1,eia_exact
+1188,gen-1188,57360,1,Sun City Project LLC_1,eia_exact
+1189,gen-1189,57361,1,Sand Drag LLC_1,eia_exact
+1190,gen-1190,57364,1,Siphon Drop Power Plant_1,eia_exact
+1191,gen-1191,57364,2,Siphon Drop Power Plant_2,eia_exact
+1192,gen-1192,57378,AVSR,AV Solar Ranch One_AVSR,eia_exact
+1193,gen-1193,57394,GEN01,Genesis Solar Energy Project_GEN01,eia_exact
+1194,gen-1194,57394,GEN02,Genesis Solar Energy Project_GEN02,eia_exact
+1195,gen-1195,57422,1,Yolo County Solar Project_1,eia_exact
+1196,gen-1196,57439,HPR2,California Valley Solar Ranch_HPR2,eia_exact
+1197,gen-1197,57439,HPR2A,California Valley Solar Ranch_HPR2A,eia_exact
+1198,gen-1198,57439,HPR2B,California Valley Solar Ranch_HPR2B,eia_exact
+1199,gen-1199,57439,HPR2C,California Valley Solar Ranch_HPR2C,eia_exact
+1200,gen-1200,57439,HPR2D,California Valley Solar Ranch_HPR2D,eia_exact
+1201,gen-1201,57441,S42A,Solar Photovoltaic Project No42_S42A,eia_exact
+1202,gen-1202,57441,S42B,Solar Photovoltaic Project No42_S42B,eia_exact
+1203,gen-1203,57441,S42C,Solar Photovoltaic Project No42_S42C,eia_exact
+1204,gen-1204,57441,S42D,Solar Photovoltaic Project No42_S42D,eia_exact
+1205,gen-1205,57441,S42E,Solar Photovoltaic Project No42_S42E,eia_exact
+1206,gen-1206,57441,S42F,Solar Photovoltaic Project No42_S42F,eia_exact
+1207,gen-1207,57441,S42G,Solar Photovoltaic Project No42_S42G,eia_exact
+1208,gen-1208,57441,S42H,Solar Photovoltaic Project No42_S42H,eia_exact
+1209,gen-1209,57441,S42I,Solar Photovoltaic Project No42_S42I,eia_exact
+1210,gen-1210,57441,S42J,Solar Photovoltaic Project No42_S42J,eia_exact
+1211,gen-1211,57455,SB1,Solar Borrego I_SB1,eia_exact
+1212,gen-1212,57459,1,Mountain View IV_1,eia_exact
+1213,gen-1213,57460,CL00,Caltech Central_CL00,eia_exact
+1214,gen-1214,57460,CL01,Caltech Central_CL01,eia_exact
+1215,gen-1215,57460,CL02,Caltech Central_CL02,eia_exact
+1216,gen-1216,57460,CL03,Caltech Central_CL03,eia_exact
+1217,gen-1217,57460,CL04,Caltech Central_CL04,eia_exact
+1218,gen-1218,57460,CL05,Caltech Central_CL05,eia_exact
+1219,gen-1219,57460,CL06,Caltech Central_CL06,eia_exact
+1220,gen-1220,57460,CL07,Caltech Central_CL07,eia_exact
+1221,gen-1221,57460,CL08,Caltech Central_CL08,eia_exact
+1222,gen-1222,57460,CL09,Caltech Central_CL09,eia_exact
+1223,gen-1223,57460,CL10,Caltech Central_CL10,eia_exact
+1224,gen-1224,57475,HRP1,John L. Featherstone Plant_HRP1,eia_exact
+1225,gen-1225,57482,CTG1,Sentinel Energy Center LLC_CTG1,eia_exact
+1226,gen-1226,57482,CTG2,Sentinel Energy Center LLC_CTG2,eia_exact
+1227,gen-1227,57482,CTG3,Sentinel Energy Center LLC_CTG3,eia_exact
+1228,gen-1228,57482,CTG4,Sentinel Energy Center LLC_CTG4,eia_exact
+1229,gen-1229,57482,CTG5,Sentinel Energy Center LLC_CTG5,eia_exact
+1230,gen-1230,57482,CTG6,Sentinel Energy Center LLC_CTG6,eia_exact
+1231,gen-1231,57482,CTG7,Sentinel Energy Center LLC_CTG7,eia_exact
+1232,gen-1232,57482,CTG8,Sentinel Energy Center LLC_CTG8,eia_exact
+1233,gen-1233,57483,CTG1,Mariposa Energy Project_CTG1,eia_exact
+1234,gen-1234,57483,CTG2,Mariposa Energy Project_CTG2,eia_exact
+1235,gen-1235,57483,CTG3,Mariposa Energy Project_CTG3,eia_exact
+1236,gen-1236,57483,CTG4,Mariposa Energy Project_CTG4,eia_exact
+1237,gen-1237,57484,GEN1,Manzana Wind LLC_GEN1,eia_exact
+1238,gen-1238,57490,56819,Imperial Solar Energy Center South_56819,eia_exact
+1239,gen-1239,57491,56819,Imperial Solar Energy Center West_56819,eia_exact
+1240,gen-1240,57497,1,Stroud Solar Station_1,eia_exact
+1241,gen-1241,57498,1,Five Points Solar Station_1,eia_exact
+1242,gen-1242,57499,1,Westside Solar Station_1,eia_exact
+1243,gen-1243,57506,SEIM,FRV SI Transport Solar LP_SEIM,eia_exact
+1244,gen-1244,57515,GT1,Walnut Creek Energy Park_GT1,eia_exact
+1245,gen-1245,57515,GT2,Walnut Creek Energy Park_GT2,eia_exact
+1246,gen-1246,57515,GT3,Walnut Creek Energy Park_GT3,eia_exact
+1247,gen-1247,57515,GT4,Walnut Creek Energy Park_GT4,eia_exact
+1248,gen-1248,57515,GT5,Walnut Creek Energy Park_GT5,eia_exact
+1249,gen-1249,57522,1,Cantua Solar Station_1,eia_exact
+1250,gen-1250,57523,1,Huron Solar Station_1,eia_exact
+1251,gen-1251,57534,S32A,Solar Photovoltaic Project No32_S32A,eia_exact
+1252,gen-1252,57534,S32B,Solar Photovoltaic Project No32_S32B,eia_exact
+1253,gen-1253,57534,S32C,Solar Photovoltaic Project No32_S32C,eia_exact
+1254,gen-1254,57535,S33A,Solar Photovoltaic Project No33_S33A,eia_exact
+1255,gen-1255,57535,S33B,Solar Photovoltaic Project No33_S33B,eia_exact
+1256,gen-1256,57544,FC01,Cal State Univ San Bernardino FC01_FC01,eia_exact
+1257,gen-1257,57555,CTG1,Pio Pico Energy Center_CTG1,eia_exact
+1258,gen-1258,57555,CTG2,Pio Pico Energy Center_CTG2,eia_exact
+1259,gen-1259,57555,CTG3,Pio Pico Energy Center_CTG3,eia_exact
+1260,gen-1260,57557,S-14,Sunnyvale City of WPCP_S-14,eia_exact
+1261,gen-1261,57557,S-15,Sunnyvale City of WPCP_S-15,eia_exact
+1262,gen-1262,57559,1,Sunset Reservoir North Basin_1,eia_exact
+1263,gen-1263,57564,CTG,Algonquin Power Sanger LLC_CTG,eia_exact
+1264,gen-1264,57564,STG2,Algonquin Power Sanger LLC_STG2,eia_exact
+1265,gen-1265,57566,2.5P2,GE - Tehachapi_2.5P2,eia_exact
+1266,gen-1266,57566,2.8P3,GE - Tehachapi_2.8P3,eia_exact
+1267,gen-1267,57573,S188,CCCSD Wastewater Treatment Plnt_S188,eia_exact
+1268,gen-1268,57579,1,Robert O Schulz Solar Farm_1,eia_exact
+1269,gen-1269,57579,2,Robert O Schulz Solar Farm_2,eia_exact
+1270,gen-1270,57580,CG1,Broadridge Cogen_CG1,eia_exact
+1271,gen-1271,57580,CG2,Broadridge Cogen_CG2,eia_exact
+1272,gen-1272,57580,PV1,Broadridge Cogen_PV1,eia_exact
+1273,gen-1273,57580,PV2,Broadridge Cogen_PV2,eia_exact
+1274,gen-1274,57584,BS1,University of California San Diego Hybrid_BS1,eia_exact
+1275,gen-1275,57584,NT2,University of California San Diego Hybrid_NT2,eia_exact
+1276,gen-1276,57584,ST1,University of California San Diego Hybrid_ST1,eia_exact
+1277,gen-1277,57584,STG,University of California San Diego Hybrid_STG,eia_exact
+1278,gen-1278,57585,1,Oxnard Paper Mill_1,eia_exact
+1279,gen-1279,57621,GEN1,Rising Tree Wind Farm_GEN1,eia_exact
+1280,gen-1280,57626,WTG1,Foundation ST_WTG1,eia_exact
+1281,gen-1281,57655,BC01,Bakersfield College Solar 01_BC01,eia_exact
+1282,gen-1282,57656,1,Temescal Canyon RV LLC_1,eia_exact
+1283,gen-1283,57669,PV1,SMUD at Grundman_PV1,eia_exact
+1284,gen-1284,57670,PV1,SMUD at Van Conett_PV1,eia_exact
+1285,gen-1285,57671,PV1,SMUD at Fleshman_PV1,eia_exact
+1286,gen-1286,57682,1,City of Madera WWTP_1,eia_exact
+1287,gen-1287,57683,1,Staples La Mirada CA_1,eia_exact
+1288,gen-1288,57695,TPZ1,Topaz Solar Farm_TPZ1,eia_exact
+1289,gen-1289,57695,TPZ2,Topaz Solar Farm_TPZ2,eia_exact
+1290,gen-1290,57695,TPZ3,Topaz Solar Farm_TPZ3,eia_exact
+1291,gen-1291,57695,TPZ4,Topaz Solar Farm_TPZ4,eia_exact
+1292,gen-1292,57695,TPZ5,Topaz Solar Farm_TPZ5,eia_exact
+1293,gen-1293,57697,1,Aerojet I_1,eia_exact
+1294,gen-1294,57698,1,Aerojet II_1,eia_exact
+1295,gen-1295,57700,1,Vasco Winds_1,eia_exact
+1296,gen-1296,57701,1,Montezuma Wind II_1,eia_exact
+1297,gen-1297,57702,1,Signal Hill West Unit_1,eia_exact
+1298,gen-1298,57708,INV,Catalina Solar LLC_INV,eia_exact
+1299,gen-1299,57715,GEN1,Watkins Manufacturing Co._GEN1,eia_exact
+1300,gen-1300,57715,GEN2,Watkins Manufacturing Co._GEN2,eia_exact
+1301,gen-1301,57722,1,North Palm Springs 4A_1,eia_exact
+1302,gen-1302,57725,1,Shiloh IV Wind Project LLC_1,eia_exact
+1303,gen-1303,57729,1,Lake Hodges Hydroelectric Facility_1,eia_exact
+1304,gen-1304,57729,2,Lake Hodges Hydroelectric Facility_2,eia_exact
+1305,gen-1305,57735,UCSD,UCSD Fuel Cell Plant_UCSD,eia_exact
+1306,gen-1306,57743,1,North Palm Springs 1A_1,eia_exact
+1307,gen-1307,57753,PV1,SMUD at Lawrence_PV1,eia_exact
+1308,gen-1308,57757,1,Pacific Wind LLC_1,eia_exact
+1309,gen-1309,57764,1,Naval Air Weapons Station China Lake_1,eia_exact
+1310,gen-1310,57770,SBFC,South Bay Fuel Cell Plant_SBFC,eia_exact
+1311,gen-1311,57771,1,Ameresco Butte County_1,eia_exact
+1312,gen-1312,57773,1,Palo Verde College_1,eia_exact
+1313,gen-1313,57774,WGNS,Windstar 1_WGNS,eia_exact
+1314,gen-1314,57777,DL1,RE Dillard 1 LLC_DL1,eia_exact
+1315,gen-1315,57778,KAM1,RE Kammerer 1 LLC_KAM1,eia_exact
+1316,gen-1316,57779,DIL2,RE Dillard 2 LLC_DIL2,eia_exact
+1317,gen-1317,57780,KAM2,RE Kammerer 2 LLC_KAM2,eia_exact
+1318,gen-1318,57781,DIL3,RE Dillard 3 LLC_DIL3,eia_exact
+1319,gen-1319,57782,KAM3,RE Kammerer 3 LLC_KAM3,eia_exact
+1320,gen-1320,57783,BRU1,RE Bruceville 1 LLC_BRU1,eia_exact
+1321,gen-1321,57784,BRU2,RE Bruceville 2 LLC_BRU2,eia_exact
+1322,gen-1322,57785,BRU3,RE Bruceville 3 LLC_BRU3,eia_exact
+1323,gen-1323,57791,WTG1,Foundation AB_WTG1,eia_exact
+1324,gen-1324,57792,WTG1,Foundation IE_WTG1,eia_exact
+1325,gen-1325,57796,1,Golden Springs Building C-1_1,eia_exact
+1326,gen-1326,57797,1,Golden Springs Building D_1,eia_exact
+1327,gen-1327,57806,DIL4,RE Dillard 4 LLC_DIL4,eia_exact
+1328,gen-1328,57807,COK01,Coca Cola American Canyon_COK01,eia_exact
+1329,gen-1329,57808,LOK00,Lockheed Martin Sunnyvale_LOK00,eia_exact
+1330,gen-1330,57809,FRK00,Franklin Templeton San Mateo_FRK00,eia_exact
+1331,gen-1331,57811,ADB00,Adobe San Jose_ADB00,eia_exact
+1332,gen-1332,57811,ADB01,Adobe San Jose_ADB01,eia_exact
+1333,gen-1333,57816,MCK1,RE McKenzie 1 LLC_MCK1,eia_exact
+1334,gen-1334,57817,MCK2,RE McKenzie 2 LLC_MCK2,eia_exact
+1335,gen-1335,57818,MCK3,RE McKenzie 3 LLC_MCK3,eia_exact
+1336,gen-1336,57819,MCK4,RE McKenzie 4 LLC_MCK4,eia_exact
+1337,gen-1337,57820,MCK5,RE McKenzie 5 LLC_MCK5,eia_exact
+1338,gen-1338,57821,MCK6,RE McKenzie 6 LLC_MCK6,eia_exact
+1339,gen-1339,57827,DSPV,Dinuba Wastewater Treatment Plant_DSPV,eia_exact
+1340,gen-1340,57831,1,Heliocentric_1,eia_exact
+1341,gen-1341,57833,AW06,Mustang Hills LLC_AW06,eia_exact
+1342,gen-1342,57834,AW07,Pinyon Pine I_AW07,eia_exact
+1343,gen-1343,57835,AW08,Alta Wind VIII_AW08,eia_exact
+1344,gen-1344,57836,TSM,L-8 Solar Project_TSM,eia_exact
+1345,gen-1345,57837,AW09,Pinyon Pine II_AW09,eia_exact
+1346,gen-1346,57840,1,ISH Solar Hospital SDMC_1,eia_exact
+1347,gen-1347,57841,1,ISH Solar Hospital Downey_1,eia_exact
+1348,gen-1348,57849,GASF1,Green Acres Solar Facility 1_GASF1,eia_exact
+1349,gen-1349,57850,GASF2,Green Acres Solar Facility 2_GASF2,eia_exact
+1350,gen-1350,57854,1PT1,North Hollywood_1PT1,eia_exact
+1351,gen-1351,57854,2T3,North Hollywood_2T3,eia_exact
+1352,gen-1352,57856,SGU1,Univ of California San Diego Solar_SGU1,eia_exact
+1353,gen-1353,57860,1,Industry MetroLink PV 1_1,eia_exact
+1354,gen-1354,57871,1,2555 E Olympic Bl_1,eia_exact
+1355,gen-1355,57891,1,Guernsey Solar Station_1,eia_exact
+1356,gen-1356,57892,1,Gates Solar Station_1,eia_exact
+1357,gen-1357,57895,ID4,Improvement Dst No. 4_ID4,eia_exact
+1358,gen-1358,57900,S48A,Solar Photovoltaic Project No48_S48A,eia_exact
+1359,gen-1359,57900,S48B,Solar Photovoltaic Project No48_S48B,eia_exact
+1360,gen-1360,57900,S48C,Solar Photovoltaic Project No48_S48C,eia_exact
+1361,gen-1361,57900,S48D,Solar Photovoltaic Project No48_S48D,eia_exact
+1362,gen-1362,57900,S48E,Solar Photovoltaic Project No48_S48E,eia_exact
+1363,gen-1363,57900,S48F,Solar Photovoltaic Project No48_S48F,eia_exact
+1364,gen-1364,57900,S48G,Solar Photovoltaic Project No48_S48G,eia_exact
+1365,gen-1365,57900,S48H,Solar Photovoltaic Project No48_S48H,eia_exact
+1366,gen-1366,57900,S48I,Solar Photovoltaic Project No48_S48I,eia_exact
+1367,gen-1367,57900,S48J,Solar Photovoltaic Project No48_S48J,eia_exact
+1368,gen-1368,57901,5,El Segundo Energy Center LLC_5,eia_exact
+1369,gen-1369,57901,6,El Segundo Energy Center LLC_6,eia_exact
+1370,gen-1370,57901,7,El Segundo Energy Center LLC_7,eia_exact
+1371,gen-1371,57901,8,El Segundo Energy Center LLC_8,eia_exact
+1372,gen-1372,57904,CHNO,San Antonio West Solar Rooftop_CHNO,eia_exact
+1373,gen-1373,57913,1,Tule Wind LLC_1,eia_exact
+1374,gen-1374,57916,1,Spreckels Sugar Company_1,eia_exact
+1375,gen-1375,57933,1,Solar Star California II LLC_1,eia_exact
+1376,gen-1376,57959,1,Desert Green Solar Farm LLC_1,eia_exact
+1377,gen-1377,57962,BT1,Brookfield Tehachapi 1_BT1,eia_exact
+1378,gen-1378,57970,SOL1,Butte College Main Campus Solar_SOL1,eia_exact
+1379,gen-1379,57971,COGEN,SF Southeast Cogen Plant_COGEN,eia_exact
+1380,gen-1380,57978,CT1,Lodi Energy Center_CT1,eia_exact
+1381,gen-1381,57978,ST1,Lodi Energy Center_ST1,eia_exact
+1382,gen-1382,57982,PV-1,Meridian Vineyards_PV-1,eia_exact
+1383,gen-1383,57982,PV-2,Meridian Vineyards_PV-2,eia_exact
+1384,gen-1384,57993,DSL1,Desert Sunlight 300 LLC_DSL1,eia_exact
+1385,gen-1385,57993,DSL10,Desert Sunlight 300 LLC_DSL10,eia_exact
+1386,gen-1386,57993,DSL11,Desert Sunlight 300 LLC_DSL11,eia_exact
+1387,gen-1387,57993,DSL2,Desert Sunlight 300 LLC_DSL2,eia_exact
+1388,gen-1388,57993,DSL3,Desert Sunlight 300 LLC_DSL3,eia_exact
+1389,gen-1389,57993,DSL4,Desert Sunlight 300 LLC_DSL4,eia_exact
+1390,gen-1390,57993,DSL5,Desert Sunlight 300 LLC_DSL5,eia_exact
+1391,gen-1391,57993,DSL6,Desert Sunlight 300 LLC_DSL6,eia_exact
+1392,gen-1392,57993,DSL7,Desert Sunlight 300 LLC_DSL7,eia_exact
+1393,gen-1393,57993,DSL8,Desert Sunlight 300 LLC_DSL8,eia_exact
+1394,gen-1394,57993,DSL9,Desert Sunlight 300 LLC_DSL9,eia_exact
+1395,gen-1395,58002,SPS,Alpaugh North_SPS,eia_exact
+1396,gen-1396,58003,SPS50,Alpaugh 50_SPS50,eia_exact
+1397,gen-1397,58007,G1,Brea Expansion Plant_G1,eia_exact
+1398,gen-1398,58007,G2,Brea Expansion Plant_G2,eia_exact
+1399,gen-1399,58007,G3,Brea Expansion Plant_G3,eia_exact
+1400,gen-1400,58007,G4,Brea Expansion Plant_G4,eia_exact
+1401,gen-1401,58007,G5,Brea Expansion Plant_G5,eia_exact
+1402,gen-1402,58039,1,Axium Modesto Solar_1,eia_exact
+1403,gen-1403,58056,JEN1,MolsonCoors Irwindale Brewery_JEN1,eia_exact
+1404,gen-1404,58056,JEN2,MolsonCoors Irwindale Brewery_JEN2,eia_exact
+1405,gen-1405,58056,PV,MolsonCoors Irwindale Brewery_PV,eia_exact
+1406,gen-1406,58056,T100,MolsonCoors Irwindale Brewery_T100,eia_exact
+1407,gen-1407,58056,T200,MolsonCoors Irwindale Brewery_T200,eia_exact
+1408,gen-1408,58058,1,Paramount Refinery_1,eia_exact
+1409,gen-1409,58073,SEPV,SEPV 1_SEPV,eia_exact
+1410,gen-1410,58076,1,Edwards Air Force Base_1,eia_exact
+1411,gen-1411,58076,2,Edwards Air Force Base_2,eia_exact
+1412,gen-1412,58076,3,Edwards Air Force Base_3,eia_exact
+1413,gen-1413,58083,GTG1,Fullerton Mill CHP_GTG1,eia_exact
+1414,gen-1414,58083,STG1,Fullerton Mill CHP_STG1,eia_exact
+1415,gen-1415,58086,1,Intel Folsom_1,eia_exact
+1416,gen-1416,58086,2,Intel Folsom_2,eia_exact
+1417,gen-1417,58100,5900,Kern Oil & Refining Co_5900,eia_exact
+1418,gen-1418,58101,WTG1,Foundation Cemex River Plant_WTG1,eia_exact
+1419,gen-1419,58101,WTG2,Foundation Cemex River Plant_WTG2,eia_exact
+1420,gen-1420,58104,WTG1,Foundation Superior Farms_WTG1,eia_exact
+1421,gen-1421,58105,WTG1,Foundation Wal-Mart Red Bluff_WTG1,eia_exact
+1422,gen-1422,58112,WTG1,Foundation Cemex Madison_WTG1,eia_exact
+1423,gen-1423,58114,WTG1,Foundation NWNA_WTG1,eia_exact
+1424,gen-1424,58114,WTG2,Foundation NWNA_WTG2,eia_exact
+1425,gen-1425,58114,WTG3,Foundation NWNA_WTG3,eia_exact
+1426,gen-1426,58118,JDS1,La Joya Del Sol_JDS1,eia_exact
+1427,gen-1427,58119,DPSS,Depot Park Solar System_DPSS,eia_exact
+1428,gen-1428,58122,GEN1,Delano Energy Center_GEN1,eia_exact
+1429,gen-1429,58128,KRSO1,Kaiser Downey_KRSO1,eia_exact
+1430,gen-1430,58128,KRSO2,Kaiser Downey_KRSO2,eia_exact
+1431,gen-1431,58128,KRSO3,Kaiser Downey_KRSO3,eia_exact
+1432,gen-1432,58128,KRSO4,Kaiser Downey_KRSO4,eia_exact
+1433,gen-1433,58128,KRSO5,Kaiser Downey_KRSO5,eia_exact
+1434,gen-1434,58132,KSRO1,Kaiser Ontario_KSRO1,eia_exact
+1435,gen-1435,58132,KSRO2,Kaiser Ontario_KSRO2,eia_exact
+1436,gen-1436,58132,KSRO3,Kaiser Ontario_KSRO3,eia_exact
+1437,gen-1437,58132,KSRO4,Kaiser Ontario_KSRO4,eia_exact
+1438,gen-1438,58132,KSRO5,Kaiser Ontario_KSRO5,eia_exact
+1439,gen-1439,58148,KS,RE Kansas South LLC_KS,eia_exact
+1440,gen-1440,58149,TAHD,TA-High Desert LLC_TAHD,eia_exact
+1441,gen-1441,58168,TURB1,Energy Center_TURB1,eia_exact
+1442,gen-1442,58168,TURB2,Energy Center_TURB2,eia_exact
+1443,gen-1443,58168,TURB3,Energy Center_TURB3,eia_exact
+1444,gen-1444,58169,1,CSUF Trigeneration_1,eia_exact
+1445,gen-1445,58169,CPAC,CSUF Trigeneration_CPAC,eia_exact
+1446,gen-1446,58169,KHS,CSUF Trigeneration_KHS,eia_exact
+1447,gen-1447,58169,NPS,CSUF Trigeneration_NPS,eia_exact
+1448,gen-1448,58169,PS4,CSUF Trigeneration_PS4,eia_exact
+1449,gen-1449,58169,SCPS,CSUF Trigeneration_SCPS,eia_exact
+1450,gen-1450,58170,GEN1,Crafton Hills College Solar Farm_GEN1,eia_exact
+1451,gen-1451,58190,CG,Thomas M Knott Cogen Facility_CG,eia_exact
+1452,gen-1452,58198,GTG1,Parnassus Central Utility Plant_GTG1,eia_exact
+1453,gen-1453,58198,GTG2,Parnassus Central Utility Plant_GTG2,eia_exact
+1454,gen-1454,58198,STG1,Parnassus Central Utility Plant_STG1,eia_exact
+1455,gen-1455,58202,VPS1,RE Victor Phelan Solar One LLC_VPS1,eia_exact
+1456,gen-1456,58204,INV3,Grassland 3&4 Solar Project_INV3,eia_exact
+1457,gen-1457,58206,1,West Gates Solar Station_1,eia_exact
+1458,gen-1458,58216,1,J.R. Simplot Company_1,eia_exact
+1459,gen-1459,58217,INV4,Grassland 1&2 Solar Project_INV4,eia_exact
+1460,gen-1460,58223,1,Hoag Hospital Cogen Plant_1,eia_exact
+1461,gen-1461,58223,2,Hoag Hospital Cogen Plant_2,eia_exact
+1462,gen-1462,58223,3,Hoag Hospital Cogen Plant_3,eia_exact
+1463,gen-1463,58226,1,Newberry Solar 1 LLC_1,eia_exact
+1464,gen-1464,58232,TAHQ,Tahquitz High School_TAHQ,eia_exact
+1465,gen-1465,58233,GEN1,Wagner Wind LLC_GEN1,eia_exact
+1466,gen-1466,58244,WEST,West Valley High School Solar_WEST,eia_exact
+1467,gen-1467,58248,GEN1,Pierce College_GEN1,eia_exact
+1468,gen-1468,58249,GEN1,VA Sepulveda Ambulatory Care Center_GEN1,eia_exact
+1469,gen-1469,58251,TG3,C&H Sugar Plant_TG3,eia_exact
+1470,gen-1470,58251,TG4,C&H Sugar Plant_TG4,eia_exact
+1471,gen-1471,58253,GEN1,CBS Television City_GEN1,eia_exact
+1472,gen-1472,58253,GEN2,CBS Television City_GEN2,eia_exact
+1473,gen-1473,58253,GEN3,CBS Television City_GEN3,eia_exact
+1474,gen-1474,58253,GEN4,CBS Television City_GEN4,eia_exact
+1475,gen-1475,58258,GEN1,Central Utilities Plant LAX 2_GEN1,eia_exact
+1476,gen-1476,58258,GEN2,Central Utilities Plant LAX 2_GEN2,eia_exact
+1477,gen-1477,58289,VNPV,Venable Solar 1_VNPV,eia_exact
+1478,gen-1478,58290,VSPV,Venable Solar 2_VSPV,eia_exact
+1479,gen-1479,58296,ROL6,Roll Delano 2_ROL6,eia_exact
+1480,gen-1480,58297,ROL4,Roll Delano_ROL4,eia_exact
+1481,gen-1481,58298,ROL3,Roll Lost Hills_ROL3,eia_exact
+1482,gen-1482,58299,XLX,Xilinx San Jose_XLX,eia_exact
+1483,gen-1483,58300,HON,Honda Torrance_HON,eia_exact
+1484,gen-1484,58301,JPR,Juniper Networks Sunnyvale_JPR,eia_exact
+1485,gen-1485,58302,LFT,Life Technologies Carlsbad_LFT,eia_exact
+1486,gen-1486,58303,TLR,Taylor Farms Salinas_TLR,eia_exact
+1487,gen-1487,58304,1,Kingsburg Solar_1,eia_exact
+1488,gen-1488,58304,2,Kingsburg Solar_2,eia_exact
+1489,gen-1489,58304,3,Kingsburg Solar_3,eia_exact
+1490,gen-1490,58306,1,Exeter Solar_1,eia_exact
+1491,gen-1491,58306,2,Exeter Solar_2,eia_exact
+1492,gen-1492,58306,3,Exeter Solar_3,eia_exact
+1493,gen-1493,58307,1,Ivanhoe Solar_1,eia_exact
+1494,gen-1494,58307,2,Ivanhoe Solar_2,eia_exact
+1495,gen-1495,58307,3,Ivanhoe Solar_3,eia_exact
+1496,gen-1496,58308,1,Lindsay Solar_1,eia_exact
+1497,gen-1497,58308,3,Lindsay Solar_3,eia_exact
+1498,gen-1498,58308,4,Lindsay Solar_4,eia_exact
+1499,gen-1499,58309,1,Porterville Solar_1,eia_exact
+1500,gen-1500,58309,2,Porterville Solar_2,eia_exact
+1501,gen-1501,58309,5,Porterville Solar_5,eia_exact
+1502,gen-1502,58320,362,G2 Energy Hay Rd_362,eia_exact
+1503,gen-1503,58354,1,Radiance Solar 4_1,eia_exact
+1504,gen-1504,58355,1,Radiance Solar 5_1,eia_exact
+1505,gen-1505,58366,1,Atwell Island_1,eia_exact
+1506,gen-1506,58370,GEN1,Gridley Main_GEN1,eia_exact
+1507,gen-1507,58371,GEN1,Gridley Main Two_GEN1,eia_exact
+1508,gen-1508,58373,WRCA,White River Solar_WRCA,eia_exact
+1509,gen-1509,58374,CSCA,Corcoran Solar_CSCA,eia_exact
+1510,gen-1510,58376,1,Oakley Solar Project_1,eia_exact
+1511,gen-1511,58379,W3998,Cold Canyon 1_W3998,eia_exact
+1512,gen-1512,58388,AVS1,Solar Star 1_AVS1,eia_exact
+1513,gen-1513,58388,SS11,Solar Star 1_SS11,eia_exact
+1514,gen-1514,58388,SS12,Solar Star 1_SS12,eia_exact
+1515,gen-1515,58388,SS13,Solar Star 1_SS13,eia_exact
+1516,gen-1516,58388,SS14,Solar Star 1_SS14,eia_exact
+1517,gen-1517,58388,SS15,Solar Star 1_SS15,eia_exact
+1518,gen-1518,58388,SS16,Solar Star 1_SS16,eia_exact
+1519,gen-1519,58389,AVS2,Solar Star 2_AVS2,eia_exact
+1520,gen-1520,58389,SS21,Solar Star 2_SS21,eia_exact
+1521,gen-1521,58389,SS22,Solar Star 2_SS22,eia_exact
+1522,gen-1522,58389,SS23,Solar Star 2_SS23,eia_exact
+1523,gen-1523,58389,SS24,Solar Star 2_SS24,eia_exact
+1524,gen-1524,58389,SS25,Solar Star 2_SS25,eia_exact
+1525,gen-1525,58394,AW10,Alta Wind X_AW10,eia_exact
+1526,gen-1526,58395,AW11,Alta Wind XI_AW11,eia_exact
+1527,gen-1527,58397,ENG1,Ameresco Johnson Canyon_ENG1,eia_exact
+1528,gen-1528,58418,1,Victor Dry Farm Ranch A_1,eia_exact
+1529,gen-1529,58419,1,Victor Dry Farm Ranch B_1,eia_exact
+1530,gen-1530,58429,1,Sunshine Gas Producers_1,eia_exact
+1531,gen-1531,58429,2,Sunshine Gas Producers_2,eia_exact
+1532,gen-1532,58429,3,Sunshine Gas Producers_3,eia_exact
+1533,gen-1533,58429,4,Sunshine Gas Producers_4,eia_exact
+1534,gen-1534,58429,5,Sunshine Gas Producers_5,eia_exact
+1535,gen-1535,58430,CSE1,Centinela Solar Energy_CSE1,eia_exact
+1536,gen-1536,58430,CSE2,Centinela Solar Energy_CSE2,eia_exact
+1537,gen-1537,58430,CSE3,Centinela Solar Energy_CSE3,eia_exact
+1538,gen-1538,58430,CSE4,Centinela Solar Energy_CSE4,eia_exact
+1539,gen-1539,58430,CSE5,Centinela Solar Energy_CSE5,eia_exact
+1540,gen-1540,58430,CSE6,Centinela Solar Energy_CSE6,eia_exact
+1541,gen-1541,58432,COG1,Houweling Nurseries_COG1,eia_exact
+1542,gen-1542,58432,COG2,Houweling Nurseries_COG2,eia_exact
+1543,gen-1543,58432,COG3,Houweling Nurseries_COG3,eia_exact
+1544,gen-1544,58436,ENG1,Ameresco San Joaquin_ENG1,eia_exact
+1545,gen-1545,58436,ENG2,Ameresco San Joaquin_ENG2,eia_exact
+1546,gen-1546,58437,ENG1,Ameresco Forward_ENG1,eia_exact
+1547,gen-1547,58437,ENG2,Ameresco Forward_ENG2,eia_exact
+1548,gen-1548,58440,9560,CBS Studio Center_9560,eia_exact
+1549,gen-1549,58440,9580,CBS Studio Center_9580,eia_exact
+1550,gen-1550,58440,9581,CBS Studio Center_9581,eia_exact
+1551,gen-1551,58440,9583,CBS Studio Center_9583,eia_exact
+1552,gen-1552,58440,9585,CBS Studio Center_9585,eia_exact
+1553,gen-1553,58440,9587,CBS Studio Center_9587,eia_exact
+1554,gen-1554,58445,1,Arrache 4006_1,eia_exact
+1555,gen-1555,58445,2,Arrache 4006_2,eia_exact
+1556,gen-1556,58446,1,Arrache 4013_1,eia_exact
+1557,gen-1557,58447,1,Arrache 8083_1,eia_exact
+1558,gen-1558,58447,2,Arrache 8083_2,eia_exact
+1559,gen-1559,58447,3,Arrache 8083_3,eia_exact
+1560,gen-1560,58448,1,Nunn_1,eia_exact
+1561,gen-1561,58449,1,Rutan_1,eia_exact
+1562,gen-1562,58449,2,Rutan_2,eia_exact
+1563,gen-1563,58449,3,Rutan_3,eia_exact
+1564,gen-1564,58450,1,Vinam_1,eia_exact
+1565,gen-1565,58451,1,Ma_1,eia_exact
+1566,gen-1566,58452,1,Horn_1,eia_exact
+1567,gen-1567,58454,1,Watts 3115_1,eia_exact
+1568,gen-1568,58454,2,Watts 3115_2,eia_exact
+1569,gen-1569,58462,1,McCoy Solar Energy Project Hybrid_1,eia_exact
+1570,gen-1570,58462,BLK2,McCoy Solar Energy Project Hybrid_BLK2,eia_exact
+1571,gen-1571,58462,BLK3,McCoy Solar Energy Project Hybrid_BLK3,eia_exact
+1572,gen-1572,58462,BLK4,McCoy Solar Energy Project Hybrid_BLK4,eia_exact
+1573,gen-1573,58462,BLK5,McCoy Solar Energy Project Hybrid_BLK5,eia_exact
+1574,gen-1574,58462,BLK6,McCoy Solar Energy Project Hybrid_BLK6,eia_exact
+1575,gen-1575,58462,BLK7,McCoy Solar Energy Project Hybrid_BLK7,eia_exact
+1576,gen-1576,58462,BLK8,McCoy Solar Energy Project Hybrid_BLK8,eia_exact
+1577,gen-1577,58467,CVS1,Campo Verde Solar_CVS1,eia_exact
+1578,gen-1578,58472,1,Buena Vista Biomass Power_1,eia_exact
+1579,gen-1579,58498,RONE,RE Rosamond One LLC_RONE,eia_exact
+1580,gen-1580,58499,RTWO,RE Rosamond Two LLC_RTWO,eia_exact
+1581,gen-1581,58500,RIO,RE Rio Grande Solar LLC_RIO,eia_exact
+1582,gen-1582,58502,COL3,RE Columbia 3 LLC_COL3,eia_exact
+1583,gen-1583,58506,937,Chuckawalla Solar_937,eia_exact
+1584,gen-1584,58508,PV3,Bear Creek Solar_PV3,eia_exact
+1585,gen-1585,58509,PV4,Vintner Solar_PV4,eia_exact
+1586,gen-1586,58510,PV5,Kettleman Solar Project_PV5,eia_exact
+1587,gen-1587,58513,937,Ironwood Solar LLC_937,eia_exact
+1588,gen-1588,58514,DHCA,Desert Hot Springs Solar_DHCA,eia_exact
+1589,gen-1589,58522,1,Madera Community Hospital_1,eia_exact
+1590,gen-1590,58525,1,City of Hayward WWTP_1,eia_exact
+1591,gen-1591,58525,COGEN,City of Hayward WWTP_COGEN,eia_exact
+1592,gen-1592,58527,1,Crown Cooling Facility_1,eia_exact
+1593,gen-1593,58528,WDT44,Garnet Solar Generation Station I LLC_WDT44,eia_exact
+1594,gen-1594,58542,DSL12,Desert Sunlight 250 LLC_DSL12,eia_exact
+1595,gen-1595,58542,DSL13,Desert Sunlight 250 LLC_DSL13,eia_exact
+1596,gen-1596,58542,DSL14,Desert Sunlight 250 LLC_DSL14,eia_exact
+1597,gen-1597,58542,DSL15,Desert Sunlight 250 LLC_DSL15,eia_exact
+1598,gen-1598,58542,DSL16,Desert Sunlight 250 LLC_DSL16,eia_exact
+1599,gen-1599,58542,DSL17,Desert Sunlight 250 LLC_DSL17,eia_exact
+1600,gen-1600,58542,DSL18,Desert Sunlight 250 LLC_DSL18,eia_exact
+1601,gen-1601,58542,DSL19,Desert Sunlight 250 LLC_DSL19,eia_exact
+1602,gen-1602,58542,DSL20,Desert Sunlight 250 LLC_DSL20,eia_exact
+1603,gen-1603,58545,1,Community Solar 1_1,eia_exact
+1604,gen-1604,58578,SON1,Sonora 1_SON1,eia_exact
+1605,gen-1605,58581,1,Oltmans SCE at Champagne_1,eia_exact
+1606,gen-1606,58582,1,Oltmans SCE at Jurupa_1,eia_exact
+1607,gen-1607,58585,BESS,Sierra Nevada Brewing Co Hybrid_BESS,eia_exact
+1608,gen-1608,58585,COGN,Sierra Nevada Brewing Co Hybrid_COGN,eia_exact
+1609,gen-1609,58585,SOLR,Sierra Nevada Brewing Co Hybrid_SOLR,eia_exact
+1610,gen-1610,58590,1,Cascade Solar_1,eia_exact
+1611,gen-1611,58607,1,One Market Plaza_1,eia_exact
+1612,gen-1612,58607,2,One Market Plaza_2,eia_exact
+1613,gen-1613,58607,3,One Market Plaza_3,eia_exact
+1614,gen-1614,58609,ISP1,Industry Solar Power Generation Station 1 LLC_ISP1,eia_exact
+1615,gen-1615,58610,NSP1,Navajo Solar Power Generation Station 1 LLC_NSP1,eia_exact
+1616,gen-1616,58611,1,Powhatan Solar Power Generation Station 1 LLC_1,eia_exact
+1617,gen-1617,58612,1,Otoe Solar Power Generation Station 1 LLC_1,eia_exact
+1618,gen-1618,58616,WSF1,Westlands Solar PV Farm_WSF1,eia_exact
+1619,gen-1619,58619,1,Transamerica Pyramid_1,eia_exact
+1620,gen-1620,58619,2,Transamerica Pyramid_2,eia_exact
+1621,gen-1621,58621,ECPV,Sol Orchard El Centro PV_ECPV,eia_exact
+1622,gen-1622,58625,SRFC2,Santa Rita Jail Hybrid_SRFC2,eia_exact
+1623,gen-1623,58625,SRJBA,Santa Rita Jail Hybrid_SRJBA,eia_exact
+1624,gen-1624,58625,SRPV2,Santa Rita Jail Hybrid_SRPV2,eia_exact
+1625,gen-1625,58625,SRPV3,Santa Rita Jail Hybrid_SRPV3,eia_exact
+1626,gen-1626,58626,WABSA,Western Antelope Blue Sky Ranch A_WABSA,eia_exact
+1627,gen-1627,58627,WADR,Western Antelope Dry Ranch_WADR,eia_exact
+1628,gen-1628,58633,1,Monterey Regional Water Pollution Control Agency_1,eia_exact
+1629,gen-1629,58634,1,Lancaster Baptist Church_1,eia_exact
+1630,gen-1630,58636,1,Sacramento Fairbain Water Treatment Plant_1,eia_exact
+1631,gen-1631,58642,1,Tulare 1 and 2_1,eia_exact
+1632,gen-1632,58642,2,Tulare 1 and 2_2,eia_exact
+1633,gen-1633,58698,D960,Mira Loma_D960,eia_exact
+1634,gen-1634,58698,D9611,Mira Loma_D9611,eia_exact
+1635,gen-1635,58698,D9612,Mira Loma_D9612,eia_exact
+1636,gen-1636,58699,GEN 1,ABEC Bidart-Old River LLC_GEN 1,eia_exact
+1637,gen-1637,58699,GEN 2,ABEC Bidart-Old River LLC_GEN 2,eia_exact
+1638,gen-1638,58711,BLKW,Lost Hills/Blackwell_BLKW,eia_exact
+1639,gen-1639,58711,LTHL,Lost Hills/Blackwell_LTHL,eia_exact
+1640,gen-1640,58713,NSTR,North Star Solar_NSTR,eia_exact
+1641,gen-1641,58718,PV1,Orion Solar I_PV1,eia_exact
+1642,gen-1642,58721,ORION,Orion Solar II_ORION,eia_exact
+1643,gen-1643,58748,NBWT,North Bay Solar 1_NBWT,eia_exact
+1644,gen-1644,58750,LDFRB,Lancaster Dry Farm Ranch B_LDFRB,eia_exact
+1645,gen-1645,58751,RSC2,Rodeo Solar C2_RSC2,eia_exact
+1646,gen-1646,58752,RSD2,Rodeo Solar D2_RSD2,eia_exact
+1647,gen-1647,58753,SSA2,Summer Solar A2_SSA2,eia_exact
+1648,gen-1648,58754,SSB2,Summer Solar B2_SSB2,eia_exact
+1649,gen-1649,58755,SSC2,Summer Solar C2_SSC2,eia_exact
+1650,gen-1650,58756,SSD2,Summer Solar D2_SSD2,eia_exact
+1651,gen-1651,58757,UE2,Summer North Solar_UE2,eia_exact
+1652,gen-1652,58757,UF2,Summer North Solar_UF2,eia_exact
+1653,gen-1653,58757,UG2,Summer North Solar_UG2,eia_exact
+1654,gen-1654,58757,UH2,Summer North Solar_UH2,eia_exact
+1655,gen-1655,58761,EXSA,Expressway Solar A_EXSA,eia_exact
+1656,gen-1656,58762,EXSB,Expressway Solar B_EXSB,eia_exact
+1657,gen-1657,58763,EXSC2,Expressway Solar C2_EXSC2,eia_exact
+1658,gen-1658,58814,GENA,Shasta Solar Farm_GENA,eia_exact
+1659,gen-1659,58814,GENB,Shasta Solar Farm_GENB,eia_exact
+1660,gen-1660,58890,BERI,Beringer_BERI,eia_exact
+1661,gen-1661,58906,VC1,Valley Center 1_VC1,eia_exact
+1662,gen-1662,58907,VC2,Valley Center 2_VC2,eia_exact
+1663,gen-1663,58909,RAM1,Ramona 1_RAM1,eia_exact
+1664,gen-1664,58911,RAM2,Ramona 2_RAM2,eia_exact
+1665,gen-1665,58912,1,Santa Fe Springs Rooftop Solar BLDG M_1,eia_exact
+1666,gen-1666,58913,1,Santa Fe Springs Rooftop Solar BLDG H_1,eia_exact
+1667,gen-1667,58919,2127,2127 Harris Solar Project_2127,eia_exact
+1668,gen-1668,58954,PV,Intel Folsom Phase 2_PV,eia_exact
+1669,gen-1669,58960,S200,Laguna Water Reclamation Facility_S200,eia_exact
+1670,gen-1670,58960,S201,Laguna Water Reclamation Facility_S201,eia_exact
+1671,gen-1671,58960,S202,Laguna Water Reclamation Facility_S202,eia_exact
+1672,gen-1672,58960,S203,Laguna Water Reclamation Facility_S203,eia_exact
+1673,gen-1673,58963,PV,Las Virgenes Municipal Water District_PV,eia_exact
+1674,gen-1674,58973,W2CA,White River Solar 2_W2CA,eia_exact
+1675,gen-1675,58975,PV1,Henrietta Solar Project_PV1,eia_exact
+1676,gen-1676,58978,CVAP,Central Valley Ag Power_CVAP,eia_exact
+1677,gen-1677,58983,1,RE Camelot LLC_1,eia_exact
+1678,gen-1678,58984,1,RE Adams East LLC_1,eia_exact
+1679,gen-1679,58985,1,RE Kansas Solar LLC_1,eia_exact
+1680,gen-1680,58986,1,RE Old River One LLC_1,eia_exact
+1681,gen-1681,58990,1,RE Columbia Two LLC_1,eia_exact
+1682,gen-1682,59002,CEC 6,Carlsbad Energy Center_CEC 6,eia_exact
+1683,gen-1683,59002,CEC 7,Carlsbad Energy Center_CEC 7,eia_exact
+1684,gen-1684,59002,CEC 8,Carlsbad Energy Center_CEC 8,eia_exact
+1685,gen-1685,59002,CEC 9,Carlsbad Energy Center_CEC 9,eia_exact
+1686,gen-1686,59002,CEC10,Carlsbad Energy Center_CEC10,eia_exact
+1687,gen-1687,59058,GEN 1,Vacaville_GEN 1,eia_exact
+1688,gen-1688,59087,GEN 1,Cottonwood Solar LLC (City of Corcoran)_GEN 1,eia_exact
+1689,gen-1689,59088,GEN 1,Calipatria Solar Farm_GEN 1,eia_exact
+1690,gen-1690,59094,GEN 1,Division 1_GEN 1,eia_exact
+1691,gen-1691,59095,GEN 1,Division 2_GEN 1,eia_exact
+1692,gen-1692,59096,GEN1,Division 3_GEN1,eia_exact
+1693,gen-1693,59098,PV1,Kettering Solar 1_PV1,eia_exact
+1694,gen-1694,59099,PV1,Kettering Solar 2_PV1,eia_exact
+1695,gen-1695,59129,57449,CSD 2- Freedom High_57449,eia_exact
+1696,gen-1696,59130,57449,CSD 2 - Heritage High_57449,eia_exact
+1697,gen-1697,59132,57449,EAFB - North Base_57449,eia_exact
+1698,gen-1698,59133,57449,EAFB - South Base_57449,eia_exact
+1699,gen-1699,59138,57449,SDCCD - Miramar_57449,eia_exact
+1700,gen-1700,59139,57449,SDCWA - Twin Oaks_57449,eia_exact
+1701,gen-1701,59167,LS1,Lancaster Solar 1_LS1,eia_exact
+1702,gen-1702,59169,LS2,Lancaster Solar 2_LS2,eia_exact
+1703,gen-1703,59182,34608,Hesperia_Oct-94,eia_excel_repair
+1704,gen-1704,59183,PV1,CID Solar LLC_PV1,eia_exact
+1705,gen-1705,59203,PV1,Farmersville_PV1,eia_exact
+1706,gen-1706,59203,PV2,Farmersville_PV2,eia_exact
+1707,gen-1707,59203,PV3,Farmersville_PV3,eia_exact
+1708,gen-1708,59219,PV1,Porterville 6 and 7_PV1,eia_exact
+1709,gen-1709,59219,PV2,Porterville 6 and 7_PV2,eia_exact
+1710,gen-1710,59235,GEN1,Rising Tree Wind Farm II_GEN1,eia_exact
+1711,gen-1711,59236,GEN1,Rising Tree Wind Farm III_GEN1,eia_exact
+1712,gen-1712,59249,PV1,Rio Bravo Solar 1 LLC_PV1,eia_exact
+1713,gen-1713,59250,PV1,Rio Bravo Solar II LLC_PV1,eia_exact
+1714,gen-1714,59256,BAT1,Vaca Dixon Battery Storage System_BAT1,eia_exact
+1715,gen-1715,59257,YB1,Yerba Buena_YB1,eia_exact
+1716,gen-1716,59261,VZ300,Verizon-Torrance_VZ300,eia_exact
+1717,gen-1717,59262,LLRC,Lancaster Little Rock_LLRC,eia_exact
+1718,gen-1718,59265,PV8,Merced Solar LLC_PV8,eia_exact
+1719,gen-1719,59267,PV9,Mission Solar LLC_PV9,eia_exact
+1720,gen-1720,59269,VMLB2,Victor Mesa Linda B2_VMLB2,eia_exact
+1721,gen-1721,59270,VMLC2,Victor Mesa Linda C2_VMLC2,eia_exact
+1722,gen-1722,59271,VMLD2,Victor Mesa Linda D2_VMLD2,eia_exact
+1723,gen-1723,59272,VMLE2,Victor Mesa Linda E2_VMLE2,eia_exact
+1724,gen-1724,59273,PALME,SEPV Palmdale East_PALME,eia_exact
+1725,gen-1725,59279,LFT01,Life Technologies - Pleasanton_LFT01,eia_exact
+1726,gen-1726,59280,KLG00,Kellogg's - San Jose_KLG00,eia_exact
+1727,gen-1727,59283,W4236,California PV Energy at ISD WWTP_W4236,eia_exact
+1728,gen-1728,59299,RED1,Waste Mangement Redwood LFGTE_RED1,eia_exact
+1729,gen-1729,59299,RED2,Waste Mangement Redwood LFGTE_RED2,eia_exact
+1730,gen-1730,59300,HAN1,Hanford 1 and 2_HAN1,eia_exact
+1731,gen-1731,59300,HAN2,Hanford 1 and 2_HAN2,eia_exact
+1732,gen-1732,59322,GEN1,Pumpjack Solar I_GEN1,eia_exact
+1733,gen-1733,59323,SMUPV,Sacramento (SMUD)_SMUPV,eia_exact
+1734,gen-1734,59328,GAC1,Golden Acorn Casino_GAC1,eia_exact
+1735,gen-1735,59329,SOL1,City of Soledad Water Reclamation_SOL1,eia_exact
+1736,gen-1736,59330,TAY1,Taylor Farms_TAY1,eia_exact
+1737,gen-1737,59331,ANB2,Anheuser-Busch No2_ANB2,eia_exact
+1738,gen-1738,59334,INV-1,Catalina Solar 2 LLC_INV-1,eia_exact
+1739,gen-1739,59339,SSC13,Quinto Solar PV Project_SSC13,eia_exact
+1740,gen-1740,59359,10400,SCE-Snowline-Duncan Road (North)_10400,eia_exact
+1741,gen-1741,59360,11113,SCE-Snowline-Duncan Road (South)_11113,eia_exact
+1742,gen-1742,59395,SC500,City of Tulare Water Facility_SC500,eia_exact
+1743,gen-1743,59405,PV11,Diamond Valley Solar Project_PV11,eia_exact
+1744,gen-1744,59408,1,Shafter Solar LLC_1,eia_exact
+1745,gen-1745,59409,SNL17,Madelyn Solar LLC_SNL17,eia_exact
+1746,gen-1746,59410,SNL19,Rudy Solar LLC_SNL19,eia_exact
+1747,gen-1747,59411,SNL18,Mitchell Solar LLC_SNL18,eia_exact
+1748,gen-1748,59412,SKI20,Algonquin SKIC20 Solar LLC_SKI20,eia_exact
+1749,gen-1749,59413,C2CA,Corcoran Solar 2_C2CA,eia_exact
+1750,gen-1750,59414,AWCA,Atwell Island West Solar_AWCA,eia_exact
+1751,gen-1751,59416,PV1,Anaheim Solar Energy Plant_PV1,eia_exact
+1752,gen-1752,59421,11111,SCE-Snowline-White Road (South)_11111,eia_exact
+1753,gen-1753,59422,10401,SCE-Snowline-White Road (North)_10401,eia_exact
+1754,gen-1754,59423,10402,SCE-Snowline-White Rd (Central)_10402,eia_exact
+1755,gen-1755,59428,GENE1,Baker Creek Hydroelectric_GENE1,eia_exact
+1756,gen-1756,59428,GENE2,Baker Creek Hydroelectric_GENE2,eia_exact
+1757,gen-1757,59431,SSG1,Sierra Solar Greenworks_SSG1,eia_exact
+1758,gen-1758,59440,SAS,Adelanto Solar II LLC_SAS,eia_exact
+1759,gen-1759,59441,SAS,Adelanto Solar LLC_SAS,eia_exact
+1760,gen-1760,59443,WAS1,TA-Acacia LLC_WAS1,eia_exact
+1761,gen-1761,59456,P-TG4,P Plant_P-TG4,eia_exact
+1762,gen-1762,59456,P-TG5,P Plant_P-TG5,eia_exact
+1763,gen-1763,59457,Q-TG1,Q Plant_Q-TG1,eia_exact
+1764,gen-1764,59458,W-TG1,W Plant_W-TG1,eia_exact
+1765,gen-1765,59461,GEN01,Bowerman Power LFG LLC_GEN01,eia_exact
+1766,gen-1766,59461,GEN02,Bowerman Power LFG LLC_GEN02,eia_exact
+1767,gen-1767,59461,GEN03,Bowerman Power LFG LLC_GEN03,eia_exact
+1768,gen-1768,59461,GEN04,Bowerman Power LFG LLC_GEN04,eia_exact
+1769,gen-1769,59461,GEN05,Bowerman Power LFG LLC_GEN05,eia_exact
+1770,gen-1770,59461,GEN06,Bowerman Power LFG LLC_GEN06,eia_exact
+1771,gen-1771,59461,GEN07,Bowerman Power LFG LLC_GEN07,eia_exact
+1772,gen-1772,59469,ALAMO,Alamo Solar_ALAMO,eia_exact
+1773,gen-1773,59473,AC2PV,Apple Campus 2 PV_AC2PV,eia_exact
+1774,gen-1774,59523,FRFSP,Five Points Solar Park_FRFSP,eia_exact
+1775,gen-1775,59524,FRBSP,Blackwell Solar Park_FRBSP,eia_exact
+1776,gen-1776,59525,FRWSP,Wright Solar Park_FRWSP,eia_exact
+1777,gen-1777,59528,OASIS,Solar Oasis LLC_OASIS,eia_exact
+1778,gen-1778,59536,AWI,Coronus Adelanto West 1_AWI,eia_exact
+1779,gen-1779,59537,AW2,Coronus Adelanto West 2_AW2,eia_exact
+1780,gen-1780,59539,1,Park Meridian No1_1,eia_exact
+1781,gen-1781,59540,2,Rancho Cucamonga Dist No1_2,eia_exact
+1782,gen-1782,59541,3,Terra Francesco_3,eia_exact
+1783,gen-1783,59550,PCSF,Putah Creek Solar Farm_PCSF,eia_exact
+1784,gen-1784,59555,VEGA1,Vega Solar_VEGA1,eia_exact
+1785,gen-1785,59557,AC2FC,Apple Campus 2 Fuel Cell_AC2FC,eia_exact
+1786,gen-1786,59597,CS001,Colton Solar One LLC_CS001,eia_exact
+1787,gen-1787,59598,CS002,Colton Solar Two LLC_CS002,eia_exact
+1788,gen-1788,59599,GEN1,Tropico Solar PV Plant_GEN1,eia_exact
+1789,gen-1789,59600,GEN1,Nicolis Solar PV Plant_GEN1,eia_exact
+1790,gen-1790,59607,MWS,Maricopa West Solar PV LLC_MWS,eia_exact
+1791,gen-1791,59610,APNLI,AP North Lake I LP_APNLI,eia_exact
+1792,gen-1792,59633,KS,Kettleman Solar -Centaurus_KS,eia_exact
+1793,gen-1793,59638,CLH,Coronal Lost Hills_CLH,eia_exact
+1794,gen-1794,59651,W4161,Forever 21 Retail Inc._W4161,eia_exact
+1795,gen-1795,59661,TSP1,Tehachapi Energy Storage Project_TSP1,eia_exact
+1796,gen-1796,59687,NDP1,Sun Harvest Solar NDP1_NDP1,eia_exact
+1797,gen-1797,59703,1,Cottonwood Solar LLC Cottonwood Carport_1,eia_exact
+1798,gen-1798,59722,SEV1,Seville 1_SEV1,eia_exact
+1799,gen-1799,59723,SEV2,Seville 2_SEV2,eia_exact
+1800,gen-1800,59730,SPV18,SEPV 18_SPV18,eia_exact
+1801,gen-1801,59738,CSB,Citizen B_CSB,eia_exact
+1802,gen-1802,59739,LWADB,Lancaster WAD B_LWADB,eia_exact
+1803,gen-1803,59740,SPVMW,SEPV Mojave West_SPVMW,eia_exact
+1804,gen-1804,59746,1,DSH (CA) - Coalinga State Hospital_1,eia_exact
+1805,gen-1805,59748,1,CDCR (CA) - Pleasant Valley State Prison_1,eia_exact
+1806,gen-1806,59798,W4172,Colon PV_W4172,eia_exact
+1807,gen-1807,59800,AMZ00,Amazon San Bernardino_AMZ00,eia_exact
+1808,gen-1808,59802,MXM00,Maxim_MXM00,eia_exact
+1809,gen-1809,59803,PXR00,Pixar - Emeryville_PXR00,eia_exact
+1810,gen-1810,59804,SBK00,Starbucks - Evolution Fresh_SBK00,eia_exact
+1811,gen-1811,59805,YAH00,Yahoo! - HQ_YAH00,eia_exact
+1812,gen-1812,59868,GEN01,Kingbird A Solar LLC_GEN01,eia_exact
+1813,gen-1813,59872,UCD1,UC Davis South Campus_UCD1,eia_exact
+1814,gen-1814,59877,MB20,Riverside RWQCP Fuel Cell_MB20,eia_exact
+1815,gen-1815,59878,GEN01,Windhub Solar A LLC_GEN01,eia_exact
+1816,gen-1816,59879,GEN01,North Rosamond Solar LLC_GEN01,eia_exact
+1817,gen-1817,59900,C3CA,Corcoran Solar 3_C3CA,eia_exact
+1818,gen-1818,59915,ORCA,Oro Loma_ORCA,eia_exact
+1819,gen-1819,59916,12307,SunE- E Philadelphia Ontario_12307,eia_exact
+1820,gen-1820,59942,ML1,Morgan Lancaster 1_ML1,eia_exact
+1821,gen-1821,59948,BF111,Bakersfield 111_BF111,eia_exact
+1822,gen-1822,59952,1,Potrero Hills Energy Producers_1,eia_exact
+1823,gen-1823,59952,2,Potrero Hills Energy Producers_2,eia_exact
+1824,gen-1824,59952,3,Potrero Hills Energy Producers_3,eia_exact
+1825,gen-1825,59952,4,Potrero Hills Energy Producers_4,eia_exact
+1826,gen-1826,59952,5,Potrero Hills Energy Producers_5,eia_exact
+1827,gen-1827,59961,WABSB,Western Antelope Blue Sky B_WABSB,eia_exact
+1828,gen-1828,59962,NLR,North Lancaster Ranch_NLR,eia_exact
+1829,gen-1829,59963,CADRC,Central Antelope Dry Ranch C_CADRC,eia_exact
+1830,gen-1830,59964,ELVSC,Elevation Solar C_ELVSC,eia_exact
+1831,gen-1831,59976,ASTR1,RE Astoria_ASTR1,eia_exact
+1832,gen-1832,59977,ASTR2,RE Astoria 2_ASTR2,eia_exact
+1833,gen-1833,59978,ECA22,Enerparc CA2 LLC_ECA22,eia_exact
+1834,gen-1834,59979,GEN1,Columbia Solar Energy LLC_GEN1,eia_exact
+1835,gen-1835,60007,MORLS,Morelos del Sol_MORLS,eia_exact
+1836,gen-1836,60026,PV1,Little Rock Pham Solar_PV1,eia_exact
+1837,gen-1837,60032,RCHTR,SunE Rochester_RCHTR,eia_exact
+1838,gen-1838,60033,GEN01,CA Flats Solar 130 LLC_GEN01,eia_exact
+1839,gen-1839,60034,GEN01,CA Flats Solar 150 LLC_GEN01,eia_exact
+1840,gen-1840,60035,RPU1,Tequesquite Landfill Solar PV Project_RPU1,eia_exact
+1841,gen-1841,60039,FTRS,Frontier Solar LLC_FTRS,eia_exact
+1842,gen-1842,60043,GEN01,Cuyama Solar LLC_GEN01,eia_exact
+1843,gen-1843,60049,GE,Golden Hills Wind_GE,eia_exact
+1844,gen-1844,60060,SDIA2,Lindberg FIeld Solar_SDIA2,eia_exact
+1845,gen-1845,60060,SDIAA,Lindberg FIeld Solar_SDIAA,eia_exact
+1846,gen-1846,60060,SDIAB,Lindberg FIeld Solar_SDIAB,eia_exact
+1847,gen-1847,60077,AVCA,CED Avenal_AVCA,eia_exact
+1848,gen-1848,60078,DU1CA,CED Ducor 1_DU1CA,eia_exact
+1849,gen-1849,60079,DU2CA,CED Ducor 2_DU2CA,eia_exact
+1850,gen-1850,60080,DU3CA,CED Ducor 3_DU3CA,eia_exact
+1851,gen-1851,60081,DU4CA,CED Ducor 4_DU4CA,eia_exact
+1852,gen-1852,60085,PV1,AVS Lancaster 1_PV1,eia_exact
+1853,gen-1853,60086,PV1,US-TOPCO (Soccer Center)_PV1,eia_exact
+1854,gen-1854,60091,GEN01,Kingbird B Solar LLC_GEN01,eia_exact
+1855,gen-1855,60092,BLCK4,Blythe Solar II LLC_BLCK4,eia_exact
+1856,gen-1856,60092,BLCK5,Blythe Solar II LLC_BLCK5,eia_exact
+1857,gen-1857,60092,BLCK6,Blythe Solar II LLC_BLCK6,eia_exact
+1858,gen-1858,60092,BLCK7,Blythe Solar II LLC_BLCK7,eia_exact
+1859,gen-1859,60093,BLCK1,Blythe Solar 110 LLC_BLCK1,eia_exact
+1860,gen-1860,60093,BLCK2,Blythe Solar 110 LLC_BLCK2,eia_exact
+1861,gen-1861,60093,BLCK3,Blythe Solar 110 LLC_BLCK3,eia_exact
+1862,gen-1862,60120,MB-16,UCI Fuel Cell_MB-16,eia_exact
+1863,gen-1863,60142,LEPV1,Lemoore 1_LEPV1,eia_exact
+1864,gen-1864,60151,BLDGF,Building F_BLDGF,eia_exact
+1865,gen-1865,60153,BLDGG,Building G_BLDGG,eia_exact
+1866,gen-1866,60154,BLDG1,Buidling L_BLDG1,eia_exact
+1867,gen-1867,60182,DULLE,Dulles_DULLE,eia_exact
+1868,gen-1868,60183,FSPRI,Freeway Springs_FSPRI,eia_exact
+1869,gen-1869,60185,SOLV1,Solverde 1_SOLV1,eia_exact
+1870,gen-1870,60186,DSR1,Antelope DSR 1_DSR1,eia_exact
+1871,gen-1871,60187,DSR2,Antelope DSR 2_DSR2,eia_exact
+1872,gen-1872,60193,GEN1,Whitethorn Solar LLC_GEN1,eia_exact
+1873,gen-1873,60220,ZWED1,Zero Waste Energy Development Co LLC_ZWED1,eia_exact
+1874,gen-1874,60220,ZWED2,Zero Waste Energy Development Co LLC_ZWED2,eia_exact
+1875,gen-1875,60223,EQXOO,Equinix San Jose_EQXOO,eia_exact
+1876,gen-1876,60224,NTL00,Intel Santa Clara_NTL00,eia_exact
+1877,gen-1877,60231,BA1,Genentech-Oceanside Hybrid_BA1,eia_exact
+1878,gen-1878,60231,PV1,Genentech-Oceanside Hybrid_PV1,eia_exact
+1879,gen-1879,60233,PV2,RE Garland_PV2,eia_exact
+1880,gen-1880,60237,MSF2,Midway Solar Farm II_MSF2,eia_exact
+1881,gen-1881,60242,SKI10,Algonquin SKIC 10 Solar LLC_SKI10,eia_exact
+1882,gen-1882,60255,1,Weymouth Solar Plant_1,eia_exact
+1883,gen-1883,60255,2,Weymouth Solar Plant_2,eia_exact
+1884,gen-1884,60277,CASTR,Castor Solar_CASTR,eia_exact
+1885,gen-1885,60279,ABSR,Antelope Big Sky Ranch_ABSR,eia_exact
+1886,gen-1886,60280,SUMSL,Summer Solar LLC_SUMSL,eia_exact
+1887,gen-1887,60281,CADRB,Central Antelope Dry Ranch B LLC_CADRB,eia_exact
+1888,gen-1888,60310,GEN01,Portal Ridge Solar B LLC_GEN01,eia_exact
+1889,gen-1889,60311,GEN01,Portal Ridge Solar C LLC_GEN01,eia_exact
+1890,gen-1890,60315,MSF3,Midway Solar Farm III_MSF3,eia_exact
+1891,gen-1891,60324,GEN01,Willow Spring Solar LLC_GEN01,eia_exact
+1892,gen-1892,60336,MSF1,Midway Solar Farm 1_MSF1,eia_exact
+1893,gen-1893,60385,MB-18,Santa Rita Jail Fuel Cell_MB-18,eia_exact
+1894,gen-1894,60386,PV1,RE Garland A_PV1,eia_exact
+1895,gen-1895,60412,MUN,Munro Valley Solar_MUN,eia_exact
+1896,gen-1896,60428,PV1,CA Dept of Public Health at Richmond_PV1,eia_exact
+1897,gen-1897,60450,PVCR,Corcoran_PVCR,eia_exact
+1898,gen-1898,60474,BSHRB,Bayshore Solar B LLC_BSHRB,eia_exact
+1899,gen-1899,60475,BSHRC,Bayshore Solar C LLC_BSHRC,eia_exact
+1900,gen-1900,60481,BSHRA,Bayshore Solar A LLC_BSHRA,eia_exact
+1901,gen-1901,60491,SB3BS,Springbok 3 Solar Farm Hybrid_SB3BS,eia_exact
+1902,gen-1902,60491,SB3SF,Springbok 3 Solar Farm Hybrid_SB3SF,eia_exact
+1903,gen-1903,60509,PV1,Valley Center_PV1,eia_exact
+1904,gen-1904,60516,PV1,Granger_PV1,eia_exact
+1905,gen-1905,60558,PV1,Solar Blythe 2_PV1,eia_exact
+1906,gen-1906,60565,SES1,Borrego Springs Energy Storage_SES1,eia_exact
+1907,gen-1907,60565,SES2,Borrego Springs Energy Storage_SES2,eia_exact
+1908,gen-1908,60566,SES1,Pala Energy Storage Yard_SES1,eia_exact
+1909,gen-1909,60566,SES2,Pala Energy Storage Yard_SES2,eia_exact
+1910,gen-1910,60568,SES,Canyon Crest Academy_SES,eia_exact
+1911,gen-1911,60569,SES,El Cajon Energy Storage_SES,eia_exact
+1912,gen-1912,60570,SES,Escondido Energy Storage_SES,eia_exact
+1913,gen-1913,60571,NCEP,North City - Landfill Gas Engine North_NCEP,eia_exact
+1914,gen-1914,60590,RS1,Golden Fields Solar I LLC_RS1,eia_exact
+1915,gen-1915,60591,RS1,Solar Star California XLI LLC_RS1,eia_exact
+1916,gen-1916,60594,VYGR1,Voyager Wind I_VYGR1,eia_exact
+1917,gen-1917,60661,013A,Mira Loma Energy Storage Facility_013A,eia_exact
+1918,gen-1918,60661,013B,Mira Loma Energy Storage Facility_013B,eia_exact
+1919,gen-1919,60678,SJ1A,San Joaquin Solar_SJ1A,eia_exact
+1920,gen-1920,60678,SJ1B,San Joaquin Solar_SJ1B,eia_exact
+1921,gen-1921,60744,SESI2,SEPV Imperial Dixieland West_SESI2,eia_exact
+1922,gen-1922,60745,SESI1,SEPV Imperial Dixieland East_SESI1,eia_exact
+1923,gen-1923,60760,PE101,Millikan BESS_PE101,eia_exact
+1924,gen-1924,60790,PV,PVN Milliken LLC_PV,eia_exact
+1925,gen-1925,60824,PV1,Valley Sanitary District WTP Solar_PV1,eia_exact
+1926,gen-1926,60825,CNS1,Colgreen North Shore Solar Farm_CNS1,eia_exact
+1927,gen-1927,60844,PV1,Genentech Vacaville Meter No1_PV1,eia_exact
+1928,gen-1928,60844,PV2,Genentech Vacaville Meter No1_PV2,eia_exact
+1929,gen-1929,60846,PV1,US GSA - Sacramento_PV1,eia_exact
+1930,gen-1930,60861,PV1,Dept of General Services -FTB_PV1,eia_exact
+1931,gen-1931,60869,PB1,Solar Star California XLIV LLC_PB1,eia_exact
+1932,gen-1932,60914,W5328,Westmont 300B_W5328,eia_exact
+1933,gen-1933,60918,3,Verwey-Hanford Dairy Digester No1_3,eia_exact
+1934,gen-1934,60960,CTG1,Hyperion Treatment Plant CHP Plant_CTG1,eia_exact
+1935,gen-1935,60960,CTG2,Hyperion Treatment Plant CHP Plant_CTG2,eia_exact
+1936,gen-1936,60960,STG1,Hyperion Treatment Plant CHP Plant_STG1,eia_exact
+1937,gen-1937,60974,2BESS,Glendale Battery Energy Storage System_2BESS,eia_exact
+1938,gen-1938,60975,WS532,Whitney Point Solar_WS532,eia_exact
+1939,gen-1939,60978,PV1,CSUF State College_PV1,eia_exact
+1940,gen-1940,60979,PV1,CSUF Nutwood Solar_PV1,eia_exact
+1941,gen-1941,60981,WS526,NextEra Westside PV_WS526,eia_exact
+1942,gen-1942,60984,PV1,Lindberg Field Solar 2_PV1,eia_exact
+1943,gen-1943,60995,1,Ramona Solar Energy_1,eia_exact
+1944,gen-1944,61006,SCAIR,SCDA Solar 1_SCAIR,eia_exact
+1945,gen-1945,61013,MCES1,Marin Clean Energy Solar One_MCES1,eia_exact
+1946,gen-1946,61027,PESCT,Pacific Ethanol Stockton Cogen Plant_PESCT,eia_exact
+1947,gen-1947,61066,WTG1,Foundation CDCR LAC_WTG1,eia_exact
+1948,gen-1948,61107,VRF,Vanadium Redox Flow Battery Plant_VRF,eia_exact
+1949,gen-1949,61115,MANT1,Manteca Land PV_MANT1,eia_exact
+1950,gen-1950,61116,DELA1,Delano Land 1_DELA1,eia_exact
+1951,gen-1951,61117,BAKE1,Bakersfield PV 1_BAKE1,eia_exact
+1952,gen-1952,61118,BIND1,Bakersfield Industrial PV 1_BIND1,eia_exact
+1953,gen-1953,61152,PV1,Intel Folsom Phase 3_PV1,eia_exact
+1954,gen-1954,61153,AT057,AT&T Holger_AT057,eia_exact
+1955,gen-1955,61154,AT058,AT&T Anaheim_AT058,eia_exact
+1956,gen-1956,61209,PV1,Sacramento Regional County Sanitation PV_PV1,eia_exact
+1957,gen-1957,61215,GBWXC,Green Beanworks C PV_GBWXC,eia_exact
+1958,gen-1958,61216,GBWXD,Green Beanworks D PV_GBWXD,eia_exact
+1959,gen-1959,61222,1,Golden Hills North Wind Energy Center_1,eia_exact
+1960,gen-1960,61249,W5531,Westmont 300A_W5531,eia_exact
+1961,gen-1961,61250,USPS1,USPS PV_USPS1,eia_exact
+1962,gen-1962,61264,ANTX2,Antelope Expansion 2_ANTX2,eia_exact
+1963,gen-1963,61265,ADSR3,Antelope DSR 3_ADSR3,eia_exact
+1964,gen-1964,61319,W4885,Port of LA Solar FiT Project_W4885,eia_exact
+1965,gen-1965,61339,GBWXB,Green Beanworks B PV_GBWXB,eia_exact
+1966,gen-1966,61348,W5691,Westmont 400A_W5691,eia_exact
+1967,gen-1967,61349,W5694,Westmont 400B_W5694,eia_exact
+1968,gen-1968,61418,VAL1,Valencia 1 Solar CA_VAL1,eia_exact
+1969,gen-1969,61419,OTP,One Ten Partners PV_OTP,eia_exact
+1970,gen-1970,61420,MRCD1,Merced 1 PV_MRCD1,eia_exact
+1971,gen-1971,61421,MDRA1,Madera 1 PV_MDRA1,eia_exact
+1972,gen-1972,61442,WTG1,Foundation California Training Facility_WTG1,eia_exact
+1973,gen-1973,61443,WTG1,Foundation Mann Packing_WTG1,eia_exact
+1974,gen-1974,61444,WTG1,Foundation SaIinas Valley State Prison_WTG1,eia_exact
+1975,gen-1975,61445,PV1,Gaskell West 1 Solar Facility_PV1,eia_exact
+1976,gen-1976,61463,VBERG,Vandenberg Solar Project_VBERG,eia_exact
+1977,gen-1977,61501,GEN1,ABEC No2 dba West-Star Dairy_GEN1,eia_exact
+1978,gen-1978,61502,GEN1,ABEC No3 dba Lakeview Dairy_GEN1,eia_exact
+1979,gen-1979,61503,GEN1,ABEC No4 dba CE&S Dairy_GEN1,eia_exact
+1980,gen-1980,61582,VYGR2,Voyager Wind II_VYGR2,eia_exact
+1981,gen-1981,61583,VYGR3,Voyager Wind III_VYGR3,eia_exact
+1982,gen-1982,61584,VYGR4,Voyager Wind IV_VYGR4,eia_exact
+1983,gen-1983,61593,W5791,Westmont 301_W5791,eia_exact
+1984,gen-1984,61594,W5792,Westmont 401_W5792,eia_exact
+1985,gen-1985,61607,CPOLY,Stenner Creek Solar_CPOLY,eia_exact
+1986,gen-1986,61620,CORSP,CDCR (CA) - Corcoran State Prison_CORSP,eia_exact
+1987,gen-1987,61621,WASCO,CDCR (CA) - Wasco State Prison_WASCO,eia_exact
+1988,gen-1988,61628,KILRO,Kilroy Solar_KILRO,eia_exact
+1989,gen-1989,61661,VISTA,Vista Energy Storage System_VISTA,eia_exact
+1990,gen-1990,61682,USG1,USG 1_USG1,eia_exact
+1991,gen-1991,61683,USG2,USG 2_USG2,eia_exact
+1992,gen-1992,61698,FOLSM,Folsom SP and CSP Sacramento_FOLSM,eia_exact
+1993,gen-1993,61718,APLEX,Aerolease_APLEX,eia_exact
+1994,gen-1994,61721,WLA01,HEBT WLA 1_WLA01,eia_exact
+1995,gen-1995,61722,IRV01,HEBT Irvine 1_IRV01,eia_exact
+1996,gen-1996,61722,IRV1W,HEBT Irvine 1_IRV1W,eia_exact
+1997,gen-1997,61723,IRV06,HEBT Irvine 2_IRV06,eia_exact
+1998,gen-1998,61723,IRV2W,HEBT Irvine 2_IRV2W,eia_exact
+1999,gen-1999,61750,WICA,Wistaria Ranch Solar_WICA,eia_exact
+2000,gen-2000,61754,1,SunSelect1_1,eia_exact
+2001,gen-2001,61754,2,SunSelect1_2,eia_exact
+2002,gen-2002,61791,5001,Stage Gulch Solar_5001,eia_exact
+2003,gen-2003,61792,5002,Lavio Solar_5002,eia_exact
+2004,gen-2004,61824,RPU2,Target Shafter_RPU2,eia_exact
+2005,gen-2005,61834,SCSP1,Soboba Community Solar Project_SCSP1,eia_exact
+2006,gen-2006,61843,10276,SeaWorld Aquatica_10276,eia_exact
+2007,gen-2007,61846,MM27,Tulare BioMAT Fuel Cell_MM27,eia_exact
+2008,gen-2008,61894,CR1,National Raisin_CR1,eia_exact
+2009,gen-2009,61894,CR2,National Raisin_CR2,eia_exact
+2010,gen-2010,61894,CR3,National Raisin_CR3,eia_exact
+2011,gen-2011,61894,CR4,National Raisin_CR4,eia_exact
+2012,gen-2012,61989,PV,Pacific Ethanol Madera Solar Array_PV,eia_exact
+2013,gen-2013,61993,GDCBA,Gavilan District College Solar Project_GDCBA,eia_exact
+2014,gen-2014,61993,GDCPV,Gavilan District College Solar Project_GDCPV,eia_exact
+2015,gen-2015,62004,SPRWY,San Pablo Raceway_SPRWY,eia_exact
+2016,gen-2016,62016,UCRIV,UC Riverside Lots 30 & 32_UCRIV,eia_exact
+2017,gen-2017,62020,STANF,Stanford Campus Solar_STANF,eia_exact
+2018,gen-2018,62028,CSULB,CSU Long Beach Lots 7 & 14_CSULB,eia_exact
+2019,gen-2019,62052,CIS1,Citizens Imperial Solar_CIS1,eia_exact
+2020,gen-2020,62056,LANC,Lancaster_LANC,eia_exact
+2021,gen-2021,62077,PV1,Blue Shld Of Cal- El Dorado Hlls Mtr B_PV1,eia_exact
+2022,gen-2022,62150,SOLAR,Chaffey College Rancho Cucamonga Campus_SOLAR,eia_exact
+2023,gen-2023,62176,21Z,Berry NMW Cogens_21Z,eia_exact
+2024,gen-2024,62176,PF,Berry NMW Cogens_PF,eia_exact
+2025,gen-2025,62242,SBRC,County of San Diego SBRC_SBRC,eia_exact
+2026,gen-2026,62246,TWSP,Target Woodland Solar Project_TWSP,eia_exact
+2027,gen-2027,62274,LHSSP,Liberty HS Solar Project_LHSSP,eia_exact
+2028,gen-2028,62275,FHSSP,Frontier HS Solar Project_FHSSP,eia_exact
+2029,gen-2029,62286,W7188,Xebec 1_W7188,eia_exact
+2030,gen-2030,62287,W7190,Francisco St. Solar_W7190,eia_exact
+2031,gen-2031,62288,VAL01,Valentine Solar LLC_VAL01,eia_exact
+2032,gen-2032,62378,VSCFW,CFW Solar X LLC - Vaughn_VSCFW,eia_exact
+2033,gen-2033,62418,4,Verwey-Hanford Dairy Digester No2_4,eia_exact
+2034,gen-2034,62419,4,Verwey-Hanford Dairy Digester No3_4,eia_exact
+2035,gen-2035,62458,RAT00,Ratkovich Alhambra_RAT00,eia_exact
+2036,gen-2036,62459,SMC01,Micro Santa Clara_SMC01,eia_exact
+2037,gen-2037,62571,DSY01,Disney Prospect_DSY01,eia_exact
+2038,gen-2038,62573,ATT56,ATT Kelvin_ATT56,eia_exact
+2039,gen-2039,62574,ATT93,ATT Van Nyus_ATT93,eia_exact
+2040,gen-2040,62575,FLX01,FLEX Gibraltar_FLX01,eia_exact
+2041,gen-2041,62577,AP11A,APP Prune A-D_AP11A,eia_exact
+2042,gen-2042,62577,AP11B,APP Prune A-D_AP11B,eia_exact
+2043,gen-2043,62577,AP11C,APP Prune A-D_AP11C,eia_exact
+2044,gen-2044,62577,AP11D,APP Prune A-D_AP11D,eia_exact
+2045,gen-2045,62578,SLPV1,Preferred Freezer San Leandro_SLPV1,eia_exact
+2046,gen-2046,62611,HELIX,PFMG Solar Grossmont Helix LLC_HELIX,eia_exact
+2047,gen-2047,62649,SFDK,SFDK Solar_SFDK,eia_exact
+2048,gen-2048,62655,HLS,HL Solar_HLS,eia_exact
+2049,gen-2049,62671,EQX1A,Equinix Caspian Dr. Fuel Cell_EQX1A,eia_exact
+2050,gen-2050,62671,EQX1B,Equinix Caspian Dr. Fuel Cell_EQX1B,eia_exact
+2051,gen-2051,62687,RPNPA,American Canyon Solar_RPNPA,eia_exact
+2052,gen-2052,62687,RPNPB,American Canyon Solar_RPNPB,eia_exact
+2053,gen-2053,62687,RPNPC,American Canyon Solar_RPNPC,eia_exact
+2054,gen-2054,62688,MFARM,Malech Solar Farm_MFARM,eia_exact
+2055,gen-2055,62690,GFARM,Guadalupe Solar Farm_GFARM,eia_exact
+2056,gen-2056,62697,NTL3A,Mission College Blvd. Fuel Cell_NTL3A,eia_exact
+2057,gen-2057,62697,NTL3B,Mission College Blvd. Fuel Cell_NTL3B,eia_exact
+2058,gen-2058,62698,KR059,Kaiser East La Palma Ave. Fuel Cell_KR059,eia_exact
+2059,gen-2059,62699,KSR24,Kaiser Deer Valley Rd. Fuel Cell_KSR24,eia_exact
+2060,gen-2060,62700,KSR23,Kaiser Owens Dr. Fuel Cell_KSR23,eia_exact
+2061,gen-2061,62701,KS18A,Kaiser Napa Valley Corporate Dr Fuel Cell_KS18A,eia_exact
+2062,gen-2062,62701,KS18B,Kaiser Napa Valley Corporate Dr Fuel Cell_KS18B,eia_exact
+2063,gen-2063,62702,EQ14A,Equinix Great Oaks Blvd. Fuel Cell_EQ14A,eia_exact
+2064,gen-2064,62702,EQ14B,Equinix Great Oaks Blvd. Fuel Cell_EQ14B,eia_exact
+2065,gen-2065,62703,EQ13A,Equinix Lundy Ave. Fuel Cell_EQ13A,eia_exact
+2066,gen-2066,62703,EQ13B,Equinix Lundy Ave. Fuel Cell_EQ13B,eia_exact
+2067,gen-2067,62704,EQX09,Equinix Douglas St. Fuel Cell_EQX09,eia_exact
+2068,gen-2068,62705,EQX08,Equinix Maple Ave. Fuel Cell_EQX08,eia_exact
+2069,gen-2069,62732,SSPAI,Solar Star Palo Alto I LLC_SSPAI,eia_exact
+2070,gen-2070,62987,GHSP,Grossmont HS Solar Project_GHSP,eia_exact
+2071,gen-2071,63054,CALTR,CalCity Solar 1_CALTR,eia_exact
+2072,gen-2072,63078,EGCRK,Eagle Creek_EGCRK,eia_exact
+2073,gen-2073,63204,HLS,CID Solar (CA)_HLS,eia_exact
+2074,gen-2074,63285,79G1,Valero Wilmington Cogeneration Plant_79G1,eia_exact
+2075,gen-2075,63303,AISP,Alticor Inc - Solar Project_AISP,eia_exact
+2076,gen-2076,63361,MIP2T,Medline Ind. Phase 2 Tracy_MIP2T,eia_exact
+2077,gen-2077,63363,NBS,Niagara Bottling Stockton_NBS,eia_exact
+2078,gen-2078,63376,PPHS,Phelan Pinon Hills CSD Solar_PPHS,eia_exact
+2079,gen-2079,63385,CA135,Castaic Lake Phase II_CA135,eia_exact
+2080,gen-2080,63412,SDZOO,San Diego Zoo_SDZOO,eia_exact
+2081,gen-2081,63439,CCFC1,Central CA Fuel Cell 1_CCFC1,eia_exact
+2082,gen-2082,63455,INV1,RE-VFO LLC_INV1,eia_exact
+2083,gen-2083,63455,INV2,RE-VFO LLC_INV2,eia_exact
+2084,gen-2084,63486,DA04,D'Arrigo Brothers - Phase 4_DA04,eia_exact
+2085,gen-2085,63493,SIAD,PSREC/SIAD Solar_SIAD,eia_exact
+2086,gen-2086,63516,CACTY,California City_CACTY,eia_exact
+2087,gen-2087,63603,ILM01,Illumina Way SD_ILM01,eia_exact
+2088,gen-2088,63604,EXN02,Extreme San Ignacio_EXN02,eia_exact
+2089,gen-2089,63605,ATT35,ATT North Watney_ATT35,eia_exact
+2090,gen-2090,63606,ATT27,ATT Ventura Blvd_ATT27,eia_exact
+2091,gen-2091,63607,EXN01,Extreme Via Del Oro_EXN01,eia_exact
+2092,gen-2092,63609,ALRGN,Allergan_ALRGN,eia_exact
+2093,gen-2093,63610,BAKER,Baker_BAKER,eia_exact
+2094,gen-2094,63611,CSULB,CSU Long Beach_CSULB,eia_exact
+2095,gen-2095,63612,DATS0,DATS_DATS0,eia_exact
+2096,gen-2096,63613,DOWNY,Downey_DOWNY,eia_exact
+2097,gen-2097,63614,LAWRP,LAWRP_LAWRP,eia_exact
+2098,gen-2098,63616,OCSD1,OCSD_OCSD1,eia_exact
+2099,gen-2099,63617,SOCCD,SOCCD_SOCCD,eia_exact
+2100,gen-2100,63630,AVHS,Pleasanton - Amador Valley High School_AVHS,eia_exact
+2101,gen-2101,63638,CTC13,Costco Lake Drive_CTC13,eia_exact
+2102,gen-2102,63651,5812,North Kern State Prison Phase II_5812,eia_exact
+2103,gen-2103,63674,DEDEA,Dedeaux_DEDEA,eia_exact
+2104,gen-2104,63699,AGT0A,AGT000 Stevens Creek Fuel Cell_AGT0A,eia_exact
+2105,gen-2105,63699,AGT0B,AGT000 Stevens Creek Fuel Cell_AGT0B,eia_exact
+2106,gen-2106,63701,CST1A,CST001 McCarthy Fuel Cell_CST1A,eia_exact
+2107,gen-2107,63701,CST1B,CST001 McCarthy Fuel Cell_CST1B,eia_exact
+2108,gen-2108,63704,EQ10A,EQX010 Great Oaks Fuel Cell_EQ10A,eia_exact
+2109,gen-2109,63704,EQ10B,EQX010 Great Oaks Fuel Cell_EQ10B,eia_exact
+2110,gen-2110,63705,EQ11A,EQX011 Duane Fuel Cell_EQ11A,eia_exact
+2111,gen-2111,63705,EQ11B,EQX011 Duane Fuel Cell_EQ11B,eia_exact
+2112,gen-2112,63705,EQ11C,EQX011 Duane Fuel Cell_EQ11C,eia_exact
+2113,gen-2113,63708,EQ15A,EQX015 Great Oaks Fuel Cell_EQ15A,eia_exact
+2114,gen-2114,63708,EQ15B,EQX015 Great Oaks Fuel Cell_EQ15B,eia_exact
+2115,gen-2115,63711,JSR00,JSR000 N Mathilda Fuel Cell_JSR00,eia_exact
+2116,gen-2116,63712,KSR28,KSR028 Merced Fuel Cell_KSR28,eia_exact
+2117,gen-2117,63714,GEN05,GEN005 Antibody Fuel Cell_GEN05,eia_exact
+2118,gen-2118,63715,SCU00,SCU000 El Camino Real Fuel Cell_SCU00,eia_exact
+2119,gen-2119,63716,KSR53,KSR053 Cantara Fuel Cell_KSR53,eia_exact
+2120,gen-2120,63717,TLR0A,TLR000 Hansen Fuel Cell_TLR0A,eia_exact
+2121,gen-2121,63717,TLR0B,TLR000 Hansen Fuel Cell_TLR0B,eia_exact
+2122,gen-2122,63717,TLR0C,TLR000 Hansen Fuel Cell_TLR0C,eia_exact
+2123,gen-2123,63928,6701,Vacaville Hospital_6701,eia_exact

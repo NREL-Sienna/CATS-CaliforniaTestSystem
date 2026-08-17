@@ -10,7 +10,17 @@ solutions/
 data/*
 !data/scs*.csv
 !data/fixed_admittance_candidates.csv
+!data/reactive_resources.csv
 !data/download_data.sh
+!data/hydro_reservoir_sources.csv
+!data/generator_names.csv
+!data/generator_prime_movers.csv
+!data/generator_plants.csv
+!data/hydro_units.csv
+!data/hydro_reservoirs.csv
+!data/enrichment_report.md
+!data/hydro_inflows.csv
+!data/hydro_inflow_2019_daily.csv
 
 # Generated build artifacts (from build_CATS.jl)
 /CATS_openapi/
