@@ -1,11 +1,11 @@
-# Round-trip test: the case written by `Sienna/build_CATS.jl` must read back through
+# Round-trip test: the case written by `build/build_CATS.jl` must read back through
 # `PowerSystems.from_file` as the same system.
 #
 # Every expectation is read from the enrichment CSVs rather than hard-coded, so the test tracks
 # the data instead of a snapshot of it. Regenerating the CSVs and rebuilding keeps it valid;
 # changing one without the other fails it, which is the point.
 #
-# Run with: julia --project=Sienna test/runtests.jl  (the Sienna env already carries PowerSystems, CSV, DataFrames)
+# Run with: julia --project=build test/runtests.jl  (the build env already carries PowerSystems, CSV, DataFrames)
 
 using Test
 using PowerSystems
@@ -20,7 +20,7 @@ const CASE_DIR = joinpath(BASE_DIR, "CATS_openapi")
 
 if !isfile(joinpath(CASE_DIR, "system.json"))
     error(
-        "no case at $CASE_DIR. Build it first: julia --project=Sienna Sienna/build_CATS.jl",
+        "no case at $CASE_DIR. Build it first: julia --project=build build/build_CATS.jl",
     )
 end
 

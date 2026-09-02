@@ -22,8 +22,12 @@ data/*
 !data/hydro_inflows.csv
 !data/hydro_inflow_2019_daily.csv
 
-# Generated build artifacts (from build_CATS.jl)
+# Generated build artifacts (from build/build_CATS.jl)
 /CATS_openapi/
+
+# Model run artifacts (from Sienna/cats_model.jl)
+/Sienna/results/
+/Sienna/csv_results/
 /GIS/counties/
 /Manifest.toml
 /Project.toml

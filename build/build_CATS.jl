@@ -1,6 +1,6 @@
 using PowerSystems
 using PowerFlowFileParser
-import PowerCoreOpenAPIModels
+import PowerOpenAPIModels
 using CSV
 using DataFrames
 using Dates
@@ -17,7 +17,14 @@ end
 
 const PSY = PowerSystems
 const PFP = PowerFlowFileParser
-const PC = PowerCoreOpenAPIModels
+const POAM = PowerOpenAPIModels
+
+# psy6 dropped `scaling_factor_multiplier`: a normalized series now *declares* itself instead
+# of naming a getter the consumer must resolve. `unit_system = DU` says the values are per unit
+# on the component's own base; `quantity_kind` names what they scale to. `units` stays nothing
+# because a per-unit basis is not a units label. Mirrors PowerSystemCaseBuilder's `per_unit_of`.
+per_unit_of(quantity_kind::AbstractString) =
+    (unit_system = PSY.DU, units = nothing, quantity_kind = quantity_kind)
 
 include(joinpath(@__DIR__, "parse_matpower.jl"))
 include(joinpath(@__DIR__, "generator_types.jl"))
@@ -834,7 +841,7 @@ function build_CATS_system(;
     pm = PFP.PowerModelsData(matpower_file)
     oapi = PFP.build_openapi_system(pm; unit_system = "DEVICE_BASE")
     doc = PFP.get_document(oapi)
-    PC.validate_document(doc)
+    POAM.validate_document(doc)
     system = from_openapi(System, doc)
 
     n_buses = length(get_components(Bus, system))
@@ -1173,10 +1180,9 @@ function build_CATS_system(;
 	    ts = SingleTimeSeries(;
            name = "max_active_power",
            data = TimeArray(timestamps, ts_values),
-           scaling_factor_multiplier = get_max_active_power,
+           per_unit_of("active_power")...,
         )
-        associations = (TimeSeriesAssociation(comp, ts) for comp in comps)
-        bulk_add_time_series!(system, associations)
+        add_time_series!(system, comps, ts)
 
         # data validity check
         if VALIDITY_CHECKS
@@ -1185,14 +1191,17 @@ function build_CATS_system(;
             total_generation = 0.0
             for comp in comps
                 # Select the row in storage; the two-call form would materialize all 8760.
-                total_generation += first(get_time_series_values(
+                # psy6 removed the `units` kwarg: the read returns the values as stored
+                # (per unit on the device base), so the consumer applies the scaling. The
+                # check still compares MW against the CSV total.
+                per_unit_value = first(get_time_series_values(
                     SingleTimeSeries,
                     comp,
                     "max_active_power";
                     start_time = timestamps[validity_check_row],
                     len = 1,
-                    units = PSY.NU,
                 ))
+                total_generation += per_unit_value * get_max_active_power(comp, PSY.NU)
             end
             @assert isapprox(total_generation, ts_df[validity_check_row, col_name])
         end
@@ -1230,7 +1239,7 @@ function build_CATS_system(;
 
     increased = 0
     most_increase = 0.0
-    begin_time_series_update(system) do
+    time_series_transaction(system) do txn
         for i in 1:n_buses
             load_name = "bus$i"
             load = get_component(PowerLoad, system, load_name)
@@ -1251,11 +1260,13 @@ function build_CATS_system(;
             @assert all(active_power .>= 0.0) "Negative real values found for load $load_name"
 
             power_configs = (
-                (active_power, "max_active_power", get_max_active_power, set_max_active_power!),
-                (abs.(reactive_power), "reactive_power", get_max_reactive_power, set_max_reactive_power!),
+                (active_power, "max_active_power", "active_power",
+                 get_max_active_power, set_max_active_power!),
+                (abs.(reactive_power), "reactive_power", "reactive_power",
+                 get_max_reactive_power, set_max_reactive_power!),
             )
 
-            for (power_values, ts_name, get_max_fn, set_max_fn!) in power_configs
+            for (power_values, ts_name, quantity_kind, get_max_fn, set_max_fn!) in power_configs
                 max_power = maximum(power_values)
                 current_max = get_max_fn(load, PSY.NU)
                 if max_power > current_max
@@ -1269,9 +1280,9 @@ function build_CATS_system(;
                 ts = SingleTimeSeries(;
                     name = ts_name,
                     data = TimeArray(timestamps, power_values),
-                    scaling_factor_multiplier = get_max_fn,
+                    per_unit_of(quantity_kind)...,
                 )
-                add_time_series!(system, load, ts)
+                add_time_series!(txn, load, ts)
             end
         end
         if increased > 0
@@ -1346,7 +1357,7 @@ function build_CATS_system(;
             cost = get_operation_cost(comp)
             isnothing(cost) && continue
             if cost isa ThermalGenerationCost || cost isa RenewableGenerationCost || cost isa HydroGenerationCost
-                vom = get_variable(cost)
+                vom = get_variable_operation_cost(cost)
                 isnothing(vom) && continue
                 fd = get_function_data(get_value_curve(vom))
                 @assert !(fd isa QuadraticCurve) "Component $(get_name(comp)) has a quadratic cost curve"
@@ -1422,4 +1433,4 @@ function build_CATS_system(;
 end
 
 system = build_CATS_system()
-to_file(system, joinpath(BASE_DIR, "CATS_openapi"); unit_system = :device_base, force = true)
+to_file(system, joinpath(BASE_DIR, "CATS_openapi"); power_units = :component_base, force = true)
