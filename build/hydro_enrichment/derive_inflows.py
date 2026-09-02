@@ -19,7 +19,7 @@ No value here is invented, estimated, or interpolated. A plant with no confirmed
 inflow/discharge gauge gets empty statistics and an explicit note in both outputs.
 CDEC values with the '---' missing-data flag are dropped, not filled.
 
-Run from anywhere: `python3 Sienna/hydro_enrichment/derive_inflows.py`
+Run from anywhere: `python3 build/hydro_enrichment/derive_inflows.py`
 """
 import csv
 import statistics

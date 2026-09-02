@@ -571,7 +571,7 @@ function _data_source(organization, dataset, url, version, confidence, fields)
         url = url,
         version = version,
         confidence = confidence,
-        recorded_by = "CATS EIA enrichment (Sienna/hydro_enrichment)",
+        recorded_by = "CATS EIA enrichment (build/hydro_enrichment)",
         fields = fields,
     )
 end
@@ -700,7 +700,7 @@ count is logged rather than left implicit.
 """
 function attach_reservoir_inflow_time_series!(system::System, daily_file::AbstractString)
     if !isfile(daily_file)
-        error("no reservoir inflow series at $daily_file; run Sienna/hydro_enrichment/derive_inflows.py")
+        error("no reservoir inflow series at $daily_file; run build/hydro_enrichment/derive_inflows.py")
     end
     daily = CSV.read(daily_file, DataFrame)
     timestamps = range(DateTime("2019-01-01T00:00:00"); step = Hour(1), length = 24 * 365)
@@ -860,7 +860,7 @@ function build_CATS_system(;
     reservoirs_file = joinpath(DATA_DIR, "hydro_reservoirs.csv")
     if !isfile(reservoirs_file)
         error("Data directory $DATA_DIR does not contain hydro_reservoirs.csv (Stage 5 of " *
-            "the EIA hydro enrichment). Regenerate it via Sienna/hydro_enrichment/ before " *
+            "the EIA hydro enrichment). Regenerate it via build/hydro_enrichment/ before " *
             "running the build.")
     end
     reservoirs_df = CSV.read(reservoirs_file, DataFrame)

@@ -63,10 +63,10 @@ the parsers, the model needs PowerOperationsModels and a solver. Neither imports
 
 ### Rebuilding the system from scratch
 
-Requires Julia 1.12+, `gdown` (`pip install gdown`), and the psy6 workspace checkouts — both
-environments resolve PowerSystems, InfrastructureSystems and the OpenAPI model packages from
-sibling directories via `[sources]` path pins, so this repository must sit inside that
-workspace.
+Requires Julia 1.12+ and `gdown` (`pip install gdown`). Both environments pin their Sienna
+dependencies by git branch in `[sources]` (PowerSystems `psy6`, InfrastructureSystems `IS4`,
+PowerOperationsModels `main`, …) and the committed manifests lock the exact commits, so the
+tree resolves from a clean clone — it does not need to sit inside a psy6 workspace.
 
 ```bash
 # 1. Fetch the two large time-series files (~580 MB); everything else is in the repo.

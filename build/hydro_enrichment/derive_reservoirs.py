@@ -19,7 +19,7 @@ the sanctioned defaults/guesses called out in the design doc (50% initial
 level, 0.0 min/evaporative loss, relative elevation datum, turbine-type
 guess from head band) -- each labelled as such, never presented as measured.
 
-Run from anywhere: `python3 Sienna/hydro_enrichment/derive_reservoirs.py`
+Run from anywhere: `python3 build/hydro_enrichment/derive_reservoirs.py`
 """
 import csv
 import re
@@ -295,7 +295,7 @@ def write_report_section(rows):
     p(STAGE5_MARKER)
     p()
     p(
-        f"Derived by `Sienna/hydro_enrichment/derive_reservoirs.py` from "
+        f"Derived by `build/hydro_enrichment/derive_reservoirs.py` from "
         f"`data/hydro_reservoir_sources.csv` (32 plants, NID/HILARRI/EHA/CDEC) and "
         f"`data/hydro_units.csv` (promoted units). One `HydroReservoir` row per "
         f"promoted plant, {len(rows)} total. Sections 1-7 above cover Stages 1-4 "
