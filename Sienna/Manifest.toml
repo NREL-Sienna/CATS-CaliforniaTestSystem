@@ -928,7 +928,7 @@ version = "0.1.0"
 [[deps.PowerOperationsModels]]
 deps = ["Dates", "DocStringExtensions", "InfraStore", "InfrastructureCoreOpenAPIModels", "InfrastructureOptimizationModels", "InfrastructureSystems", "InfrastructureTimeSeriesOpenAPIModels", "InteractiveUtils", "JSON3", "JuMP", "LinearAlgebra", "Logging", "PowerCoreOpenAPIModels", "PowerDynamicsOpenAPIModels", "PowerInvestmentsOpenAPIModels", "PowerNetworkMatrices", "PowerOpenAPIModels", "PowerOperationsOpenAPIModels", "PowerSystems", "PrettyTables", "ProgressMeter", "Serialization", "SparseArrays", "TimerOutputs"]
 git-tree-sha1 = "83c27675f0e3307cfd2f05013705494ece4bed61"
-repo-rev = "main"
+repo-rev = "jd/hydro_fixes"
 repo-url = "https://github.com/Sienna-Platform/PowerOperationsModels.jl.git"
 uuid = "c9281074-0ec2-4761-850d-1a24107ea5e8"
 version = "0.1.0"
