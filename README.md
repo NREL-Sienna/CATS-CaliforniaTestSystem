@@ -39,6 +39,80 @@ Clone the repository
 
 Run a DC optimal power flow using [PowerModels.jl](https://github.com/lanl-ansi/PowerModels.jl) by executing the file `run_opf.jl`.
 
+## Sienna / psy6: building and running the system
+
+The Sienna form of CATS is built from source data in this repository, not shipped as a
+serialized system. The only serialization format is the **OpenAPI bundle** written to
+`CATS_openapi/`; psy5-era `CATS_Sienna*.json`/`.h5` files are gone and will not load into
+psy6 PowerSystems.
+
+### Repository layout
+
+| Path | Contents |
+|---|---|
+| `build/` | Everything that builds the Sienna system: `build_CATS.jl` and its includes, the hydro/reactive enrichment scripts, and the build environment (`Project.toml`). |
+| `Sienna/` | The model: `cats_model.jl` (single-instance security-constrained unit commitment) and its own environment. |
+| `data/` | Enrichment inputs (small, tracked) plus `download_data.sh` for the large time-series files (not tracked). |
+| `MATPOWER/` | The upstream network case — the root input to the build. |
+| `GIS/` | `CATS_buses.csv`, `CATS_gens.csv`, `CATS_lines.json` — also build inputs, despite the directory name. |
+| `test/` | Round-trip test: rebuilds nothing, reads `CATS_openapi/` back and checks it against the enrichment CSVs. |
+| `Archive/` | Upstream provenance (original `.m`, EIA generator data, GeoJSON) that the enrichment cites. |
+
+`build/` and `Sienna/` are separate environments on purpose: the build needs PowerSystems and
+the parsers, the model needs PowerOperationsModels and a solver. Neither imports the other.
+
+### Rebuilding the system from scratch
+
+Requires Julia 1.12+ and `gdown` (`pip install gdown`). Both environments pin their Sienna
+dependencies by git branch in `[sources]` (PowerSystems `psy6`, InfrastructureSystems `IS4`,
+PowerOperationsModels `main`, …) and the committed manifests lock the exact commits, so the
+tree resolves from a clean clone — it does not need to sit inside a psy6 workspace.
+
+```bash
+# 1. Fetch the two large time-series files (~580 MB); everything else is in the repo.
+./data/download_data.sh
+
+# 2. Instantiate the build environment.
+julia --project=build -e 'using Pkg; Pkg.instantiate()'
+
+# 3. Build. Parses the MATPOWER case, applies the EIA/CAISO and hydro enrichment, and writes
+#    CATS_openapi/{system.json,time_series.h5}. Takes several minutes on ~8,870 buses.
+julia --project=build build/build_CATS.jl
+
+# 4. Verify. Reads the bundle back through PowerSystems.from_file and checks every count and
+#    field against the enrichment CSVs (492 assertions).
+julia --project=build test/runtests.jl
+```
+
+Step 3 converts `Load_Agg_Post_Assignment_v3_latest.csv` to a `.jld2` cache on first run,
+which takes a few minutes and ~1.2 GB. To do it as its own step instead:
+
+```bash
+julia --project=build build/convert_load_csv_to_jld2.jl
+```
+
+The `.jld2` is a cache, not an input — deleting it only costs rebuild time.
+
+### Running the model
+
+```bash
+julia --project=Sienna -e 'using Pkg; Pkg.instantiate()'
+julia --project=Sienna Sienna/cats_model.jl
+```
+
+Solves one unit-commitment instance in which the dispatch must respect line flows in the base
+case and under N-1 contingencies, and writes peak dual reports to `Sienna/csv_results/`. Size
+it with environment variables rather than editing the file — `CATS_N_GATES` (number of 500 kV
+contingencies, default 5), `CATS_N_MONITORED` (230 kV lines watched under each, default 50),
+`CATS_PTDF_TOL`. The defaults solve in about a minute; the post-contingency constraint count
+scales as their product, so raise both with care.
+
+For a fast end-to-end check:
+
+```bash
+CATS_N_GATES=1 CATS_N_MONITORED=5 CATS_PTDF_TOL=0.1 julia --project=Sienna Sienna/cats_model.jl
+```
+
 ### Recent Updates
 The CATS was updated on November 11, 2023. All previous versions are available in the 'Archive' directory.
 <!-- Due to formatting restrictions, the MATPOWER and GIS formats of the CATS model have different indices for components. The CSV files in the `Additional Data Files` folder map this relationship, in addition to providing additional data fields. 
